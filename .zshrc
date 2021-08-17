@@ -296,12 +296,16 @@ if [[ ! $( command -v brew ) ]]; then
 	echo "Could not find the 'brew' command."
 	echo "  Please install: https://brew.sh"
 else
-	brew bundle dump --force --file="$HOME/.Brewfile"  &> /dev/null &
+	brew bundle dump --force --file="$HOME/.Brewfile"  &> /dev/null & # Sync ~/.Brewfile
 fi
 
 ## VCSH (Setup .gitignore for my public and private).
 vcsh write-gitignore pub &> /dev/null &
 vcsh write-gitignore priv &> /dev/null &
+
+## VCSH: Let me know about file changes to my vcsh.
+vcsh pub diff --exit-code &> /dev/null || ( echo "vcsh pub has changes:" && vcsh pub status --short )
+vcsh priv diff --exit-code &> /dev/null || ( echo "vcsh priv has changes:" && vcsh pub status --short )
 
 ###
  # Aliases
