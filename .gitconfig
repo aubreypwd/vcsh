@@ -1,0 +1,141 @@
+[alias]
+
+	# GUI's
+	gui    = "! /bin/sh $HOME/Repos/github.com/aubreypwd/configs/git/scripts/tower.sh"
+	g      = gui
+	glog   = "! /bin/sh $HOME/Repos/github.com/aubreypwd/configs/git/scripts/towerlog.sh"
+	gl     = glog
+
+	# Checkout.
+	co     = checkout
+
+	# Commits
+	
+	## All
+	ca     = commit -a --verbose # Commit and add all files and add message to editor.
+	cap    = "! function f() { git ca && git p; }; f" # Commit all files, add message in editor, and push.
+	cam    = "! function f() { git ca -m '$1'; }; f" # Commit all with a message.
+	camp   = "! function f() { git ca -m '$1' && git p; }; f" # Commit all with a message and push.
+
+	## Staged
+	cs     = commit --verbose # Commit staged files and write message in editor.
+	csp    = "! function f() { git cs && git p; }; f" # Commit staged files, write a message in an editor, and push.
+	csm    = "! function f() { git cs -m '$1'; }; f" # Commit staged with a message.
+	csmp   = "! function f() { git csm '$1' && git p; }; f" # Commit staged with a message and push.
+
+	# Status
+	stat   = status
+	s      = status
+
+	# Logs
+	blog   = log --oneline --decorate --graph # Better log, looks better in CLI.
+	l      = blog # Normal log, but looks better.
+
+	# Reset & Clear
+	rhh    = reset --hard HEAD # Reset easily.
+	rhhc   = "! git rhh && git clear" # Reset and remove new files.
+	clear  = clean -df # Just remove new files
+
+	# Push/Pull
+	p      = "! git push -u origin \"$(git rev-parse --abbrev-ref HEAD)\"" # git push current branch.
+	u      = "! git pull origin \"$(git rev-parse --abbrev-ref HEAD)\"" # git pull current branch.
+
+	# Branches & Tags
+	b      = "! echo $(git branch --show-current)" # Show the current branch.
+	cob    = checkout -b
+	cb     = "! git b | pbcopy" # Copy the current branch to the clipboard.
+	db     = "! function f() { git branch -D $1; git push origin :$1 ;}; f"
+	dt     = "! function f() { git tag -d $1; git push origin :refs/tags/$1; }; f"
+	fb     = "! /bin/bash -c 'source $HOME/.antigen/bundles/aubreypwd/zsh-plugin-fzf-git-branch/fzf-git-branch.plugin.zsh && fzf-git-branch'" # See https://github.com/aubreypwd/zsh-plugin-fzf-git-branch
+	mt     = "! function f() { git dt $1; git tag $1; git push --tags; }; f" # Move tag here.
+
+	# DIFFs
+	diffs  = diff --staged
+	ds     = diffs
+	d      = diff
+
+[push]
+	default = current
+
+[user]
+	name = Aubrey Portwood
+	email = code@aubreypwd.com
+
+[core]
+	editor = vim
+	excludesfile = /Users/aubreypwd/.gitignore
+
+[color]
+	ui = true
+	diff = auto
+	status = auto
+	branch = auto
+	interactive = auto
+	pager = true
+
+[credential]
+	helper = osxkeychain
+
+[color]
+	diff = auto
+	status = auto
+	branch = auto
+	interactive = auto
+	ui = true
+	pager = true
+
+[color "status"]
+	added = green
+	changed = red bold
+	untracked = magenta bold
+
+[color "branch"]
+	remote = yellow
+
+[gui]
+	tabsize = 2
+
+[diff]
+	noprefix = true
+	tool = meld
+
+[difftool]
+	prompt = false
+
+[difftool "meld"]
+	trustExitCode = true
+	cmd = open -W -a Meld --args \"$LOCAL\" \"$REMOTE\"
+
+[pager]
+	diff = false
+	show = false
+
+[mergetool "smerge"] # Sublime Merge as mergetool
+	cmd = smerge mergetool \"$BASE\" \"$LOCAL\" \"$REMOTE\" -o \"$MERGED\"
+	trustExitCode = true
+
+[mergetool "meld"]
+	trustExitCode = true
+	cmd = open -W -a Meld --args --auto-merge \"$LOCAL\" \"$BASE\" \"$REMOTE\" --output=\"$MERGED\"
+
+[merge]
+	tool = meld
+
+[mergetool]
+	keepBackup = false
+	prompt = false
+
+[pull]
+	rebase = false
+
+[ghq]
+	root = ~/Repos
+
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+
+[init]
+	defaultBranch = main
