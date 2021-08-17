@@ -94,7 +94,7 @@
 		"vendor/*"
 	],
 	"bold_folder_labels": false,
-	"trim_only_modified_white_space": true,
+	"trim_only_modified_white_space": false,
 	"caret_extra_bottom": 0,
 	"caret_extra_top": 0,
 	"caret_extra_width": 0,

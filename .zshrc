@@ -1,6 +1,7 @@
 #!/bin/zsh
 
 export HOMEBREW_BUNDLE_FILE="$HOME/.Brewfile" # brew nundle nob.
+export HOMEBREW_BUNDLE_NO_LOCK=true;
 
 setopt no_monitor # For commands below eding in &, do not report done when running in background.
 
@@ -142,9 +143,9 @@ export ZSH="$HOME/.oh-my-zsh" # Path to your oh-my-zsh installation.
  # @since Thursday, 10/1/2020
  ##
 if [ ! -e "$ZSH" ]; then
-    echo ".oh-my-zsh isn't installed!"
-    echo "  Install: https://ohmyz.sh/#install"
-    return
+	echo ".oh-my-zsh isn't installed!"
+	echo "  Install: https://ohmyz.sh/#install"
+	return
 fi
 
 ###
@@ -177,43 +178,43 @@ source $ZSH/oh-my-zsh.sh
  # @since Monday, 9/21/2020
  ##
 if [[ ! -f "/usr/local/share/antigen/antigen.zsh" ]]; then
-    echo "Please install antigen and reload to install ZSH plugins:"
-    echo "  Homebrew: brew reinstall antigen"
+	echo "Please install antigen and reload to install ZSH plugins:"
+	echo "  Homebrew: brew reinstall antigen"
 else
-    source /usr/local/share/antigen/antigen.zsh # brew install antigen
+	source /usr/local/share/antigen/antigen.zsh # brew install antigen
 
-    # Builtin:
-    antigen bundle git
-    antigen bundle wp-cli
-    antigen bundle svn
-    antigen bundle git-extras
-    antigen bundle history-substring-search
-    antigen bundle osx
-    antigen bundle z
+	# Builtin:
+	antigen bundle git
+	antigen bundle wp-cli
+	antigen bundle svn
+	antigen bundle git-extras
+	antigen bundle history-substring-search
+	antigen bundle osx
+	antigen bundle z
 
-    # Others:
-    antigen bundle Tarrasch/zsh-bd
+	# Others:
+	antigen bundle Tarrasch/zsh-bd
 
-    # Easy way to require needed commands in my packages.
-    antigen bundle ssh://git@github.com/aubreypwd/zsh-plugin-require  # export REQUIRE_AUTO_INSTALL="off" # Un-comment to disable autoinstall.
+	# Easy way to require needed commands in my packages.
+	antigen bundle ssh://git@github.com/aubreypwd/zsh-plugin-require  # export REQUIRE_AUTO_INSTALL="off" # Un-comment to disable autoinstall.
 
-    # My Plugins:
-    antigen bundle ssh://git@github.com/aubreypwd/zsh-plugin-x
-    antigen bundle ssh://git@github.com/aubreypwd/zsh-plugin-reload
-    antigen bundle ssh://git@github.com/aubreypwd/zsh-plugin-fzf-git-branch
-    antigen bundle ssh://git@github.com/aubreypwd/zsh-plugin-tdl
-    antigen bundle ssh://git@github.com/aubreypwd/zsh-plugin-hide
-    antigen bundle ssh://git@github.com/aubreypwd/zsh-plugin-delete
-    antigen bundle ssh://git@github.com/aubreypwd/zsh-plugin-comment
-    antigen bundle ssh://git@github.com/aubreypwd/zsh-plugin-pwdcp
-    antigen bundle ssh://git@github.com/aubreypwd/zsh-plugin-cvideo
-    antigen bundle ssh://git@github.com/aubreypwd/zsh-plugin-yt2mp3
-    antigen bundle ssh://git@github.com/aubreypwd/zsh-plugin-fd
-    antigen bundle ssh://git@github.com/aubreypwd/zsh-plugin-download
-    antigen bundle ssh://git@github.com/WebDevStudios/zsh-plugin-satisbuild.git
-    antigen bundle ssh://git@github.com/aubreypwd/zsh-plugin-bruse.git
+	# My Plugins:
+	antigen bundle ssh://git@github.com/aubreypwd/zsh-plugin-x
+	antigen bundle ssh://git@github.com/aubreypwd/zsh-plugin-reload
+	antigen bundle ssh://git@github.com/aubreypwd/zsh-plugin-fzf-git-branch
+	antigen bundle ssh://git@github.com/aubreypwd/zsh-plugin-tdl
+	antigen bundle ssh://git@github.com/aubreypwd/zsh-plugin-hide
+	antigen bundle ssh://git@github.com/aubreypwd/zsh-plugin-delete
+	antigen bundle ssh://git@github.com/aubreypwd/zsh-plugin-comment
+	antigen bundle ssh://git@github.com/aubreypwd/zsh-plugin-pwdcp
+	antigen bundle ssh://git@github.com/aubreypwd/zsh-plugin-cvideo
+	antigen bundle ssh://git@github.com/aubreypwd/zsh-plugin-yt2mp3
+	antigen bundle ssh://git@github.com/aubreypwd/zsh-plugin-fd
+	antigen bundle ssh://git@github.com/aubreypwd/zsh-plugin-download
+	antigen bundle ssh://git@github.com/WebDevStudios/zsh-plugin-satisbuild.git
+	antigen bundle ssh://git@github.com/aubreypwd/zsh-plugin-bruse.git
 
-    antigen apply
+	antigen apply
 fi
 
 ###
@@ -225,76 +226,82 @@ fi
  # @since Friday, 10/2/2020                               The initial ones.
  ##
 if [[ ! $( command -v require ) ]]; then
-    echo "Could not find the 'require' function."
-    echo "  Please install: https://github.com/aubreypwd/zsh-plugin-require"
+	echo "Could not find the 'require' function."
+	echo "  Please install: https://github.com/aubreypwd/zsh-plugin-require"
 else
 
-    ###
-     # Install homebrew.
-     #
-     # You probably have this installed aready though.
-     #
-     # E.g: brew
-     #
-     # @since Friday, 10/2/2020
-     # @see   https://brew.sh
-     ##
-    require "brew" '/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"' &> /dev/null &
+	###
+	 # Install homebrew.
+	 #
+	 # You probably have this installed aready though.
+	 #
+	 # E.g: brew
+	 #
+	 # @since Friday, 10/2/2020
+	 # @see   https://brew.sh
+	 ##
+	require "brew" '/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"' &> /dev/null &
 
-    ###
-     # Install package managers from homebrew.
-     #
-     # Also installs gem
-     #
-     # @since Friday, 10/2/2020
-     ##
-    require "composer" "brew reinstall composer" "brew" &> /dev/null & # Composer, @see https://composer.org
-    require "npm" "brew reinstall node" "brew" &> /dev/null & # Also installs node.
-    require "python" "brew reinstall python" "brew" &> /dev/null & # Installs pip3 and easy_install
-    require "ruby" "brew reinstall ruby" "brew" &> /dev/null & # Installs gem
+	###
+	 # Install package managers from homebrew.
+	 #
+	 # Also installs gem
+	 #
+	 # @since Friday, 10/2/2020
+	 ##
+	require "composer" "brew reinstall composer" "brew" &> /dev/null & # Composer, @see https://composer.org
+	require "npm" "brew reinstall node" "brew" &> /dev/null & # Also installs node.
+	require "python" "brew reinstall python" "brew" &> /dev/null & # Installs pip3 and easy_install
+	require "ruby" "brew reinstall ruby" "brew" &> /dev/null & # Installs gem
 
-    ###
-     # Install repo managers.
-     #
-     # @since Friday, 10/2/2020
-     ##
-    require "ghq" "brew reinstall ghq" "brew" &> /dev/null &
+	###
+	 # Install repo managers.
+	 #
+	 # @since Friday, 10/2/2020
+	 ##
+	require "ghq" "brew reinstall ghq" "brew" &> /dev/null &
 
-    ###
-     # Homebrew Requirements
-     #
-     # @since Friday, 10/2/2020
-     # @see   https://brew.sh
-     ##
-    require "curl" "brew reinstall curl" "brew" &> /dev/null &
-    require "m" "brew reinstall m" "brew" &> /dev/null & # What does this do?
-    require "git" "brew reinstall git" "brew" &> /dev/null &
-    require "svn" "brew reinstall subversion" "brew" &> /dev/null &
-    require "ffmpeg" "brew reinstall ffmpeg" "brew" &> /dev/null &
-    require "fzf" "brew reinstall fzf" "brew" &> /dev/null &
-    require "slack" "brew tap rockymadden/rockymadden && brew reinstall rockymadden/rockymadden/slack-cli && slack init" &> /dev/null &
-    require "trash" "brew reinstall trash-cli" "brew" &> /dev/null &
-        require "trash-empty" "brew reinstall trash-cli" "brew" &> /dev/null &
-    require "watch" "brew reinstall watch" "brew" &> /dev/null &
-    require "watchexec" "brew reinstall watchexec" "brew" &> /dev/null &
-    require "wget" "brew reinstall wget" "brew" &> /dev/null &
-    require "wp" "brew reinstall wp-cli" "brew" &> /dev/null &
+	###
+	 # Homebrew Requirements
+	 #
+	 # @since Friday, 10/2/2020
+	 # @see   https://brew.sh
+	 ##
+	require "curl" "brew reinstall curl" "brew" &> /dev/null &
+	require "m" "brew reinstall m" "brew" &> /dev/null & # What does this do?
+	require "git" "brew reinstall git" "brew" &> /dev/null &
+	require "svn" "brew reinstall subversion" "brew" &> /dev/null &
+	require "ffmpeg" "brew reinstall ffmpeg" "brew" &> /dev/null &
+	require "fzf" "brew reinstall fzf" "brew" &> /dev/null &
+	require "slack" "brew tap rockymadden/rockymadden && brew reinstall rockymadden/rockymadden/slack-cli && slack init" &> /dev/null &
+	require "watch" "brew reinstall watch" "brew" &> /dev/null &
+	require "watchexec" "brew reinstall watchexec" "brew" &> /dev/null &
+	require "wget" "brew reinstall wget" "brew" &> /dev/null &
+	require "wp" "brew reinstall wp-cli" "brew" &> /dev/null &
 
-    ###
-     # Non-homebrew Requirements
-     #
-     # @since Friday, 10/2/2020
-     ##
-    require "hcl" "gem install hcl && hcl config -r" &> /dev/null &
-    require "rainbow" "easy_install rainbow" "easy_install" &> /dev/null & # Colorize less.
+	###
+	 # Non-homebrew Requirements
+	 #
+	 # @since Friday, 10/2/2020
+	 ##
+	require "hcl" "gem install hcl && hcl config -r" &> /dev/null &
+	require "rainbow" "easy_install rainbow" "easy_install" &> /dev/null & # Colorize less.
 
-    ## https://github.com/RichiH/vcsh
-    require "vcsh" "brew reinstall vcsh" "brew" &> /dev/null &
+	## https://github.com/RichiH/vcsh
+	require "vcsh" "brew reinstall vcsh" "brew" &> /dev/null &
 fi
 
-## VCSH (Setup .gitignore for my public and private)
-vcsh write-gitignore public &> /dev/null &
-vcsh write-gitignore private &> /dev/null &
+# Brewfile dump (keep it up to date).
+if [[ ! $( command -v brew ) ]]; then
+	echo "Could not find the 'brew' command."
+	echo "  Please install: https://brew.sh"
+else
+	brew bundle dump --force --file="$HOME/.Brewfile"  &> /dev/null &
+fi
+
+## VCSH (Setup .gitignore for my public and private).
+vcsh write-gitignore pub &> /dev/null &
+vcsh write-gitignore priv &> /dev/null &
 
 ###
  # Aliases
@@ -302,13 +309,13 @@ vcsh write-gitignore private &> /dev/null &
  # @since Thursday, 10/1/2020 Moved over from .config
  ##
 alias edit="subl -n"
-    alias e="edit"
-    alias editzsh="subl -n ~/.zshrc"
-        alias ezsh="editzsh"
-    alias editgit="subl -n ~/.gitconfig"
-        alias egit="editgit"
-    alias editssh="subl -n ~/.ssh/config"
-        alias essh="editssh"
+	alias e="edit"
+	alias editzsh="subl -n ~/.zshrc"
+		alias ezsh="editzsh"
+	alias editgit="subl -n ~/.gitconfig"
+		alias egit="editgit"
+	alias editssh="subl -n ~/.ssh/config"
+		alias essh="editssh"
 
 alias ls='ls -laGFh'
 alias c=clear
@@ -329,7 +336,7 @@ alias c@1="composer self-update --1"
 # Fuzzy find at certain levels easily.
 alias fdd="fd 2" # Two levels.
 alias fd!="fd 10" # Deeper.
-    alias goto="fd!" # Just an easier way to get to fd!.
+	alias goto="fd!" # Just an easier way to get to fd!.
 alias fd~="fd 50" # Super deep.
 
 # Misc.
@@ -337,8 +344,8 @@ alias vim="vim -c 'startinsert'" # Start Vim in insert mode (mostly for commit w
 alias repo="cd ~/Repos && fdd" # An easy way to get to a repo using my ffd command.
 
 alias locals="cd ~/Sites/Local && fd 3" # An easy way to get to a local.
-    alias localsite="locals"
-    alias loc="locals"
+	alias localsite="locals"
+	alias loc="locals"
 
 # npm install's.
 alias npmib="n auto && npm i && npm run build"
@@ -349,8 +356,8 @@ alias npmibd="n auto && npm i && npm run build && (npm run dev || npm run watch 
 
 # Homebrew
 alias brewdump="brew bundle dump --file=$HOME/.Brewfile --verbose --all --describe --force --no-lock" # Dump what's installed to my Brewfile
-    alias brewout="brewdump"
-    alias brewd="brewdump"
+	alias brewout="brewdump"
+	alias brewd="brewdump"
 
 # Sounds
 alias bell="tput bel"
@@ -371,5 +378,3 @@ alias difff="diff -rq" # Diff a directory.
 # config
 alias myconfig="/usr/bin/git --git-dir=$HOME/.myconfig/ --work-tree=$HOME"
 alias myconfigp="/usr/bin/git --git-dir=$HOME/.myconfig-priv/ --work-tree=$HOME"
-
-# $(cd ~ && brew bundle ) # Dump out what's installed in Homebrew to ~/.Brewfile
