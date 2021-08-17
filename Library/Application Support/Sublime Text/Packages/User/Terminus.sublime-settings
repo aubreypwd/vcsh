@@ -1,0 +1,60 @@
+{
+  // "theme": "tomorrow-night-eighties",
+  "theme": "user",
+
+    // Monokai Spectrum
+  "user_theme_colors": {
+    "background": "#1e1e1e",
+    "foreground": "#dad5e1",
+    "caret": "white",
+    "block_caret": "white",
+    "selection": "#444444",
+    "selection_foreground": "#dad5e1",
+    "00": "#706e73",  // black
+    "01": "#dc577d",  // red
+    "02": "#78d18b",  // green
+    "03": "#f6e064",  // brown
+    "04": "#59cfe1",  // blue
+    "05": "#fd9353",  // magenta
+    "06": "#59cfe1",  // cyan
+    "07": "#706e73",  // white
+    // "08": "#7f7f7f",  // light_black
+    // "09": "#f68d8c",  // light_red
+    // "10": "#a7d3a9",  // light_green
+    // "11": "#ffd478",  // light_brown
+    // "12": "#77aad5",  // light_blue
+    // "13": "#d6acd5",  // light_magenta
+    // "14": "#75d4d5",  // light_cyan
+    // "15": "#d5d5d5",   // light_white
+  },
+
+  // // Tomorrow Night Eighties
+  // "user_theme_colors": {
+  //   "background": "#202020",
+  //   "foreground": "#d5d5d5",
+  //   "caret": "white",
+  //   "block_caret": "white",
+  //   "selection": "#444444",
+  //   "selection_foreground": "#d5d5d5",
+  //   "00": "#d5d5d5",  // black
+  //   "01": "#f68d8c",  // red
+  //   "02": "#a7d3a9",  // green
+  //   "03": "#ffd478",  // brown
+  //   "04": "#77aad5",  // blue
+  //   "05": "#d6acd5",  // magenta
+  //   "06": "#75d4d5",  // cyan
+  //   "07": "#d5d5d5",  // white
+  //   "08": "#7f7f7f",  // light_black
+  //   "09": "#f68d8c",  // light_red
+  //   "10": "#a7d3a9",  // light_green
+  //   "11": "#ffd478",  // light_brown
+  //   "12": "#77aad5",  // light_blue
+  //   "13": "#d6acd5",  // light_magenta
+  //   "14": "#75d4d5",  // light_cyan
+  //   "15": "#d5d5d5",   // light_white
+  // },
+
+  "view_settings": {
+    // "padding": 10
+  }
+}
