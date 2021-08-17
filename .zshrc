@@ -1,5 +1,7 @@
 #!/bin/zsh
 
+export HOMEBREW_BUNDLE_FILE="$HOME/.Brewfile" # brew nundle nob.
+
 setopt no_monitor # For commands below eding in &, do not report done when running in background.
 
 # Make sure we have ~/iCloud link in $HOME
@@ -369,3 +371,5 @@ alias difff="diff -rq" # Diff a directory.
 # config
 alias myconfig="/usr/bin/git --git-dir=$HOME/.myconfig/ --work-tree=$HOME"
 alias myconfigp="/usr/bin/git --git-dir=$HOME/.myconfig-priv/ --work-tree=$HOME"
+
+# $(cd ~ && brew bundle ) # Dump out what's installed in Homebrew to ~/.Brewfile
