@@ -379,6 +379,6 @@ alias jqci="jq .require composer.json"
 # diff folders
 alias difff="diff -rq" # Diff a directory.
 
-# config
-alias myconfig="/usr/bin/git --git-dir=$HOME/.myconfig/ --work-tree=$HOME"
-alias myconfigp="/usr/bin/git --git-dir=$HOME/.myconfig-priv/ --work-tree=$HOME"
+# vcsh
+alias pub="vcsh pub"
+alias priv="vcsh priv"
