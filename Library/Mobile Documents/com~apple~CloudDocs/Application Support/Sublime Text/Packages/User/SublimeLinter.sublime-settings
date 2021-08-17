@@ -1,0 +1,100 @@
+{
+    "debug": true,
+    "delay": 0,
+    "lint_mode": "background",
+    "linters": {
+        "eslint": {
+            "working_dir": "${file_path}",
+            "disable": false,
+            "args": [
+            ],
+            "excludes": [],
+        },
+        "phpcs": {
+            "working_dir": "${file_path}",
+            "disable": false,
+            "args": [
+            ],
+            "excludes": []
+        },
+        "sass": {
+            "working_dir": "${file_path}",
+            "disable": false,
+            "args": [
+            ],
+            "excludes": [],
+        },
+        "stylelint": {
+            "working_dir": "${file_path}",
+            "disable": false,
+            "args": [
+            ],
+            "excludes": [],
+        },
+        "json": {
+            "disable": false,
+            "args": [],
+            "excludes": [],
+            "strict": true
+        },
+        "shellcheck": {
+            "disable": false,
+            "args": [],
+            "exclude": "",
+            "excludes": []
+        },
+        "jshint": {
+            "disable": true,
+            "args": [],
+            "excludes": []
+        },
+        "csslint": {
+            "disable": true,
+            "args": [],
+            "errors": "",
+            "excludes": [],
+            "ignore": "",
+            "warnings": ""
+        }
+    },
+    "paths": {
+        "linux": [],
+        "osx": [
+        ],
+        "windows": []
+    },
+    "show_marks_in_minimap": false,
+    "syntax_map": {
+        "html (django)": "html",
+        "html (rails)": "html",
+        "html 5": "html",
+        "javascript (babel)": "javascript",
+        "magicpython": "python",
+        "php": "html",
+        "python django": "python",
+        "pythonimproved": "python"
+    },
+    "no_column_highlights_line": true,
+    "gutter_theme": "Default",
+    "styles": [
+        {
+            "scope": "region.yellowish markup.warning.sublime_linter",
+            "types": [
+                "warning"
+            ],
+            "icon": "warning",
+            "mark_style": "solid_underline"
+        },
+        {
+            "scope": "region.redish markup.error.sublime_linter",
+            "types": [
+                "error"
+            ],
+            "icon": "error",
+            "mark_style": "solid_underline"
+        },
+        {
+            "priority": 1
+        }
+    ]
+}

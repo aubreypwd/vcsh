@@ -1,0 +1,22 @@
+{
+  "close_on_stop": true,
+  "break_on_exception": [
+    "Fatal error", // E_ERROR, E_CORE_ERROR, E_COMPILE_ERROR, E_USER_ERROR
+    "Catchable fatal error", // E_RECOVERABLE_ERROR (since PHP 5.2.0)
+    // "Warning", // E_WARNING, E_CORE_WARNING, E_COMPILE_WARNING, E_USER_WARNING
+    "Parse error", // E_PARSE
+    // "Notice", // E_NOTICE, E_USER_NOTICE
+    "Strict standards", // E_STRICT
+    "Deprecated", // E_DEPRECATED, E_USER_DEPRECATED (since PHP 5.3.0)
+    // "Xdebug", // 0
+    "Unknown error" // default
+  ],
+  "break_on_exception": true,
+  "pretty_output": true,
+  "break_on_start": false,
+  "debug": true,
+  "max_depth": 3,
+  "max_children": 50,
+  "ide_key": "",
+  "port": 9001, // Yes, we have to use this now that PHP 7.4 takes over port 9000.
+}
