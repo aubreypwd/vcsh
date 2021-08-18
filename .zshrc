@@ -54,7 +54,7 @@ defaults write com.apple.dock showhidden -bool false &> /dev/null & # When Apps 
 defaults write com.apple.dock static-only -bool false &> /dev/null & # Only show running apps in Dock (when set to true)
 defaults write com.googlecode.iterm2 "Secure Input" 0 &> /dev/null & # Tell iterm2 to allow non-secure input for escape
 defaults write com.apple.screencapture type jpg # Take jpg screenshots.
-defaults write defaults write com.apple.finder CreateDesktop false # Don't show desktop icons.
+defaults write defaults write com.apple.finder CreateDesktop false &> /dev/null & # Don't show desktop icons.
 
 ###
  # Enable history between panels.
