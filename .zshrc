@@ -303,9 +303,20 @@ fi
 vcsh write-gitignore pub &> /dev/null &
 vcsh write-gitignore priv &> /dev/null &
 
+function gitcheck {
+	git --git-dir="$1/.git" diff --exit-code &> /dev/null || \
+		echo "$1 has git changes."
+}
+
 ## VCSH: Let me know about file changes to my vcsh.
-vcsh pub diff --exit-code &> /dev/null || ( echo "vcsh pub has changes:" && vcsh pub status --short )
-vcsh priv diff --exit-code &> /dev/null || ( echo "vcsh priv has changes:" && vcsh priv status --short )
+function status {
+
+	vcsh pub diff --exit-code &> /dev/null || false && echo "pub has git changes"
+	vcsh priv diff --exit-code &> /dev/null || false && echo "priv has git changes"
+
+	gitcheck "$HOME/iCloud/Application Support/Sublime Text/Packages/User/Snippets"
+
+}; status
 
 ###
  # Aliases
@@ -381,4 +392,4 @@ alias difff="diff -rq" # Diff a directory.
 
 # vcsh
 alias pub='vcsh pub'
-alias priv='csh priv'
+alias priv='vcsh priv'
