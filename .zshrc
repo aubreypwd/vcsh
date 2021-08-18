@@ -305,7 +305,7 @@ vcsh write-gitignore priv &> /dev/null &
 
 ## VCSH: Let me know about file changes to my vcsh.
 vcsh pub diff --exit-code &> /dev/null || ( echo "vcsh pub has changes:" && vcsh pub status --short )
-vcsh priv diff --exit-code &> /dev/null || ( echo "vcsh priv has changes:" && vcsh pub status --short )
+vcsh priv diff --exit-code &> /dev/null || ( echo "vcsh priv has changes:" && vcsh priv status --short )
 
 ###
  # Aliases
