@@ -380,5 +380,5 @@ alias jqci="jq .require composer.json"
 alias difff="diff -rq" # Diff a directory.
 
 # vcsh
-alias pub="vcsh pub"
-alias priv="vcsh priv"
+alias pub='vcsh pub'
+alias priv="'csh priv'
