@@ -76,11 +76,9 @@
 		<key>behaviourArgument</key>
 		<dict>
 			<key>path</key>
-			<string>/Applications/Google Chrome.app</string>
-			<key>profileName</key>
-			<string>Profile 18</string>
+			<string>/Applications/Chromium.app</string>
 			<key>type</key>
-			<string>ChoosyChromeProfileMode</string>
+			<string>ChoosyBrowser</string>
 		</dict>
 		<key>enabled</key>
 		<true/>
