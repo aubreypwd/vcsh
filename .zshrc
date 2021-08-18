@@ -381,4 +381,4 @@ alias difff="diff -rq" # Diff a directory.
 
 # vcsh
 alias pub='vcsh pub'
-alias priv="'csh priv'
+alias priv='csh priv'
