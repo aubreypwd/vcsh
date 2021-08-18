@@ -8,6 +8,74 @@
 		<key>behaviourArgument</key>
 		<dict>
 			<key>path</key>
+			<string>/Applications/Friendly Streaming.app</string>
+			<key>type</key>
+			<string>ChoosyBrowser</string>
+		</dict>
+		<key>enabled</key>
+		<true/>
+		<key>predicate</key>
+		<string>URL CONTAINS "youtube.com"</string>
+		<key>title</key>
+		<string>Friendly Streaming</string>
+	</dict>
+	<dict>
+		<key>behaviour</key>
+		<integer>6</integer>
+		<key>behaviourArgument</key>
+		<dict>
+			<key>path</key>
+			<string>/Users/aubreypwd/Applications/WebCatalog Apps/GitHub.app</string>
+			<key>type</key>
+			<string>ChoosyBrowser</string>
+		</dict>
+		<key>enabled</key>
+		<true/>
+		<key>predicate</key>
+		<string>URL CONTAINS "github.com"</string>
+		<key>title</key>
+		<string>Github</string>
+	</dict>
+	<dict>
+		<key>behaviour</key>
+		<integer>6</integer>
+		<key>behaviourArgument</key>
+		<dict>
+			<key>path</key>
+			<string>/Users/aubreypwd/Applications/WebCatalog Apps/Jira.app</string>
+			<key>type</key>
+			<string>ChoosyBrowser</string>
+		</dict>
+		<key>enabled</key>
+		<true/>
+		<key>predicate</key>
+		<string>URL CONTAINS "atlassian.net"</string>
+		<key>title</key>
+		<string>Jira</string>
+	</dict>
+	<dict>
+		<key>behaviour</key>
+		<integer>6</integer>
+		<key>behaviourArgument</key>
+		<dict>
+			<key>path</key>
+			<string>/Users/aubreypwd/Applications/WebCatalog Apps/Twitter.app</string>
+			<key>type</key>
+			<string>ChoosyBrowser</string>
+		</dict>
+		<key>enabled</key>
+		<true/>
+		<key>predicate</key>
+		<string>URL CONTAINS "twitter.com"</string>
+		<key>title</key>
+		<string>Twitter</string>
+	</dict>
+	<dict>
+		<key>behaviour</key>
+		<integer>6</integer>
+		<key>behaviourArgument</key>
+		<dict>
+			<key>path</key>
 			<string>/Applications/Google Chrome.app</string>
 			<key>profileName</key>
 			<string>Profile 18</string>
@@ -20,42 +88,6 @@
 		<string>URL CONTAINS ".local" OR URL CONTAINS ".test" OR URL CONTAINS "localhost:" OR URL CONTAINS ".dev"</string>
 		<key>title</key>
 		<string>DEV</string>
-	</dict>
-	<dict>
-		<key>behaviour</key>
-		<integer>6</integer>
-		<key>behaviourArgument</key>
-		<dict>
-			<key>path</key>
-			<string>/Applications/Google Chrome.app</string>
-			<key>profileName</key>
-			<string>Profile 11</string>
-			<key>type</key>
-			<string>ChoosyChromeProfileMode</string>
-		</dict>
-		<key>enabled</key>
-		<true/>
-		<key>predicate</key>
-		<string>URL CONTAINS "basecamp.com/1756504" OR URL CONTAINS "webdevstudios.beanstalkapp.com" OR URL CONTAINS "webdevstudios" OR URL CONTAINS "forecastapp" OR URL CONTAINS "help.wpengine.com" OR URL CONTAINS "recordit.co" OR URL CONTAINS "cloudup.com" OR URL CONTAINS "newscorp-" OR URL CONTAINS "dowjones.io" OR URL CONTAINS "wdslab.com" OR URL CONTAINS "wpengine.com" OR URL CONTAINS "github.com/WebDevStudios" OR URL CONTAINS "discover.office.com" OR URL CONTAINS "discover.microsoft.com" OR URL CONTAINS "heytaco" OR URL CONTAINS "maintainn"</string>
-		<key>title</key>
-		<string>Google Chrome (WebDevStudios)</string>
-	</dict>
-	<dict>
-		<key>behaviour</key>
-		<integer>6</integer>
-		<key>behaviourArgument</key>
-		<dict>
-			<key>path</key>
-			<string>/Applications/Friendly Streaming.app</string>
-			<key>type</key>
-			<string>ChoosyBrowser</string>
-		</dict>
-		<key>enabled</key>
-		<true/>
-		<key>predicate</key>
-		<string>URL CONTAINS "youtube.com" AND URL CONTAINS "hulu.com" AND URL CONTAINS "amazon.com/Amazon-Video"</string>
-		<key>title</key>
-		<string>Friendly Streaming</string>
 	</dict>
 	<dict>
 		<key>behaviour</key>
@@ -118,35 +150,16 @@
 			<key>path</key>
 			<string>/Applications/Google Chrome.app</string>
 			<key>profileName</key>
-			<string>Profile 17</string>
+			<string>Profile 11</string>
 			<key>type</key>
 			<string>ChoosyChromeProfileMode</string>
 		</dict>
 		<key>enabled</key>
 		<true/>
 		<key>predicate</key>
-		<string>URL CONTAINS "monster-next.atlassian"</string>
+		<string>URL CONTAINS "basecamp.com/1756504" OR URL CONTAINS "webdevstudios.beanstalkapp.com" OR URL CONTAINS "webdevstudios" OR URL CONTAINS "forecastapp" OR URL CONTAINS "help.wpengine.com" OR URL CONTAINS "recordit.co" OR URL CONTAINS "cloudup.com" OR URL CONTAINS "newscorp-" OR URL CONTAINS "dowjones.io" OR URL CONTAINS "wdslab.com" OR URL CONTAINS "wpengine.com" OR URL CONTAINS "github.com/WebDevStudios" OR URL CONTAINS "discover.office.com" OR URL CONTAINS "discover.microsoft.com" OR URL CONTAINS "heytaco" OR URL CONTAINS "maintainn"</string>
 		<key>title</key>
-		<string>Google Chrome (Monster)</string>
-	</dict>
-	<dict>
-		<key>behaviour</key>
-		<integer>6</integer>
-		<key>behaviourArgument</key>
-		<dict>
-			<key>path</key>
-			<string>/Applications/Google Chrome.app</string>
-			<key>profileName</key>
-			<string>Profile 10</string>
-			<key>type</key>
-			<string>ChoosyChromeProfileMode</string>
-		</dict>
-		<key>enabled</key>
-		<true/>
-		<key>predicate</key>
-		<string>URL CONTAINS "newscorp.atlassian.net"</string>
-		<key>title</key>
-		<string>Google Chrome (NewsCorp)</string>
+		<string>Google Chrome (WebDevStudios)</string>
 	</dict>
 	<dict>
 		<key>behaviour</key>

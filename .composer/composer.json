@@ -5,7 +5,8 @@
         "aubreypwd/composer-uninstall": "dev-master@dev",
         "webdevstudios/mstrxmlcheck": "dev-master@dev",
         "spatie/ray": "^1.21",
-        "squizlabs/php_codesniffer": "^3.6"
+        "squizlabs/php_codesniffer": "^3.6",
+        "laravel/valet": "^2.16"
     },
     "repositories": {
         "composer-uninstall": {
