@@ -172,7 +172,7 @@
 	"matching_scope": "invalid",
 	"mini_diff": true,
 	"native_tabs": "disabled",
-	"open_files_in_new_window": true,
+	"open_files_in_new_window": "never",
 	"ours_gutter": true,
 	"overlay_scroll_bars": "enabled",
 	"preview_on_click": false,
