@@ -1,9 +1,9 @@
 [alias]
 
 	# GUI's
-	gui    = "! /bin/sh $HOME/Repos/github.com/aubreypwd/configs/git/scripts/tower.sh"
+	gui    = "! /bin/sh $HOME/.gitscripts/tower.sh"
 	g      = gui
-	glog   = "! /bin/sh $HOME/Repos/github.com/aubreypwd/configs/git/scripts/towerlog.sh"
+	glog   = "! /bin/sh $HOME/.gitscripts/towerlog.sh"
 	gl     = glog
 
 	# Checkout.
