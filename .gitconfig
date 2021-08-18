@@ -10,18 +10,18 @@
 	co     = checkout
 
 	# Commits
-	
+
 	## All
 	ca     = commit -a --verbose # Commit and add all files and add message to editor.
 	cap    = "! function f() { git ca && git p; }; f" # Commit all files, add message in editor, and push.
-	cam    = "! function f() { git ca -m '$1'; }; f" # Commit all with a message.
-	camp   = "! function f() { git ca -m '$1' && git p; }; f" # Commit all with a message and push.
+	cam    = "! function f() { git ca -m \"$1\"; }; f" # Commit all with a message.
+	camp   = "! function f() { git ca -m \"$1\" && git p; }; f" # Commit all with a message and push.
 
 	## Staged
 	cs     = commit --verbose # Commit staged files and write message in editor.
 	csp    = "! function f() { git cs && git p; }; f" # Commit staged files, write a message in an editor, and push.
-	csm    = "! function f() { git cs -m '$1'; }; f" # Commit staged with a message.
-	csmp   = "! function f() { git csm '$1' && git p; }; f" # Commit staged with a message and push.
+	csm    = "! function f() { git cs -m \"$1\"; }; f" # Commit staged with a message.
+	csmp   = "! function f() { git csm \"$1\" && git p; }; f" # Commit staged with a message and push.
 
 	# Status
 	stat   = status
