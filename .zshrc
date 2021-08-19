@@ -24,6 +24,10 @@ export PATH="/usr/local/sbin:$PATH"
 export PATH="/usr/local/lib/node_modules:$PATH"
 export PATH="/usr/local/opt/openssl@1.1/bin:$PATH" # If you need to have openssl@1.1 first in your PATH run
 
+## Ruby
+export PATH="/usr/local/opt/ruby/bin:$PATH"
+export PATH="/usr/local/lib/ruby/gems/3.0.0/bin:$PATH"
+
 ###
  # Nobs for compilers to find openssl@1.1
  #
@@ -274,7 +278,7 @@ else
 	require "svn" "brew reinstall subversion" "brew" &> /dev/null &
 	require "ffmpeg" "brew reinstall ffmpeg" "brew" &> /dev/null &
 	require "fzf" "brew reinstall fzf" "brew" &> /dev/null &
-	require "slack" "brew tap rockymadden/rockymadden && brew reinstall rockymadden/rockymadden/slack-cli && slack init" &> /dev/null &
+	# require "slack" "brew tap rockymadden/rockymadden && brew reinstall rockymadden/rockymadden/slack-cli" &> /dev/null &
 	require "watch" "brew reinstall watch" "brew" &> /dev/null &
 	require "watchexec" "brew reinstall watchexec" "brew" &> /dev/null &
 	require "wget" "brew reinstall wget" "brew" &> /dev/null &
@@ -349,7 +353,7 @@ alias locals="cd ~/Sites/Local && fd 3" # An easy way to get to a local.
 	alias loc="locals"
 
 # npm install's.
-alias npmib="n auto && npm i && npm run build"
+alias npmib="n auto && npm i && npm run build && b"
 
 # npm install, build, and DEV
 alias npmid="n auto && npm i && (npm run dev || npm run watch || npm run start || true)"

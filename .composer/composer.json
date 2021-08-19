@@ -6,7 +6,8 @@
         "webdevstudios/mstrxmlcheck": "dev-master@dev",
         "spatie/ray": "^1.21",
         "squizlabs/php_codesniffer": "^3.6",
-        "laravel/valet": "^2.16"
+        "laravel/valet": "^2.16",
+        "roots/multisite-url-fixer": "^1.1"
     },
     "repositories": {
         "composer-uninstall": {
