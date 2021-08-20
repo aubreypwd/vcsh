@@ -296,14 +296,6 @@ else
 	require "vcsh" "brew reinstall vcsh" "brew" &> /dev/null &
 fi
 
-# Brewfile dump (keep it up to date).
-if [[ ! $( command -v brew ) ]]; then
-	echo "Could not find the 'brew' command."
-	echo "  Please install: https://brew.sh"
-else
-	brew bundle dump --force --file="$HOME/.Brewfile"  &> /dev/null & # Sync ~/.Brewfile
-fi
-
 ## VCSH (Setup .gitignore for my public and private).
 vcsh write-gitignore pub &> /dev/null &
 vcsh write-gitignore priv &> /dev/null &
@@ -361,8 +353,6 @@ alias npmibd="n auto && npm i && npm run build && (npm run dev || npm run watch 
 
 # Homebrew
 alias brewdump="brew bundle dump --file=$HOME/.Brewfile --verbose --all --describe --force --no-lock" # Dump what's installed to my Brewfile
-	alias brewout="brewdump"
-	alias brewd="brewdump"
 
 # Sounds
 alias bell="tput bel"
@@ -383,3 +373,11 @@ alias difff="diff -rq" # Diff a directory.
 # vcsh
 alias pub='vcsh pub'
 alias priv='vcsh priv'
+
+# Brewfile dump (keep it up to date).
+if [[ ! $( command -v brew ) ]]; then
+	echo "Could not find the 'brew' command."
+	echo "  Please install: https://brew.sh so we can dump the .Brewfile"
+else
+	brew brewdump  &> /dev/null & # Sync ~/.Brewfile
+fi
