@@ -61,6 +61,13 @@ defaults write com.apple.screencapture type jpg # Take jpg screenshots.
 defaults write defaults write com.apple.finder CreateDesktop false &> /dev/null & # Don't show desktop icons.
 
 ###
+ # Hide apps from Dock while running
+ #
+ # @since Sunday, August 22, 2021
+ ##
+/usr/libexec/PlistBuddy -c 'Add :LSUIElement bool true' "/Applications/zoom.us.app/Contents/Info.plist"
+
+###
  # Enable history between panels.
  #
  # @since Thursday, 10/1/2020
