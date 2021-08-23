@@ -6,7 +6,7 @@ export HOMEBREW_BUNDLE_NO_LOCK=true;
 setopt no_monitor # For commands below eding in &, do not report done when running in background.
 
 # Make sure we have ~/iCloud link in $HOME
-ln -sf "$HOME/Library/Mobile Documents/com~apple~CloudDocs" "$HOME/iCloud"
+ln -sf "$HOME/Library/Mobile Documents/com~apple~CloudDocs" "$HOME/iCloud" &> /dev/null &
 
 # Don't show last login message, e.g. you have mail, etc.
 touch "$HOME/.hushlogin"
@@ -17,6 +17,7 @@ ssh-add -q -A -k &> /dev/null &
 # Directories
 mkdir -p "$HOME/Pictures/Screenshots" &> /dev/null &
 
+# Oaths
 export PATH="$HOME/.composer/vendor/bin:$PATH"
 export PATH="$HOME/bin:/usr/local/bin:$PATH"
 export PATH="/Applications/Sublime Text.app/Contents/SharedSupport/bin:$PATH"
@@ -65,7 +66,7 @@ defaults write defaults write com.apple.finder CreateDesktop false &> /dev/null 
  #
  # @since Sunday, August 22, 2021
  ##
-/usr/libexec/PlistBuddy -c 'Add :LSUIElement bool true' "/Applications/zoom.us.app/Contents/Info.plist"
+/usr/libexec/PlistBuddy -c 'Add :LSUIElement bool true' "/Applications/zoom.us.app/Contents/Info.plist" &> /dev/null &
 
 ###
  # Enable history between panels.
