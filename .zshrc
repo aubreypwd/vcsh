@@ -66,7 +66,7 @@ defaults write defaults write com.apple.finder CreateDesktop false &> /dev/null 
  #
  # @since Sunday, August 22, 2021
  ##
-/usr/libexec/PlistBuddy -c 'Add :LSUIElement bool true' "/Applications/zoom.us.app/Contents/Info.plist" &> /dev/null &
+# /usr/libexec/PlistBuddy -c 'Add :LSUIElement bool true' "/Applications/zoom.us.app/Contents/Info.plist" &> /dev/null &
 
 ###
  # Enable history between panels.
