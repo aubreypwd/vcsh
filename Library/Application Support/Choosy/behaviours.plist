@@ -8,6 +8,57 @@
 		<key>behaviourArgument</key>
 		<dict>
 			<key>path</key>
+			<string>/Users/aubreypwd/Applications/WebCatalog Apps/IFTTT.app</string>
+			<key>type</key>
+			<string>ChoosyBrowser</string>
+		</dict>
+		<key>enabled</key>
+		<true/>
+		<key>predicate</key>
+		<string>URL CONTAINS "ifttt.com"</string>
+		<key>title</key>
+		<string>IFTTT</string>
+	</dict>
+	<dict>
+		<key>behaviour</key>
+		<integer>6</integer>
+		<key>behaviourArgument</key>
+		<dict>
+			<key>path</key>
+			<string>/Users/aubreypwd/Applications/WebCatalog Apps/PageSpeed Insights.app</string>
+			<key>type</key>
+			<string>ChoosyBrowser</string>
+		</dict>
+		<key>enabled</key>
+		<true/>
+		<key>predicate</key>
+		<string>URL CONTAINS "https://developers.google.com/speed/pagespeed/insights"</string>
+		<key>title</key>
+		<string>PageSpeed</string>
+	</dict>
+	<dict>
+		<key>behaviour</key>
+		<integer>6</integer>
+		<key>behaviourArgument</key>
+		<dict>
+			<key>path</key>
+			<string>/Users/aubreypwd/Applications/WebCatalog Apps/Google Search.app</string>
+			<key>type</key>
+			<string>ChoosyBrowser</string>
+		</dict>
+		<key>enabled</key>
+		<true/>
+		<key>predicate</key>
+		<string>URL CONTAINS "www.google.com/search?q"</string>
+		<key>title</key>
+		<string>Google Search</string>
+	</dict>
+	<dict>
+		<key>behaviour</key>
+		<integer>6</integer>
+		<key>behaviourArgument</key>
+		<dict>
+			<key>path</key>
 			<string>/Users/aubreypwd/Applications/WebCatalog Apps/Buddy.app</string>
 			<key>type</key>
 			<string>ChoosyBrowser</string>
@@ -177,6 +228,23 @@
 		<string>URL CONTAINS "basecamp.com/1756504" OR URL CONTAINS "webdevstudios.beanstalkapp.com" OR URL CONTAINS "webdevstudios" OR URL CONTAINS "forecastapp" OR URL CONTAINS "help.wpengine.com" OR URL CONTAINS "recordit.co" OR URL CONTAINS "cloudup.com" OR URL CONTAINS "newscorp-" OR URL CONTAINS "dowjones.io" OR URL CONTAINS "wdslab.com" OR URL CONTAINS "wpengine.com" OR URL CONTAINS "github.com/WebDevStudios" OR URL CONTAINS "discover.office.com" OR URL CONTAINS "discover.microsoft.com" OR URL CONTAINS "heytaco" OR URL CONTAINS "maintainn"</string>
 		<key>title</key>
 		<string>Google Chrome (WebDevStudios)</string>
+	</dict>
+	<dict>
+		<key>behaviour</key>
+		<integer>6</integer>
+		<key>behaviourArgument</key>
+		<dict>
+			<key>path</key>
+			<string>/Users/aubreypwd/Applications/WebCatalog Apps/DevDocs.app</string>
+			<key>type</key>
+			<string>ChoosyBrowser</string>
+		</dict>
+		<key>enabled</key>
+		<true/>
+		<key>predicate</key>
+		<string>URL CONTAINS "devdocs.io"</string>
+		<key>title</key>
+		<string>devdocs.io</string>
 	</dict>
 	<dict>
 		<key>behaviour</key>
