@@ -8,6 +8,40 @@
 		<key>behaviourArgument</key>
 		<dict>
 			<key>path</key>
+			<string>/Applications/Slack.app</string>
+			<key>type</key>
+			<string>ChoosyBrowser</string>
+		</dict>
+		<key>enabled</key>
+		<true/>
+		<key>predicate</key>
+		<string>URL CONTAINS ".slack.com/archives"</string>
+		<key>title</key>
+		<string>Slack Links</string>
+	</dict>
+	<dict>
+		<key>behaviour</key>
+		<integer>6</integer>
+		<key>behaviourArgument</key>
+		<dict>
+			<key>path</key>
+			<string>/Users/aubreypwd/Applications/WebCatalog Apps/WebDevStudios Packages.app</string>
+			<key>type</key>
+			<string>ChoosyBrowser</string>
+		</dict>
+		<key>enabled</key>
+		<true/>
+		<key>predicate</key>
+		<string>URL CONTAINS "packages.wdslab.com"</string>
+		<key>title</key>
+		<string>WebDevStudios Packages</string>
+	</dict>
+	<dict>
+		<key>behaviour</key>
+		<integer>6</integer>
+		<key>behaviourArgument</key>
+		<dict>
+			<key>path</key>
 			<string>/Users/aubreypwd/Applications/WebCatalog Apps/DevDocs.app</string>
 			<key>type</key>
 			<string>ChoosyBrowser</string>
@@ -173,25 +207,6 @@
 		<string>URL CONTAINS ".local" OR URL CONTAINS ".test" OR URL CONTAINS "localhost:" OR URL CONTAINS ".dev"</string>
 		<key>title</key>
 		<string>DEV</string>
-	</dict>
-	<dict>
-		<key>behaviour</key>
-		<integer>6</integer>
-		<key>behaviourArgument</key>
-		<dict>
-			<key>path</key>
-			<string>/Applications/Google Chrome.app</string>
-			<key>profileName</key>
-			<string>Profile 11</string>
-			<key>type</key>
-			<string>ChoosyChromeProfileMode</string>
-		</dict>
-		<key>enabled</key>
-		<true/>
-		<key>predicate</key>
-		<string>URL CONTAINS ".slack.com/archives"</string>
-		<key>title</key>
-		<string>Slack Links</string>
 	</dict>
 	<dict>
 		<key>behaviour</key>
