@@ -387,20 +387,32 @@ alias difff="diff -rq" # Diff a directory.
 alias pub='vcsh pub'
 alias priv='vcsh priv'
 
+###
+ # A way to output a dirty message.
+ #
+ # @since Friday, August 27, 2021
+ ##
 function __dirty_message {
 	echo "🚨  $1 is dirty"
 }
 
+###
+ # Wrapper for git-is-clean messaging
+ #
+ # @since Friday, August 27, 2021
+ ##
 function __git-is-clean {
 	git-is-clean "$1" || ( __dirty_message "$1" && tput bel )
 }
+
+# Watch these repositories for dirtiness.
 __git-is-clean "$HOME/Repos/github.com/aubreypwd/iTerm2"
 __git-is-clean "$HOME/Repos/github.com/aubreypwd/Alfred.alfredpreferences"
 __git-is-clean "$HOME/Repos/github.com/aubreypwd/subl-snippets"
 
+# Have to do something special here for vcsh.
 vcsh pub diff-index --quiet --ignore-submodules HEAD || __dirty_message "pub"
 vcsh priv diff-index --quiet --ignore-submodules HEAD || __dirty_message "priv"
-
 
 # Brewfile dump (keep it up to date).
 if [[ ! $( command -v brew ) ]]; then
