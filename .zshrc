@@ -351,6 +351,7 @@ alias fd~="fd 50" # Super deep.
 # Misc.
 alias vim="vim -c 'startinsert'" # Start Vim in insert mode (mostly for commit writing).
 alias repo="cd ~/Repos && fdd" # An easy way to get to a repo using my ffd command.
+alias antigengo="cd ~/.antigen && fdd" # An easy way to get to a bundle.
 
 alias locals="cd ~/Sites/Local && fd 3" # An easy way to get to a local.
 	alias localsite="locals"
@@ -386,15 +387,20 @@ alias difff="diff -rq" # Diff a directory.
 alias pub='vcsh pub'
 alias priv='vcsh priv'
 
-###
- # Watch repositories.
- ##
+function __dirty_message {
+	echo "🚨  $1 is dirty"
+}
+
 function __git-is-clean {
-	git-is-clean "$1" || echo "🚨  $1 is dirty" && tput bel;
+	git-is-clean "$1" || ( __dirty_message "$1" && tput bel )
 }
 __git-is-clean "$HOME/Repos/github.com/aubreypwd/iTerm2"
 __git-is-clean "$HOME/Repos/github.com/aubreypwd/Alfred.alfredpreferences"
 __git-is-clean "$HOME/Repos/github.com/aubreypwd/subl-snippets"
+
+vcsh pub diff-index --quiet --ignore-submodules HEAD || __dirty_message "pub"
+vcsh priv diff-index --quiet --ignore-submodules HEAD || __dirty_message "priv"
+
 
 # Brewfile dump (keep it up to date).
 if [[ ! $( command -v brew ) ]]; then
