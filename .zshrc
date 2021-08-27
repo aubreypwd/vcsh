@@ -196,6 +196,9 @@ if [[ ! -f "/usr/local/share/antigen/antigen.zsh" ]]; then
 else
 	source /usr/local/share/antigen/antigen.zsh # brew install antigen
 
+	# oh-my-zsh
+	antigen use oh-my-zsh
+
 	# Builtin:
 	antigen bundle git
 	antigen bundle wp-cli
@@ -224,8 +227,9 @@ else
 	antigen bundle ssh://git@github.com/aubreypwd/zsh-plugin-yt2mp3
 	antigen bundle ssh://git@github.com/aubreypwd/zsh-plugin-fd
 	antigen bundle ssh://git@github.com/aubreypwd/zsh-plugin-download
-	antigen bundle ssh://git@github.com/WebDevStudios/zsh-plugin-satisbuild.git
-	antigen bundle ssh://git@github.com/aubreypwd/zsh-plugin-bruse.git
+	antigen bundle ssh://git@github.com/WebDevStudios/zsh-plugin-satisbuild
+	antigen bundle ssh://git@github.com/aubreypwd/zsh-plugin-bruse
+	antigen bundle ssh://git@github.com/aubreypwd/zsh-plugin-git-is-clean
 
 	antigen apply
 fi
@@ -381,6 +385,16 @@ alias difff="diff -rq" # Diff a directory.
 # vcsh
 alias pub='vcsh pub'
 alias priv='vcsh priv'
+
+###
+ # Watch repositories.
+ ##
+function __git-is-clean {
+	git-is-clean "$1" || echo "🚨  $1 is dirty" && tput bel;
+}
+__git-is-clean "$HOME/Repos/github.com/aubreypwd/iTerm2"
+__git-is-clean "$HOME/Repos/github.com/aubreypwd/Alfred.alfredpreferences"
+__git-is-clean "$HOME/Repos/github.com/aubreypwd/subl-snippets"
 
 # Brewfile dump (keep it up to date).
 if [[ ! $( command -v brew ) ]]; then
