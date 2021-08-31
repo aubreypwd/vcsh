@@ -1,3 +1,5 @@
+#!/bin/zsh
+
 function __set_exports {
 
 	export HOMEBREW_BUNDLE_FILE="$HOME/.Brewfile" # brew nundle nob.
@@ -289,7 +291,8 @@ function __zsh {
 	fi
 }
 
-function __require {
+function __require_and_install_commands {
+
 	###
 	 # Required Commands
 	 #
@@ -467,7 +470,7 @@ if [ -e "$ZSH" ]; then
 	__zsh # Always load this first.
 
 	# Plugin things
-	__require
+	__require_and_install_commands
 	__misc
 	__watch_repos
 
