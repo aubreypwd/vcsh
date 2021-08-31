@@ -1,3 +1,8 @@
+
+#### FIG ENV VARIABLES ####
+# Please make sure this block is at the start of this file.
+[ -s ~/.fig/shell/pre.sh ] && source ~/.fig/shell/pre.sh
+#### END FIG ENV VARIABLES ####
 #!/bin/zsh
 
 export HOMEBREW_BUNDLE_FILE="$HOME/.Brewfile" # brew nundle nob.
@@ -421,3 +426,8 @@ if [[ ! $( command -v brew ) ]]; then
 else
 	brew brewdump  &> /dev/null & # Sync ~/.Brewfile
 fi
+
+#### FIG ENV VARIABLES ####
+# Please make sure this block is at the end of this file.
+[ -s ~/.fig/fig.sh ] && source ~/.fig/fig.sh
+#### END FIG ENV VARIABLES ####
