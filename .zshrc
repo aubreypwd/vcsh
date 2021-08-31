@@ -124,7 +124,7 @@ chflags nohidden "$HOME/.Brewfile" &> /dev/null &
  # @since Friday, 10/2/2020
  ##
 export COMPOSER_PROCESS_TIMEOUT=60 # Fail after x seconds.
-export LESS="-F -X $LESS" # Don't pager on less.
+export LESS="-F -X -R $LESS" # Don't pager on less.
 export MANPAGER='ul | cat -s' # Don't use less.
 
 composer self-update --1 &> /dev/null & # Use Composer Version 1 for now...
