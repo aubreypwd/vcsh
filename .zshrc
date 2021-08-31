@@ -1,10 +1,3 @@
-
-#### FIG ENV VARIABLES ####
-# Please make sure this block is at the start of this file.
-[ -s ~/.fig/shell/pre.sh ] && source ~/.fig/shell/pre.sh
-#### END FIG ENV VARIABLES ####
-#!/bin/zsh
-
 export HOMEBREW_BUNDLE_FILE="$HOME/.Brewfile" # brew nundle nob.
 export HOMEBREW_BUNDLE_NO_LOCK=true;
 
@@ -211,7 +204,14 @@ else
 	antigen bundle git-extras
 	antigen bundle history-substring-search
 	antigen bundle osx
-	antigen bundle z
+	# antigen bundle z
+	# antigen bundle npm
+	antigen bundle torifat/npms
+	# antigen bundle torifat/nnvm
+	antigen bundle amstrad/oh-my-matrix
+	# antigen bundle node
+	antigen bundle zsh-users/zsh-syntax-highlighting
+	antigen bundle zpm-zsh/ls
 
 	# Others:
 	antigen bundle Tarrasch/zsh-bd
@@ -295,11 +295,12 @@ else
 	require "svn" "brew reinstall subversion" "brew" &> /dev/null &
 	require "ffmpeg" "brew reinstall ffmpeg" "brew" &> /dev/null &
 	require "fzf" "brew reinstall fzf" "brew" &> /dev/null &
-	# require "slack" "brew tap rockymadden/rockymadden && brew reinstall rockymadden/rockymadden/slack-cli" &> /dev/null &
 	require "watch" "brew reinstall watch" "brew" &> /dev/null &
 	require "watchexec" "brew reinstall watchexec" "brew" &> /dev/null &
 	require "wget" "brew reinstall wget" "brew" &> /dev/null &
 	require "wp" "brew reinstall wp-cli" "brew" &> /dev/null &
+	require "exa" "brew reinstall exa" "brew" &> /dev/null & # Exa makes ls even more awesome.
+	require "nocommand" "brew tap homebrew/cask-fonts && brew install --cask font-hack-nerd-font" "brew" &> /dev/null & # Helps fonts with ligatures (e.g. exa).
 
 	###
 	 # Non-homebrew Requirements
@@ -331,7 +332,7 @@ alias edit="subl -n"
 	alias editssh="subl -n ~/.ssh/config"
 		alias essh="editssh"
 
-alias ls='ls -laGFh'
+alias ls='ls -lah'
 alias c=clear
 alias tower='gittower'
 
