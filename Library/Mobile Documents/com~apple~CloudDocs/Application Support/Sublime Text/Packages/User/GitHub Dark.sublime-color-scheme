@@ -2,10 +2,12 @@
 {
   "variables":
   {
-    "background": "#1C1C1C"
+    "background": "#1C1C1C",
+    "cursor": "#3fb950"
   },
   "globals":
   {
+    "line_highlight": "var(background)"
   },
   "rules":
   [
