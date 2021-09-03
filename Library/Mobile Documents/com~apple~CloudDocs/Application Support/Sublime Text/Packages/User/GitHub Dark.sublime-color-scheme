@@ -3,7 +3,17 @@
   "variables":
   {
     "background": "#1C1C1C",
-    "cursor": "#3fb950"
+    "cursor": "#3fb950",
+
+    // Colors
+    "blue": "#6ca4f8",
+    "gray": "#6e7681",
+    "green": "#56d364",
+    "purple": "#db61a2",
+    "red": "#f78166",
+    "cyan": "#2b7489",
+    "white": "#ffffff",
+    "yellow": "#e3b341"
   },
   "globals":
   {
