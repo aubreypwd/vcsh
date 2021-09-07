@@ -1,6 +1,22 @@
 #!/bin/zsh
 
 ###
+ # Aubrey's .zshrc file
+ #
+ # This is my ~/.zshrc file and it does a lot of things, but mostly it helps me:
+ #
+ # - Setup my machine
+ # - Make things easier to do in the Terminal
+ # - Make development super easy
+ # - Sometimes make things more complicated than they need to be
+ #
+ # Most actions are blocked into callable functions all prefixed with __
+ # and I call them in a certain order.
+ #
+ # @since The beginning of time.
+ ##
+
+###
  # Paths, etc.
  #
  # @since   Tuesday, September 7, 2021
@@ -93,19 +109,16 @@ function __set_options {
 ###
  # Secure ZSH stuff
  #
- # @since   Tuesday, September 7, 2021
+ # @since   Thursday, 10/1/2020
  # @updated Tuesday, September 7, 2021 First version.
  ##
-function __load_secure_zsh {
+function __load_secure_zsh_config {
 
-	###
-	 # Load a .zshrc file that you aren't tracking in VCS.
-	 #
-	 # @since Thursday, 10/1/2020
-	 ##
-	if [ -f "$HOME/.zshrc.secure" ]; then
-		source "$HOME/.zshrc.secure"
+	if ! [ -f "$HOME/.zshrc-secure" ]; then
+		return
 	fi
+
+	source "$HOME/.zshrc-secure"
 }
 
 ###
@@ -525,7 +538,7 @@ function __misc {
  ##
 __set_exports
 __set_options
-__load_secure_zsh
+__load_secure_zsh_config
 __setup_vcsh
 __write_macos_defaults
 __aliases
