@@ -20,7 +20,7 @@
  # Paths, etc.
  #
  # @since   Tuesday, September 7, 2021
- # @updated Tuesday, September 7, 2021 First version.
+ # @updated Tuesday, September 7, 2021 Introduced
  ##
 function __set_exports {
 
@@ -88,7 +88,7 @@ function __set_exports {
  # Options
  #
  # @since   Tuesday, September 7, 2021
- # @updated Tuesday, September 7, 2021 First version.
+ # @updated Tuesday, September 7, 2021 Introduced
  ##
 function __set_opts {
 
@@ -110,7 +110,7 @@ function __set_opts {
  # Secure ZSH stuff
  #
  # @since   Thursday, 10/1/2020
- # @updated Tuesday, September 7, 2021 First version.
+ # @updated Tuesday, September 7, 2021 Introduced
  ##
 function __load_secure_zsh_config {
 
@@ -125,7 +125,7 @@ function __load_secure_zsh_config {
  # VCSH Stuff
  #
  # @since   Tuesday, September 7, 2021
- # @updated Tuesday, September 7, 2021 First version.
+ # @updated Tuesday, September 7, 2021 Introduced
  ##
 function __setup_vcsh {
 	() {
@@ -140,7 +140,7 @@ function __setup_vcsh {
  # MacOS Default Writes
  #
  # @since   Tuesday, September 7, 2021
- # @updated Tuesday, September 7, 2021 First version.
+ # @updated Tuesday, September 7, 2021 Introduced
  ##
 function __write_macos_defaults {
 	() {
@@ -174,7 +174,7 @@ function __write_macos_defaults {
  # Aliases
  #
  # @since   Tuesday, September 7, 2021
- # @updated Tuesday, September 7, 2021 First version.
+ # @updated Tuesday, September 7, 2021 Introduced
  ##
 function __aliases {
 
@@ -192,7 +192,6 @@ function __aliases {
 		alias editssh="subl -n ~/.ssh/config"
 			alias essh="editssh"
 
-	alias ls='ls -lah'
 	alias c=clear
 	alias tower='gittower'
 
@@ -261,9 +260,10 @@ function __aliases {
  # All things ZSH
  #
  # @since   Tuesday, September 7, 2021
- # @updated Tuesday, September 7, 2021 First version.
+ # @updated Tuesday, September 7, 2021 Introduced
  ##
 function __zsh {
+
 	###
 	 # Theme
 	 #
@@ -350,7 +350,7 @@ function __zsh {
  # Things that can be automatically installed.
  #
  # @since   Tuesday, September 7, 2021
- # @updated Tuesday, September 7, 2021 First version.
+ # @updated Tuesday, September 7, 2021 Introduced
  ##
 function __require_and_install_commands {
 
@@ -363,6 +363,7 @@ function __require_and_install_commands {
 	 # @since Friday, 10/2/2020                               The initial ones.
 	 ##
 	if [[ ! $( command -v require ) ]]; then
+
 		echo "Could not find the 'require' function."
 		echo "  Please install: https://github.com/aubreypwd/zsh-plugin-require"
 	else
@@ -438,9 +439,15 @@ function __require_and_install_commands {
  # Notify me when repos change.
  #
  # @since   Tuesday, September 7, 2021
- # @updated Tuesday, September 7, 2021 First version.
+ # @updated Tuesday, September 7, 2021 Introduced
  ##
 function __watch_repos {
+
+	if [[ ! $( command -v vcsh ) ]]; then
+
+		echo "vcsh missing, please install!"
+		return
+	fi
 
 	###
 	 # A way to output a dirty message.
@@ -471,10 +478,25 @@ function __watch_repos {
 }
 
 ###
+ # Final aliases that need to override things loaded below.
+ #
+ # Sometimes plugins from ZSH, etc write over aliases above,
+ # this has to exist to overwrite them again because I believe in
+ # freedom.
+ #
+ # @since   Tuesday, September 7, 2021
+ # @updated Tuesday, September 7, 2021 Introduced
+ ##
+function __alias_overrides {
+
+	alias ls='ls -lah'
+}
+
+###
  # Misc Things
  #
  # @since   Tuesday, September 7, 2021
- # @updated Tuesday, September 7, 2021 First version.
+ # @updated Tuesday, September 7, 2021 Introduced
  ##
 function __misc {
 
@@ -531,10 +553,39 @@ function __misc {
 }
 
 ###
- # All the non-ZSH required things.
+ # ZSH loader
+ #
+ # @since  Tuesday, September 7, 2021
+ # @updated Tuesday, September 7, 2021
+ ##
+function __load_zsh {
+
+	###
+	 # All the ZSH things.
+	 #
+	 # @since   Tuesday, September 7, 2021
+	 # @updated Tuesday, September 7, 2021 Introduced
+	 ##
+	if [ -e "$ZSH" ]; then
+
+		# Always load ZSH stuff first.
+		__zsh
+
+		# Done
+		return 0; # Continue
+	fi
+
+	echo ".oh-my-zsh isn't installed!"
+	echo "  Install: https://ohmyz.sh/#install"
+
+	return 1; # Do not continue
+}
+
+###
+ # 💾 Do It!
  #
  # @since   Tuesday, September 7, 2021
- # @updated Tuesday, September 7, 2021 First version.
+ # @updated Tuesday, September 7, 2021 Introduced
  ##
 __set_exports
 __set_opts
@@ -542,24 +593,8 @@ __load_secure_zsh_config
 __setup_vcsh
 __write_macos_defaults
 __aliases
-
-###
- # All the ZSH things.
- #
- # @since   Tuesday, September 7, 2021
- # @updated Tuesday, September 7, 2021 First version.
- ##
-if [ -e "$ZSH" ]; then
-
-	# Always load ZSH stuff first.
-	__zsh
-
-	# Plugins
-	__require_and_install_commands
-	__misc
-	__watch_repos
-else
-
-	echo ".oh-my-zsh isn't installed!"
-	echo "  Install: https://ohmyz.sh/#install"
-fi
+__load_zsh || return # If ZSH fails to load none of the below will be ran.
+__require_and_install_commands
+__misc
+__watch_repos
+__alias_overrides
