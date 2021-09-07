@@ -90,7 +90,7 @@ function __set_exports {
  # @since   Tuesday, September 7, 2021
  # @updated Tuesday, September 7, 2021 First version.
  ##
-function __set_options {
+function __set_opts {
 
 	###
 	 # Enable history between panels.
@@ -537,7 +537,7 @@ function __misc {
  # @updated Tuesday, September 7, 2021 First version.
  ##
 __set_exports
-__set_options
+__set_opts
 __load_secure_zsh_config
 __setup_vcsh
 __write_macos_defaults
