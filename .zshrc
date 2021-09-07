@@ -1,7 +1,7 @@
 #!/bin/zsh
 
 ###
- # Aubrey's .zshrc file
+ # My .zshrc file
  #
  # This is my ~/.zshrc file and it does a lot of things, but mostly it helps me:
  #
