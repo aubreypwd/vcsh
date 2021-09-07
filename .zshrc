@@ -1,5 +1,11 @@
 #!/bin/zsh
 
+###
+ # Paths, etc.
+ #
+ # @since   Tuesday, September 7, 2021
+ # @updated Tuesday, September 7, 2021 First version.
+ ##
 function __set_exports {
 
 	export HOMEBREW_BUNDLE_FILE="$HOME/.Brewfile" # brew nundle nob.
@@ -62,6 +68,12 @@ function __set_exports {
 	export ZSH="$HOME/.oh-my-zsh" # Path to your oh-my-zsh installation.
 }
 
+###
+ # Options
+ #
+ # @since   Tuesday, September 7, 2021
+ # @updated Tuesday, September 7, 2021 First version.
+ ##
 function __set_options {
 
 	###
@@ -78,6 +90,12 @@ function __set_options {
 	touch "$HOME/.hushlogin"
 }
 
+###
+ # Secure ZSH stuff
+ #
+ # @since   Tuesday, September 7, 2021
+ # @updated Tuesday, September 7, 2021 First version.
+ ##
 function __load_secure_zsh {
 
 	###
@@ -90,6 +108,12 @@ function __load_secure_zsh {
 	fi
 }
 
+###
+ # VCSH Stuff
+ #
+ # @since   Tuesday, September 7, 2021
+ # @updated Tuesday, September 7, 2021 First version.
+ ##
 function __setup_vcsh {
 	() {
 
@@ -99,6 +123,12 @@ function __setup_vcsh {
 	}  &> /dev/null &
 }
 
+###
+ # MacOS Default Writes
+ #
+ # @since   Tuesday, September 7, 2021
+ # @updated Tuesday, September 7, 2021 First version.
+ ##
 function __write_macos_defaults {
 	() {
 
@@ -127,6 +157,12 @@ function __write_macos_defaults {
 	}  &> /dev/null &
 }
 
+###
+ # Aliases
+ #
+ # @since   Tuesday, September 7, 2021
+ # @updated Tuesday, September 7, 2021 First version.
+ ##
 function __aliases {
 
 	###
@@ -208,6 +244,12 @@ function __aliases {
 	alias matrix='cmatrix'
 }
 
+###
+ # All things ZSH
+ #
+ # @since   Tuesday, September 7, 2021
+ # @updated Tuesday, September 7, 2021 First version.
+ ##
 function __zsh {
 	###
 	 # Theme
@@ -291,6 +333,12 @@ function __zsh {
 	fi
 }
 
+###
+ # Things that can be automatically installed.
+ #
+ # @since   Tuesday, September 7, 2021
+ # @updated Tuesday, September 7, 2021 First version.
+ ##
 function __require_and_install_commands {
 
 	###
@@ -373,6 +421,12 @@ function __require_and_install_commands {
 	fi
 }
 
+###
+ # Notify me when repos change.
+ #
+ # @since   Tuesday, September 7, 2021
+ # @updated Tuesday, September 7, 2021 First version.
+ ##
 function __watch_repos {
 
 	###
@@ -403,6 +457,12 @@ function __watch_repos {
 	vcsh priv diff-index --quiet --ignore-submodules HEAD || __dirty_message "priv"
 }
 
+###
+ # Misc Things
+ #
+ # @since   Tuesday, September 7, 2021
+ # @updated Tuesday, September 7, 2021 First version.
+ ##
 function __misc {
 
 	###
@@ -457,7 +517,12 @@ function __misc {
 	} &> /dev/null &
 }
 
-# Bootup...
+###
+ # All the non-ZSH required things.
+ #
+ # @since   Tuesday, September 7, 2021
+ # @updated Tuesday, September 7, 2021 First version.
+ ##
 __set_exports
 __set_options
 __load_secure_zsh
@@ -465,15 +530,21 @@ __setup_vcsh
 __write_macos_defaults
 __aliases
 
-# ZSH installed...
+###
+ # All the ZSH things.
+ #
+ # @since   Tuesday, September 7, 2021
+ # @updated Tuesday, September 7, 2021 First version.
+ ##
 if [ -e "$ZSH" ]; then
-	__zsh # Always load this first.
 
-	# Plugin things
+	# Always load ZSH stuff first.
+	__zsh
+
+	# Plugins
 	__require_and_install_commands
 	__misc
 	__watch_repos
-
 else
 
 	echo ".oh-my-zsh isn't installed!"

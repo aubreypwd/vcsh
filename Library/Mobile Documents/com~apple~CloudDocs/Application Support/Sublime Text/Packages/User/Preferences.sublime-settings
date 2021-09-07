@@ -101,7 +101,7 @@
 	"caret_style": "phase",
 	"centurion_color_orange": true,
 	"close_windows_when_empty": false,
-	"color_scheme": "Packages/GitHub Theme/schemes/GitHub Dark.sublime-color-scheme",
+	"color_scheme": "Packages/User/GitHub Dark.sublime-color-scheme",
 	"copy_with_empty_selection": true,
 	"default_line_ending": "unix",
 	"detect_indentation": true,
