@@ -216,6 +216,7 @@ function __aliases {
 	# Misc.
 	alias vim="vim -c 'startinsert'" # Start Vim in insert mode (mostly for commit writing).
 	alias repo="cd ~/Repos && fdd" # An easy way to get to a repo using my ffd command.
+	alias site="cd ~/Sites && fdd" # Quick way to get to a site
 	alias antigengo="cd ~/.antigen && fdd" # An easy way to get to a bundle.
 
 	alias locals="cd ~/Sites/Local && fd 3" # An easy way to get to a local.
@@ -254,6 +255,10 @@ function __aliases {
 
 	# Misc
 	alias matrix='cmatrix'
+
+	# WP-CLI
+	alias wpeach='wp site list --field=url | xargs -n1 -I % wp --url=%' # On each subsite, run a command.
+	alias wpdbgz='wp db export - | gzip -9 -f >' # Export a database and compress the file.
 }
 
 ###
