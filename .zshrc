@@ -24,8 +24,9 @@
  ##
 function __set_exports {
 
+	export PAGER="highlight --out-format ansi --syntax=html --force --no-trailing-nl" # I can scroll and highlist
 	export HOMEBREW_BUNDLE_FILE="$HOME/.Brewfile" # brew nundle nob.
-	export HOMEBREW_BUNDLE_NO_LOCK=true;
+	export HOMEBREW_BUNDLE_NO_LOCK=true; # Don't make a lock file.
 
 	# Oaths
 	export PATH="$HOME/.composer/vendor/bin:$PATH"
@@ -222,6 +223,8 @@ function __aliases {
 	alias locals="cd ~/Sites/Local && fd 3" # An easy way to get to a local.
 		alias localsite="locals"
 		alias loc="locals"
+
+	alias high='highlight -O ansi'
 
 	# npm install's.
 	alias npmib="n auto && npm i && npm run build && b"
@@ -425,6 +428,7 @@ function __require_and_install_commands {
 			require "exa" "brew reinstall exa" "brew" # Exa makes ls even more awesome.
 			require "cmatrix" "brew reinstall cmatrix" "brew" # Exa makes ls even more awesome.
 			require "terminal-notifier" "brew reinstall terminal-notifier" "brew" # Terminal notifications
+			require "highlight" "brew reinstall highlight" "brew" # Highlighting cat
 
 			###
 			 # Non-homebrew Requirements
