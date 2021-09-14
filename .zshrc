@@ -424,6 +424,7 @@ function __require_and_install_commands {
 			require "wp" "brew reinstall wp-cli" "brew"
 			require "exa" "brew reinstall exa" "brew" # Exa makes ls even more awesome.
 			require "cmatrix" "brew reinstall cmatrix" "brew" # Exa makes ls even more awesome.
+			require "terminal-notifier" "brew reinstall terminal-notifier" "brew" # Terminal notifications
 
 			###
 			 # Non-homebrew Requirements
@@ -584,6 +585,17 @@ function __load_zsh {
 	echo "  Install: https://ohmyz.sh/#install"
 
 	return 1; # Do not continue
+}
+
+###
+ # Notifications
+ #
+ # E.g: not "Title" "SubTitle" "Message"
+ #
+ # @since
+ ##
+function not {
+	terminal-notifier -title "$1" -subtitle "$2" -message "$3" -activate 'com.googlecode.iterm2'
 }
 
 ###
