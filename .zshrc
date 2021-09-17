@@ -599,7 +599,7 @@ function __load_zsh {
  # @since
  ##
 function -- {
-	terminal-notifier -title "$1" -subtitle "$2" -message "$3" -activate 'com.googlecode.iterm2'
+	terminal-notifier -title "$1" -subtitle "$2" -message "$3" -activate 'com.googlecode.iterm2' --sound "boop"
 }
 
 ###
