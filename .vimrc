@@ -8,7 +8,9 @@ syntax on
 
 imap ii <Esc> "@see https://news.ycombinator.com/item?id=13100718
 
-set termguicolors
+set termguicolors "Stick to terminal colors
 
 :set mouse=a
 :set clipboard=unnamed
+
+autocmd BufRead,BufNewFile * start "Start in edit mode

@@ -1,5 +1,5 @@
 {
-	"bootstrapped": true,
+	// "bootstrapped": true,
 	"in_process_packages":
 	[
 	],
@@ -65,4 +65,5 @@
 		"Xdebug Client",
 		"ZSH",
 	],
+	"auto_upgrade": false,
 }
