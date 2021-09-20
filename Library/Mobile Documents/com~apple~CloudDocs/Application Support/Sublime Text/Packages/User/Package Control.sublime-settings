@@ -67,4 +67,5 @@
 		"ZSH",
 	],
 	"auto_upgrade": false,
+	"bootstrapped": true,
 }
