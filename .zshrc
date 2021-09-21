@@ -465,7 +465,11 @@ function __watch_repos {
 	 # @since Friday, August 27, 2021
 	 ##
 	function __dirty_message {
-		echo "🚨  $1 is dirty"
+
+		full="\e[31m⑂\e[0m \e[33m$1\e[0m is dirty"
+		tilde="~"
+
+		echo -e "${full/$HOME/$tilde}"
 	}
 
 	###
