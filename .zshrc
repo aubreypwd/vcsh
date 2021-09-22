@@ -478,7 +478,7 @@ function __watch_repos {
 	 # @since Friday, August 27, 2021
 	 ##
 	function __git-is-clean {
-		git-is-clean "$1" || ( __dirty_message "$1" && tput bel )
+		git-is-clean "$1" || ( __dirty_message "$1" )
 	}
 
 	# Watch these repositories for dirtiness.
