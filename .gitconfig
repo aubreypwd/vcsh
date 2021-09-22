@@ -42,8 +42,10 @@
 
 	# Branches & Tags
 	b      = "! echo $(git branch --show-current)" # Show the current branch.
-	cob    = checkout -b
+	nb     = checkout -b # New branch
 	cb     = "! git b | pbcopy" # Copy the current branch to the clipboard.
+
+	## Moving Branches and tags around
 	db     = "! function f() { git branch -D $1; git push origin :$1 ;}; f"
 	dt     = "! function f() { git tag -d $1; git push origin :refs/tags/$1; }; f"
 	fb     = "! /bin/bash -c 'source $HOME/.antigen/bundles/aubreypwd/zsh-plugin-fzf-git-branch/fzf-git-branch.plugin.zsh && fzf-git-branch'" # See https://github.com/aubreypwd/zsh-plugin-fzf-git-branch
