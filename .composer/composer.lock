@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "8a1069195391e28e8b4d70452c7db708",
+    "content-hash": "ac47252e468fe239aa7ccec66d959daa",
     "packages": [
         {
             "name": "aubreypwd/composer-uninstall",

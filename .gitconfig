@@ -26,6 +26,8 @@
 	# Status
 	stat   = status
 	s      = status
+	sd     = "! function f() { git status && git diff ;}; f"
+	sds    = "! function f() { git status && git diff --staged ;}; f"
 
 	# Logs
 	blog   = log --oneline --decorate --graph # Better log, looks better in CLI.
