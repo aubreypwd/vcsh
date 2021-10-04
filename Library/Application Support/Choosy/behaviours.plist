@@ -214,7 +214,7 @@
 			<key>path</key>
 			<string>/Applications/Google Chrome.app</string>
 			<key>profileName</key>
-			<string>Profile 1</string>
+			<string>Default</string>
 			<key>type</key>
 			<string>ChoosyChromeProfileMode</string>
 		</dict>
