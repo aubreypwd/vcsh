@@ -1,12 +1,13 @@
 {
 	"always_show_command_status": false,
-	"expand_merge_commits_by_default": false,
+	"expand_merge_commits_by_default": true,
 	"ignore_diff_white_space": false,
-	"side_bar_layout": "tabs",
+	"side_bar_layout": "commit_graph_as_column",
 	"tab_size": 2,
 	"theme": "Merge Darker.sublime-theme",
 	"color_scheme": "Meetio Darker.sublime-color-scheme",
 	"trim_trailing_white_space_on_save": false,
 	"auto_diff_style_min_chars": 72,
 	"font_size": 12,
+	"image_diff_style": "onion-skin",
 }

@@ -3,7 +3,7 @@
 	# GUI's
 	tower  = "! /bin/sh $HOME/.gitscripts/tower.sh" # Tower
 	smerge = "! function f() { smerge ./ -b; }; f"  # Sublime Merge
-	gui    = smerge
+	gui    = tower
 	g      = gui
 	gp     = "! function f() { git gui && git p; }; f" # Use GUI then push commits
 	glog   = "! /bin/sh $HOME/.gitscripts/towerlog.sh"
