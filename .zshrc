@@ -619,13 +619,13 @@ function __functions {
 	###
 	 # Watch files.
 	 #
-	 # E.g: watchf js,css,php "command"
+	 # E.g: watchf ./ js,css,php "cmd"
 	 #
 	 # @since Monday, October 11, 2021
 	 ##
 	function watchf {
 		clear
-		watchexec --watch ./ -e "$1" "$2" -c -p
+		watchexec --watch "$1" -e "$2" "$3" -c -p
 	}
 }
 
