@@ -1,7 +1,9 @@
 [alias]
 
 	# GUI's
-	gui    = "! /bin/sh $HOME/.gitscripts/tower.sh"
+	tower  = "! /bin/sh $HOME/.gitscripts/tower.sh" # Tower
+	smerge = "! function f() { smerge ./ -b; }; f"  # Sublime Merge
+	gui    = smerge
 	g      = gui
 	gp     = "! function f() { git gui && git p; }; f" # Use GUI then push commits
 	glog   = "! /bin/sh $HOME/.gitscripts/towerlog.sh"
