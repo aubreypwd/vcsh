@@ -44,6 +44,7 @@
 		"excersize"
 	],
 	"always_prompt_for_file_reload": false,
+	"tab_completion": true,
 	"show_syntax": true,
 	"hardware_acceleration": "none",
 	"always_show_minimap_viewport": false,
@@ -51,11 +52,16 @@
 	"gutter": true,
 	"margin": 2,
 	"animation_enabled": false,
+
 	"auto_complete_commit_on_tab": true,
-	"auto_find_in_selection": true,
-	"auto_complete_trailing_symbols": true,
 	"auto_complete_with_fields": true,
+	"auto_complete_preserve_order": "none",
+	"auto_complete_trailing_symbols": true,
 	"auto_complete_trailing_spaces": true,
+	"auto_complete_include_snippets": true,
+	"auto_complete_include_snippets_when_typing": true,
+
+	"auto_find_in_selection": true,
 	"auto_hide_menu": true,
 	"auto_hide_tabs": false,
 	"auto_hide_status_bar": false,
@@ -166,7 +172,6 @@
 	[
 	],
 	"index_files": true,
-	"index_workers": -1,
 	"line_padding_bottom": 0,
 	"line_padding_top": 0,
 	"live_matching": true,
@@ -185,7 +190,7 @@
 	],
 	"scroll_past_end": true,
 	"shift_tab_unindent": true,
-	"show_definitions": false,
+	"show_definitions": true,
 	"show_navigation_bar": false,
 	"close_deleted_files": true,
 	"show_full_path": false,
@@ -194,7 +199,6 @@
 	"show_rel_path": true,
 	"allow_git_home_dir": false,
 	"show_minimap": false,
-	/*"show_navigation_bar": false,*/
 	"show_only_filename": true,
 	"show_tab_close_buttons": true,
 	"sidebar_font_small": true,

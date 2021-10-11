@@ -24,7 +24,8 @@
  ##
 function __set_exports {
 
-	export PAGER="highlight --out-format ansi --syntax=html --force --no-trailing-nl" # I can scroll and highlist
+	# export PAGER="highlight --out-format ansi --syntax=html --force --no-trailing-nl" # I can scroll and highlist
+	export PAGER="cat" # Just use cat for now.
 	export HOMEBREW_BUNDLE_FILE="$HOME/.Brewfile" # brew nundle nob.
 	export HOMEBREW_BUNDLE_NO_LOCK=true; # Don't make a lock file.
 
@@ -596,14 +597,36 @@ function __load_zsh {
 }
 
 ###
- # Notifications
+ # Functions
  #
- # E.g: not "Title" "SubTitle" "Message"
+ # Functions are just more advanced aliases.
  #
- # @since
+ # @since Monday, October 11, 2021
  ##
-function -- {
-	terminal-notifier -title "$1" -subtitle "$2" -message "$3" -activate 'com.googlecode.iterm2' --sound "boop"
+function __functions {
+
+	###
+	 # Notifications
+	 #
+	 # E.g: not "Title" "SubTitle" "Message"
+	 #
+	 # @since
+	 ##
+	function -- {
+		terminal-notifier -title "$1" -subtitle "$2" -message "$3" -activate 'com.googlecode.iterm2' --sound "boop"
+	}
+
+	###
+	 # Watch files.
+	 #
+	 # E.g: watchf js,css,php "command"
+	 #
+	 # @since Monday, October 11, 2021
+	 ##
+	function watchf {
+		clear
+		watchexec --watch ./ -e "$1" "$2" -c -p
+	}
 }
 
 ###
@@ -618,6 +641,7 @@ __load_secure_zsh_config
 __setup_vcsh
 __write_macos_defaults
 __aliases
+__functions
 __load_zsh || return # If ZSH fails to load none of the below will be ran.
 __require_and_install_commands
 __misc
