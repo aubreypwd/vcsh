@@ -627,6 +627,38 @@ function __functions {
 		clear
 		watchexec --watch "$1" -e "$2" "$3" -c -p
 	}
+
+	###
+	 # Hide an app from the Dock.
+	 #
+	 # E.g: dockhide "Tower"
+	 #
+	 # @since Monday, October 11, 2021
+	 ##
+	function dockhide {
+		/usr/libexec/PlistBuddy -c 'Add :LSUIElement bool true' "/Applications/$1.app/Contents/Info.plist" &> /dev/null
+		/usr/libexec/PlistBuddy -c 'Add :LSUIElement bool true' "~/Applications/$1.app/Contents/Info.plist" &> /dev/null
+	}
+	###
+	 # Show an app in the Dock.
+	 #
+	 # E.g: dockshow "Tower"
+	 #
+	 # @since Monday, October 11, 2021
+	 ##
+	function dockshow {
+		/usr/libexec/PlistBuddy -c 'Delete :LSUIElement' "/Applications/$1.app/Contents/Info.plist" &> /dev/null
+		/usr/libexec/PlistBuddy -c 'Delete :LSUIElement' "~/Applications/$1.app/Contents/Info.plist" &> /dev/null
+	}
+}
+
+###
+ # Hide Applications from Dock.
+ #
+ # @since Monday, October 11, 2021
+ ##
+function __hide_from_dock() {
+	dockhide "Tower"
 }
 
 ###
@@ -647,3 +679,4 @@ __require_and_install_commands
 __misc
 __watch_repos
 __alias_overrides
+__hide_from_dock
