@@ -636,8 +636,7 @@ function __functions {
 	 # @since Monday, October 11, 2021
 	 ##
 	function dockhide {
-		/usr/libexec/PlistBuddy -c 'Add :LSUIElement bool true' "/Applications/$1.app/Contents/Info.plist" &> /dev/null
-		/usr/libexec/PlistBuddy -c 'Add :LSUIElement bool true' "~/Applications/$1.app/Contents/Info.plist" &> /dev/null
+		/usr/libexec/PlistBuddy -c 'Add :LSUIElement bool true' "$1/Contents/Info.plist" &> /dev/null
 	}
 	###
 	 # Show an app in the Dock.
@@ -647,8 +646,7 @@ function __functions {
 	 # @since Monday, October 11, 2021
 	 ##
 	function dockshow {
-		/usr/libexec/PlistBuddy -c 'Delete :LSUIElement' "/Applications/$1.app/Contents/Info.plist" &> /dev/null
-		/usr/libexec/PlistBuddy -c 'Delete :LSUIElement' "~/Applications/$1.app/Contents/Info.plist" &> /dev/null
+		/usr/libexec/PlistBuddy -c 'Delete :LSUIElement' "$1/Contents/Info.plist" &> /dev/null
 	}
 }
 
@@ -657,8 +655,8 @@ function __functions {
  #
  # @since Monday, October 11, 2021
  ##
-function __hide_from_dock() {
-	dockhide "Tower"
+function __dock_icon_control() {
+	# dockhide "/Applications/Tower.app"
 }
 
 ###
@@ -679,4 +677,4 @@ __require_and_install_commands
 __misc
 __watch_repos
 __alias_overrides
-__hide_from_dock
+__dock_icon_control
