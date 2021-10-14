@@ -21,7 +21,7 @@
 	## Staged
 	cs     = commit --verbose # Commit staged files and write message in editor.
 	csp    = "! function f() { git cs && git p; }; f" # Commit staged files, write a message in an editor, and push.
-	csmp   = "! function f() { git commit -am '$1' && git p; }; f" # Commit staged files, write a message inline, and push.
+	csmp   = "! function f() { git commit -m '$1' && git p; }; f" # Commit staged files, write a message inline, and push.
 
 	# Status
 	stat   = status
