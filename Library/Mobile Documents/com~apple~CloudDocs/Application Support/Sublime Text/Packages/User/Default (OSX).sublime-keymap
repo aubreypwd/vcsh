@@ -1,0 +1,50 @@
+[
+  /*
+   * Show the sidebar easier.
+   */
+  { "keys": ["super+\\"], "command": "toggle_side_bar" },
+  { "keys": ["super+."], "command": "toggle_side_bar" },
+
+  /*
+   * Marks.
+   */
+  { "keys": ["alt+f"], "command": "next_bookmark" },
+  { "keys": ["alt+b"], "command": "prev_bookmark" },
+  { "keys": ["alt+m"], "command": "toggle_bookmark" },
+  { "keys": ["alt+c"], "command": "clear_bookmarks" },
+  { "keys": ["alt+a"], "command": "select_all_bookmarks" },
+
+  // Change quotes.
+  { "keys": ["super+shift+'"], "command": "change_quotes" },
+
+  // ToggleWords.
+  { "keys": ["super+alt+enter"], "command": "toggle_word"},
+
+  // Sessions.
+  { "keys": ["super+ctrl+alt+p"], "command": "load_session"},
+  { "keys": ["super+ctrl+alt+shift+p"], "command": "save_session"},
+
+  { "keys": ["super+ctrl+l"], "command": "alignment" },
+
+  {
+    "keys": ["alt+l"], "command": "align_tab",
+    "args" : {"live_preview" : true}
+  },
+
+  // Terminus
+  {
+      "keys": ["super+alt+t"],
+      "command": "terminus_open",
+      "args": {
+          "cwd": "${file_path:${folder}}",
+          "title": "zsh",
+          "auto_close": true
+      }
+  },
+  {
+    "keys": ["alt+`"], "command": "toggle_terminus_panel"
+  },
+
+  // Line keys.
+  { "keys": ["shift+super+k"], "command": "run_macro_file", "args": {"file": "res://Packages/Default/Delete Line.sublime-macro"} },
+]
