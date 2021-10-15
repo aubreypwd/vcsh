@@ -3,7 +3,7 @@
 	# GUI's
 	tower   = "! /bin/sh $HOME/.gitscripts/tower.sh" # Tower
 	smerge  = "! function f() { smerge ./ -b; }; f"  # Sublime Merge
-	lazygit = "! function f() { nwindow lazygit ./; }; f"
+	lazygit = "! function f() { ttab -w -t 'lazygit' -q 'lazygit && exit'; }; f"
 	lg      = lazygit
 	gui     = lg
 	g       = gui

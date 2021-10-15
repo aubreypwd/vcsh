@@ -194,6 +194,8 @@ function __aliases {
 		alias editssh="subl -n ~/.ssh/config"
 			alias essh="editssh"
 
+	alias twin='ttab -w'
+
 	alias c=clear
 	alias tower='gittower'
 
@@ -444,6 +446,8 @@ function __require_and_install_commands {
 
 			## lazygit for git gui
 			require "lazygit" "brew install jesseduffield/lazygit/lazygit" "brew"
+			require "ttab" "npm install ttab -g" "npm"
+
 
 		} &> /dev/null &
 	fi
@@ -506,7 +510,6 @@ function __watch_repos {
  # @updated Tuesday, September 7, 2021 Introduced
  ##
 function __alias_overrides {
-
 	alias ls='ls -lah'
 }
 
@@ -650,26 +653,6 @@ function __functions {
 	 ##
 	function dockshow {
 		/usr/libexec/PlistBuddy -c 'Delete :LSUIElement' "$1/Contents/Info.plist" &> /dev/null
-	}
-
-	###
-	 # Open a new window and run a command.
-	 #
-	 # E.g: window lazygit
-	 #
-	 # @since Friday, October 15, 2021
-	 #
-	 # @see https://stuartdotson.com/blog/how-to-programmatically-open-a-new-terminal-tab-or-window/
-	 ##
-	function nwindow {
-		osascript -e "
-			tell application \"iTerm2\"
-				set newWindow to (create window with default profile)
-				tell current session of newWindow
-						write text \"$1\"
-				end tell
-			end tell
-		"
 	}
 }
 
