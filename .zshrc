@@ -651,6 +651,24 @@ function __functions {
 	function dockshow {
 		/usr/libexec/PlistBuddy -c 'Delete :LSUIElement' "$1/Contents/Info.plist" &> /dev/null
 	}
+
+	###
+	 # Open a new window and run a command.
+	 #
+	 # E.g: window lazygit
+	 #
+	 # @since Friday, October 15, 2021
+	 ##
+	function window {
+		osascript -e "
+			tell application \"iTerm2\"
+				set newWindow to (create window with default profile)
+				tell current session of newWindow
+						write text \"$1\"
+				end tell
+			end tell
+		"
+	}
 }
 
 ###
