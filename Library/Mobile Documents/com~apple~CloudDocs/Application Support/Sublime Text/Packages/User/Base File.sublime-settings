@@ -1,0 +1,8 @@
+{
+	"jsdocs_extra_tags": [
+		"@author Aubrey Portwood <${100:aubrey@webdevstudios.com}>",
+		"@since ${200:NEXT}",
+	],
+	"jsdocs_short_primitives": true,
+	"jsdocs_spacer_between_sections": "after_description"
+}
