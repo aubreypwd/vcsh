@@ -1,12 +1,18 @@
 [alias]
 
 	# GUI's
-	tower   = "! /bin/sh $HOME/.gitscripts/tower.sh" # Tower
-	smerge  = "! function f() { smerge ./ -b; }; f"  # Sublime Merge
-	lazygit = "! function f() { ttab -w -t 'lazygit' -q 'lazygit && exit'; }; f"
+	tower    = "! /bin/sh $HOME/.gitscripts/tower.sh" # Tower
+	smerge   = "! function f() { smerge ./ -b; }; f"  # Sublime Merge
+	lazygit  = "! function f() { ttab -w -t 'lazygit' -q 'lazygit && exit'; }; f"
+	lazygitp = "! function f() { ttab -w -t 'lazygit' -q 'lazygit && p && exit'; }; f"
+
 	lg      = lazygit
-	gui     = lg
+	gui     = lazygit
+	guip    = lazygitp
+
 	g       = gui
+	gp      = guip
+
 	glog    = "! /bin/sh $HOME/.gitscripts/towerlog.sh"
 
 	# Checkout.
