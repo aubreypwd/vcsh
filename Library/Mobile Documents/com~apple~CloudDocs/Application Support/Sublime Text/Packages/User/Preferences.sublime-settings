@@ -155,6 +155,11 @@
 		"Markdown",
 		"MonokaiFree",
 		"Vintage", // Comment out to Use Vim Mode
+/*"Vintage",*/
+/*"Vintage",*/
+/*"Vintage",*/
+/*"Vintage",*/
+/*"Vintage",*/
 	],
 	"ignored_words":
 	[

@@ -17,6 +17,10 @@
             ],
             "excludes": []
         },
+        "phpcbf": {
+            "working_dir": "${file_path}",
+            "disable": false,
+        },
         "sass": {
             "working_dir": "${file_path}",
             "disable": false,

@@ -6,7 +6,7 @@
     // "php_path": "/usr/local/bin/php",
 
     // Path to the PHPCBF script.
-    // "phpcbf_path": "/Users/aubreypwd/.composer/vendor/bin/phpcbf",
+    "phpcbf_path": "./vendor/bin/phpcbf",
 
     // Additional arguments to pass to PHPCS/PHPCBF.
     "additional_args": [],
