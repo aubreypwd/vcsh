@@ -1,0 +1,15 @@
+// Documentation at https://www.sublimetext.com/docs/color_schemes.html
+{
+	"variables":
+	{
+	},
+	"globals":
+	{
+		"background": "#1a1a1a",
+		"gutter": "#1a1a1a"
+	},
+	"rules":
+	[
+
+	]
+}
