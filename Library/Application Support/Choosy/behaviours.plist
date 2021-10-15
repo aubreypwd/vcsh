@@ -47,7 +47,7 @@
 			<string>ChoosyBrowser</string>
 		</dict>
 		<key>enabled</key>
-		<false/>
+		<true/>
 		<key>predicate</key>
 		<string>URL CONTAINS ".slack.com/archives"</string>
 		<key>title</key>
@@ -277,6 +277,23 @@
 		<string>URL CONTAINS "basecamp.com/1756504" OR URL CONTAINS "webdevstudios.beanstalkapp.com" OR URL CONTAINS "webdevstudios" OR URL CONTAINS "forecastapp" OR URL CONTAINS "help.wpengine.com" OR URL CONTAINS "recordit.co" OR URL CONTAINS "cloudup.com" OR URL CONTAINS "newscorp-" OR URL CONTAINS "dowjones.io" OR URL CONTAINS "wdslab.com" OR URL CONTAINS "wpengine.com" OR URL CONTAINS "github.com/WebDevStudios" OR URL CONTAINS "discover.office.com" OR URL CONTAINS "discover.microsoft.com" OR URL CONTAINS "heytaco" OR URL CONTAINS "maintainn"</string>
 		<key>title</key>
 		<string>Google Chrome (WebDevStudios)</string>
+	</dict>
+	<dict>
+		<key>behaviour</key>
+		<integer>6</integer>
+		<key>behaviourArgument</key>
+		<dict>
+			<key>path</key>
+			<string>/Users/aubreypwd/Applications/WebCatalog Apps/Reddit.app</string>
+			<key>type</key>
+			<string>ChoosyBrowser</string>
+		</dict>
+		<key>enabled</key>
+		<true/>
+		<key>predicate</key>
+		<string>URL CONTAINS "reddit.com"</string>
+		<key>title</key>
+		<string>Reddit</string>
 	</dict>
 	<dict>
 		<key>behaviour</key>
