@@ -661,7 +661,7 @@ function __functions {
 	 #
 	 # @see https://stuartdotson.com/blog/how-to-programmatically-open-a-new-terminal-tab-or-window/
 	 ##
-	function window {
+	function nwindow {
 		osascript -e "
 			tell application \"iTerm2\"
 				set newWindow to (create window with default profile)
