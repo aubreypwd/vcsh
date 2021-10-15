@@ -127,7 +127,7 @@
 	cmd = open -W -a Meld --args --auto-merge \"$PWD/$LOCAL\" \"$PWD/$BASE\" \"$PWD/$REMOTE\" --output=\"$PWD/$MERGED\"
 
 [merge]
-	tool = meld
+	tool = sublime
 
 [mergetool]
 	keepBackup = false
@@ -149,3 +149,6 @@
 	defaultBranch = main
 [diff "plist"]
 	textconv = plutil -convert xml1 -o -
+[mergetool "sublime"]
+	cmd = subl -w $MERGED
+	trustExitCode = false
