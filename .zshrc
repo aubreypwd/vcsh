@@ -658,6 +658,8 @@ function __functions {
 	 # E.g: window lazygit
 	 #
 	 # @since Friday, October 15, 2021
+	 #
+	 # @see https://stuartdotson.com/blog/how-to-programmatically-open-a-new-terminal-tab-or-window/
 	 ##
 	function window {
 		osascript -e "
