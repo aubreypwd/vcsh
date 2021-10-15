@@ -442,6 +442,9 @@ function __require_and_install_commands {
 			## https://github.com/RichiH/vcsh
 			require "vcsh" "brew reinstall vcsh" "brew"
 
+			## lazygit for git gui
+			require "lazygit" "brew install jesseduffield/lazygit/lazygit" "brew"
+
 		} &> /dev/null &
 	fi
 }
