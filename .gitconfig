@@ -25,13 +25,13 @@
 	ca     = commit -a --verbose # Commit and add all files and add message to editor.
 	cam    = commit -am # Commit and add all files and add message inline (don't push).
 	cap    = "! function f() { git ca && git p; }; f" # Commit all files, add message in editor, and push.
-	camp   = "! function f() { git commit -am '$1' && git p; }; f" # Commit all files, add message inline, and push.
+	camp   = "! function f() { git commit -am \"$1\" && git p; }; f" # Commit all files, add message inline, and push.
 
 	## Staged
 	cs     = commit --verbose # Commit staged files and write message in editor.
 	csm    = commit -m # Commit staged files, write a message inline (don't push).
 	csp    = "! function f() { git cs && git p; }; f" # Commit staged files, write a message in an editor, and push.
-	csmp   = "! function f() { git commit -m '$1' && git p; }; f" # Commit staged files, write a message inline, and push.
+	csmp   = "! function f() { git commit -m \"$1\" && git p; }; f" # Commit staged files, write a message inline, and push.
 
 	# Status
 	stat   = status
