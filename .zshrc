@@ -29,12 +29,13 @@ function __set_exports {
 	export HOMEBREW_BUNDLE_FILE="$HOME/.Brewfile" # brew nundle nob.
 	export HOMEBREW_BUNDLE_NO_LOCK=true; # Don't make a lock file.
 
-	# Oaths
+	# Paths
 	export PATH="$HOME/.composer/vendor/bin:$PATH"
 	export PATH="$HOME/bin:/usr/local/bin:$PATH"
 	export PATH="/Applications/Sublime Text.app/Contents/SharedSupport/bin:$PATH"
 	export PATH="/usr/local/sbin:$PATH"
 	export PATH="/usr/local/lib/node_modules:$PATH"
+	export PATH="/opt/homebrew/bin:$PATH"
 	export PATH="/usr/local/opt/openssl@1.1/bin:$PATH" # If you need to have openssl@1.1 first in your PATH run
 
 	## Ruby
@@ -306,11 +307,11 @@ function __zsh {
 	 #
 	 # @since Monday, 9/21/2020
 	 ##
-	if [[ ! -f "/usr/local/share/antigen/antigen.zsh" ]]; then
+	if [[ ! -f "/opt/homebrew/share/antigen/antigen.zsh" ]]; then
 		echo "Please install antigen and reload to install ZSH plugins:"
 		echo "  Homebrew: brew reinstall antigen"
 	else
-		source /usr/local/share/antigen/antigen.zsh # brew install antigen
+		source /opt/homebrew/share/antigen/antigen.zsh # brew install antigen
 
 		# oh-my-zsh
 		antigen use oh-my-zsh
