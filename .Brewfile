@@ -8,11 +8,14 @@ tap "homebrew/cask-fonts"
 tap "homebrew/cask-versions"
 tap "homebrew/core"
 tap "homebrew/services"
+tap "jesseduffield/lazygit"
 tap "jhawthorn/fzy"
 tap "rockymadden/rockymadden"
 tap "sargsyan/github-notifier"
 # Plugin manager for zsh, inspired by oh-my-zsh and vundle
 brew "antigen"
+# C library implementing the SSH2 protocol
+brew "libssh2"
 # Download with resuming and segmented downloading
 brew "aria2"
 # Tool for generating GNU Standards-compliant Makefiles
@@ -21,6 +24,10 @@ brew "automake"
 brew "bchunk"
 # Install pip packages as homebrew formulae
 brew "brew-pip"
+# Interpreted, interactive, object-oriented programming language
+brew "python@3.9"
+# Core application library for C
+brew "glib"
 # GNU Emacs text editor
 brew "emacs", restart_service: true
 # Emacs dependency management
@@ -29,8 +36,12 @@ brew "cask"
 brew "ccat"
 # Cross-platform make
 brew "cmake"
+# Console Matrix
+brew "cmatrix"
 # Dependency Manager for PHP
 brew "composer"
+# Open source suite of directory software
+brew "openldap"
 # Get a file from an HTTP, HTTPS or FTP server
 brew "curl"
 # Display user-friendly message boxes from shell scripts
@@ -41,8 +52,14 @@ brew "dmg2img"
 brew "dnsmasq"
 # Select default apps for documents and URL schemes on macOS
 brew "duti"
+# Modern replacement for 'ls'
+brew "exa"
+# OpenType text shaping engine
+brew "harfbuzz"
 # Play, record, convert, and stream audio and video
 brew "ffmpeg"
+# Libraries to talk to Microsoft SQL Server and Sybase databases
+brew "freetds", link: false
 # Command-line fuzzy finder written in Go
 brew "fzf"
 # Fast, simple fuzzy text selector with an advanced scoring algorithm
@@ -71,6 +88,8 @@ brew "jasper"
 brew "graphicsmagick"
 # Colorize logfiles and command output
 brew "grc"
+# Convert source code to formatted text with syntax highlighting
+brew "highlight"
 # Improved top (interactive process viewer)
 brew "htop"
 # Configurable static site generator
@@ -129,10 +148,14 @@ brew "ruby-build"
 brew "ssh-copy-id"
 # Version control system designed to be a better CVS
 brew "subversion"
+# Send macOS User Notifications from the command-line
+brew "terminal-notifier"
 # Command-line interface to the freedesktop.org trashcan
 brew "trash-cli"
 # Display directories as trees (with optional color/HTML output)
 brew "tree"
+# CLI for programmatically opening tabs/windows in Terminal, iTerm2, or Gnome Terminal
+brew "ttab"
 # Extraction utility for .zip compressed archives
 brew "unzip"
 # Config manager based on git
@@ -159,6 +182,8 @@ brew "zlib"
 brew "zsh"
 # Vault
 brew "hashicorp/tap/vault"
+# A simple terminal UI for git commands, written in Go
+brew "jesseduffield/lazygit/lazygit"
 # Password manager that keeps all passwords secure behind one password
 cask "1password"
 # Command-line helper for the 1Password password manager
@@ -175,11 +200,14 @@ cask "cakebrew"
 cask "choosy"
 # System cleaner for logs, caches and more
 cask "clean-me"
+# File sharing solution
+cask "dropshare"
 # Web browser
 cask "firefox"
 cask "font-fira-code"
 cask "font-fira-mono"
 cask "font-fira-mono-for-powerline"
+cask "font-hack-nerd-font"
 # Finder replacement and FTP, SFTP, WebDAV and Amazon s3 client
 cask "forklift"
 # Web browser
@@ -194,8 +222,14 @@ cask "keyboardcleantool"
 cask "meld"
 # VPN client for secure internet access and private browsing
 cask "nordvpn"
+# Markdown-based note-taking app that doesn't suck
+cask "notable"
+# Automatically hides or quits apps after periods of inactivity
+cask "quitter"
 # Archive manager for data compression and backups
 cask "rar"
+# Move and resize windows using keyboard shortcuts or snap areas
+cask "rectangle"
 # Move and resize windows with ease
 cask "spectacle"
 # Music streaming service
