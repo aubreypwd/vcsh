@@ -4,10 +4,10 @@
 	tower    = "! /bin/sh $HOME/.gitscripts/tower.sh" # Tower
 	smerge   = "! function f() { smerge ./ -b; }; f"  # Sublime Merge
 	lazygit  = "! function f() { ttab -w -t 'lazygit' -q 'lazygit && exit'; }; f"
-	lazygitp = "! function f() { ttab -w -t 'lazygit' -q 'lazygit && p && exit'; }; f"
+	lazygitp = "! function f() { ttab -w -t 'lazygit' -q 'lazygit && git p && exit'; }; f"
 
 	lg      = lazygit
-	gui     = lazygit
+	gui     = tower
 	guip    = lazygitp
 
 	g       = gui
@@ -132,8 +132,12 @@
 	trustExitCode = true
 	cmd = open -W -a Meld --args --auto-merge \"$PWD/$LOCAL\" \"$PWD/$BASE\" \"$PWD/$REMOTE\" --output=\"$PWD/$MERGED\"
 
+[mergetool "sublime"]
+	cmd = subl -w $MERGED
+	trustExitCode = false
+
 [merge]
-	tool = sublime
+	tool = meld
 
 [mergetool]
 	keepBackup = false
@@ -153,8 +157,6 @@
 
 [init]
 	defaultBranch = main
+
 [diff "plist"]
 	textconv = plutil -convert xml1 -o -
-[mergetool "sublime"]
-	cmd = subl -w $MERGED
-	trustExitCode = false
