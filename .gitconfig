@@ -130,7 +130,7 @@
 
 [mergetool "meld"]
 	trustExitCode = true
-	cmd = open -W -a Meld --args --auto-merge \"$PWD/$LOCAL\" \"$PWD/$BASE\" \"$PWD/$REMOTE\" --output=\"$PWD/$MERGED\"
+	cmd = open -W -a Meld --fresh --new --args --auto-merge \"$PWD/$LOCAL\" \"$PWD/$BASE\" \"$PWD/$REMOTE\" --output=\"$PWD/$MERGED\"
 
 [mergetool "sublime"]
 	cmd = subl -w $MERGED
