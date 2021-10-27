@@ -561,9 +561,6 @@ function __misc {
 
 		composer self-update --1 # Use Composer Version 1 for now...
 
-		# Make sure we have ~/iCloud link in $HOME
-		ln -sf "$HOME/Library/Mobile Documents/com~apple~CloudDocs" "$HOME/iCloud"
-
 		# Make sure keys and identities make it into keychain.
 		ssh-add -q -A -k
 

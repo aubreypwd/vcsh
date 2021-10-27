@@ -15,8 +15,8 @@
   "pretty_output": true,
   "break_on_start": false,
   "debug": true,
-  "max_depth": 3,
-  "max_children": 50,
+  "max_depth": 5,
+  "max_children": 10,
   "ide_key": "",
   "port": 9001, // Yes, we have to use this now that PHP 7.4 takes over port 9000.
 }
