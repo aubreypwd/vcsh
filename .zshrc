@@ -31,32 +31,12 @@ function __set_exports {
 
 	# Paths
 	export PATH="$HOME/.composer/vendor/bin:$PATH"
-	export PATH="$HOME/bin:/usr/local/bin:$PATH"
-	export PATH="/Applications/Sublime Text.app/Contents/SharedSupport/bin:$PATH"
-	export PATH="/usr/local/sbin:$PATH"
-	export PATH="/usr/local/lib/node_modules:$PATH"
-	export PATH="/opt/homebrew/bin:$PATH"
-	export PATH="/usr/local/opt/openssl@1.1/bin:$PATH" # If you need to have openssl@1.1 first in your PATH run
-
-	## Ruby
-	export PATH="/usr/local/opt/ruby/bin:$PATH"
-	export PATH="/usr/local/lib/ruby/gems/3.0.0/bin:$PATH"
-
-	###
-	 # Nobs for compilers to find openssl@1.1
-	 #
-	 # @since Thursday, 10/1/2020
-	 ##
-	export CPPFLAGS="-I/usr/local/opt/openssl@1.1/include"
-	export LDFLAGS="-L/usr/local/opt/openssl@1.1/lib"
-	export PKG_CONFIG_PATH="/usr/local/opt/openssl@1.1/lib/pkgconfig" # For pkg-config to find openssl@1.1 you may need to set:
-
-	###
-	 # Hide apps from Dock while running
-	 #
-	 # @since Sunday, August 22, 2021
-	 ##
-	# /usr/libexec/PlistBuddy -c 'Add :LSUIElement bool true' "/Applications/zoom.us.app/Contents/Info.plist" &> /dev/null &
+	export PATH="$HOME/bin:$PATH"
+	export PATH="/Applications/Sublime Text.app/Contents/SharedSupport/bin:$PATH" # subl
+	export PATH="/opt/homebrew/sbin:$PATH" # Homebrew
+	export PATH="/opt/homebrew/bin:$PATH" # Homebrew
+	export PATH="/opt/homebrew/opt/ruby/bin:$PATH" #  Ruby
+	export PATH="/opt/homebrew/opt/openssl@3/bin:$PATH" # Open SSL
 
 	###
 	 # Misc Nobs

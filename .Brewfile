@@ -59,7 +59,7 @@ brew "harfbuzz"
 # Play, record, convert, and stream audio and video
 brew "ffmpeg"
 # Libraries to talk to Microsoft SQL Server and Sybase databases
-brew "freetds", link: false
+brew "freetds"
 # Command-line fuzzy finder written in Go
 brew "fzf"
 # Fast, simple fuzzy text selector with an advanced scoring algorithm
@@ -117,15 +117,9 @@ brew "n"
 # HTTP(S) server and reverse proxy, and IMAP/POP3 proxy server
 brew "nginx"
 # Platform built on V8 to build network applications
-brew "node"
-# Platform built on V8 to build network applications
-brew "node@10"
-# Platform built on V8 to build network applications
-brew "node@12"
-# Platform built on V8 to build network applications
 brew "node@14"
-# Manage multiple Node.js versions
-brew "nvm"
+# Cryptography and SSL/TLS Toolkit
+brew "openssl@3"
 # Swiss-army knife of markup format conversion
 brew "pandoc"
 # Simplistic interactive filtering tool
@@ -154,8 +148,6 @@ brew "terminal-notifier"
 brew "trash-cli"
 # Display directories as trees (with optional color/HTML output)
 brew "tree"
-# CLI for programmatically opening tabs/windows in Terminal, iTerm2, or Gnome Terminal
-brew "ttab"
 # Extraction utility for .zip compressed archives
 brew "unzip"
 # Config manager based on git
@@ -172,8 +164,6 @@ brew "wget"
 brew "wp-cli"
 # Malware identification and classification tool
 brew "yara"
-# JavaScript package manager
-brew "yarn"
 # Download YouTube videos from the command-line
 brew "youtube-dl"
 # General-purpose lossless data-compression library
@@ -184,63 +174,23 @@ brew "zsh"
 brew "hashicorp/tap/vault"
 # A simple terminal UI for git commands, written in Go
 brew "jesseduffield/lazygit/lazygit"
-# Password manager that keeps all passwords secure behind one password
-cask "1password"
 # Command-line helper for the 1Password password manager
 cask "1password-cli"
-# Application launcher and productivity software
-cask "alfred"
-# Application uninstaller
-cask "appcleaner"
-# Menu bar icon organizer
-cask "bartender"
 # GUI app for Homebrew
 cask "cakebrew"
 # Open links in any browser
 cask "choosy"
 # System cleaner for logs, caches and more
 cask "clean-me"
-# File sharing solution
-cask "dropshare"
-# Web browser
-cask "firefox"
-cask "font-fira-code"
-cask "font-fira-mono"
-cask "font-fira-mono-for-powerline"
-cask "font-hack-nerd-font"
-# Finder replacement and FTP, SFTP, WebDAV and Amazon s3 client
-cask "forklift"
-# Web browser
-cask "google-chrome"
-# HTTP and GraphQL Client
-cask "insomnia"
-# File archiver
-cask "keka"
-# Blocks all Keyboard and TouchBar input
-cask "keyboardcleantool"
-# Visual diff and merge tool
-cask "meld"
 # VPN client for secure internet access and private browsing
 cask "nordvpn"
-# Markdown-based note-taking app that doesn't suck
-cask "notable"
-# Automatically hides or quits apps after periods of inactivity
-cask "quitter"
 # Archive manager for data compression and backups
 cask "rar"
-# Move and resize windows using keyboard shortcuts or snap areas
-cask "rectangle"
 # Move and resize windows with ease
 cask "spectacle"
 # Music streaming service
 cask "spotify"
-# Native GUI tool for relational databases
-cask "tableplus"
-# Git client focusing on power and productivity
-cask "tower"
 # Free and open-source hosted hypervisor for x86 virtualization
 cask "virtualbox"
-# Tool to run web apps like desktop apps
-cask "webcatalog"
 # Video communication and virtual meeting platform
 cask "zoom"
