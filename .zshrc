@@ -644,6 +644,8 @@ function __dock_icon_control() {
 	# dockhide "/Applications/Tower.app"
 }
 
+autoload -Uz compinit && compinit
+
 ###
  # 💾 Do It!
  #
