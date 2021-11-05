@@ -33,7 +33,7 @@
 
   // Terminus
   {
-      "keys": ["super+alt+t"],
+      "keys": ["super+alt+`"],
       "command": "terminus_open",
       "args": {
           "cwd": "${file_path:${folder}}",

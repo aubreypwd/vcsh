@@ -4,20 +4,20 @@
 
     // Monokai Spectrum
   "user_theme_colors": {
-    "background": "#1e1e1e",
-    "foreground": "#dad5e1",
-    "caret": "white",
+    "background": "#121212",
+    "foreground": "#d5d2d5",
+    "caret": "#78d18b",
     "block_caret": "white",
     "selection": "#444444",
     "selection_foreground": "#dad5e1",
-    "00": "#706e73",  // black
-    "01": "#dc577d",  // red
-    "02": "#78d18b",  // green
-    "03": "#f6e064",  // brown
-    "04": "#59cfe1",  // blue
-    "05": "#fd9353",  // magenta
-    "06": "#59cfe1",  // cyan
-    "07": "#706e73",  // white
+    "00": "#121212",  // black
+    "01": "#fc618d",  // red
+    "02": "#7bd88f",  // green
+    "03": "#fd9353",  // brown
+    "04": "#5ad4e6",  // blue
+    "05": "#948ae3",  // magenta
+    "06": "#5ad4e6",  // cyan
+    "07": "#d5d2d5",  // white
     // "08": "#7f7f7f",  // light_black
     // "09": "#f68d8c",  // light_red
     // "10": "#a7d3a9",  // light_green
@@ -55,6 +55,6 @@
   // },
 
   "view_settings": {
-    // "padding": 10
+    "padding": 5
   }
 }
