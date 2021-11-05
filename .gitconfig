@@ -21,6 +21,9 @@
 
 	# Commits
 
+	# ghq
+	repo   = "! function f() { ghq get \"$1\"; }; f" # Commit all files, add message inline, and push.
+
 	## All
 	ca     = commit -a --verbose # Commit and add all files and add message to editor.
 	cam    = commit -am # Commit and add all files and add message inline (don't push).
