@@ -492,7 +492,7 @@ function __watch_repos {
  # @updated Tuesday, September 7, 2021 Introduced
  ##
 function __alias_overrides {
-	alias ls='ls -lah'
+	alias ls='exa -l -g --icons --tree --level=2 -a' # Enhance exa ls defaults.
 }
 
 ###

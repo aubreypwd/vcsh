@@ -64,6 +64,7 @@
     "paths": {
         "linux": [],
         "osx": [
+          "/opt/homebrew/bin"
         ],
         "windows": []
     },
