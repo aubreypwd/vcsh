@@ -11,6 +11,9 @@
             "excludes": [],
         },
         "phpcs": {
+            "env": {
+              "PATH":"/opt/homebrew/bin"
+            },
             "working_dir": "${file_path}",
             "disable": false,
             "args": [
