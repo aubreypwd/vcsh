@@ -149,12 +149,12 @@
 	"hot_exit": true,
 	"ignored_packages":
 	[
+		"AutoFileName",
 		"EditorConfig",
 		"gruvbox 2",
 		"JsPrettier",
 		"Markdown",
-		"MonokaiFree",
-		"Vintage", // Comment out to Use Vim Mode
+		"MonokaiFree", // Comment out to Use Vim Mode
 /*"Vintage",*/
 /*"Vintage",*/
 /*"Vintage",*/
@@ -162,6 +162,7 @@
 /*"Vintage",*/
 /*"Vintage",*/
 /*"Vintage",*/
+		"Vintage",
 	],
 	"ignored_words":
 	[

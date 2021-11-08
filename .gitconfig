@@ -29,6 +29,7 @@
 	cam    = commit -am # Commit and add all files and add message inline (don't push).
 	cap    = "! function f() { git ca && git p; }; f" # Commit all files, add message in editor, and push.
 	camp   = "! function f() { git commit -am \"$1\" && git p; }; f" # Commit all files, add message inline, and push.
+	pew    = "! function f() { git commit -a --allow-empty-message -m '' && git p; }; f" # Push an empty commit with all updates.
 
 	## Staged
 	cs     = commit --verbose # Commit staged files and write message in editor.
