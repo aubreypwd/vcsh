@@ -237,90 +237,6 @@ function __aliases {
 }
 
 ###
- # All things ZSH
- #
- # @since   Tuesday, September 7, 2021
- # @updated Tuesday, September 7, 2021 Introduced
- ##
-function __zsh {
-
-	###
-	 # Theme
-	 #
-	 # - Must be done before you shource oh-my-zsh.
-	 #
-	 # @since Monday, 9/21/2020 frisk
-	 # @since 10/1/20           ys
-	 # @since Wednesday, 10/7/2020 Switched to refined for more simplicity.
-	 ##
-	ZSH_THEME="refined"
-
-	# Load
-	plugins=(git)
-
-	source $ZSH/oh-my-zsh.sh
-
-	###
-	 # Antigen Plugin Manager
-	 #
-	 # I use Antigen to source my various zsh functions and aliases.
-	 #
-	 # - Think of "bundle" as "plugin".
-	 # - E.g. `Tarrasch/zsh-bd` should clone from Github by default
-	 # - Cloning using ssh URL ensures the resutling clone is contributable upstream with 2FA
-	 #
-	 # @see   $HOME/.antigen/bundle                 Where the repos are cloned and sourced from.
-	 # @see   https://github.com/zsh-users/antigen  Antigen download and info.
-	 #
-	 # @since Monday, 9/21/2020
-	 ##
-	if [[ ! -f "/opt/homebrew/share/antigen/antigen.zsh" ]]; then
-		echo "Please install antigen and reload to install ZSH plugins:"
-		echo "  Homebrew: brew reinstall antigen"
-	else
-		source /opt/homebrew/share/antigen/antigen.zsh # brew install antigen
-
-		# oh-my-zsh
-		antigen use oh-my-zsh
-
-		# Builtin:
-		antigen bundle git
-		antigen bundle wp-cli
-		antigen bundle svn
-		antigen bundle git-extras
-		antigen bundle history-substring-search
-		antigen bundle osx
-		antigen bundle torifat/npms
-		antigen bundle zsh-users/zsh-syntax-highlighting
-		antigen bundle zpm-zsh/ls
-
-		# Others:
-		antigen bundle Tarrasch/zsh-bd
-
-		# Easy way to require needed commands in my packages.
-		antigen bundle ssh://git@github.com/aubreypwd/zsh-plugin-require # export REQUIRE_AUTO_INSTALL="off" # Un-comment to disable autoinstall.
-
-		# My Plugins:
-		antigen bundle ssh://git@github.com/aubreypwd/zsh-plugin-x
-		antigen bundle ssh://git@github.com/aubreypwd/zsh-plugin-reload
-		antigen bundle ssh://git@github.com/aubreypwd/zsh-plugin-fzf-git-branch # Used in my "git fb" alias
-		antigen bundle ssh://git@github.com/aubreypwd/zsh-plugin-tdl
-		antigen bundle ssh://git@github.com/aubreypwd/zsh-plugin-hide # Hide and unhide folders
-		antigen bundle ssh://git@github.com/aubreypwd/zsh-plugin-delete
-		antigen bundle ssh://git@github.com/aubreypwd/zsh-plugin-comment # Add comments to a file in macOS.
-		antigen bundle ssh://git@github.com/aubreypwd/zsh-plugin-pwdcp # Copy the current pwd.
-		antigen bundle ssh://git@github.com/aubreypwd/zsh-plugin-cvideo # Compress a video with cvideo
-		antigen bundle ssh://git@github.com/aubreypwd/zsh-plugin-yt2mp3 # Download a YouTube video as an mp3.
-		# antigen bundle ssh://git@github.com/aubreypwd/zsh-plugin-fd
-		antigen bundle ssh://git@github.com/aubreypwd/zsh-plugin-download # Download files using aria2c
-		#antigen bundle ssh://git@github.com/aubreypwd/zsh-plugin-bruse # I haven't been using this much.
-		antigen bundle ssh://git@github.com/aubreypwd/zsh-plugin-git-is-clean
-
-		antigen apply
-	fi
-}
-
-###
  # Things that can be automatically installed.
  #
  # @since   Tuesday, September 7, 2021
@@ -549,8 +465,79 @@ function __load_zsh {
 	 ##
 	if [ -e "$ZSH" ]; then
 
-		# Always load ZSH stuff first.
-		__zsh
+		###
+		 # Theme
+		 #
+		 # - Must be done before you shource oh-my-zsh.
+		 #
+		 # @since Monday, 9/21/2020 frisk
+		 # @since 10/1/20           ys
+		 # @since Wednesday, 10/7/2020 Switched to refined for more simplicity.
+		 ##
+		ZSH_THEME="refined"
+
+		# Built-in plugins.
+		plugins=()
+
+		# Load
+		source $ZSH/oh-my-zsh.sh
+
+		###
+		 # Antigen Plugin Manager
+		 #
+		 # I use Antigen to source my various zsh functions and aliases.
+		 #
+		 # - Think of "bundle" as "plugin".
+		 # - E.g. `Tarrasch/zsh-bd` should clone from Github by default
+		 # - Cloning using ssh URL ensures the resutling clone is contributable upstream with 2FA
+		 #
+		 # @see   $HOME/.antigen/bundle                 Where the repos are cloned and sourced from.
+		 # @see   https://github.com/zsh-users/antigen  Antigen download and info.
+		 #
+		 # @since Monday, 9/21/2020
+		 ##
+		if [[ ! -f "/opt/homebrew/share/antigen/antigen.zsh" ]]; then
+			echo "Please install antigen and reload to install ZSH plugins:"
+			echo "  Homebrew: brew reinstall antigen"
+		else
+			source /opt/homebrew/share/antigen/antigen.zsh # brew install antigen
+
+			# oh-my-zsh
+			antigen use oh-my-zsh
+
+			# Builtin:
+			antigen bundle wp-cli
+			antigen bundle git-extras
+			antigen bundle history-substring-search
+			antigen bundle osx
+			# antigen bundle torifat/npms
+			antigen bundle zsh-users/zsh-syntax-highlighting
+
+			# Easy way to require needed commands in my packages.
+			antigen bundle ssh://git@github.com/aubreypwd/zsh-plugin-require # export REQUIRE_AUTO_INSTALL="off" # Un-comment to disable autoinstall.
+
+			# My Plugins:
+			antigen bundle ssh://git@github.com/aubreypwd/zsh-plugin-x
+			antigen bundle ssh://git@github.com/aubreypwd/zsh-plugin-reload
+			antigen bundle ssh://git@github.com/aubreypwd/zsh-plugin-fzf-git-branch # Used in my "git fb" alias
+			antigen bundle ssh://git@github.com/aubreypwd/zsh-plugin-hide # Hide and unhide folders
+			antigen bundle ssh://git@github.com/aubreypwd/zsh-plugin-delete
+			antigen bundle ssh://git@github.com/aubreypwd/zsh-plugin-comment # Add comments to a file in macOS.
+			antigen bundle ssh://git@github.com/aubreypwd/zsh-plugin-pwdcp # Copy the current pwd.
+			antigen bundle ssh://git@github.com/aubreypwd/zsh-plugin-cvideo # Compress a video with cvideo
+			antigen bundle ssh://git@github.com/aubreypwd/zsh-plugin-yt2mp3 # Download a YouTube video as an mp3.
+			antigen bundle ssh://git@github.com/aubreypwd/zsh-plugin-fd
+			antigen bundle ssh://git@github.com/aubreypwd/zsh-plugin-download # Download files using aria2c
+			antigen bundle ssh://git@github.com/aubreypwd/zsh-plugin-git-is-clean
+
+			# Not using right now
+			# antigen bundle ssh://git@github.com/aubreypwd/zsh-plugin-tdl
+
+			# Might retire
+			#antigen bundle ssh://git@github.com/aubreypwd/zsh-plugin-bruse # I haven't been using this much.
+
+			antigen apply
+		fi
 
 		# Done
 		return 0; # Continue
