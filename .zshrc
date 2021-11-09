@@ -1,5 +1,7 @@
 #!/bin/zsh
 
+export ZSH="$HOME/.oh-my-zsh" # Path to your oh-my-zsh installation.
+
 ###
  # My .zshrc file
  #
@@ -64,7 +66,6 @@ function __set_exports {
 	 # @since Thursday, 10/1/2020
 	 ##
 	export UPDATE_ZSH_DAYS=90
-	export ZSH="$HOME/.oh-my-zsh" # Path to your oh-my-zsh installation.
 }
 
 ###
@@ -202,7 +203,7 @@ function __aliases {
 	alias site="cd ~/Sites && fdd" # Quick way to get to a site
 	alias antigengo="cd ~/.antigen && fdd" # An easy way to get to a bundle.
 
-	alias local="cd ~/Sites/Local && fd 3" # An easy way to get to a local.
+	alias locals="cd ~/Sites/Local && fd 3" # An easy way to get to a local.
 	alias high='highlight -O ansi'
 
 	# npm install's.
@@ -212,7 +213,7 @@ function __aliases {
 	alias npmid="n auto && npm i && (npm run dev || npm run watch || npm run start || true)"
 	alias npmibd="n auto && npm i && npm run build && (npm run dev || npm run watch || npm run start || true)"
 
-	# Homebrew
+	# # Homebrew
 	alias brewd="brew bundle dump --file=$HOME/.Brewfile --verbose --all --describe --force --no-lock" # Dump what's installed to my Brewfile
 
 	# Sounds
@@ -310,7 +311,7 @@ function __zsh {
 		antigen bundle ssh://git@github.com/aubreypwd/zsh-plugin-pwdcp # Copy the current pwd.
 		antigen bundle ssh://git@github.com/aubreypwd/zsh-plugin-cvideo # Compress a video with cvideo
 		antigen bundle ssh://git@github.com/aubreypwd/zsh-plugin-yt2mp3 # Download a YouTube video as an mp3.
-		antigen bundle ssh://git@github.com/aubreypwd/zsh-plugin-fd
+		# antigen bundle ssh://git@github.com/aubreypwd/zsh-plugin-fd
 		antigen bundle ssh://git@github.com/aubreypwd/zsh-plugin-download # Download files using aria2c
 		#antigen bundle ssh://git@github.com/aubreypwd/zsh-plugin-bruse # I haven't been using this much.
 		antigen bundle ssh://git@github.com/aubreypwd/zsh-plugin-git-is-clean
