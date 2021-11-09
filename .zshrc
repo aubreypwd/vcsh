@@ -116,7 +116,7 @@ function __setup_vcsh {
 		## VCSH (Setup .gitignore for my public and private).
 		vcsh write-gitignore pub
 		vcsh write-gitignore priv
-	}  &> /dev/null &
+	} &> /dev/null &
 }
 
 ###
@@ -151,7 +151,7 @@ function __write_macos_defaults {
 		defaults write com.googlecode.iterm2 "Secure Input" 0 # Tell iterm2 to allow non-secure input for escape
 		defaults write com.apple.screencapture type jpg # Take jpg screenshots.
 		defaults write defaults write com.apple.finder CreateDesktop false # Don't show desktop icons.
-	}  &> /dev/null &
+	} &> /dev/null &
 }
 
 ###
@@ -168,16 +168,14 @@ function __aliases {
 	 # @since Thursday, 10/1/2020 Moved over from .config
 	 ##
 	alias edit="subl -n"
-		alias e="edit"
-		alias editzsh="subl -n ~/.zshrc"
-			alias ezsh="editzsh"
-		alias editgit="subl -n ~/.gitconfig"
-			alias egit="editgit"
-		alias editssh="subl -n ~/.ssh/config"
-			alias essh="editssh"
-
+	alias e="edit"
+	alias editzsh="subl -n ~/.zshrc"
+	alias ezsh="editzsh"
+	alias editgit="subl -n ~/.gitconfig"
+	alias egit="editgit"
+	alias editssh="subl -n ~/.ssh/config"
+	alias essh="editssh"
 	alias twin='ttab -w'
-
 	alias c=clear
 	alias tower='gittower'
 
@@ -196,7 +194,6 @@ function __aliases {
 	# Fuzzy find at certain levels easily.
 	alias fdd="fd 2" # Two levels.
 	alias fd!="fd 10" # Deeper.
-		alias goto="fd!" # Just an easier way to get to fd!.
 	alias fd~="fd 50" # Super deep.
 
 	# Misc.
@@ -205,37 +202,26 @@ function __aliases {
 	alias site="cd ~/Sites && fdd" # Quick way to get to a site
 	alias antigengo="cd ~/.antigen && fdd" # An easy way to get to a bundle.
 
-	alias locals="cd ~/Sites/Local && fd 3" # An easy way to get to a local.
-		alias localsite="locals"
-		alias loc="locals"
-
+	alias local="cd ~/Sites/Local && fd 3" # An easy way to get to a local.
 	alias high='highlight -O ansi'
 
 	# npm install's.
 	alias npmib="n auto && npm i && npm run build && b"
-
-	# npm install, build, and DEV
+	alias npmcib="n auto && npm ci && npm run build && b"
+	alias npmrb="npm run build && b"
 	alias npmid="n auto && npm i && (npm run dev || npm run watch || npm run start || true)"
 	alias npmibd="n auto && npm i && npm run build && (npm run dev || npm run watch || npm run start || true)"
 
 	# Homebrew
-	alias brewdump="brew bundle dump --file=$HOME/.Brewfile --verbose --all --describe --force --no-lock" # Dump what's installed to my Brewfile
+	alias brewd="brew bundle dump --file=$HOME/.Brewfile --verbose --all --describe --force --no-lock" # Dump what's installed to my Brewfile
 
 	# Sounds
 	alias bell="tput bel"
 	alias beep="bell"
 	alias b="bell"
 
-	# jq: package.json
-	alias jqps="jq .scripts package.json"
-	alias jqpi="jq .dependancies package.json"
-
-	# jq: composer.json
-	alias jqcs="jq .scripts composer.json"
-	alias jqci="jq .require composer.json"
-
 	# diff folders
-	alias difff="diff -rq" # Diff a directory.
+	alias diffd="diff -rq" # Diff a directory.
 
 	# vcsh
 	alias pub='vcsh pub'
@@ -246,7 +232,7 @@ function __aliases {
 
 	# WP-CLI
 	alias wpeach='wp site list --field=url | xargs -n1 -I % wp --url=%' # On each subsite, run a command.
-	alias wpdbgz='wp db export - | gzip -9 -f >' # Export a database and compress the file.
+	alias wpdbex='wp db export - | gzip -9 -f >' # Export a database and compress the file.
 }
 
 ###
@@ -303,12 +289,7 @@ function __zsh {
 		antigen bundle git-extras
 		antigen bundle history-substring-search
 		antigen bundle osx
-		# antigen bundle z
-		# antigen bundle npm
 		antigen bundle torifat/npms
-		# antigen bundle torifat/nnvm
-		# antigen bundle amstrad/oh-my-matrix
-		# antigen bundle node
 		antigen bundle zsh-users/zsh-syntax-highlighting
 		antigen bundle zpm-zsh/ls
 
@@ -321,18 +302,17 @@ function __zsh {
 		# My Plugins:
 		antigen bundle ssh://git@github.com/aubreypwd/zsh-plugin-x
 		antigen bundle ssh://git@github.com/aubreypwd/zsh-plugin-reload
-		antigen bundle ssh://git@github.com/aubreypwd/zsh-plugin-fzf-git-branch
+		antigen bundle ssh://git@github.com/aubreypwd/zsh-plugin-fzf-git-branch # Used in my "git fb" alias
 		antigen bundle ssh://git@github.com/aubreypwd/zsh-plugin-tdl
-		antigen bundle ssh://git@github.com/aubreypwd/zsh-plugin-hide
+		antigen bundle ssh://git@github.com/aubreypwd/zsh-plugin-hide # Hide and unhide folders
 		antigen bundle ssh://git@github.com/aubreypwd/zsh-plugin-delete
-		antigen bundle ssh://git@github.com/aubreypwd/zsh-plugin-comment
-		antigen bundle ssh://git@github.com/aubreypwd/zsh-plugin-pwdcp
-		antigen bundle ssh://git@github.com/aubreypwd/zsh-plugin-cvideo
-		antigen bundle ssh://git@github.com/aubreypwd/zsh-plugin-yt2mp3
+		antigen bundle ssh://git@github.com/aubreypwd/zsh-plugin-comment # Add comments to a file in macOS.
+		antigen bundle ssh://git@github.com/aubreypwd/zsh-plugin-pwdcp # Copy the current pwd.
+		antigen bundle ssh://git@github.com/aubreypwd/zsh-plugin-cvideo # Compress a video with cvideo
+		antigen bundle ssh://git@github.com/aubreypwd/zsh-plugin-yt2mp3 # Download a YouTube video as an mp3.
 		antigen bundle ssh://git@github.com/aubreypwd/zsh-plugin-fd
-		antigen bundle ssh://git@github.com/aubreypwd/zsh-plugin-download
-		antigen bundle ssh://git@github.com/WebDevStudios/zsh-plugin-satisbuild
-		antigen bundle ssh://git@github.com/aubreypwd/zsh-plugin-bruse
+		antigen bundle ssh://git@github.com/aubreypwd/zsh-plugin-download # Download files using aria2c
+		#antigen bundle ssh://git@github.com/aubreypwd/zsh-plugin-bruse # I haven't been using this much.
 		antigen bundle ssh://git@github.com/aubreypwd/zsh-plugin-git-is-clean
 
 		antigen apply
@@ -427,9 +407,8 @@ function __require_and_install_commands {
 			require "vcsh" "brew reinstall vcsh" "brew"
 
 			## lazygit for git gui
-			require "lazygit" "brew install jesseduffield/lazygit/lazygit" "brew"
-			require "ttab" "npm install ttab -g" "npm"
-
+			require "lazygit" "brew install jesseduffield/lazygit/lazygit" "brew" # Used as a GUI in-terminal.
+			require "ttab" "npm install ttab -g" "npm" # Used to open new windows in iTerm, etc.
 
 		} &> /dev/null &
 	fi
@@ -492,7 +471,8 @@ function __watch_repos {
  # @updated Tuesday, September 7, 2021 Introduced
  ##
 function __alias_overrides {
-	alias ls='exa -l -g --icons --tree --level=2 -a' # Enhance exa ls defaults.
+	alias ls='exa -l -g --icons --tree --level=1 -a' # Enhance exa ls defaults.
+	alias ls2='exa -l -g --icons --tree --level=2 -a' # Enhance exa ls defaults.
 }
 
 ###
@@ -584,7 +564,8 @@ function __load_zsh {
 ###
  # Functions
  #
- # Functions are just more advanced aliases.
+ # Functions are just more advanced aliases, these might become
+ # their own zsh plugins.
  #
  # @since Monday, October 11, 2021
  ##
@@ -616,32 +597,24 @@ function __functions {
 	###
 	 # Hide an app from the Dock.
 	 #
-	 # E.g: dockhide "Tower"
+	 # E.g: hideindock "Tower"
 	 #
 	 # @since Monday, October 11, 2021
 	 ##
-	function dockhide {
+	function hideindock {
 		/usr/libexec/PlistBuddy -c 'Add :LSUIElement bool true' "$1/Contents/Info.plist" &> /dev/null
 	}
+
 	###
 	 # Show an app in the Dock.
 	 #
-	 # E.g: dockshow "Tower"
+	 # E.g: showindock "Tower"
 	 #
 	 # @since Monday, October 11, 2021
 	 ##
-	function dockshow {
+	function showindock {
 		/usr/libexec/PlistBuddy -c 'Delete :LSUIElement' "$1/Contents/Info.plist" &> /dev/null
 	}
-}
-
-###
- # Hide Applications from Dock.
- #
- # @since Monday, October 11, 2021
- ##
-function __dock_icon_control() {
-	# dockhide "/Applications/Tower.app"
 }
 
 autoload -Uz compinit && compinit
@@ -664,4 +637,3 @@ __require_and_install_commands
 __misc
 __watch_repos
 __alias_overrides
-__dock_icon_control
