@@ -27,7 +27,7 @@
 	## Staging
 	sm     = "add -u" # Add modifed
 	sa     = "add ." # All all
-	rf     = "rm --cached"
+	us     = "rm --cached"
 
 	## All
 	ca     = commit -a --verbose # Commit and add all files and add message to editor.
