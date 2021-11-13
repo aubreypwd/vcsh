@@ -24,6 +24,11 @@
 	# ghq
 	repo   = "! function f() { ghq get \"$1\"; }; f" # Commit all files, add message inline, and push.
 
+	## Staging
+	sm     = "add -u" # Add modifed
+	sa     = "add ." # All all
+	rf     = "rm --cached"
+
 	## All
 	ca     = commit -a --verbose # Commit and add all files and add message to editor.
 	cam    = commit -am # Commit and add all files and add message inline (don't push).
@@ -36,6 +41,10 @@
 	csm    = commit -m # Commit staged files, write a message inline (don't push).
 	csp    = "! function f() { git cs && git p; }; f" # Commit staged files, write a message in an editor, and push.
 	csmp   = "! function f() { git commit -m \"$1\" && git p; }; f" # Commit staged files, write a message inline, and push.
+
+	## Modified files only.
+	cmep   = "! function f() { git add -u && git commit && git p; }; f" # Commit all modifed files and write a message in the editor and push.
+	cmmp   = "! function f() { git add -u && git commit -m \"$1\" && git p; }; f" # Commit all modifed files w/ a message and push.
 
 	# Status
 	stat   = status
