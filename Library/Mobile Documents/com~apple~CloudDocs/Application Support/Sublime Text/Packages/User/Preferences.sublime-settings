@@ -31,7 +31,6 @@
 		"plugins",
 		"postmeta",
 		"iframe's",
-		"",
 		"Akamai",
 		"screenshot",
 		"Blogs",
@@ -154,37 +153,7 @@
 		"JsPrettier",
 		"Markdown",
 		"MonokaiFree",
-		"Vintage", // Comment out to Use Vim Mode
-/*"Vintage",*/
-/*"Vintage",*/
-/*"Vintage",*/
-/*"Vintage",*/
-/*"Vintage",*/
-/*"Vintage",*/
-/*"Vintage",*/
-/*"Vintage",*/
-/*"Vintage",*/
-/*"Vintage",*/
-/*"Vintage",*/
-/*"Vintage",*/
-/*"Vintage",*/
-/*"Vintage",*/
-/*"Vintage",*/
-/*"Vintage",*/
-/*"Vintage",*/
-/*"Vintage",*/
-/*"Vintage",*/
-/*"Vintage",*/
-/*"Vintage",*/
-/*"Vintage",*/
-/*"Vintage",*/
-/*"Vintage",*/
-/*"Vintage",*/
-/*"WordPress Code Reference",*/
-/*"WordPress",*/
-/*"Vintage",*/
-/*"Vintage",*/
-/*"VSCMT",*/
+		"Vintage",
 	],
 	"ignored_words":
 	[
