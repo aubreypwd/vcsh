@@ -25,6 +25,7 @@
   { "keys": ["super+ctrl+alt+shift+p"], "command": "save_session"},
 
   { "keys": ["super+ctrl+l"], "command": "alignment" },
+  { "keys": ["alt+shift+d"], "command": "dev_docs_search_selection" },
 
   {
     "keys": ["alt+l"], "command": "align_tab",

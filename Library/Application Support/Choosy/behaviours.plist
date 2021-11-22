@@ -8,6 +8,23 @@
 		<key>behaviourArgument</key>
 		<dict>
 			<key>path</key>
+			<string>/Users/aubreypwd/Applications/WebCatalog Apps/Confluence.app</string>
+			<key>type</key>
+			<string>ChoosyBrowser</string>
+		</dict>
+		<key>enabled</key>
+		<true/>
+		<key>predicate</key>
+		<string>URL CONTAINS ".atlassian.net/wiki"</string>
+		<key>title</key>
+		<string>Confluence</string>
+	</dict>
+	<dict>
+		<key>behaviour</key>
+		<integer>6</integer>
+		<key>behaviourArgument</key>
+		<dict>
+			<key>path</key>
 			<string>/Users/aubreypwd/Applications/WebCatalog Apps/Jira.app</string>
 			<key>type</key>
 			<string>ChoosyBrowser</string>
@@ -15,9 +32,21 @@
 		<key>enabled</key>
 		<true/>
 		<key>predicate</key>
-		<string>URL CONTAINS "atlassian.net"</string>
+		<string>URL CONTAINS ".atlassian.net"</string>
 		<key>title</key>
 		<string>Jira</string>
+	</dict>
+	<dict>
+		<key>behaviour</key>
+		<integer>0</integer>
+		<key>behaviourArgument</key>
+		<string></string>
+		<key>enabled</key>
+		<true/>
+		<key>predicate</key>
+		<string>URL CONTAINS "developer.wordpress.org" OR URL CONTAINS "tailwindcss.com/docs"</string>
+		<key>title</key>
+		<string>Documentation</string>
 	</dict>
 	<dict>
 		<key>behaviour</key>
@@ -32,9 +61,9 @@
 		<key>enabled</key>
 		<true/>
 		<key>predicate</key>
-		<string>URL CONTAINS "http://google.com/search"</string>
+		<string>URL CONTAINS "://google.com/search" OR URL CONTAINS "://www.google.com/search"</string>
 		<key>title</key>
-		<string>Google Search (WebCatalog)</string>
+		<string>Google Search</string>
 	</dict>
 	<dict>
 		<key>behaviour</key>
@@ -51,7 +80,7 @@
 		<key>predicate</key>
 		<string>URL CONTAINS "stackoverflow.com" OR URL CONTAINS "stackexchange.com"</string>
 		<key>title</key>
-		<string>Stack Exchange (WebCatalog)</string>
+		<string>Stack Exchange</string>
 	</dict>
 	<dict>
 		<key>behaviour</key>
@@ -195,23 +224,6 @@
 		<key>behaviourArgument</key>
 		<dict>
 			<key>path</key>
-			<string>/Users/aubreypwd/Applications/WebCatalog Apps/Confluence.app</string>
-			<key>type</key>
-			<string>ChoosyBrowser</string>
-		</dict>
-		<key>enabled</key>
-		<true/>
-		<key>predicate</key>
-		<string>URL CONTAINS "atlassian.net/wiki"</string>
-		<key>title</key>
-		<string>Confluence</string>
-	</dict>
-	<dict>
-		<key>behaviour</key>
-		<integer>6</integer>
-		<key>behaviourArgument</key>
-		<dict>
-			<key>path</key>
 			<string>/Users/aubreypwd/Applications/WebCatalog Apps/Buddy.app</string>
 			<key>type</key>
 			<string>ChoosyBrowser</string>
@@ -280,18 +292,16 @@
 		<key>behaviourArgument</key>
 		<dict>
 			<key>path</key>
-			<string>/Applications/Google Chrome.app</string>
-			<key>profileName</key>
-			<string>Default</string>
+			<string>/Applications/Min.app</string>
 			<key>type</key>
-			<string>ChoosyChromeProfileMode</string>
+			<string>ChoosyBrowser</string>
 		</dict>
 		<key>enabled</key>
 		<true/>
 		<key>predicate</key>
 		<string>URL CONTAINS ".local" OR URL CONTAINS ".test" OR URL CONTAINS "localhost:" OR URL CONTAINS ".dev"</string>
 		<key>title</key>
-		<string>DEV</string>
+		<string>DEV (Min)</string>
 	</dict>
 	<dict>
 		<key>behaviour</key>
@@ -309,42 +319,6 @@
 		<string>URL CONTAINS "zoom.us/j"</string>
 		<key>title</key>
 		<string>Zoom Links</string>
-	</dict>
-	<dict>
-		<key>behaviour</key>
-		<integer>6</integer>
-		<key>behaviourArgument</key>
-		<dict>
-			<key>path</key>
-			<string>/Applications/Safari.app</string>
-			<key>type</key>
-			<string>ChoosyBrowser</string>
-		</dict>
-		<key>enabled</key>
-		<true/>
-		<key>predicate</key>
-		<string>URL CONTAINS "basecamp.com/3007979"</string>
-		<key>title</key>
-		<string>Safari</string>
-	</dict>
-	<dict>
-		<key>behaviour</key>
-		<integer>6</integer>
-		<key>behaviourArgument</key>
-		<dict>
-			<key>path</key>
-			<string>/Applications/Google Chrome.app</string>
-			<key>profileName</key>
-			<string>Default</string>
-			<key>type</key>
-			<string>ChoosyChromeProfileMode</string>
-		</dict>
-		<key>enabled</key>
-		<true/>
-		<key>predicate</key>
-		<string>URL CONTAINS "basecamp.com/1756504" OR URL CONTAINS "webdevstudios.beanstalkapp.com" OR URL CONTAINS "webdevstudios" OR URL CONTAINS "forecastapp" OR URL CONTAINS "help.wpengine.com" OR URL CONTAINS "recordit.co" OR URL CONTAINS "cloudup.com" OR URL CONTAINS "newscorp-" OR URL CONTAINS "dowjones.io" OR URL CONTAINS "wdslab.com" OR URL CONTAINS "wpengine.com" OR URL CONTAINS "github.com/WebDevStudios" OR URL CONTAINS "discover.office.com" OR URL CONTAINS "discover.microsoft.com" OR URL CONTAINS "heytaco" OR URL CONTAINS "maintainn"</string>
-		<key>title</key>
-		<string>Google Chrome (WebDevStudios)</string>
 	</dict>
 	<dict>
 		<key>behaviour</key>
