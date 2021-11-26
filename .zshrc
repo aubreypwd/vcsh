@@ -603,6 +603,81 @@ function __functions {
 	function showindock {
 		/usr/libexec/PlistBuddy -c 'Delete :LSUIElement' "$1/Contents/Info.plist" &> /dev/null
 	}
+
+	# newwp "site"
+	function newvwp {
+
+		if [[ -z "$1" ]]; then
+			echo "Please specify a site name, e.g.:"
+			echo "    newvwp example"
+
+			return
+		fi
+
+		pwd=$(pwd)
+
+		if read -q "choice?Are you sure you want to park ${pwd} and add $1? [y/n]: "; then
+
+			# Park the current directory so that the folder we make inside can be served.
+			echo "Enter your password to park ${pwd}:" && echo && \
+				valet park && \
+
+			cd "$1" && \
+			echo "Enter password to secure '$1.test' " && \
+				valet secure && \
+
+			echo && echo "Installing WordPress in ${pwd}..." && \
+				wp core download && \
+				wp config create --dbuser=root --dbhost="127.0.0.1" --dbname="$1" && \
+				wp db create && \
+				wp core install --url="https://$1.test" --title="$1" --admin_user="admin" --admin_email="noreply@example.com" && \
+				wp user update admin --user_pass=password && \
+
+			echo && echo "Setting up constants..." && \
+				wp config set DISABLE_WP_CRON true --raw && \
+				wp config set EMPTY_TRASH_DAYS 0 --raw && \
+				wp config set WP_MAX_MEMORY_LIMIT 4096 --raw && \
+				wp config set WP_MEMORY_LIMIT 4096 --raw && \
+				wp config set COMPRESS_CSS false --raw && \
+				wp config set COMPRESS_SCRIPTS false --raw && \
+				wp config set CONCATENATE_SCRIPTS false --raw && \
+				wp config set ENFORCE_GZIP false --raw && \
+				wp config set FS_METHOD direct && \
+				wp config set WP_DEBUG true --raw && \
+				wp config set SCRIPT_DEBUG true --raw && \
+				wp config set WP_DEBUG_DISPLAY false --raw && \
+				wp config set WP_DEBUG_LOG true --raw && \
+				wp config set FORCE_SSL_ADMIN true --raw && \
+				wp config set FORCE_SSL_LOGIN true --raw && \
+				wp config set SAVE_QUERIES true --raw && \
+
+			# Require spatie/ray for debugging.
+			echo && echo "Setting up spatie/ray..." && \
+				composer init --name="no/installable" -q -n && \
+				composer require spatie/ray && \
+				wp config set '__SPATIE_RAY' "require __DIR__ . '/vendor/autoload.php'" --raw --type='variable' && \
+
+			echo && echo "Installing wp-mailhot-smtp..." && \
+				wp plugin install --activate wp-mailhog-smtp && \
+
+			echo && echo "Installing debug-bar-* plugins..." && \
+				wp plugin install --activate debug-bar && \
+				wp plugin install --activate debug-bar-console && \
+				wp plugin install --activate debug-bar-shortcodes && \
+				wp plugin install --activate debug-bar-constants && \
+				wp plugin install --activate debug-bar-post-types && \
+				wp plugin install --activate debug-bar-cron && \
+				wp plugin install --activate debug-bar-actions-and-filters-addon && \
+				wp plugin install --activate debug-bar-transients && \
+				wp plugin install --activate debug-bar-list-dependencies && \
+				wp plugin install --activate debug-bar-remote-requests && \
+				wp plugin install --activate query-monitor && \
+
+			echo && echo "Done!" && \
+				open "https://$1.test/wp-login.php?loggedout=true"
+
+		fi
+	}
 }
 
 autoload -Uz compinit && compinit
