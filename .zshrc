@@ -202,18 +202,25 @@ function __aliases {
 	alias repo="cd ~/Repos && fdd" # An easy way to get to a repo using my ffd command.
 	alias site="cd ~/Sites && fdd" # Quick way to get to a site
 	alias antigengo="cd ~/.antigen && fdd" # An easy way to get to a bundle.
-
 	alias locals="cd ~/Sites/Local && fd 3" # An easy way to get to a local.
 	alias high='highlight -O ansi'
 
-	# npm install's.
-	alias npmib="n auto && npm i && npm run build && b"
-	alias npmcib="n auto && npm ci && npm run build && b"
-	alias npmrb="npm run build && b"
-	alias npmid="n auto && npm i && (npm run dev || npm run watch || npm run start || true)"
-	alias npmibd="n auto && npm i && npm run build && (npm run dev || npm run watch || npm run start || true)"
+ 	# Installs (NPM)
+	alias npmai="n auto && npm i"
+	alias npmaci="n auto && npm ci"
 
-	# # Homebrew
+	# Build (NPM)
+	alias npmcib="npmaci && npmrb && b"
+	alias npmib="npmai && npmrb && b"
+	alias npmrb="npm run build && b"
+
+	# Dev (NPM)
+	alias npmcid="npmaci && npmrd"
+	alias npmid="npmai && npmrd"
+	alias npmibd="npmai && npmrb && npmrd"
+	alias npmrd="npm run dev || npm run watch || npm run start || true"
+
+	# Homebrew
 	alias brewd="brew bundle dump --file=$HOME/.Brewfile --verbose --all --describe --force --no-lock" # Dump what's installed to my Brewfile
 
 	# Sounds
