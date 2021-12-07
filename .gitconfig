@@ -64,6 +64,8 @@
 	# Push/Pull
 	p      = "! git push -u origin \"$(git rev-parse --abbrev-ref HEAD)\"" # git push current branch.
 	u      = "! git pull origin \"$(git rev-parse --abbrev-ref HEAD)\"" # git pull current branch.
+	pullnr = "! git pull origin \"$(git rev-parse --abbrev-ref HEAD)\" --no-rebase"
+	unr    = pullnr
 
 	# Branches & Tags
 	b      = "! echo $(git branch --show-current)" # Show the current branch.
