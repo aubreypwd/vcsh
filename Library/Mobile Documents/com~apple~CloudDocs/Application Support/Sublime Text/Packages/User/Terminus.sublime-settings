@@ -30,6 +30,7 @@
     "15": "#d5d2d5",   // light_white
   },
   "view_settings": {
-    "padding": 5
-  }
+    "padding": 5,
+    "rulers": [],
+  },
 }

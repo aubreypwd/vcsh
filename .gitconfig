@@ -20,6 +20,7 @@
 	m      = merge
 
 	# Commits
+	c = g # Commit, usually, with GUI for easy staging/etc.
 
 	# ghq
 	repo   = "! function f() { ghq get \"$1\"; }; f" # Commit all files, add message inline, and push.
