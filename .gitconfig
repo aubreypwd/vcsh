@@ -12,15 +12,13 @@
 
 	g       = gui
 	gp      = guip
+	ga = "! function f() { git add . && git g; }; f" # Add all files and open the GUI.
 
 	glog    = "! /bin/sh $HOME/.gitscripts/towerlog.sh"
 
 	# Checkout.
 	co     = checkout
 	m      = merge
-
-	# Commits
-	c = g # Commit, usually, with GUI for easy staging/etc.
 
 	# ghq
 	repo   = "! function f() { ghq get \"$1\"; }; f" # Commit all files, add message inline, and push.
@@ -160,7 +158,6 @@
 	prompt = false
 
 [pull]
-	ff = only
 
 [ghq]
 	root = ~/Repos
