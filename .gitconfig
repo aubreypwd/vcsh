@@ -158,6 +158,7 @@
 	prompt = false
 
 [pull]
+	rebase = false
 
 [ghq]
 	root = ~/Repos
