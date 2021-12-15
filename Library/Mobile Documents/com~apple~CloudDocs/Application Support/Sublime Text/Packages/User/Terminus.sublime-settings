@@ -1,11 +1,7 @@
 {
   "theme": "user",
-
   "brighten_bold_text": false,
-
   "unix_term": "xterm",
-
-    // Monokai Spectrum
   "user_theme_colors": {
     "background": "#121212",
     "foreground": "#d5d2d5",

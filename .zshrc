@@ -179,6 +179,7 @@ function __aliases {
 	alias twin='ttab -w'
 	alias c=clear
 	alias tower='gittower'
+	alias ll=ls
 
 	# Easy composer commands.
 	alias cu="composer uninstall"
@@ -395,6 +396,13 @@ function __watch_repos {
  # @updated Tuesday, September 7, 2021 Introduced
  ##
 function __alias_overrides {
+
+	if [ "$TERM_PROGRAM" = "Terminus-Sublime" ]; then
+		alias ls='ls -lah --color' # Use normal alias
+
+		return
+	fi
+
 	alias ls='exa -l -g --icons --tree --level=1 -a' # Enhance exa ls defaults.
 	alias ls2='exa -l -g --icons --tree --level=2 -a' # Enhance exa ls defaults.
 }
@@ -614,6 +622,11 @@ function __functions {
 }
 
 autoload -Uz compinit && compinit
+
+if [ "$TERM_PROGRAM" = "Terminus-Sublime" ]; then
+	bindkey "\e[1;3C" forward-word
+	bindkey "\e[1;3D" backward-word
+fi
 
 ###
  # 💾 Do It!
