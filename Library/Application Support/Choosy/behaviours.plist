@@ -8,6 +8,23 @@
 		<key>behaviourArgument</key>
 		<dict>
 			<key>path</key>
+			<string>/Users/aubreypwd/Applications/WebCatalog Apps/LinkedIn Learnin‪g.app</string>
+			<key>type</key>
+			<string>ChoosyBrowser</string>
+		</dict>
+		<key>enabled</key>
+		<true/>
+		<key>predicate</key>
+		<string>URL CONTAINS "linkedin.com/learning"</string>
+		<key>title</key>
+		<string>LinkedIn Learning</string>
+	</dict>
+	<dict>
+		<key>behaviour</key>
+		<integer>6</integer>
+		<key>behaviourArgument</key>
+		<dict>
+			<key>path</key>
 			<string>/Users/aubreypwd/Applications/WebCatalog Apps/Amazon.app</string>
 			<key>type</key>
 			<string>ChoosyBrowser</string>
@@ -49,7 +66,7 @@
 		<key>enabled</key>
 		<true/>
 		<key>predicate</key>
-		<string>URL CONTAINS "youtube."</string>
+		<string>URL CONTAINS "youtube." OR URL CONTAINS "youtu.be"</string>
 		<key>title</key>
 		<string>Friendly Streaming</string>
 	</dict>
@@ -421,6 +438,23 @@
 		<string>URL CONTAINS "vercel.com"</string>
 		<key>title</key>
 		<string>Vercel</string>
+	</dict>
+	<dict>
+		<key>behaviour</key>
+		<integer>6</integer>
+		<key>behaviourArgument</key>
+		<dict>
+			<key>path</key>
+			<string>/Users/aubreypwd/Applications/WebCatalog Apps/HackMD.app</string>
+			<key>type</key>
+			<string>ChoosyBrowser</string>
+		</dict>
+		<key>enabled</key>
+		<true/>
+		<key>predicate</key>
+		<string>URL CONTAINS "://hackmd.io"</string>
+		<key>title</key>
+		<string>HackMD</string>
 	</dict>
 	<dict>
 		<key>behaviour</key>

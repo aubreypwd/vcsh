@@ -39,6 +39,7 @@ function __set_exports {
 	export PATH="/opt/homebrew/bin:$PATH" # Homebrew
 	export PATH="/opt/homebrew/opt/ruby/bin:$PATH" #  Ruby
 	export PATH="/opt/homebrew/opt/openssl@3/bin:$PATH" # Open SSL
+	export PATH="/opt/homebrew/lib/ruby/gems/3.0.0/bin:$PATH" # Ruby Gems
 
 	###
 	 # Misc Nobs
@@ -180,6 +181,7 @@ function __aliases {
 	alias c=clear
 	alias tower='gittower'
 	alias ll=ls
+	alias cat=bat
 
 	# Easy composer commands.
 	alias cu="composer uninstall"
@@ -584,6 +586,17 @@ function __functions {
 	 ##
 	function -- {
 		terminal-notifier -title "$1" -subtitle "$2" -message "$3" -activate 'com.googlecode.iterm2' --sound "boop"
+	}
+
+	###
+	 # Reset Finder
+	 #
+	 # E.g: rfinder
+	 #
+	 # @since Tuesday, December 21, 2021
+	 ##
+	function rfinder {
+		find "$HOME" -name ".DS_Store" -depth -exec rm {} \;
 	}
 
 	###

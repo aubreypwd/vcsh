@@ -18,16 +18,18 @@ brew "antigen"
 brew "libssh2"
 # Download with resuming and segmented downloading
 brew "aria2"
-# Tool for generating GNU Standards-compliant Makefiles
-brew "automake"
-# Convert CD images from .bin/.cue to .iso/.cdr
-brew "bchunk"
-# Install pip packages as homebrew formulae
-brew "brew-pip"
 # Interpreted, interactive, object-oriented programming language
 brew "python@3.9"
 # Core application library for C
 brew "glib"
+# Tool for generating GNU Standards-compliant Makefiles
+brew "automake"
+# Clone of cat(1) with syntax highlighting and Git integration
+brew "bat"
+# Convert CD images from .bin/.cue to .iso/.cdr
+brew "bchunk"
+# Install pip packages as homebrew formulae
+brew "brew-pip"
 # GNU Emacs text editor
 brew "emacs", restart_service: true
 # Emacs dependency management
@@ -49,11 +51,13 @@ brew "dialog"
 # Utilities for converting macOS DMG images
 brew "dmg2img"
 # Lightweight DNS forwarder and DHCP server
-brew "dnsmasq"
+brew "dnsmasq", restart_service: true
 # Select default apps for documents and URL schemes on macOS
 brew "duti"
 # Modern replacement for 'ls'
 brew "exa"
+# Simple, fast and user-friendly alternative to find
+brew "fd"
 # OpenType text shaping engine
 brew "harfbuzz"
 # Play, record, convert, and stream audio and video
@@ -98,10 +102,14 @@ brew "hugo"
 brew "libheif"
 # Tools and libraries to manipulate images in many formats
 brew "imagemagick"
+# Lightweight and flexible command-line JSON processor
+brew "jq"
 # Text-based web browser
 brew "lynx"
 # Swiss Army Knife for macOS
 brew "m-cli"
+# Web and API based SMTP testing tool
+brew "mailhog", restart_service: true
 # Tool to convert MDF (Alcohol 120% images) images to ISO images
 brew "mdf2iso"
 # Modern and intuitive terminal-based text editor
@@ -115,7 +123,7 @@ brew "mysql", restart_service: true
 # Node version management
 brew "n"
 # HTTP(S) server and reverse proxy, and IMAP/POP3 proxy server
-brew "nginx"
+brew "nginx", restart_service: true
 # Platform built on V8 to build network applications
 brew "node@14"
 # Cryptography and SSL/TLS Toolkit
@@ -134,16 +142,18 @@ brew "protobuf-c"
 brew "python@3.8"
 # Utility that provides fast incremental file transfer
 brew "rsync"
-# Powerful, clean, object-oriented scripting language
-brew "ruby"
 # Install various Ruby versions and implementations
 brew "ruby-build"
 # Add a public key to a remote machine's authorized_keys file
 brew "ssh-copy-id"
 # Version control system designed to be a better CVS
 brew "subversion"
+# Manipulate and query tags on macOS files
+brew "tag"
 # Send macOS User Notifications from the command-line
 brew "terminal-notifier"
+# Terminal multiplexer
+brew "tmux"
 # Command-line interface to the freedesktop.org trashcan
 brew "trash-cli"
 # Display directories as trees (with optional color/HTML output)
@@ -160,6 +170,8 @@ brew "watch"
 brew "watchexec"
 # Internet file retriever
 brew "wget"
+# Tools for the WireGuard secure network tunnel
+brew "wireguard-tools"
 # Command-line interface for WordPress
 brew "wp-cli"
 # Malware identification and classification tool
@@ -176,6 +188,8 @@ brew "hashicorp/tap/vault"
 brew "jesseduffield/lazygit/lazygit"
 # Command-line helper for the 1Password password manager
 cask "1password-cli"
+# Instant messaging application
+cask "adium"
 # GUI app for Homebrew
 cask "cakebrew"
 # Open links in any browser
@@ -190,7 +204,7 @@ cask "rar"
 cask "spectacle"
 # Music streaming service
 cask "spotify"
-# Free and open-source hosted hypervisor for x86 virtualization
+# Virtualizer for x86 hardware
 cask "virtualbox"
 # Video communication and virtual meeting platform
 cask "zoom"
