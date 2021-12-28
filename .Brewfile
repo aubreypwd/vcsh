@@ -42,8 +42,6 @@ brew "cmake"
 brew "cmatrix"
 # Dependency Manager for PHP
 brew "composer"
-# Open source suite of directory software
-brew "openldap"
 # Get a file from an HTTP, HTTPS or FTP server
 brew "curl"
 # Display user-friendly message boxes from shell scripts
@@ -92,6 +90,10 @@ brew "jasper"
 brew "graphicsmagick"
 # Colorize logfiles and command output
 brew "grc"
+# Framework for layout and rendering of i18n text
+brew "pango"
+# Toolkit for creating graphical user interfaces
+brew "gtk+3"
 # Convert source code to formatted text with syntax highlighting
 brew "highlight"
 # Improved top (interactive process viewer)
@@ -135,7 +137,7 @@ brew "peco"
 # Interactive grep tool
 brew "percol"
 # General-purpose scripting language
-brew "php@7.4", restart_service: true, link: true
+brew "php@7.4"
 # Protocol buffers library
 brew "protobuf-c"
 # Interpreted, interactive, object-oriented programming language
