@@ -34,6 +34,7 @@
 	cap    = "! function f() { git ca && git p; }; f" # Commit all files, add message in editor, and push.
 	camp   = "! function f() { git commit -am \"$1\" && git p; }; f" # Commit all files, add message inline, and push.
 	pew    = "! function f() { git commit -a --allow-empty-message -m '' && git p; }; f" # Push an empty commit with all updates.
+	apew   = "! function f() { git add . && git commit -a --allow-empty-message -m '' && git p; }; f" # Push an empty commit with all updates.
 
 	## Staged
 	cs     = commit --verbose # Commit staged files and write message in editor.
@@ -65,6 +66,7 @@
 	u      = "! git pull origin \"$(git rev-parse --abbrev-ref HEAD)\"" # git pull current branch.
 	pullnr = "! git pull origin \"$(git rev-parse --abbrev-ref HEAD)\" --no-rebase"
 	unr    = pullnr
+	pt     = push --tags
 
 	# Branches & Tags
 	b      = "! echo $(git branch --show-current)" # Show the current branch.
