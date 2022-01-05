@@ -568,6 +568,19 @@ function __load_zsh {
 }
 
 ###
+ # Set npm config.
+ #
+ # Because there's not a global .npmconfig file to use.
+ #
+ # @since Wednesday, January 5, 2022
+ ##
+function __npm_config {
+	() {
+		npm config set git-tag-version false # When using npm version, don't automatically push a tag, instead use --git-tag-version
+	} &> /dev/null &
+}
+
+###
  # Functions
  #
  # Functions are just more advanced aliases, these might become
@@ -643,30 +656,38 @@ function __functions {
 	}
 
 	###
-	 # Install WordPress Debug plugins.
+	 # WordPress Debug Plugins functions.
 	 #
 	 # @since Tuesday, January 4, 2022
 	 ##
-	function installwpdbp {
-		wp plugin install --activate-network $(wpdbp)
-	}
+	function ___wpdbp {
 
-	###
-	 # Deactivate debugging plugins.
-	 #
-	 # @since Tuesday, January 4, 2022
-	 ##
-	function deactivatewpdbp {
-		wp plugin deactivate --network $(wpdbp)
-	}
+		###
+		 # Install WordPress Debug plugins.
+		 #
+		 # @since Tuesday, January 4, 2022
+		 ##
+		function installwpdbp {
+			wp plugin install --activate-network $(wpdbp)
+		}
 
-	###
-	 # Delete debugging plugins.
-	 #
-	 # @since Tuesday, January 4, 2022
-	 ##
-	function deletewpdbp {
-		wp plugin delete $(wpdbp)
+		###
+		 # Deactivate debugging plugins.
+		 #
+		 # @since Tuesday, January 4, 2022
+		 ##
+		function deactivatewpdbp {
+			wp plugin deactivate --network $(wpdbp)
+		}
+
+		###
+		 # Delete debugging plugins.
+		 #
+		 # @since Tuesday, January 4, 2022
+		 ##
+		function deletewpdbp {
+			wp plugin delete $(wpdbp)
+		}
 	}
 }
 
@@ -688,6 +709,7 @@ __set_opts
 __load_secure_zsh_config
 __setup_vcsh
 __write_macos_defaults
+__npm_config
 __aliases
 __functions
 __load_zsh || return # If ZSH fails to load none of the below will be ran.
