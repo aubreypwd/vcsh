@@ -355,11 +355,6 @@ function __watch_repos {
 		return
 	fi
 
-	() {
-		pub pew
-		priv pew
-	} &> /dev/null &
-
 	###
 	 # A way to output a dirty message.
 	 #
