@@ -416,6 +416,11 @@ function __alias_overrides {
  # @updated Tuesday, September 7, 2021 Introduced
  ##
 function __misc {
+	() {
+		pub pew
+		priv pew
+	} &> /dev/null &
+
 
 	###
 	 # iTerm2 History Support
