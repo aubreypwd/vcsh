@@ -182,7 +182,7 @@
   "open_files_in_new_window": "never",
   "ours_gutter": true,
   "overlay_scroll_bars": "enabled",
-  "preview_on_click": false,
+  "preview_on_click": true,
   "remember_full_screen": true,
   "rulers":
   [

@@ -5,16 +5,16 @@
 	smerge   = "! function f() { smerge ./ -b; }; f"  # Sublime Merge
 	lazygit  = "! function f() { ttab -w -t 'lazygit' -q 'lazygit && exit'; }; f"
 	lazygitp = "! function f() { ttab -w -t 'lazygit' -q 'lazygit && git p && exit'; }; f"
-
 	lg      = lazygit
 	gui     = tower
 	guip    = lazygitp
-
 	g       = gui
 	gp      = guip
 	ga = "! function f() { git add . && git g; }; f" # Add all files and open the GUI.
-
 	glog    = "! /bin/sh $HOME/.gitscripts/towerlog.sh"
+
+	# Commit
+	cm = commit
 
 	# Checkout.
 	co     = checkout
