@@ -43,6 +43,7 @@
     "excersize"
   ],
   "always_prompt_for_file_reload": false,
+  "create_window_at_startup": false,
   "translate_tabs_to_spaces": false,
   "tab_completion": false,
   "show_syntax": true,

@@ -142,7 +142,7 @@ function __write_macos_defaults {
 		defaults write com.apple.TextEdit SmartDashes -bool false
 		defaults write com.apple.finder FXEnableExtensionChangeWarning -bool false
 		defaults write com.apple.screencapture location "$HOME/Pictures/Screenshots"
-		defaults write com.apple.desktopservices DSDontWriteNetworkStores true
+		defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
 		defaults write com.apple.Finder QuitMenuItem 1 # Add quit to Finder
 		defaults write com.apple.dock springboard-columns -int 7
 		defaults write com.apple.dock springboard-rows -int 7 # Launchpad Grid
@@ -171,13 +171,11 @@ function __aliases {
 	 ##
 	alias edit="subl -n"
 	alias e="edit"
-	alias editzsh="subl -n ~/.zshrc"
-	alias ezsh="editzsh"
-	alias editgit="subl -n ~/.gitconfig"
-	alias egit="editgit"
-	alias editssh="subl -n ~/.ssh/config"
-	alias essh="editssh"
-	alias twin='ttab -w'
+	alias ezsh="subl -n ~/.zshrc"
+	alias egit="subl -n ~/.gitconfig"
+	alias essh="subl -n ~/.ssh/config"
+	alias nw='ttab -w' # New window.
+	alias nt='ttab ' # New tab.
 	alias c=clear
 	alias tower='gittower'
 	alias ll=ls
