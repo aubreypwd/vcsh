@@ -179,7 +179,6 @@ function __aliases {
 	alias c=clear
 	alias tower='gittower'
 	alias ll=ls
-	alias cat=bat
 
 	# Easy composer commands.
 	alias cu="composer uninstall"

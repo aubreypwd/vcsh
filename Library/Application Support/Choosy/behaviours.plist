@@ -83,7 +83,7 @@
 		<key>enabled</key>
 		<true/>
 		<key>predicate</key>
-		<string>URL CONTAINS "php.net" OR URL CONTAINS "https://developer.wordpress.org/?s=" OR URL CONTAINS "tailwindcss.com/docs" OR URL CONTAINS "wordpress.org/"</string>
+		<string>URL CONTAINS "php.net" OR URL CONTAINS "https://developer.wordpress.org/?s=" OR URL CONTAINS "tailwindcss.com/docs" OR URL CONTAINS "wordpress.org/" OR URL CONTAINS "docs.wpvip.com"</string>
 		<key>title</key>
 		<string>Documentation</string>
 	</dict>
