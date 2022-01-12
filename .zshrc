@@ -169,6 +169,7 @@ function __aliases {
 	 #
 	 # @since Thursday, 10/1/2020 Moved over from .config
 	 ##
+	alias cat="bat"
 	alias edit="subl -n"
 	alias e="edit"
 	alias ezsh="subl -n ~/.zshrc"
