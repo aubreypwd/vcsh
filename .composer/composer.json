@@ -18,5 +18,10 @@
             "type": "git",
             "url": "git@github.com:WebDevStudios/mstrxmlcheck.git"
         }
+    },
+    "config": {
+        "allow-plugins": {
+            "aubreypwd/composer-uninstall": true
+        }
     }
 }
