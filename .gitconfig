@@ -43,7 +43,7 @@
 	csmp   = "! function f() { git commit -m \"$1\" && git p; }; f" # Commit staged files, write a message inline, and push.
 
 	## Modified files only.
-	cmep   = "! function f() { git add -u && git commit && git p; }; f" # Commit all modifed files and write a message in the editor and push.
+	cmp   = "! function f() { git add -u && git commit && git p; }; f" # Commit all modifed files and write a message in the editor and push.
 	cmmp   = "! function f() { git add -u && git commit -m \"$1\" && git p; }; f" # Commit all modifed files w/ a message and push.
 
 	# Status
