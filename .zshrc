@@ -152,7 +152,9 @@ function __write_macos_defaults {
 		defaults write com.apple.dock static-only -bool false # Only show running apps in Dock (when set to true)
 		defaults write com.googlecode.iterm2 "Secure Input" 0 # Tell iterm2 to allow non-secure input for escape
 		defaults write com.apple.screencapture type jpg # Take jpg screenshots.
-		defaults write defaults write com.apple.finder CreateDesktop false # Don't show desktop icons.
+		defaults write defaults write com.apple.finder CreateDesktop true # Do or don't show desktop icons.
+		defaults write com.apple.dock show-recent-count -int 100; # When showing recent applications, show up to 100 vs. 3 which shows non-pinned apps in their own place.
+
 	} &> /dev/null &
 }
 
