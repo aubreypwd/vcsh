@@ -8,7 +8,7 @@
 		<key>behaviourArgument</key>
 		<dict>
 			<key>path</key>
-			<string>/Users/aubreypwd/Applications/WebCatalog Apps/WordPress VIP.app</string>
+			<string>/Applications/WordPress VIP.app</string>
 			<key>type</key>
 			<string>ChoosyBrowser</string>
 		</dict>
@@ -25,7 +25,7 @@
 		<key>behaviourArgument</key>
 		<dict>
 			<key>path</key>
-			<string>/Users/aubreypwd/Applications/WebCatalog Apps/LinkedIn Learnin‪g.app</string>
+			<string>/Applications/LinkedIn Learnin‪g.app</string>
 			<key>type</key>
 			<string>ChoosyBrowser</string>
 		</dict>
@@ -42,7 +42,7 @@
 		<key>behaviourArgument</key>
 		<dict>
 			<key>path</key>
-			<string>/Users/aubreypwd/Applications/WebCatalog Apps/LinkedIn.app</string>
+			<string>/Applications/LinkedIn.app</string>
 			<key>type</key>
 			<string>ChoosyBrowser</string>
 		</dict>
@@ -59,7 +59,7 @@
 		<key>behaviourArgument</key>
 		<dict>
 			<key>path</key>
-			<string>/Users/aubreypwd/Applications/WebCatalog Apps/Amazon.app</string>
+			<string>/Applications/Amazon.app</string>
 			<key>type</key>
 			<string>ChoosyBrowser</string>
 		</dict>
@@ -76,14 +76,14 @@
 		<key>behaviourArgument</key>
 		<dict>
 			<key>path</key>
-			<string>/Users/aubreypwd/Applications/WebCatalog Apps/Documentation.app</string>
+			<string>/Applications/Documentation.app</string>
 			<key>type</key>
 			<string>ChoosyBrowser</string>
 		</dict>
 		<key>enabled</key>
 		<true/>
 		<key>predicate</key>
-		<string>URL CONTAINS "php.net" OR URL CONTAINS "https://developer.wordpress.org/?s=" OR URL CONTAINS "tailwindcss.com/docs" OR URL CONTAINS "wordpress.org/" OR URL CONTAINS "docs.wpvip.com"</string>
+		<string>URL CONTAINS "php.net" OR URL CONTAINS "https://developer.wordpress.org/?s=" OR URL CONTAINS "tailwindcss.com/docs" OR URL CONTAINS "wordpress.org/" OR URL CONTAINS "docs.wpvip.com" OR URL CONTAINS "developer.mozilla."</string>
 		<key>title</key>
 		<string>Documentation</string>
 	</dict>
@@ -110,7 +110,7 @@
 		<key>behaviourArgument</key>
 		<dict>
 			<key>path</key>
-			<string>/Users/aubreypwd/Applications/WebCatalog Apps/Figma.app</string>
+			<string>/Applications/Figma.app</string>
 			<key>type</key>
 			<string>ChoosyBrowser</string>
 		</dict>
@@ -127,7 +127,7 @@
 		<key>behaviourArgument</key>
 		<dict>
 			<key>path</key>
-			<string>/Users/aubreypwd/Applications/WebCatalog Apps/Confluence.app</string>
+			<string>/Applications/Confluence.app</string>
 			<key>type</key>
 			<string>ChoosyBrowser</string>
 		</dict>
@@ -144,7 +144,7 @@
 		<key>behaviourArgument</key>
 		<dict>
 			<key>path</key>
-			<string>/Users/aubreypwd/Applications/WebCatalog Apps/Jira.app</string>
+			<string>/Applications/Jira.app</string>
 			<key>type</key>
 			<string>ChoosyBrowser</string>
 		</dict>
@@ -157,9 +157,14 @@
 	</dict>
 	<dict>
 		<key>behaviour</key>
-		<integer>0</integer>
+		<integer>6</integer>
 		<key>behaviourArgument</key>
-		<string></string>
+		<dict>
+			<key>path</key>
+			<string>/Applications/Documentation.app</string>
+			<key>type</key>
+			<string>ChoosyBrowser</string>
+		</dict>
 		<key>enabled</key>
 		<true/>
 		<key>predicate</key>
@@ -173,7 +178,7 @@
 		<key>behaviourArgument</key>
 		<dict>
 			<key>path</key>
-			<string>/Users/aubreypwd/Applications/WebCatalog Apps/Google Search.app</string>
+			<string>/Applications/Google Search.app</string>
 			<key>type</key>
 			<string>ChoosyBrowser</string>
 		</dict>
@@ -190,7 +195,7 @@
 		<key>behaviourArgument</key>
 		<dict>
 			<key>path</key>
-			<string>/Users/aubreypwd/Applications/WebCatalog Apps/Google Calendar.app</string>
+			<string>/Applications/Google Calendar.app</string>
 			<key>type</key>
 			<string>ChoosyBrowser</string>
 		</dict>
@@ -207,7 +212,7 @@
 		<key>behaviourArgument</key>
 		<dict>
 			<key>path</key>
-			<string>/Users/aubreypwd/Applications/WebCatalog Apps/Stack Exchange.app</string>
+			<string>/Applications/Stack Exchange.app</string>
 			<key>type</key>
 			<string>ChoosyBrowser</string>
 		</dict>
@@ -224,7 +229,7 @@
 		<key>behaviourArgument</key>
 		<dict>
 			<key>path</key>
-			<string>/Users/aubreypwd/Applications/WebCatalog Apps/WP Engine.app</string>
+			<string>/Applications/WP Engine.app</string>
 			<key>type</key>
 			<string>ChoosyBrowser</string>
 		</dict>
@@ -241,7 +246,7 @@
 		<key>behaviourArgument</key>
 		<dict>
 			<key>path</key>
-			<string>/Users/aubreypwd/Applications/WebCatalog Apps/Google Docs.app</string>
+			<string>/Applications/Google Docs.app</string>
 			<key>type</key>
 			<string>ChoosyBrowser</string>
 		</dict>
@@ -258,7 +263,7 @@
 		<key>behaviourArgument</key>
 		<dict>
 			<key>path</key>
-			<string>/Users/aubreypwd/Applications/WebCatalog Apps/Teamwork.app</string>
+			<string>/Applications/Teamwork.app</string>
 			<key>type</key>
 			<string>ChoosyBrowser</string>
 		</dict>
@@ -292,7 +297,7 @@
 		<key>behaviourArgument</key>
 		<dict>
 			<key>path</key>
-			<string>/Users/aubreypwd/Applications/WebCatalog Apps/WebDevStudios Packages.app</string>
+			<string>/Applications/WebDevStudios Packages.app</string>
 			<key>type</key>
 			<string>ChoosyBrowser</string>
 		</dict>
@@ -309,7 +314,7 @@
 		<key>behaviourArgument</key>
 		<dict>
 			<key>path</key>
-			<string>/Users/aubreypwd/Applications/WebCatalog Apps/DevDocs.app</string>
+			<string>/Applications/DevDocs.app</string>
 			<key>type</key>
 			<string>ChoosyBrowser</string>
 		</dict>
@@ -326,7 +331,7 @@
 		<key>behaviourArgument</key>
 		<dict>
 			<key>path</key>
-			<string>/Users/aubreypwd/Applications/WebCatalog Apps/IFTTT.app</string>
+			<string>/Applications/IFTTT.app</string>
 			<key>type</key>
 			<string>ChoosyBrowser</string>
 		</dict>
@@ -343,7 +348,7 @@
 		<key>behaviourArgument</key>
 		<dict>
 			<key>path</key>
-			<string>/Users/aubreypwd/Applications/WebCatalog Apps/PageSpeed Insights.app</string>
+			<string>/Applications/PageSpeed Insights.app</string>
 			<key>type</key>
 			<string>ChoosyBrowser</string>
 		</dict>
@@ -360,7 +365,7 @@
 		<key>behaviourArgument</key>
 		<dict>
 			<key>path</key>
-			<string>/Users/aubreypwd/Applications/WebCatalog Apps/Buddy.app</string>
+			<string>/Applications/Buddy.app</string>
 			<key>type</key>
 			<string>ChoosyBrowser</string>
 		</dict>
@@ -377,7 +382,7 @@
 		<key>behaviourArgument</key>
 		<dict>
 			<key>path</key>
-			<string>/Users/aubreypwd/Applications/WebCatalog Apps/GitHub.app</string>
+			<string>/Applications/GitHub.app</string>
 			<key>type</key>
 			<string>ChoosyBrowser</string>
 		</dict>
@@ -394,7 +399,7 @@
 		<key>behaviourArgument</key>
 		<dict>
 			<key>path</key>
-			<string>/Users/aubreypwd/Applications/WebCatalog Apps/Twitter.app</string>
+			<string>/Applications/Twitter.app</string>
 			<key>type</key>
 			<string>ChoosyBrowser</string>
 		</dict>
@@ -445,7 +450,7 @@
 		<key>behaviourArgument</key>
 		<dict>
 			<key>path</key>
-			<string>/Users/aubreypwd/Applications/WebCatalog Apps/Reddit.app</string>
+			<string>/Applications/Reddit.app</string>
 			<key>type</key>
 			<string>ChoosyBrowser</string>
 		</dict>
@@ -462,7 +467,7 @@
 		<key>behaviourArgument</key>
 		<dict>
 			<key>path</key>
-			<string>/Users/aubreypwd/Applications/WebCatalog Apps/GIPHY.app</string>
+			<string>/Applications/GIPHY.app</string>
 			<key>type</key>
 			<string>ChoosyBrowser</string>
 		</dict>
@@ -479,7 +484,7 @@
 		<key>behaviourArgument</key>
 		<dict>
 			<key>path</key>
-			<string>/Users/aubreypwd/Applications/WebCatalog Apps/Vercel.app</string>
+			<string>/Applications/Vercel.app</string>
 			<key>type</key>
 			<string>ChoosyBrowser</string>
 		</dict>
@@ -496,7 +501,7 @@
 		<key>behaviourArgument</key>
 		<dict>
 			<key>path</key>
-			<string>/Users/aubreypwd/Applications/WebCatalog Apps/HackMD.app</string>
+			<string>/Applications/HackMD.app</string>
 			<key>type</key>
 			<string>ChoosyBrowser</string>
 		</dict>
@@ -513,7 +518,7 @@
 		<key>behaviourArgument</key>
 		<dict>
 			<key>path</key>
-			<string>/Users/aubreypwd/Applications/WebCatalog Apps/Google Drive.app</string>
+			<string>/Applications/Google Drive.app</string>
 			<key>type</key>
 			<string>ChoosyBrowser</string>
 		</dict>
@@ -530,7 +535,7 @@
 		<key>behaviourArgument</key>
 		<dict>
 			<key>path</key>
-			<string>/Users/aubreypwd/Applications/WebCatalog Apps/Facebook.app</string>
+			<string>/Applications/Facebook.app</string>
 			<key>type</key>
 			<string>ChoosyBrowser</string>
 		</dict>
