@@ -656,6 +656,38 @@ function __functions {
 	}
 
 	###
+	 # Strip Jetpack stuff.
+	 #
+	 # @since Monday, January 31, 2022
+	 ##
+	function sjp {
+
+		# Deactivate Jetpack.
+		wp plugin deactivate jetpack --skip-plugins || true \
+
+			# Delete Jetpack options.
+			&& wp option delete jetpack_private_options --skip-plugins \
+			&& wp option delete jetpack_options --skip-plugins \
+
+			# Clear cache.
+			&& wp cache flush --skip-plugins \
+
+			# Set constants to protect against identify crisis.
+			&& wp config set WP_LOCAL_DEV true --raw --skip-plugins \
+			&& wp config set JETPACK_DEV_DEBUG true --raw --skip-plugins \
+
+			# Turn Jetpack back on.
+			&& wp plugin activate jetpack --skip-plugins || true
+
+		# Stip Jetpack stuff that causes identity crisis.
+		wp jetpack options delete blog_token || true \
+			&& wp jetpack options delete id || true
+
+		echo
+		echo "💀 --- Jetpack Stripped!"
+	}
+
+	###
 	 # WordPress Debug Plugins functions.
 	 #
 	 # @since Tuesday, January 4, 2022
