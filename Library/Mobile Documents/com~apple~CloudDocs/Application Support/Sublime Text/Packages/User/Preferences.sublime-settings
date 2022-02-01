@@ -100,7 +100,7 @@
     "vendor/*"
   ],
   "bold_folder_labels": false,
-  "trim_only_modified_white_space": false,
+  "trim_only_modified_white_space": true,
   "caret_extra_bottom": 0,
   "caret_extra_top": 0,
   "caret_extra_width": 0,
@@ -110,7 +110,7 @@
   "color_scheme": "Monokai Pro (Filter Spectrum).sublime-color-scheme",
   "copy_with_empty_selection": true,
   "default_line_ending": "unix",
-  "detect_indentation": false,
+  "detect_indentation": true,
   "drag_text": false,
   "draw_indent_guides": true,
   "draw_shadows": false,
@@ -167,7 +167,7 @@
   ],
   "indent_guide_options":
   [
-    "draw_normal"
+    "draw_active"
   ],
   "index_exclude_patterns":
   [
@@ -176,7 +176,13 @@
   "line_padding_bottom": 0,
   "line_padding_top": 0,
   "live_matching": true,
-  "match_brackets_angle": true,
+  "match_brackets" : true,
+  "match_brackets_content" : true,
+  "match_brackets_square" : true,
+  "match_brackets_braces" : true,
+  "match_brackets_angle" : true,
+  "match_tags" : true,
+  "match_selection" : true,
   "matching_scope": "invalid",
   "mini_diff": true,
   "native_tabs": "disabled",
@@ -210,7 +216,7 @@
   "theirs_gutter": true,
   "theme": "Delta.sublime-theme",
   "tree_animation_enabled": false,
-  "trim_trailing_white_space_on_save": true,
+  "trim_trailing_white_space_on_save": "all",
   "ui_separator": true,
   "update_check": false,
   "use_simple_full_screen": true,
