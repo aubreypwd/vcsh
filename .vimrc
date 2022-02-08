@@ -20,3 +20,23 @@ set cc=51,71
 highlight ColorColumn ctermbg=0 guibg=black
 highlight OverLength ctermbg=red ctermfg=white guibg=#592929
 match OverLength /\%51v.*/
+
+" Install vim-plug if not found
+if empty(glob('~/.vim/autoload/plug.vim'))
+  silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
+    \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+endif
+
+" Run PlugInstall if there are missing plugins
+autocmd VimEnter * if len(filter(values(g:plugs), '!isdirectory(v:val.dir)'))
+  \| PlugInstall --sync | source $MYVIMRC
+\| endif
+
+"Plugins
+call plug#begin('~/.vim/plugged')
+	Plug 'phanviet/vim-monokai-pro'
+call plug#end()
+
+" UI
+set termguicolors
+colorscheme monokai_pro
