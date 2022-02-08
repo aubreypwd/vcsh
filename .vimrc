@@ -14,3 +14,9 @@ set termguicolors "Stick to terminal colors
 :set clipboard=unnamed
 
 autocmd BufRead,BufNewFile * start "Start in edit mode
+
+"For committing
+set cc=51,71
+highlight ColorColumn ctermbg=0 guibg=black
+highlight OverLength ctermbg=red ctermfg=white guibg=#592929
+match OverLength /\%51v.*/

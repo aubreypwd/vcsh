@@ -83,7 +83,7 @@
 		<key>enabled</key>
 		<true/>
 		<key>predicate</key>
-		<string>URL CONTAINS "php.net" OR URL CONTAINS "https://developer.wordpress.org/?s=" OR URL CONTAINS "tailwindcss.com/docs" OR URL CONTAINS "wordpress.org/" OR URL CONTAINS "docs.wpvip.com" OR URL CONTAINS "developer.mozilla."</string>
+		<string>URL CONTAINS "php.net" OR URL CONTAINS "https://developer.wordpress.org/?s=" OR URL CONTAINS "tailwindcss.com/docs" OR URL CONTAINS "wordpress.org/" OR URL CONTAINS "docs.wpvip.com" OR URL CONTAINS "https://support.advancedcustomfields.com" OR URL CONTAINS "developer.mozilla."</string>
 		<key>title</key>
 		<string>Documentation</string>
 	</dict>
@@ -440,7 +440,7 @@
 		<key>enabled</key>
 		<true/>
 		<key>predicate</key>
-		<string>URL CONTAINS "zoom.us/j"</string>
+		<string>URL CONTAINS "zoom.us/j" OR URL CONTAINS "zoom.aubreypwd.com"</string>
 		<key>title</key>
 		<string>Zoom Links</string>
 	</dict>
@@ -579,6 +579,23 @@
 		<string>URL CONTAINS "https://app.memrise.com"</string>
 		<key>title</key>
 		<string>Memrise</string>
+	</dict>
+	<dict>
+		<key>behaviour</key>
+		<integer>6</integer>
+		<key>behaviourArgument</key>
+		<dict>
+			<key>path</key>
+			<string>/Applications/Tumblr.app</string>
+			<key>type</key>
+			<string>ChoosyBrowser</string>
+		</dict>
+		<key>enabled</key>
+		<true/>
+		<key>predicate</key>
+		<string>URL CONTAINS "//www.tumblr.com/blog/"</string>
+		<key>title</key>
+		<string>New rule</string>
 	</dict>
 	<dict>
 		<key>behaviour</key>

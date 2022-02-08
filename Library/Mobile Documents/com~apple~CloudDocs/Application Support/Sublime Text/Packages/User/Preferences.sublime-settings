@@ -42,7 +42,8 @@
     "linting",
     "excersize"
   ],
-  "always_prompt_for_file_reload": false,
+  "always_prompt_for_file_reload": true,
+  "remember_layout": true,
   "create_window_at_startup": false,
   "translate_tabs_to_spaces": false,
   "tab_completion": false,
@@ -145,6 +146,7 @@
   "gpu_window_buffer": true,
   "highlight_line": true,
   "highlight_modified_tabs": true,
+  "index_exclude_gitignore": false,
   "hot_exit": true,
   "ignored_packages":
   [
@@ -171,6 +173,13 @@
   ],
   "index_exclude_patterns":
   [
+    "*.log",
+    "*.txt",
+    "*.zip",
+    "*.jpg",
+    "*.png",
+    "*.gif",
+    "*.webp"
   ],
   "index_files": true,
   "line_padding_bottom": 0,
@@ -204,7 +213,9 @@
   "show_full_path": false,
   "show_git_status": true,
   "show_line_endings": true,
-  "show_rel_path": true,
+  "show_rel_path": false,
+  "sublime_merge_path": null,
+  "show_project_first": true,
   "allow_git_home_dir": false,
   "show_minimap": false,
   "show_only_filename": true,

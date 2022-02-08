@@ -33,7 +33,7 @@
 	#cam    = commit -am # Commit and add all files and add message inline (don't push).
 
 	## All and Push
-	caep   = "! function f() { git ca && git p; }; f" # Commit all files, add message in editor, and push.
+	caep   = "! function f() { git cae && git p; }; f" # Commit all files, add message in editor, and push.
 	#camp   = "! function f() { git commit -am \"$1\" && git p; }; f" # Commit all files, add message inline, and push.
 
 	## Just commit (empty) and push.
