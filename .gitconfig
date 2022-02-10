@@ -32,6 +32,7 @@
 	cm = "! function f() { git mod && git commit; }; f"
 	ca = "! function f() { git all && git commit; }; f"
 	cs = "commit"
+	ai = "! git ls-files -m -o --exclude-standard | fzf --print0 -m | xargs -0 -t -o git add"
 
 	## All
 	#cae     = commit -a --verbose # Commit and add all files and add message to editor.
