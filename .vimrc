@@ -23,20 +23,26 @@ match OverLength /\%51v.*/
 
 " Install vim-plug if not found
 if empty(glob('~/.vim/autoload/plug.vim'))
-  silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
-    \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+	silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
+		\ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 endif
 
 " Run PlugInstall if there are missing plugins
 autocmd VimEnter * if len(filter(values(g:plugs), '!isdirectory(v:val.dir)'))
-  \| PlugInstall --sync | source $MYVIMRC
+	\| PlugInstall --sync | source $MYVIMRC
 \| endif
 
 "Plugins
 call plug#begin('~/.vim/plugged')
-	Plug 'phanviet/vim-monokai-pro'
+	"Plug 'phanviet/vim-monokai-pro'
+	Plug 'patstockwell/vim-monokai-tasty'
+	Plug 'tpope/vim-surround'
+	Plug 'nathanaelkane/vim-indent-guides'
+	Plug 'mutewinter/nginx.vim'
+	Plug 'rhysd/committia.vim'
 call plug#end()
 
 " UI
 set termguicolors
-colorscheme monokai_pro
+"colorscheme monokai_pro
+colorscheme vim-monokai-tasty
