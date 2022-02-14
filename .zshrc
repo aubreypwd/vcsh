@@ -174,14 +174,15 @@ function __aliases {
 	alias cat="bat"
 	alias edit="subl -n"
 	alias e="edit"
-	alias ezsh="subl -n ~/.zshrc"
-	alias egit="subl -n ~/.gitconfig"
-	alias essh="subl -n ~/.ssh/config"
+	alias editzsh="subl -n ~/.zshrc"
+	alias editgit="subl -n ~/.gitconfig"
+	alias editssh="subl -n ~/.ssh/config"
 	alias nw='ttab -w' # New window.
 	alias nt='ttab ' # New tab.
 	alias c=clear
 	alias tower='gittower'
 	alias ll=ls
+	alias ntx="nt && x"
 
 	# Easy composer commands.
 	alias cu="composer uninstall"
@@ -203,7 +204,11 @@ function __aliases {
 	# Misc.
 	alias vim="vim -c 'startinsert'" # Start Vim in insert mode (mostly for commit writing).
 	alias repo="cd ~/Repos && fdd" # An easy way to get to a repo using my ffd command.
-	alias site="cd ~/Sites && fdd" # Quick way to get to a site
+	alias loc="cd ~/Sites/Local && fd && cd app/public || true" # Quick way to get to a site
+	alias val="cd ~/Sites/Valet && fd 2" # Quick way to get to a site
+	alias v="val"
+	alias site="loc"
+	alias s="site"
 	alias antigengo="cd ~/.antigen && fdd" # An easy way to get to a bundle.
 	alias locals="cd ~/Sites/Local && fd 3" # An easy way to get to a local.
 	alias high='highlight -O ansi'

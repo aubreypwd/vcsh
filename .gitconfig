@@ -14,7 +14,7 @@
 	glog    = "! /bin/sh $HOME/.gitscripts/towerlog.sh"
 
 	# Commit
-	cm = commit
+	c = commit
 
 	# Checkout.
 	co     = checkout
@@ -31,8 +31,7 @@
 	## Comitting
 	cm = "! function f() { git mod && git commit; }; f"
 	ca = "! function f() { git all && git commit; }; f"
-	cs = "commit"
-	ai = "! git ls-files -m -o --exclude-standard | fzf --print0 -m | xargs -0 -t -o git add" # https://spin.atomicobject.com/2018/04/05/fuzzy-find-git-add/
+	ai = "! git ls-files -m -o --exclude-standard | fzf --reverse --height 10 --print0 -m | xargs -0 -t -o git add" # https://spin.atomicobject.com/2018/04/05/fuzzy-find-git-add/
 
 	## All
 	#cae     = commit -a --verbose # Commit and add all files and add message to editor.
@@ -92,6 +91,7 @@
 	# DIFFs
 	diffs  = diff --staged
 	ds     = diffs
+	dm     = diff
 	d      = diff
 
 [push]
@@ -137,10 +137,6 @@
 
 [diff]
 	noprefix = true
-	tool = meld
-
-[difftool]
-	prompt = false
 
 [difftool "meld"]
 	trustExitCode = true
@@ -162,12 +158,8 @@
 	cmd = subl -w $MERGED
 	trustExitCode = false
 
-[merge]
-	tool = meld
-
 [mergetool]
 	keepBackup = false
-	prompt = false
 
 [pull]
 	rebase = false

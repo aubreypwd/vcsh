@@ -42,7 +42,7 @@
     "linting",
     "excersize"
   ],
-  "always_prompt_for_file_reload": true,
+  "always_prompt_for_file_reload": false,
   "remember_layout": true,
   "create_window_at_startup": false,
   "translate_tabs_to_spaces": false,
@@ -198,7 +198,7 @@
   "open_files_in_new_window": "never",
   "ours_gutter": true,
   "overlay_scroll_bars": "enabled",
-  "preview_on_click": true,
+  "preview_on_click": false,
   "remember_full_screen": true,
   "rulers":
   [
