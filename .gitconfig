@@ -13,15 +13,12 @@
 	ga = "! function f() { git add . && git g; }; f" # Add all files and open the GUI.
 	glog    = "! /bin/sh $HOME/.gitscripts/towerlog.sh"
 
-	# Commit
-	c = commit
-
 	# Checkout.
 	co     = checkout
 	m      = merge
 
 	# ghq sortcut.
-	repo = "! function f() { ghq get \"$1\"; }; f" # Commit all files, add message inline, and push.
+	get = "! function f() { ghq get \"$1\"; }; f" # Commit all files, add message inline, and push.
 
 	## Staging
 	mod     = "add -u" # Add modifed
@@ -29,33 +26,11 @@
 	rm-c    = "rm --cached"
 
 	## Comitting
-	cm = "! function f() { git mod && git commit; }; f"
-	ca = "! function f() { git all && git commit; }; f"
-	ai = "! git ls-files -m -o --exclude-standard | fzf --reverse --height 10 --print0 -m | xargs -0 -t -o git add" # https://spin.atomicobject.com/2018/04/05/fuzzy-find-git-add/
-
-	## All
-	#cae     = commit -a --verbose # Commit and add all files and add message to editor.
-	#cam    = commit -am # Commit and add all files and add message inline (don't push).
-
-	## All and Push
-	#caep   = "! function f() { git cae && git p; }; f" # Commit all files, add message in editor, and push.
-	#camp   = "! function f() { git commit -am \"$1\" && git p; }; f" # Commit all files, add message inline, and push.
-
-	## Just commit (empty) and push.
-	#pewa   = "! function f() { git add . && git commit -a --allow-empty-message -m '' && git p; }; f" # Push an empty commit with all updates.
-	pew    = "! function f() { git commit -a --allow-empty-message -m '' && git p; }; f" # Push an empty commit with all updates.
-
-	## Staged
-	#cse    = commit --verbose # Commit staged files and write message in editor.
-	#csm    = commit -m # Commit staged files, write a message inline (don't push).
-
-	## Staged and Push
-	#csep   = "! function f() { git cse && git p; }; f" # Commit staged files, write a message in an editor, and push.
-	#csmp   = "! function f() { git commit -m \"$1\" && git p; }; f" # Commit staged files, write a message inline, and push.
-
-	## Modified files only & Push
-	#cmep   = "! function f() { git add -u && git commit --verbose && git p; }; f" # Commit all modifed files and write a message in the editor and push.
-	#cmmp   = "! function f() { git add -u && git commit -m \"$1\" && git p; }; f" # Commit all modifed files w/ a message and push.
+	c = commit
+	cm  = "! function f() { git mod && git commit; }; f"
+	ca  = "! function f() { git all && git commit; }; f"
+	ai  = "! git ls-files -m -o --exclude-standard | fzf --reverse --height 10 --print0 -m | xargs -0 -t -o git add" # https://spin.atomicobject.com/2018/04/05/fuzzy-find-git-add/
+	pew = "! function f() { git commit -a --allow-empty-message -m '' && git p; }; f" # Push an empty commit with all updates.
 
 	# Status
 	stat   = status
@@ -64,8 +39,12 @@
 	sds    = "! function f() { git status && git diff --staged ;}; f"
 
 	# Logs
-	blog   = log --oneline --decorate --graph # Better log, looks better in CLI.
-	l      = blog # Normal log, but looks better.
+	l = log --oneline --decorate --graph # Better log, looks better in CLI.
+	l1 = l -n 1
+	l2 = l -n 2
+	l5 = l -n 5
+	lt = l -n 10
+	ltt = l -n 20
 
 	# Reset & Clear
 	rhh    = reset --hard HEAD # Reset easily.
@@ -79,7 +58,7 @@
 
 	# Branches & Tags
 	b      = "! echo $(git branch --show-current)" # Show the current branch.
-	new    = checkout -b # New branch
+	nb     = checkout -b # New branch
 	cb     = "! git b | pbcopy" # Copy the current branch to the clipboard.
 
 	## Moving Branches and tags around
@@ -178,3 +157,6 @@
 
 [diff "plist"]
 	textconv = plutil -convert xml1 -o -
+
+[merge]
+	tool = smerge

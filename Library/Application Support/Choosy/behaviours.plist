@@ -399,7 +399,7 @@
 		<key>behaviourArgument</key>
 		<dict>
 			<key>path</key>
-			<string>/Applications/Twitter.app</string>
+			<string>/Applications/Tweetbot.app</string>
 			<key>type</key>
 			<string>ChoosyBrowser</string>
 		</dict>

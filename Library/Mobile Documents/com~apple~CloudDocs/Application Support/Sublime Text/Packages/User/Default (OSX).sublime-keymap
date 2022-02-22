@@ -21,8 +21,8 @@
   { "keys": ["super+alt+enter"], "command": "toggle_word"},
 
   // Sessions.
-  { "keys": ["super+ctrl+alt+p"], "command": "load_session"},
-  { "keys": ["super+ctrl+alt+shift+p"], "command": "save_session"},
+  { "keys": ["super+ctrl+shift+p"], "command": "load_session"},
+  { "keys": ["super+ctrl+shift+p+alt"], "command": "save_session"},
 
   // Misc.
   { "keys": ["super+ctrl+l"], "command": "alignment" },

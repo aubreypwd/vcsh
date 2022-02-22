@@ -111,7 +111,7 @@
   "color_scheme": "Monokai Pro (Filter Spectrum).sublime-color-scheme",
   "copy_with_empty_selection": true,
   "default_line_ending": "unix",
-  "detect_indentation": true,
+  "detect_indentation": false,
   "drag_text": false,
   "draw_indent_guides": true,
   "draw_shadows": false,
