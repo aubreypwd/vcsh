@@ -207,7 +207,7 @@ function __aliases {
 	alias loc="cd ~/Sites/Local && fd && cd app/public || true" # Quick way to get to a site
 	alias val="cd ~/Sites/Valet && fd 2" # Quick way to get to a site
 	alias v="val"
-	alias site="loc"
+	alias site="val"
 	alias s="site"
 	alias antigengo="cd ~/.antigen && fdd" # An easy way to get to a bundle.
 	alias locals="cd ~/Sites/Local && fd 3" # An easy way to get to a local.
@@ -496,7 +496,7 @@ function __load_zsh {
 		 # @since 10/1/20           ys
 		 # @since Wednesday, 10/7/2020 Switched to refined for more simplicity.
 		 ##
-		ZSH_THEME="nicoulaj"
+		ZSH_THEME="headline"
 
 		# Built-in plugins.
 		plugins=()
