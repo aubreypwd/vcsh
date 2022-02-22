@@ -496,7 +496,7 @@ function __load_zsh {
 		 # @since 10/1/20           ys
 		 # @since Wednesday, 10/7/2020 Switched to refined for more simplicity.
 		 ##
-		ZSH_THEME="refined"
+		ZSH_THEME="nicoulaj"
 
 		# Built-in plugins.
 		plugins=()
