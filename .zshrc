@@ -505,8 +505,7 @@ function __load_zsh {
 		# Make sure that additonal info isn't shown.
 		precmd() {
 			setopt localoptions nopromptsubst
-			vcs_info # Get version control info before we start outputting stuff
-			print -P ""
+			print -P "%F{yellow}$(cmd_exec_time)%f"
 			unset cmd_timestamp #Reset cmd exec time.
 		}
 
