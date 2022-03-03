@@ -205,10 +205,8 @@ function __aliases {
 	alias vim="vim -c 'startinsert'" # Start Vim in insert mode (mostly for commit writing).
 	alias repo="cd ~/Repos && fdd" # An easy way to get to a repo using my ffd command.
 	alias loc="cd ~/Sites/Local && fd && cd app/public || true" # Quick way to get to a site
-	alias val="cd ~/Sites/Valet && fd 2" # Quick way to get to a site
-	alias v="val"
+	alias val="cd ~/Sites/Valet && fd 1" # Quick way to get to a site
 	alias site="val"
-	alias s="site"
 	alias antigengo="cd ~/.antigen && fdd" # An easy way to get to a bundle.
 	alias locals="cd ~/Sites/Local && fd 3" # An easy way to get to a local.
 	alias high='highlight -O ansi'
@@ -496,13 +494,21 @@ function __load_zsh {
 		 # @since 10/1/20           ys
 		 # @since Wednesday, 10/7/2020 Switched to refined for more simplicity.
 		 ##
-		ZSH_THEME="headline"
+		ZSH_THEME="refined"
 
 		# Built-in plugins.
 		plugins=()
 
 		# Load
 		source $ZSH/oh-my-zsh.sh
+
+		# Make sure that additonal info isn't shown.
+		precmd() {
+			setopt localoptions nopromptsubst
+			vcs_info # Get version control info before we start outputting stuff
+			print -P ""
+			unset cmd_timestamp #Reset cmd exec time.
+		}
 
 		###
 		 # Antigen Plugin Manager
