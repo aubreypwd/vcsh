@@ -181,7 +181,6 @@ function __aliases {
 	alias nt='ttab ' # New tab.
 	alias c=clear
 	alias tower='gittower'
-	alias ll=ls
 	alias ntx="nt && x"
 
 	# Easy composer commands.
@@ -403,13 +402,13 @@ function __watch_repos {
 function __alias_overrides {
 
 	if [ "$TERM_PROGRAM" = "Terminus-Sublime" ]; then
-		alias ls='ls -lah --color' # Use normal alias
 
+		alias ls='ls -lah --color' # Use normal alias
 		return
 	fi
 
-	alias ls='exa -l -g --icons --tree --level=1 -a' # Enhance exa ls defaults.
-	alias ls2='exa -l -g --icons --tree --level=2 -a' # Enhance exa ls defaults.
+	alias ls='exa $PWD -l -g --icons --tree --level=1 -a' # Enhance exa ls defaults.
+	alias ll='exa $PWD -l -g --icons --tree --level=2 -a' # Enhance exa ls defaults, but show 2 levels deep.
 }
 
 ###

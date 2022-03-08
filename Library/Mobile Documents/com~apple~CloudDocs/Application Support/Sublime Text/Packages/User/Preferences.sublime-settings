@@ -123,6 +123,7 @@
   "fallback_encoding": "UTF-16",
   "show_git_status_in_status_bar": true,
   "file_tab_style": "square",
+  "index_workers": 8,
   "file_exclude_patterns":
   [
     "*.min.*",
@@ -138,7 +139,6 @@
     "no_bold",
     "no_italic",
     "gray_antialias",
-    // "no_round"
   ],
   "font_size": 12,
   "freesia_borderless": true,
@@ -147,6 +147,7 @@
   "highlight_line": true,
   "highlight_modified_tabs": true,
   "index_exclude_gitignore": false,
+  "auto_complete_use_index": true,
   "hot_exit": true,
   "ignored_packages":
   [
@@ -173,15 +174,12 @@
   ],
   "index_exclude_patterns":
   [
-    "*.log",
-    "*.txt",
     "*.zip",
     "*.jpg",
     "*.png",
     "*.gif",
     "*.webp"
   ],
-  "index_files": true,
   "line_padding_bottom": 0,
   "line_padding_top": 0,
   "live_matching": true,
@@ -207,6 +205,7 @@
     80, // Normal rulers
   ],
   "scroll_past_end": true,
+  "index_files": true,
   "shift_tab_unindent": true,
   "show_definitions": true,
   "show_navigation_bar": false,
@@ -230,7 +229,7 @@
   "tree_animation_enabled": false,
   "trim_trailing_white_space_on_save": "all",
   "ui_separator": true,
-  "update_check": false,
+  "update_check": true,
   "use_simple_full_screen": true,
   "use_tab_stops": false,
   "word_wrap": false,
