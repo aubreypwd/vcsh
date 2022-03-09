@@ -13,7 +13,7 @@
 			<string>ChoosyBrowser</string>
 		</dict>
 		<key>enabled</key>
-		<true/>
+		<false/>
 		<key>predicate</key>
 		<string>URL CONTAINS "dashboard.wpvip.com" OR URL CONTAINS "wordpressvip.zendesk.com"</string>
 		<key>title</key>
@@ -30,7 +30,7 @@
 			<string>ChoosyBrowser</string>
 		</dict>
 		<key>enabled</key>
-		<true/>
+		<false/>
 		<key>predicate</key>
 		<string>URL CONTAINS "linkedin.com/learning"</string>
 		<key>title</key>
@@ -47,7 +47,7 @@
 			<string>ChoosyBrowser</string>
 		</dict>
 		<key>enabled</key>
-		<true/>
+		<false/>
 		<key>predicate</key>
 		<string>URL CONTAINS "linkedin.com"</string>
 		<key>title</key>
@@ -64,7 +64,7 @@
 			<string>ChoosyBrowser</string>
 		</dict>
 		<key>enabled</key>
-		<true/>
+		<false/>
 		<key>predicate</key>
 		<string>URL CONTAINS "amazon.com"</string>
 		<key>title</key>
@@ -81,7 +81,7 @@
 			<string>ChoosyBrowser</string>
 		</dict>
 		<key>enabled</key>
-		<true/>
+		<false/>
 		<key>predicate</key>
 		<string>URL CONTAINS "php.net" OR URL CONTAINS "https://developer.wordpress.org/?s=" OR URL CONTAINS "tailwindcss.com/docs" OR URL CONTAINS "wordpress.org/" OR URL CONTAINS "docs.wpvip.com" OR URL CONTAINS "https://support.advancedcustomfields.com" OR URL CONTAINS "developer.mozilla."</string>
 		<key>title</key>
@@ -115,7 +115,7 @@
 			<string>ChoosyBrowser</string>
 		</dict>
 		<key>enabled</key>
-		<true/>
+		<false/>
 		<key>predicate</key>
 		<string>URL CONTAINS "figma.com/file"</string>
 		<key>title</key>
@@ -166,7 +166,7 @@
 			<string>ChoosyBrowser</string>
 		</dict>
 		<key>enabled</key>
-		<true/>
+		<false/>
 		<key>predicate</key>
 		<string>URL CONTAINS "developer.wordpress.org" OR URL CONTAINS "tailwindcss.com/docs"</string>
 		<key>title</key>
@@ -183,7 +183,7 @@
 			<string>ChoosyBrowser</string>
 		</dict>
 		<key>enabled</key>
-		<true/>
+		<false/>
 		<key>predicate</key>
 		<string>URL CONTAINS "://google.com/search" OR URL CONTAINS "://www.google.com/search"</string>
 		<key>title</key>
@@ -200,7 +200,7 @@
 			<string>ChoosyBrowser</string>
 		</dict>
 		<key>enabled</key>
-		<true/>
+		<false/>
 		<key>predicate</key>
 		<string>URL CONTAINS "calendar.google.com" OR URL CONTAINS "google.com/calendar"</string>
 		<key>title</key>
@@ -217,7 +217,7 @@
 			<string>ChoosyBrowser</string>
 		</dict>
 		<key>enabled</key>
-		<true/>
+		<false/>
 		<key>predicate</key>
 		<string>URL CONTAINS "stackoverflow.com" OR URL CONTAINS "stackexchange.com"</string>
 		<key>title</key>
@@ -251,7 +251,7 @@
 			<string>ChoosyBrowser</string>
 		</dict>
 		<key>enabled</key>
-		<true/>
+		<false/>
 		<key>predicate</key>
 		<string>URL CONTAINS "docs.google.com"</string>
 		<key>title</key>
@@ -268,7 +268,7 @@
 			<string>ChoosyBrowser</string>
 		</dict>
 		<key>enabled</key>
-		<true/>
+		<false/>
 		<key>predicate</key>
 		<string>URL CONTAINS "teamwork.com"</string>
 		<key>title</key>
@@ -302,7 +302,7 @@
 			<string>ChoosyBrowser</string>
 		</dict>
 		<key>enabled</key>
-		<true/>
+		<false/>
 		<key>predicate</key>
 		<string>URL CONTAINS "packages.wdslab.com"</string>
 		<key>title</key>
@@ -319,7 +319,7 @@
 			<string>ChoosyBrowser</string>
 		</dict>
 		<key>enabled</key>
-		<true/>
+		<false/>
 		<key>predicate</key>
 		<string>URL CONTAINS "devdocs.io"</string>
 		<key>title</key>
@@ -336,7 +336,7 @@
 			<string>ChoosyBrowser</string>
 		</dict>
 		<key>enabled</key>
-		<true/>
+		<false/>
 		<key>predicate</key>
 		<string>URL CONTAINS "ifttt.com"</string>
 		<key>title</key>
@@ -353,7 +353,7 @@
 			<string>ChoosyBrowser</string>
 		</dict>
 		<key>enabled</key>
-		<true/>
+		<false/>
 		<key>predicate</key>
 		<string>URL CONTAINS "developers.google.com/speed/pagespeed/insights" OR URL CONTAINS "pagespeed.web.dev"</string>
 		<key>title</key>
@@ -387,7 +387,7 @@
 			<string>ChoosyBrowser</string>
 		</dict>
 		<key>enabled</key>
-		<true/>
+		<false/>
 		<key>predicate</key>
 		<string>URL CONTAINS "github.com"</string>
 		<key>title</key>
@@ -417,15 +417,17 @@
 		<dict>
 			<key>path</key>
 			<string>/Applications/Google Chrome.app</string>
+			<key>profileName</key>
+			<string>Profile 5</string>
 			<key>type</key>
-			<string>ChoosyBrowser</string>
+			<string>ChoosyChromeProfileMode</string>
 		</dict>
 		<key>enabled</key>
 		<true/>
 		<key>predicate</key>
 		<string>URL CONTAINS ".local" OR URL CONTAINS ".test" OR URL CONTAINS "localhost:"</string>
 		<key>title</key>
-		<string>DEV</string>
+		<string>Local Dev</string>
 	</dict>
 	<dict>
 		<key>behaviour</key>
@@ -455,7 +457,7 @@
 			<string>ChoosyBrowser</string>
 		</dict>
 		<key>enabled</key>
-		<true/>
+		<false/>
 		<key>predicate</key>
 		<string>URL CONTAINS "reddit.com"</string>
 		<key>title</key>
@@ -472,7 +474,7 @@
 			<string>ChoosyBrowser</string>
 		</dict>
 		<key>enabled</key>
-		<true/>
+		<false/>
 		<key>predicate</key>
 		<string>URL CONTAINS "giphy.com"</string>
 		<key>title</key>
@@ -489,7 +491,7 @@
 			<string>ChoosyBrowser</string>
 		</dict>
 		<key>enabled</key>
-		<true/>
+		<false/>
 		<key>predicate</key>
 		<string>URL CONTAINS "vercel.com"</string>
 		<key>title</key>
@@ -523,7 +525,7 @@
 			<string>ChoosyBrowser</string>
 		</dict>
 		<key>enabled</key>
-		<true/>
+		<false/>
 		<key>predicate</key>
 		<string>URL CONTAINS "drive.google.com"</string>
 		<key>title</key>
@@ -540,7 +542,7 @@
 			<string>ChoosyBrowser</string>
 		</dict>
 		<key>enabled</key>
-		<true/>
+		<false/>
 		<key>predicate</key>
 		<string>URL CONTAINS "facebook.com"</string>
 		<key>title</key>
@@ -557,7 +559,7 @@
 			<string>ChoosyBrowser</string>
 		</dict>
 		<key>enabled</key>
-		<true/>
+		<false/>
 		<key>predicate</key>
 		<string>URL CONTAINS "wordpress.com"</string>
 		<key>title</key>
@@ -574,7 +576,7 @@
 			<string>ChoosyBrowser</string>
 		</dict>
 		<key>enabled</key>
-		<true/>
+		<false/>
 		<key>predicate</key>
 		<string>URL CONTAINS "https://app.memrise.com"</string>
 		<key>title</key>
@@ -591,7 +593,7 @@
 			<string>ChoosyBrowser</string>
 		</dict>
 		<key>enabled</key>
-		<true/>
+		<false/>
 		<key>predicate</key>
 		<string>URL CONTAINS "//www.tumblr.com/blog/"</string>
 		<key>title</key>
@@ -608,7 +610,7 @@
 			<string>ChoosyBrowser</string>
 		</dict>
 		<key>enabled</key>
-		<true/>
+		<false/>
 		<key>predicate</key>
 		<string>URL CONTAINS "https://dev.azure.com/"</string>
 		<key>title</key>
