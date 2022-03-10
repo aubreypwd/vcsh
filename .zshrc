@@ -256,7 +256,7 @@ function __aliases {
 	fi
 
 	# Valet
-	alias _vdb='mycli -u root -h 127.0.0.1'
+	alias db='mycli -u root -h 127.0.0.1'
 }
 
 ###
