@@ -256,7 +256,7 @@ function __aliases {
 	fi
 
 	# Valet
-	alias vdb='mycli -u root -h 127.0.0.1'
+	alias _vdb='mycli -u root -h 127.0.0.1'
 }
 
 ###
@@ -466,9 +466,8 @@ function __misc {
 		 ##
 		chflags nohidden "$HOME/Applications"
 		chflags nohidden "$HOME/Library"
+		chflags hidden "$HOME/Documents" # I don't use this folder much
 		chflags nohidden "$HOME/.Brewfile"
-
-		composer self-update --1 # Use Composer Version 1 for now...
 
 		# Make sure keys and identities make it into keychain.
 		ssh-add -q -A -k
