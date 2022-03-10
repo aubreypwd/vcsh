@@ -248,7 +248,15 @@ function __aliases {
 	alias wpdbex='wp db export - | gzip -9 -f >' # Export a database and compress the file.
 
 	# xattr
-	alias clatts="xattr -cr"
+	alias clearatts="xattr -cr"
+
+	# curl
+	if [[ $( command -v http ) ]]; then
+		alias curl='http'
+	fi
+
+	# Valet
+	alias vdb='mycli -u root -h 127.0.0.1'
 }
 
 ###
@@ -326,6 +334,8 @@ function __require_and_install_commands {
 			require "cmatrix" "brew reinstall cmatrix" "brew" # Exa makes ls even more awesome.
 			require "terminal-notifier" "brew reinstall terminal-notifier" "brew" # Terminal notifications
 			require "highlight" "brew reinstall highlight" "brew" # Highlighting cat
+			require "mycli" "brew reinstall mycli" "brew" # Better than mysql
+			require "http" "brew install httpie" "brew" # Better than curl
 
 			###
 			 # Non-homebrew Requirements
