@@ -396,6 +396,7 @@ function __watch_repos {
 	__git-is-clean "$HOME/Repos/github.com/aubreypwd/iTerm2"
 	__git-is-clean "$HOME/Repos/github.com/aubreypwd/Alfred.alfredpreferences"
 	__git-is-clean "$HOME/Repos/github.com/aubreypwd/subl-snippets"
+	__git-is-clean "$HOME/iCloud/Profile Photos"
 
 	# Have to do something special here for vcsh.
 	vcsh pub diff-index --quiet --ignore-submodules HEAD || __dirty_message "pub"

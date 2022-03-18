@@ -416,11 +416,9 @@
 		<key>behaviourArgument</key>
 		<dict>
 			<key>path</key>
-			<string>/Applications/Google Chrome.app</string>
-			<key>profileName</key>
-			<string>Profile 5</string>
+			<string>/Applications/Chromium.app</string>
 			<key>type</key>
-			<string>ChoosyChromeProfileMode</string>
+			<string>ChoosyBrowser</string>
 		</dict>
 		<key>enabled</key>
 		<true/>
@@ -615,6 +613,23 @@
 		<string>URL CONTAINS "https://dev.azure.com/"</string>
 		<key>title</key>
 		<string>Azure Devops</string>
+	</dict>
+	<dict>
+		<key>behaviour</key>
+		<integer>6</integer>
+		<key>behaviourArgument</key>
+		<dict>
+			<key>path</key>
+			<string>/Applications/Tenor.app</string>
+			<key>type</key>
+			<string>ChoosyBrowser</string>
+		</dict>
+		<key>enabled</key>
+		<true/>
+		<key>predicate</key>
+		<string>URL CONTAINS "https://tenor.com/"</string>
+		<key>title</key>
+		<string>Tenor</string>
 	</dict>
 	<dict>
 		<key>behaviour</key>
