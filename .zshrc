@@ -206,7 +206,7 @@ function __aliases {
 	alias loc="cd ~/Sites/Local && fd && cd app/public || true" # Quick way to get to a site
 	alias val="cd ~/Sites/Valet && fd 1" # Quick way to get to a site
 	alias site="val"
-	alias antigengo="cd ~/.antigen && fdd" # An easy way to get to a bundle.
+	alias antigenfd="cd ~/.antigen/bundles/aubreypwd && fd" # An easy way to get to a bundle.
 	alias locals="cd ~/Sites/Local && fd 3" # An easy way to get to a local.
 	alias high='highlight -O ansi'
 
