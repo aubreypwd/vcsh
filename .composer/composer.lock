@@ -874,24 +874,24 @@
         },
         {
             "name": "laravel/valet",
-            "version": "v2.18.3",
+            "version": "v2.18.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/valet.git",
-                "reference": "69f432edf0fdccf2c1b8b18e9efc45a64cca7958"
+                "reference": "d0cd85bb71ef5ef29291a10ba770becfc96e7d2d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/valet/zipball/69f432edf0fdccf2c1b8b18e9efc45a64cca7958",
-                "reference": "69f432edf0fdccf2c1b8b18e9efc45a64cca7958",
+                "url": "https://api.github.com/repos/laravel/valet/zipball/d0cd85bb71ef5ef29291a10ba770becfc96e7d2d",
+                "reference": "d0cd85bb71ef5ef29291a10ba770becfc96e7d2d",
                 "shasum": ""
             },
             "require": {
                 "guzzlehttp/guzzle": "^6.0|^7.4",
-                "illuminate/container": "~5.1|^6.0|^7.0|^8.0",
+                "illuminate/container": "~5.1|^6.0|^7.0|^8.0|^9.0",
                 "mnapoli/silly": "^1.0",
                 "php": "^5.6|^7.0|^8.0",
-                "symfony/process": "^3.0|^4.0|^5.0",
+                "symfony/process": "^3.0|^4.0|^5.0|^6.0",
                 "tightenco/collect": "^5.3|^6.0|^7.0|^8.0"
             },
             "require-dev": {
@@ -937,7 +937,7 @@
                 "wwdhhd",
                 "zonda"
             ],
-            "time": "2021-12-23T08:22:17+00:00"
+            "time": "2022-03-14T15:38:48+00:00"
         },
         {
             "name": "mnapoli/silly",
