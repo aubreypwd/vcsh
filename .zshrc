@@ -257,6 +257,9 @@ function __aliases {
 
 	# Valet
 	alias db='mycli -u root -h 127.0.0.1'
+
+	# Finder
+	alias finder='open -F -a Finder' # Open Finder but remember the window size when you open.
 }
 
 ###
