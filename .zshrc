@@ -260,6 +260,9 @@ function __aliases {
 
 	# Finder
 	alias finder='open -F -a Finder' # Open Finder but remember the window size when you open.
+
+	# DNS
+	alias flushdns='sudo dscacheutil -flushcache; sudo killall -HUP mDNSResponder'
 }
 
 ###
@@ -470,7 +473,7 @@ function __misc {
 		 ##
 		chflags nohidden "$HOME/Applications"
 		chflags nohidden "$HOME/Library"
-		chflags hidden "$HOME/Documents" # I don't use this folder much
+		chflags nohidden "$HOME/Documents"
 		chflags nohidden "$HOME/.Brewfile"
 
 		# Make sure keys and identities make it into keychain.
