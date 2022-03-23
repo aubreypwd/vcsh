@@ -40,13 +40,14 @@ function __set_exports {
 	export PATH="/opt/homebrew/opt/ruby/bin:$PATH" #  Ruby
 	export PATH="/opt/homebrew/opt/openssl@3/bin:$PATH" # Open SSL
 	export PATH="/opt/homebrew/lib/ruby/gems/3.0.0/bin:$PATH" # Ruby Gems
+	export PATH="/usr/local/bin:$PATH" # Just for n, where it symlinks node.
 
 	###
 	 # Misc Nobs
 	 #
 	 # @since Friday, 10/2/2020
 	 ##
-	export COMPOSER_PROCESS_TIMEOUT=60 # Fail after x seconds.
+	export COMPOSER_PROCESS_TIMEOUT=3600 # Fail after x seconds.
 	export LESS="-F -X -R $LESS" # Don't pager on less.
 	export MANPAGER='ul | cat -s' # Don't use less.
 
@@ -67,6 +68,9 @@ function __set_exports {
 	 # @since Thursday, 10/1/2020
 	 ##
 	export UPDATE_ZSH_DAYS=90
+
+	# Python
+	export PYTHON='/opt/homebrew/bin/python3'
 }
 
 ###
