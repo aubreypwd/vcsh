@@ -1,7 +1,5 @@
 {
 	"jsdocs_extra_tags": [
-		"@author ${100:Aubrey Portwood}${150:WebDevStudios} <${110:aubrey@webdevstudios.com}${120:contact@webdevstudios.com}${130:code@aubreypwd.com}>",
-		"@since ${2100:NEXT}",
 	],
 	"jsdocs_short_primitives": true,
 	"jsdocs_spacer_between_sections": "after_description"
