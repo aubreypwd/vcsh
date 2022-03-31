@@ -157,7 +157,7 @@ function __write_macos_defaults {
 		defaults write com.googlecode.iterm2 "Secure Input" 0 # Tell iterm2 to allow non-secure input for escape
 		defaults write com.apple.screencapture type jpg # Take jpg screenshots.
 		defaults write defaults write com.apple.finder CreateDesktop true # Do or don't show desktop icons.
-		defaults write com.apple.dock show-recent-count -int 1 # Show only X recent app by default.
+		defaults write com.apple.dock show-recent-count -int 3 # Show only X recent app by default.
 
 	} &> /dev/null &
 }
@@ -406,6 +406,7 @@ function __watch_repos {
 	__git-is-clean "$HOME/Repos/github.com/aubreypwd/iTerm2"
 	__git-is-clean "$HOME/Repos/github.com/aubreypwd/Alfred.alfredpreferences"
 	__git-is-clean "$HOME/Repos/github.com/aubreypwd/subl-snippets"
+	__git-is-clean "$HOME/Repos/github.com/aubreypwd/safari-user-scripts"
 	__git-is-clean "$HOME/iCloud/Profile Photos"
 
 	# Have to do something special here for vcsh.
