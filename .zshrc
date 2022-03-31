@@ -186,8 +186,7 @@ function __aliases {
 	alias c=clear
 	alias tower='gittower'
 	alias ntx="nt && x"
-	alias npm="n auto || nvm use && npm" # Run npm using the preferred version by default.
-	alias npmv="npm" # Run npm using a set version (don't use nvm or n).
+	alias npmrc="n auto || nvm use && npm" # Run npm using the preferred version by default.
 
 	# Easy composer commands.
 	alias cu="composer uninstall"
