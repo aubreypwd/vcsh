@@ -186,6 +186,7 @@ function __aliases {
 	alias c=clear
 	alias tower='gittower'
 	alias ntx="nt && x"
+	alias npm="n auto || nvm use && npm"
 
 	# Easy composer commands.
 	alias cu="composer uninstall"
