@@ -432,8 +432,8 @@ function __alias_overrides {
 		return
 	fi
 
-	alias ls='exa $PWD -l -g --icons --tree --level=1 -a' # Enhance exa ls defaults.
-	alias ll='exa $PWD -l -g --icons --tree --level=2 -a' # Enhance exa ls defaults, but show 2 levels deep.
+	alias ls='exa -l -g --icons --tree --level=1 -a' # Enhance exa ls defaults.
+	alias ll='exa -l -g --icons --tree --level=2 -a' # Enhance exa ls defaults, but show 2 levels deep.
 }
 
 ###
