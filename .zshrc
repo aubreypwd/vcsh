@@ -186,7 +186,7 @@ function __aliases {
 	alias c=clear
 	alias tower='gittower'
 	alias ntx="nt && x"
-	alias npmv="n auto || nvm use && npm" # Run npm using the preferred version by default.
+	alias na="n auto" # Install the preferred version.
 
 	# Easy composer commands.
 	alias cu="composer uninstall"
@@ -210,7 +210,7 @@ function __aliases {
 	alias repo="cd ~/Repos && fdd" # An easy way to get to a repo using my ffd command.
 	alias loc="cd ~/Sites/Local && fd && cd app/public || true" # Quick way to get to a site
 	alias val="cd ~/Sites/Valet && fd 1" # Quick way to get to a site
-	alias site="val"
+	alias site="loc"
 	alias antigenfd="cd ~/.antigen/bundles/aubreypwd && fd" # An easy way to get to a bundle.
 	alias locals="cd ~/Sites/Local && fd 3" # An easy way to get to a local.
 	alias high='highlight -O ansi'
