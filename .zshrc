@@ -71,6 +71,10 @@ function __set_exports {
 
 	# Python
 	export PYTHON='/opt/homebrew/bin/python3'
+
+	# Fix wordpress-develop
+	export PUPPETEER_SKIP_CHROMIUM_DOWNLOAD=true
+	export PUPPETEER_EXECUTABLE_PATH=`which chromium`
 }
 
 ###
@@ -157,7 +161,7 @@ function __write_macos_defaults {
 		defaults write com.googlecode.iterm2 "Secure Input" 0 # Tell iterm2 to allow non-secure input for escape
 		defaults write com.apple.screencapture type jpg # Take jpg screenshots.
 		defaults write defaults write com.apple.finder CreateDesktop true # Do or don't show desktop icons.
-		defaults write com.apple.dock show-recent-count -int 3 # Show only X recent app by default.
+		defaults write com.apple.dock show-recent-count -int 2 # Show only X recent app by default.
 
 	} &> /dev/null &
 }
