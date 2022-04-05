@@ -383,17 +383,15 @@
 		<dict>
 			<key>path</key>
 			<string>/Applications/Google Chrome.app</string>
-			<key>profileName</key>
-			<string>Profile 7</string>
 			<key>type</key>
-			<string>ChoosyChromeProfileMode</string>
+			<string>ChoosyBrowser</string>
 		</dict>
 		<key>enabled</key>
 		<true/>
 		<key>predicate</key>
 		<string>URL CONTAINS ".local" OR URL CONTAINS ".test" OR URL CONTAINS "localhost:"</string>
 		<key>title</key>
-		<string>Chrome (Dev)</string>
+		<string>Google Chrome</string>
 	</dict>
 	<dict>
 		<key>behaviour</key>
@@ -588,14 +586,14 @@
 		<key>behaviourArgument</key>
 		<dict>
 			<key>path</key>
-			<string>/Applications/AwesomeMotive.app</string>
+			<string>/Applications/Google Chrome.app</string>
 			<key>type</key>
 			<string>ChoosyBrowser</string>
 		</dict>
 		<key>enabled</key>
-		<false/>
+		<true/>
 		<key>predicate</key>
-		<string>URL CONTAINS "hub.awesomemotive.com" OR URL CONTAINS "awesomemotive.bamboohr.com" OR URL CONTAINS "app.gusto.com"</string>
+		<string>URL CONTAINS "hub.awesomemotive.com" OR URL CONTAINS "awesomemotive.bamboohr.com" OR URL CONTAINS "app.gusto.com" OR URL CONTAINS "awesomemotive"</string>
 		<key>title</key>
 		<string>Awesome Motive</string>
 	</dict>

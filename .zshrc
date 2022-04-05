@@ -191,6 +191,7 @@ function __aliases {
 	alias tower='gittower'
 	alias ntx="nt && x"
 	alias na="n auto" # Install the preferred version.
+	alias fakedata="fakedata --limit 1"
 
 	# Easy composer commands.
 	alias cu="composer uninstall"
