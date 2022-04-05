@@ -4,7 +4,7 @@
     "lint_mode": "background",
     "linters": {
         "eslint": {
-            "working_dir": "${file_path}",
+            "working_dir": "${folder}",
             "disable": false,
             "args": [
             ],
@@ -14,25 +14,25 @@
             "env": {
               "PATH":"/opt/homebrew/bin"
             },
-            "working_dir": "${file_path}",
+            "working_dir": "${folder}",
             "disable": false,
             "args": [
             ],
             "excludes": []
         },
         "phpcbf": {
-            "working_dir": "${file_path}",
+            "working_dir": "${folder}",
             "disable": false,
         },
         "sass": {
-            "working_dir": "${file_path}",
+            "working_dir": "${folder}",
             "disable": false,
             "args": [
             ],
             "excludes": [],
         },
         "stylelint": {
-            "working_dir": "${file_path}",
+            "working_dir": "${folder}",
             "disable": false,
             "args": [
             ],
