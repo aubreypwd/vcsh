@@ -273,6 +273,9 @@ function __aliases {
 
 	# DNS
 	alias flushdns='sudo dscacheutil -flushcache; sudo killall -HUP mDNSResponder'
+
+	# AwesomeMotive / AffiliateWP
+	alias build:affwp='na && npm ci || npm i && npm run build'
 }
 
 ###
