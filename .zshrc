@@ -594,7 +594,7 @@ function __load_zsh {
 			# antigen bundle ssh://git@github.com/aubreypwd/zsh-plugin-tdl
 
 			# Might retire
-			#antigen bundle ssh://git@github.com/aubreypwd/zsh-plugin-bruse # I haven't been using this much.
+			antigen bundle ssh://git@github.com/aubreypwd/zsh-plugin-bruse # I haven't been using this much.
 
 			antigen apply
 		fi
@@ -631,6 +631,21 @@ function __npm_config {
  # @since Monday, October 11, 2021
  ##
 function __functions {
+
+	###
+	 # Easy way to configure WP CLI in LocalWP.
+	 #
+	 # E.g: lwpcliconfig ".../Library/Application Support/Local/run/6vRk6evkc/mysql/mysqld.sock"
+	 #
+	 # @since Thursday, April 7, 2022
+	 ##
+	function wpcliconfig {
+
+		cp "/Users/aubreypwd/Documents/Development/wp-cli.local/wp-cli.local.php" "./"
+		cp "/Users/aubreypwd/Documents/Development/wp-cli.local/wp-cli.local.yml" "./"
+
+		echo "$1" > "wp-cli.local.sock"
+	}
 
 	###
 	 # Notifications
