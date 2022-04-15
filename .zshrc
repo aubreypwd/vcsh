@@ -355,6 +355,7 @@ function __require_and_install_commands {
 			require "highlight" "brew reinstall highlight" "brew" # Highlighting cat
 			require "mycli" "brew reinstall mycli" "brew" # Better than mysql
 			require "http" "brew install httpie" "brew" # Better than curl
+			require "m" "brew install m-cli" "brew" # Love m-cli!
 
 			###
 			 # Non-homebrew Requirements
