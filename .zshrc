@@ -639,7 +639,7 @@ function __functions {
 	 #
 	 # @since Thursday, April 7, 2022
 	 ##
-	function wpcliconfig {
+	function lwpcliconfig {
 
 		cp "/Users/aubreypwd/Documents/Development/wp-cli.local/wp-cli.local.php" "./"
 		cp "/Users/aubreypwd/Documents/Development/wp-cli.local/wp-cli.local.yml" "./"
