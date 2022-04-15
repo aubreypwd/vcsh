@@ -10,8 +10,12 @@ tap "homebrew/core"
 tap "homebrew/services"
 tap "jesseduffield/lazygit"
 tap "jhawthorn/fzy"
+tap "lucapette/tap"
+tap "nicoverbruggen/cask"
 tap "rockymadden/rockymadden"
 tap "sargsyan/github-notifier"
+tap "shivammathur/php"
+tap "sidneys/homebrew"
 # Plugin manager for zsh, inspired by oh-my-zsh and vundle
 brew "antigen"
 # C library implementing the SSH2 protocol
@@ -22,6 +26,8 @@ brew "aria2"
 brew "python@3.9"
 # Core application library for C
 brew "glib"
+# GNOME accessibility toolkit
+brew "atk"
 # Tool for generating GNU Standards-compliant Makefiles
 brew "automake"
 # Clone of cat(1) with syntax highlighting and Git integration
@@ -30,12 +36,22 @@ brew "bat"
 brew "bchunk"
 # Install pip packages as homebrew formulae
 brew "brew-pip"
+# Extract files from Microsoft cabinet files
+brew "cabextract"
+# XML-based font configuration API for X Windows
+brew "fontconfig"
+# GNU Transport Layer Security (TLS) Library
+brew "gnutls"
 # GNU Emacs text editor
 brew "emacs", restart_service: true
 # Emacs dependency management
 brew "cask"
 # Like cat but displays content with syntax highlighting
 brew "ccat"
+# CD/DVD/Blu-ray premastering and recording software
+brew "cdrtools"
+# Control Google Chrome from the command-line
+brew "chrome-cli"
 # Cross-platform make
 brew "cmake"
 # Console Matrix
@@ -56,8 +72,12 @@ brew "duti"
 brew "exa"
 # Simple, fast and user-friendly alternative to find
 brew "fd"
+# Generate introspection data for GObject libraries
+brew "gobject-introspection"
 # OpenType text shaping engine
 brew "harfbuzz"
+# Blu-Ray disc playback library for media players like VLC
+brew "libbluray"
 # Play, record, convert, and stream audio and video
 brew "ffmpeg"
 # Libraries to talk to Microsoft SQL Server and Sybase databases
@@ -66,14 +86,20 @@ brew "freetds"
 brew "fzf"
 # Fast, simple fuzzy text selector with an advanced scoring algorithm
 brew "fzy"
+# Toolkit for image loading and pixel buffer manipulation
+brew "gdk-pixbuf"
 # GitHub command-line tool
 brew "gh"
 # Remote repository management made easy
 brew "ghq"
+# GIF image/animation creator/editor
+brew "gifsicle"
 # Distributed revision control system
 brew "git"
 # Git extension for versioning large files
 brew "git-lfs"
+# GNU implementation of the famous stream editor
+brew "gnu-sed"
 # Common error values for all GnuPG components
 brew "libgpg-error"
 # Assuan IPC Library
@@ -90,6 +116,8 @@ brew "jasper"
 brew "graphicsmagick"
 # Colorize logfiles and command output
 brew "grc"
+# GSettings schemas for desktop components
+brew "gsettings-desktop-schemas"
 # Framework for layout and rendering of i18n text
 brew "pango"
 # Toolkit for creating graphical user interfaces
@@ -98,6 +126,10 @@ brew "gtk+3"
 brew "highlight"
 # Improved top (interactive process viewer)
 brew "htop"
+# Apache HTTP server
+brew "httpd", restart_service: true
+# User-friendly cURL replacement (command-line HTTP client)
+brew "httpie"
 # Configurable static site generator
 brew "hugo"
 # ISO/IEC 23008-12:2017 HEIF file format decoder and encoder
@@ -106,6 +138,8 @@ brew "libheif"
 brew "imagemagick"
 # Lightweight and flexible command-line JSON processor
 brew "jq"
+# Network authentication protocol
+brew "krb5"
 # Text-based web browser
 brew "lynx"
 # Swiss Army Knife for macOS
@@ -118,14 +152,18 @@ brew "mdf2iso"
 brew "micro"
 # Tail multiple files in one terminal simultaneously
 brew "multitail"
+# CLI for MySQL with auto-completion and syntax highlighting
+brew "mycli"
 # Protocol buffers (Google's data interchange format)
 brew "protobuf"
 # Open source relational database management system
-brew "mysql", restart_service: true
+brew "mysql"
 # Node version management
 brew "n"
 # HTTP(S) server and reverse proxy, and IMAP/POP3 proxy server
 brew "nginx", restart_service: true
+# Platform built on V8 to build network applications
+brew "node"
 # Platform built on V8 to build network applications
 brew "node@14"
 # Cryptography and SSL/TLS Toolkit
@@ -137,9 +175,13 @@ brew "peco"
 # Interactive grep tool
 brew "percol"
 # General-purpose scripting language
-brew "php@7.4"
+brew "php@7.4", restart_service: true, link: true
 # Protocol buffers library
 brew "protobuf-c"
+# Python 3 bindings for the Cairo graphics library
+brew "py3cairo"
+# Python version management
+brew "pyenv"
 # Interpreted, interactive, object-oriented programming language
 brew "python@3.8"
 # Utility that provides fast incremental file transfer
@@ -166,20 +208,28 @@ brew "unzip"
 brew "vcsh"
 # Vi 'workalike' with many additional features
 brew "vim"
+# Terminal emulator widget used by GNOME terminal
+brew "vte3"
 # Executes a program periodically, showing output fullscreen
 brew "watch"
 # Execute commands when watched files change
 brew "watchexec"
 # Internet file retriever
 brew "wget"
+# Library to create, extract, and modify Windows Imaging files
+brew "wimlib"
 # Tools for the WireGuard secure network tunnel
 brew "wireguard-tools"
 # Command-line interface for WordPress
 brew "wp-cli"
 # Malware identification and classification tool
 brew "yara"
+# JavaScript package manager
+brew "yarn"
 # Download YouTube videos from the command-line
 brew "youtube-dl"
+# Fork of youtube-dl with additional features and fixes
+brew "yt-dlp"
 # General-purpose lossless data-compression library
 brew "zlib"
 # UNIX shell (command interpreter)
@@ -188,18 +238,34 @@ brew "zsh"
 brew "hashicorp/tap/vault"
 # A simple terminal UI for git commands, written in Go
 brew "jesseduffield/lazygit/lazygit"
+brew "lucapette/tap/fakedata"
+# General-purpose scripting language
+brew "shivammathur/php/php@5.6"
+# General-purpose scripting language
+brew "shivammathur/php/php@7.1"
 # Command-line helper for the 1Password password manager
 cask "1password-cli"
 # Instant messaging application
 cask "adium"
+# Enable Windows-like alt-tab
+cask "alt-tab"
 # GUI app for Homebrew
 cask "cakebrew"
 # Open links in any browser
 cask "choosy"
+# Free and open-source web browser
+cask "chromium"
 # System cleaner for logs, caches and more
 cask "clean-me"
+# Tool to prevent the system from going into sleep mode
+cask "keepingyouawake"
+# Reverse proxy, secure introspectable tunnels to localhost
+cask "ngrok"
 # VPN client for secure internet access and private browsing
 cask "nordvpn"
+# Free and open-source SoundCloud client
+cask "nuage"
+cask "phpmon"
 # Archive manager for data compression and backups
 cask "rar"
 # Move and resize windows with ease
