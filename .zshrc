@@ -192,6 +192,7 @@ function __aliases {
 	alias ntx="nt && x"
 	alias na="n auto" # Install the preferred version.
 	alias fakedata="fakedata --limit 1"
+	alias golive="ngrok http -host-header=rewrite $1:443"
 
 	# Easy composer commands.
 	alias cu="composer uninstall"
@@ -275,7 +276,7 @@ function __aliases {
 	alias flushdns='sudo dscacheutil -flushcache; sudo killall -HUP mDNSResponder'
 
 	# AwesomeMotive / AffiliateWP
-	alias affwp:build='composer install && na && npm ci || npm i && npm run build'
+	alias affwp:build='composer install || composer update && na && npm ci || npm i && npm run build'
 }
 
 ###
@@ -498,6 +499,11 @@ function __misc {
 		mkdir -p "$HOME/Pictures/Screenshots"
 
 		brew brewdump # Sync ~/.Brewfile
+
+		if [[ ! $( command -v php ) ]]; then
+			brew unlink php@7.4
+			brew link --force --overwrite php@7.4
+		fi
 
 	} &> /dev/null &
 }

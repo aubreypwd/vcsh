@@ -1,24 +1,14 @@
 {
     "require": {
         "php": "^7",
-        "aubreypwd/composer-uninstall": "dev-master@dev",
-        "spatie/ray": "^1.21",
-        "laravel/valet": "^2.16",
         "roots/multisite-url-fixer": "^1.1"
     },
     "repositories": {
         "composer-uninstall": {
             "type": "git",
             "url": "git@github.com:aubreypwd/composer-uninstall.git"
-        },
-        "WebDevStudios/mstrxmlcheck": {
-            "type": "git",
-            "url": "git@github.com:WebDevStudios/mstrxmlcheck.git"
         }
     },
     "config": {
-        "allow-plugins": {
-            "aubreypwd/composer-uninstall": true
-        }
     }
 }
