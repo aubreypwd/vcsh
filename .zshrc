@@ -101,7 +101,7 @@ if [ -e "$ZSH" ]; then
 
 		# High Level Dependancies
 		antigen bundle ssh://git@github.com/aubreypwd/zsh-plugin-require # export REQUIRE_AUTO_INSTALL="off" # Un-comment to disable autoinstall.
-		antigen bundle ssh://git@github.com/aubreypwd/zsh-plugin-git-is-clean # Required by my-functions.
+		antigen bundle ssh://git@github.com/aubreypwd/zsh-plugin-git-is-clean # Required by my-repos.
 
 		# My Tools
 		antigen bundle ssh://git@github.com/aubreypwd/zsh-plugin-my-functions
