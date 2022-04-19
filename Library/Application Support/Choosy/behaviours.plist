@@ -679,6 +679,23 @@
 	</dict>
 	<dict>
 		<key>behaviour</key>
+		<integer>6</integer>
+		<key>behaviourArgument</key>
+		<dict>
+			<key>path</key>
+			<string>/Applications/Stripe.app</string>
+			<key>type</key>
+			<string>ChoosyBrowser</string>
+		</dict>
+		<key>enabled</key>
+		<true/>
+		<key>predicate</key>
+		<string>URL CONTAINS "dashboard.stripe.com"</string>
+		<key>title</key>
+		<string>Stripe</string>
+	</dict>
+	<dict>
+		<key>behaviour</key>
 		<integer>3</integer>
 		<key>behaviourArgument</key>
 		<string></string>
