@@ -209,6 +209,6 @@ alias ll='exa -l -g --icons --tree --level=2 -a' # Enhance exa ls defaults, but 
 
 } &> /dev/null &
 
-pub pew # Send (modifed) updates up to Git.
-priv pew # Send (modified) updates up to Git.
+pub pew &> /dev/null # Send (modifed) updates up to Git.
+priv pew &> /dev/null # Send (modified) updates up to Git.
 myrepos
