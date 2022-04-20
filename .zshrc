@@ -209,6 +209,5 @@ alias ll='exa -l -g --icons --tree --level=2 -a' # Enhance exa ls defaults, but 
 	mkdir -p "$HOME/Pictures/Screenshots"
 
 
-} &> /dev/null &
-
-myrepos
+} &> /dev/null && \
+	myrepos
