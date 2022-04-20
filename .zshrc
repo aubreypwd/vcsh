@@ -143,6 +143,8 @@ autoload -Uz compinit && compinit
 alias ls='exa -l -g --icons --tree --level=1 -a' # Enhance exa ls defaults.
 alias ll='exa -l -g --icons --tree --level=2 -a' # Enhance exa ls defaults, but show 2 levels deep.
 
+myrepos
+
 ###
  # Quietly
  #
