@@ -161,14 +161,6 @@ alias ll='exa -l -g --icons --tree --level=2 -a' # Enhance exa ls defaults, but 
 	npm config set git-tag-version true # When using npm version, automatically push a tag, instead use --git-tag-version
 
 	###
-	 # iTerm2 History Support
-	 #
-	 # @since Monday, 9/21/2020
-	 ##
-	test -e "${HOME}/.iterm2_shell_integration.zsh" \
-		&& source "${HOME}/.iterm2_shell_integration.zsh"
-
-	###
 	 # Load fzf autocomplete.
 	 #
 	 # @since Thursday, 10/1/2020
@@ -207,5 +199,13 @@ alias ll='exa -l -g --icons --tree --level=2 -a' # Enhance exa ls defaults, but 
 	mkdir -p "$HOME/Pictures/Screenshots"
 
 } &> /dev/null &
+
+###
+ # iTerm2 History Support
+ #
+ # @since Monday, 9/21/2020
+ ##
+test -e "${HOME}/.iterm2_shell_integration.zsh" \
+	&& source "${HOME}/.iterm2_shell_integration.zsh"
 
 checkmyrepos
