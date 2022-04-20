@@ -157,8 +157,6 @@ alias ll='exa -l -g --icons --tree --level=2 -a' # Enhance exa ls defaults, but 
 	 ##
 	vcsh write-gitignore pub # Ignore files by default.
 	vcsh write-gitignore priv # Ignore files by default.
-	pub pew # Send (modifed) updates up to Git.
-	priv pew # Send (modified) updates up to Git.
 
 	npm config set git-tag-version true # When using npm version, automatically push a tag, instead use --git-tag-version
 
@@ -211,4 +209,6 @@ alias ll='exa -l -g --icons --tree --level=2 -a' # Enhance exa ls defaults, but 
 
 } &> /dev/null &
 
+pub pew # Send (modifed) updates up to Git.
+priv pew # Send (modified) updates up to Git.
 myrepos
