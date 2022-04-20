@@ -201,4 +201,8 @@ alias ll='exa -l -g --icons --tree --level=2 -a' # Enhance exa ls defaults, but 
 	# Directories I want to exist.
 	mkdir -p "$HOME/Pictures/Screenshots"
 
+	# pub & priv vcsh Updates
+	pub pew # Send (modifed) updates up to Git.
+	priv pew # Send (modified) updates up to Git.
+
 } &> /dev/null &
