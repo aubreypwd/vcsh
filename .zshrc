@@ -29,7 +29,6 @@ touch "$HOME/.hushlogin" # Don't show last login message, e.g. you have mail, et
  # Load ZSH
  #
  # @since   Tuesday, September 7, 2021
- # @updated Tuesday, September 7, 2021 Introduced
  ##
 if [ -e "$ZSH" ]; then
 
@@ -140,6 +139,10 @@ fi
 
 autoload -Uz compinit && compinit
 
+# Aliases we need to override.
+alias ls='exa -l -g --icons --tree --level=1 -a' # Enhance exa ls defaults.
+alias ll='exa -l -g --icons --tree --level=2 -a' # Enhance exa ls defaults, but show 2 levels deep.
+
 ###
  # Quietly
  #
@@ -197,9 +200,5 @@ autoload -Uz compinit && compinit
 
 	# Directories I want to exist.
 	mkdir -p "$HOME/Pictures/Screenshots"
-
-	# Alias
-	alias ls='exa -l -g --icons --tree --level=1 -a' # Enhance exa ls defaults.
-	alias ll='exa -l -g --icons --tree --level=2 -a' # Enhance exa ls defaults, but show 2 levels deep.
 
 } &> /dev/null &

@@ -1,13 +1,7 @@
 {
     "require": {
-        "php": "^7",
-        "roots/multisite-url-fixer": "^1.1"
     },
     "repositories": {
-        "composer-uninstall": {
-            "type": "git",
-            "url": "git@github.com:aubreypwd/composer-uninstall.git"
-        }
     },
     "config": {
     }
