@@ -150,8 +150,15 @@ alias ll='exa -l -g --icons --tree --level=2 -a' # Enhance exa ls defaults, but 
  ##
 () {
 
-	vcsh write-gitignore pub
-	vcsh write-gitignore priv
+	###
+	 # vcsh Repos
+	 #
+	 # @since Wednesday, April 20, 2022
+	 ##
+	vcsh write-gitignore pub # Ignore files by default.
+	vcsh write-gitignore priv # Ignore files by default.
+	pub pew # Send (modifed) updates up to Git.
+	priv pew # Send (modified) updates up to Git.
 
 	npm config set git-tag-version true # When using npm version, automatically push a tag, instead use --git-tag-version
 
@@ -201,8 +208,5 @@ alias ll='exa -l -g --icons --tree --level=2 -a' # Enhance exa ls defaults, but 
 	# Directories I want to exist.
 	mkdir -p "$HOME/Pictures/Screenshots"
 
-	# pub & priv vcsh Updates
-	pub pew # Send (modifed) updates up to Git.
-	priv pew # Send (modified) updates up to Git.
 
 } &> /dev/null &
