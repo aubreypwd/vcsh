@@ -206,9 +206,6 @@ alias ll='exa -l -g --icons --tree --level=2 -a' # Enhance exa ls defaults, but 
 	# Directories I want to exist.
 	mkdir -p "$HOME/Pictures/Screenshots"
 
-	priv pew
-	pub pew
-
 } &> /dev/null &
 
 checkmyrepos
