@@ -336,7 +336,7 @@
 			<string>ChoosyBrowser</string>
 		</dict>
 		<key>enabled</key>
-		<false/>
+		<true/>
 		<key>predicate</key>
 		<string>URL CONTAINS "buddy.works"</string>
 		<key>title</key>
