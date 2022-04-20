@@ -130,82 +130,82 @@ if [ -e "$ZSH" ]; then
 		antigen bundle ssh://git@github.com/aubreypwd/zsh-plugin-bruse # I haven't been using this much.
 
 		antigen apply
-
-		autoload -Uz compinit && compinit
-
-		# Aliases we need to override.
-		alias ls='exa -l -g --icons --tree --level=1 -a' # Enhance exa ls defaults.
-		alias ll='exa -l -g --icons --tree --level=2 -a' # Enhance exa ls defaults, but show 2 levels deep.
-
-		###
-		 # Quietly
-		 #
-		 # @since Tuesday, April 19, 2022
-		 ##
-		() {
-
-			###
-			 # vcsh Repos
-			 #
-			 # @since Wednesday, April 20, 2022
-			 ##
-			vcsh write-gitignore pub # Ignore files by default.
-			vcsh write-gitignore priv # Ignore files by default.
-
-			npm config set git-tag-version true # When using npm version, automatically push a tag, instead use --git-tag-version
-
-			###
-			 # iTerm2 History Support
-			 #
-			 # @since Monday, 9/21/2020
-			 ##
-			test -e "${HOME}/.iterm2_shell_integration.zsh" \
-				&& source "${HOME}/.iterm2_shell_integration.zsh"
-
-			###
-			 # Load fzf autocomplete.
-			 #
-			 # @since Thursday, 10/1/2020
-			 ##
-			[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-
-			###
-			 # Hidden/Unhidden Files & Folders
-			 #
-			 # @since Thursday, 10/1/2020
-			 ##
-			chflags nohidden "$HOME/Applications"
-			chflags nohidden "$HOME/Library"
-			chflags nohidden "$HOME/Documents"
-			chflags nohidden "$HOME/.Brewfile"
-
-			###
-			 # Terminus for Sublime Text 3 Support
-			 #
-			 # @since Monday, 9/21/2020
-			 ##
-			if [ "$TERM_PROGRAM" = "Terminus-Sublime" ]; then
-
-				# Fix arrow keys.
-				bindkey "\e[1;3C" forward-word
-				bindkey "\e[1;3D" backward-word
-
-				# Fix ls.
-				alias ls='ls -lah --color' # Use normal alias
-			fi
-
-			# Make sure keys and identities make it into keychain.
-			ssh-add -q -A -k
-
-			# Directories I want to exist.
-			mkdir -p "$HOME/Pictures/Screenshots"
-
-		} &> /dev/null &
-
-		checkmyrepos
 	fi
 else
 
 	echo ".oh-my-zsh isn't installed!"
 	echo "  Install: https://ohmyz.sh/#install"
 fi
+
+autoload -Uz compinit && compinit
+
+# Aliases we need to override.
+alias ls='exa -l -g --icons --tree --level=1 -a' # Enhance exa ls defaults.
+alias ll='exa -l -g --icons --tree --level=2 -a' # Enhance exa ls defaults, but show 2 levels deep.
+
+###
+ # Quietly
+ #
+ # @since Tuesday, April 19, 2022
+ ##
+() {
+
+	###
+	 # vcsh Repos
+	 #
+	 # @since Wednesday, April 20, 2022
+	 ##
+	vcsh write-gitignore pub # Ignore files by default.
+	vcsh write-gitignore priv # Ignore files by default.
+
+	npm config set git-tag-version true # When using npm version, automatically push a tag, instead use --git-tag-version
+
+	###
+	 # iTerm2 History Support
+	 #
+	 # @since Monday, 9/21/2020
+	 ##
+	test -e "${HOME}/.iterm2_shell_integration.zsh" \
+		&& source "${HOME}/.iterm2_shell_integration.zsh"
+
+	###
+	 # Load fzf autocomplete.
+	 #
+	 # @since Thursday, 10/1/2020
+	 ##
+	[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+	###
+	 # Hidden/Unhidden Files & Folders
+	 #
+	 # @since Thursday, 10/1/2020
+	 ##
+	chflags nohidden "$HOME/Applications"
+	chflags nohidden "$HOME/Library"
+	chflags nohidden "$HOME/Documents"
+	chflags nohidden "$HOME/.Brewfile"
+
+	###
+	 # Terminus for Sublime Text 3 Support
+	 #
+	 # @since Monday, 9/21/2020
+	 ##
+	if [ "$TERM_PROGRAM" = "Terminus-Sublime" ]; then
+
+		# Fix arrow keys.
+		bindkey "\e[1;3C" forward-word
+		bindkey "\e[1;3D" backward-word
+
+		# Fix ls.
+		alias ls='ls -lah --color' # Use normal alias
+	fi
+
+	# Make sure keys and identities make it into keychain.
+	ssh-add -q -A -k
+
+	# Directories I want to exist.
+	mkdir -p "$HOME/Pictures/Screenshots"
+
+} &> /dev/null &
+
+checkmyrepos
