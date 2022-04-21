@@ -84,7 +84,7 @@
     "*.json",
     "*.log",
     "*.map*",
-    "*.min.*",
+    // "*.min.*",
     "*.sql",
     ".db/*",
     ".git/*",
@@ -126,7 +126,7 @@
   "index_workers": 8,
   "file_exclude_patterns":
   [
-    "*.min.*",
+    // "*.min.*",
     ".DS_Store"
   ],
   "find_selected_text": true,
