@@ -108,7 +108,7 @@ if [ -e "$ZSH" ]; then
 		antigen bundle ssh://git@github.com/aubreypwd/zsh-plugin-my-require
 
 		# Other Plugins
-		antigen bundle wp-cli
+		# antigen bundle wp-cli
 		antigen bundle git-extras
 		antigen bundle history-substring-search
 		antigen bundle osx
