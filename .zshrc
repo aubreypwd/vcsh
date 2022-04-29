@@ -134,6 +134,29 @@ else
 
 	echo ".oh-my-zsh isn't installed!"
 	echo "  Install: https://ohmyz.sh/#install"
+
+	exit 2
+fi
+
+###
+ # Terminus for Sublime Text 3 Support
+ #
+ # @since Monday, 9/21/2020
+ ##
+if [ "$TERM_PROGRAM" = "Terminus-Sublime" ]; then
+
+	# Fix arrow keys.
+	bindkey "\e[1;3C" forward-word
+	bindkey "\e[1;3D" backward-word
+
+	# Don't use exa outside of Terminus
+	alias ls='ls -lah --color' # Use normal alias
+else
+
+	# Use exa outside of Terminus.
+	alias ls='exa -l -g --icons --tree --level=1 -a' # Enhance exa ls defaults.
+	alias ll='exa -l -g --icons --tree --level=2 -a' # Enhance exa ls defaults, but show 2 levels deep.
+
 fi
 
 autoload -Uz compinit && compinit
@@ -171,27 +194,6 @@ autoload -Uz compinit && compinit
 	chflags nohidden "$HOME/Library"
 	chflags nohidden "$HOME/Documents"
 	chflags nohidden "$HOME/.Brewfile"
-
-	###
-	 # Terminus for Sublime Text 3 Support
-	 #
-	 # @since Monday, 9/21/2020
-	 ##
-	if [ "$TERM_PROGRAM" = "Terminus-Sublime" ]; then
-
-		# Fix arrow keys.
-		bindkey "\e[1;3C" forward-word
-		bindkey "\e[1;3D" backward-word
-
-		# Don't use exa outside of Terminus
-		alias ls='ls -lah --color' # Use normal alias
-	else
-
-		# Use exa outside of Terminus.
-		alias ls='exa -l -g --icons --tree --level=1 -a' # Enhance exa ls defaults.
-		alias ll='exa -l -g --icons --tree --level=2 -a' # Enhance exa ls defaults, but show 2 levels deep.
-
-	fi
 
 	# Make sure keys and identities make it into keychain.
 	ssh-add -q -A -k
