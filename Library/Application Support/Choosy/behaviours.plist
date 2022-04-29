@@ -47,7 +47,7 @@
 			<string>ChoosyBrowser</string>
 		</dict>
 		<key>enabled</key>
-		<true/>
+		<false/>
 		<key>predicate</key>
 		<string>URL CONTAINS "linkedin.com"</string>
 		<key>title</key>
@@ -64,7 +64,7 @@
 			<string>ChoosyBrowser</string>
 		</dict>
 		<key>enabled</key>
-		<true/>
+		<false/>
 		<key>predicate</key>
 		<string>URL CONTAINS "amazon.com"</string>
 		<key>title</key>
@@ -217,7 +217,7 @@
 			<string>ChoosyBrowser</string>
 		</dict>
 		<key>enabled</key>
-		<true/>
+		<false/>
 		<key>predicate</key>
 		<string>URL CONTAINS "help.wpengine.com" OR URL CONTAINS "my.wpengine.com"</string>
 		<key>title</key>
@@ -234,7 +234,7 @@
 			<string>ChoosyBrowser</string>
 		</dict>
 		<key>enabled</key>
-		<true/>
+		<false/>
 		<key>predicate</key>
 		<string>URL CONTAINS "docs.google.com" OR URL CONTAINS "drive.google.com"</string>
 		<key>title</key>
@@ -336,7 +336,7 @@
 			<string>ChoosyBrowser</string>
 		</dict>
 		<key>enabled</key>
-		<true/>
+		<false/>
 		<key>predicate</key>
 		<string>URL CONTAINS "buddy.works"</string>
 		<key>title</key>
@@ -353,7 +353,7 @@
 			<string>ChoosyBrowser</string>
 		</dict>
 		<key>enabled</key>
-		<true/>
+		<false/>
 		<key>predicate</key>
 		<string>URL CONTAINS "github.com"</string>
 		<key>title</key>
@@ -370,7 +370,7 @@
 			<string>ChoosyBrowser</string>
 		</dict>
 		<key>enabled</key>
-		<true/>
+		<false/>
 		<key>predicate</key>
 		<string>URL CONTAINS "twitter.com"</string>
 		<key>title</key>
@@ -489,7 +489,7 @@
 			<string>ChoosyBrowser</string>
 		</dict>
 		<key>enabled</key>
-		<true/>
+		<false/>
 		<key>predicate</key>
 		<string>URL CONTAINS "facebook.com"</string>
 		<key>title</key>
@@ -557,7 +557,7 @@
 			<string>ChoosyBrowser</string>
 		</dict>
 		<key>enabled</key>
-		<true/>
+		<false/>
 		<key>predicate</key>
 		<string>URL CONTAINS "https://tenor.com/"</string>
 		<key>title</key>
@@ -574,7 +574,7 @@
 			<string>ChoosyBrowser</string>
 		</dict>
 		<key>enabled</key>
-		<true/>
+		<false/>
 		<key>predicate</key>
 		<string>URL CONTAINS "hub.awesomemotive.com" OR URL CONTAINS "awesomemotive.bamboohr.com" OR URL CONTAINS "app.gusto.com" OR URL CONTAINS "awesomemotive"</string>
 		<key>title</key>
@@ -591,7 +591,7 @@
 			<string>ChoosyBrowser</string>
 		</dict>
 		<key>enabled</key>
-		<true/>
+		<false/>
 		<key>predicate</key>
 		<string>URL CONTAINS "affiliatewp.com/account" OR URL CONTAINS "docs.affiliatewp.com" OR URL CONTAINS "team.affiliatewp.com/feature-requests"</string>
 		<key>title</key>
@@ -625,7 +625,7 @@
 			<string>ChoosyBrowser</string>
 		</dict>
 		<key>enabled</key>
-		<true/>
+		<false/>
 		<key>predicate</key>
 		<string>URL CONTAINS "meet.google.com"</string>
 		<key>title</key>
@@ -642,7 +642,7 @@
 			<string>ChoosyBrowser</string>
 		</dict>
 		<key>enabled</key>
-		<true/>
+		<false/>
 		<key>predicate</key>
 		<string>URL CONTAINS "helpscout.net"</string>
 		<key>title</key>
@@ -654,7 +654,7 @@
 		<key>behaviourArgument</key>
 		<string></string>
 		<key>enabled</key>
-		<true/>
+		<false/>
 		<key>predicate</key>
 		<string>URL CONTAINS "drive.google.com" OR URL CONTAINS "docs.google.com"</string>
 		<key>title</key>
@@ -671,7 +671,7 @@
 			<string>ChoosyBrowser</string>
 		</dict>
 		<key>enabled</key>
-		<true/>
+		<false/>
 		<key>predicate</key>
 		<string>URL CONTAINS "mega.nz"</string>
 		<key>title</key>
@@ -688,7 +688,7 @@
 			<string>ChoosyBrowser</string>
 		</dict>
 		<key>enabled</key>
-		<true/>
+		<false/>
 		<key>predicate</key>
 		<string>URL CONTAINS "dashboard.stripe.com"</string>
 		<key>title</key>
@@ -705,7 +705,7 @@
 			<string>ChoosyBrowser</string>
 		</dict>
 		<key>enabled</key>
-		<true/>
+		<false/>
 		<key>predicate</key>
 		<string>URL CONTAINS "hashnode.com"</string>
 		<key>title</key>
@@ -722,7 +722,7 @@
 			<string>ChoosyBrowser</string>
 		</dict>
 		<key>enabled</key>
-		<true/>
+		<false/>
 		<key>predicate</key>
 		<string>URL CONTAINS "community.localwp.com"</string>
 		<key>title</key>
