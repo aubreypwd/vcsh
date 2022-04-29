@@ -183,8 +183,6 @@ autoload -Uz compinit && compinit
 		bindkey "\e[1;3C" forward-word
 		bindkey "\e[1;3D" backward-word
 
-		///asdfasdf
-
 		# Don't use exa outside of Terminus
 		alias ls='ls -lah --color' # Use normal alias
 	else
