@@ -49,3 +49,5 @@ colorscheme vim-monokai-tasty
 set background=dark
 hi Normal ctermbg=16 guibg=#121212
 hi LineNr ctermbg=16 guibg=#121212
+
+set backspace=indent,eol,start
