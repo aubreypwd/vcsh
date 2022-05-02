@@ -93,7 +93,7 @@
 		<key>behaviourArgument</key>
 		<dict>
 			<key>path</key>
-			<string>/Applications/Friendly Streaming.app</string>
+			<string>/Applications/Safari.app</string>
 			<key>type</key>
 			<string>ChoosyBrowser</string>
 		</dict>
@@ -102,7 +102,7 @@
 		<key>predicate</key>
 		<string>URL CONTAINS "youtube." OR URL CONTAINS "youtu.be"</string>
 		<key>title</key>
-		<string>Friendly Streaming</string>
+		<string>YouTube</string>
 	</dict>
 	<dict>
 		<key>behaviour</key>
