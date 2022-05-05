@@ -47,7 +47,7 @@ set termguicolors
 "colorscheme monokai_pro
 colorscheme vim-monokai-tasty
 set background=dark
-hi Normal ctermbg=16 guibg=#121212
-hi LineNr ctermbg=16 guibg=#121212
+hi Normal ctermbg=16 guibg=NONE
+hi LineNr ctermbg=16 guibg=NONE
 
 set backspace=indent,eol,start
