@@ -193,8 +193,9 @@ autoload -Uz compinit && compinit
 	chflags nohidden "$HOME/Applications"
 	chflags nohidden "$HOME/Library"
 	chflags nohidden "$HOME/Documents"
-	chflags nohidden "$HOME/Desktop"
-	chflags nohidden "$HOME/.Brewfile"
+	chflags hidden "$HOME/Desktop"
+	chflags hidden "$HOME/Music"
+	chflags hidden "$HOME/Public"
 
 	# Make sure keys and identities make it into keychain.
 	ssh-add -q -A -k
