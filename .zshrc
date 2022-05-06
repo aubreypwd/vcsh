@@ -193,6 +193,7 @@ autoload -Uz compinit && compinit
 	chflags nohidden "$HOME/Applications"
 	chflags nohidden "$HOME/Library"
 	chflags nohidden "$HOME/Documents"
+	chflags nohidden "$HOME/Desktop"
 	chflags nohidden "$HOME/.Brewfile"
 
 	# Make sure keys and identities make it into keychain.
