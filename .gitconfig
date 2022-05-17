@@ -48,8 +48,8 @@
 	ltt = l -n 20
 
 	# Stashes
-	st = stash push -m
-	pop = stash apply
+	save = stash push -m
+	open = stash pop
 
 	# Reset & Clear
 	rhh    = reset --hard HEAD # Reset easily.
