@@ -47,6 +47,10 @@
 	lt = l -n 10
 	ltt = l -n 20
 
+	# Stashes
+	st = stash push -m
+	pop = stash apply
+
 	# Reset & Clear
 	rhh    = reset --hard HEAD # Reset easily.
 	rhhc   = "! git rhh && git clear" # Reset and remove new files.
