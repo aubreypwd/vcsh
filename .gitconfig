@@ -47,9 +47,13 @@
 	lt = l -n 10
 	ltt = l -n 20
 
-	# Stashes
-	save = stash push -m
-	open = stash pop
+	# Stashes (or stows)
+	stow = stash push -m
+	stows = stash list
+	unstow = stash pop
+	applystow = stash apply
+	rmstow = stash drop
+	stowinfo = stash show -p
 
 	# Reset & Clear
 	rhh    = reset --hard HEAD # Reset easily.
