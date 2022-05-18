@@ -38,6 +38,7 @@
 	s      = status
 	sd     = "! function f() { git status && git diff ;}; f"
 	sds    = "! function f() { git status && git diff --staged ;}; f"
+	di     = "! git ls-files -m -o --exclude-standard | fzf --reverse --height 10 --print0 -m | xargs -0 -t -o git diff" # Interactive diff.
 
 	# Logs
 	l = log --oneline --decorate --graph # Better log, looks better in CLI.
