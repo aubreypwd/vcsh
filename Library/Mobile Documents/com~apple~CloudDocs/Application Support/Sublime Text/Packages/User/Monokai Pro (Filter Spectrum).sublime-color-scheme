@@ -5,8 +5,8 @@
 	},
 	"globals":
 	{
-		"background": "#151515",
-		"gutter": "#151515"
+		// "background": "#1E1E1E",
+		"gutter": "#1E1E1E"
 	},
 	"rules":
 	[
