@@ -1,5 +1,6 @@
 {
     "require": {
+        "spatie/global-ray": "^1.0"
     },
     "repositories": {
     },
