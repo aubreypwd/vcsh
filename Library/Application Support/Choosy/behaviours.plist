@@ -389,7 +389,7 @@
 		<key>enabled</key>
 		<true/>
 		<key>predicate</key>
-		<string>URL CONTAINS ".local" OR URL CONTAINS ".test" OR URL CONTAINS "localhost:"</string>
+		<string>URL CONTAINS ".local" OR URL CONTAINS ".test" OR URL CONTAINS "localhost:" OR URL CONTAINS "https://a.supportally.com/"</string>
 		<key>title</key>
 		<string>Google Chrome</string>
 	</dict>
