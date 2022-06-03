@@ -196,6 +196,7 @@ autoload -Uz compinit && compinit
 	chflags hidden "$HOME/Desktop"
 	chflags hidden "$HOME/Music"
 	chflags hidden "$HOME/Public"
+	chflags hidden "$HOME/Applications (Parallels)"
 
 	# Make sure keys and identities make it into keychain.
 	ssh-add -q -A -k
