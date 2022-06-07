@@ -21,9 +21,12 @@
 	get = "! function f() { ghq get \"$1\"; }; f" # Commit all files, add message inline, and push.
 
 	## Staging
-	mod     = "add -u" # Add modifed
-	all     = "add ." # All all
-	rm-c    = "rm --cached"
+	mod = "add -u" # Add modifed
+	all = "add ." # All all
+	rmc = "rm --cached"
+
+	# Stashing
+	stow = "stash push -m"
 
 	## Comitting
 	c      = commit
