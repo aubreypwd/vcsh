@@ -56,6 +56,7 @@
         ".antigen/init.zsh",
         ".antigen/init.zsh.zwc",
         ".antigen/.zcompdump",
+        ".zcompdump-Aubrey’s Macbook Air*"
       ],
       "folder_exclude_patterns":
       [
@@ -107,6 +108,8 @@
         "Virtual Machines.localized",
         "Applications",
         "Archive",
+        "Archive & Backup",
+        "Applications*",
         "Desktop",
         "Documents",
         "Downloads",
