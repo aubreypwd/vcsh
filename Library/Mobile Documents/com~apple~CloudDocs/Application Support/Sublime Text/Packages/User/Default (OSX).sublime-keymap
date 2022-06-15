@@ -12,6 +12,15 @@
   { "keys": ["super+."], "command": "toggle_side_bar" },
 
   /*
+   * Moving files across panels more easily.
+   *
+   * @since Wednesday, June 15, 2022
+   */
+  { "keys": ["super+1"], "command": "move_to_group", "args": { "group": 0 } },
+  { "keys": ["super+2"], "command": "move_to_group", "args": { "group": 1 } },
+  { "keys": ["super+3"], "command": "move_to_group", "args": { "group": 2 } },
+
+  /*
    * Marks.
    */
   { "keys": ["alt+f"], "command": "next_bookmark" },
