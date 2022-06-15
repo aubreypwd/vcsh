@@ -42,9 +42,6 @@
     "linting",
     "excersize"
   ],
-  "sidebar_toggle_on_hover": true,
-  "sidebar_toggle_on_click": false,
-  "sidebar_toggle_auto_hide": true,
   "always_prompt_for_file_reload": false,
   "remember_layout": true,
   "create_window_at_startup": false,
