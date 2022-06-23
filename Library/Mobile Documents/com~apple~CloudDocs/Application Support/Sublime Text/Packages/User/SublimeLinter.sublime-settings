@@ -4,38 +4,29 @@
     "lint_mode": "background",
     "linters": {
         "eslint": {
-            "working_dir": "${folder}",
             "disable": false,
-            "args": [
-            ],
+            "args": [],
             "excludes": [],
         },
         "phpcs": {
             "env": {
-              "PATH":"/opt/homebrew/bin"
+              "PATH": "/opt/homebrew/Cellar/php@7.4/7.4.30/bin"
             },
-            "working_dir": "${folder}",
             "disable": false,
-            "args": [
-            ],
+            "args": [],
             "excludes": []
         },
         "phpcbf": {
-            "working_dir": "${folder}",
             "disable": false,
         },
         "sass": {
-            "working_dir": "${folder}",
             "disable": false,
-            "args": [
-            ],
+            "args": [],
             "excludes": [],
         },
         "stylelint": {
-            "working_dir": "${folder}",
             "disable": false,
-            "args": [
-            ],
+            "args": [],
             "excludes": [],
         },
         "json": {
