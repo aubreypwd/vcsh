@@ -14,7 +14,7 @@
             },
             "disable": false,
             "args": [],
-            "excludes": []
+            "excludes": [],
         },
         "phpcbf": {
             "disable": false,
