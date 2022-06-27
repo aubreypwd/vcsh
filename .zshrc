@@ -168,6 +168,8 @@ autoload -Uz compinit && compinit
  ##
 () {
 
+	brewd # Dump out a .Brewfile.
+
 	###
 	 # vcsh Repos
 	 #
@@ -196,6 +198,7 @@ autoload -Uz compinit && compinit
 	chflags hidden "$HOME/Desktop"
 	chflags hidden "$HOME/Music"
 	chflags hidden "$HOME/Public"
+	chflags hidden "$HOME/Sites/Local"
 	chflags hidden "$HOME/Applications (Parallels)"
 
 	# Make sure keys and identities make it into keychain.
