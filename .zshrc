@@ -192,13 +192,13 @@ autoload -Uz compinit && compinit
 	 #
 	 # @since Thursday, 10/1/2020
 	 ##
-	chflags nohidden "$HOME/Applications"
+	chflags hidden "$HOME/Applications"
 	chflags nohidden "$HOME/Library"
 	chflags nohidden "$HOME/Documents"
 	chflags hidden "$HOME/Desktop"
 	chflags hidden "$HOME/Music"
 	chflags hidden "$HOME/Public"
-	chflags hidden "$HOME/Sites/Local"
+	chflags nohidden "$HOME/Sites/Local"
 	chflags hidden "$HOME/Applications (Parallels)"
 
 	# Make sure keys and identities make it into keychain.
