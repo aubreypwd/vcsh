@@ -48,8 +48,10 @@
 	l1 = l -n 1
 	l2 = l -n 2
 	l5 = l -n 5
-	lt = l -n 10
-	ltt = l -n 20
+	l10 = l -n 10
+	l20 = l -n 20
+	l50 = l -n 20
+	l100 = l -n 20
 
 	# Reset & Clear
 	rhh    = reset --hard HEAD # Reset easily.
