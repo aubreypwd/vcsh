@@ -233,4 +233,9 @@
   "use_tab_stops": false,
   "word_wrap": false,
   "console_max_history_lines": 100,
+  "gravity_tab_height_short": true,
+  "gravity_highlight_color_blue": true,
+  // "gravity_selected_tab_bold": true,
+  // "gravity_sidebar_header": true,
+  "gravity_tab_font_small": true,
 }
