@@ -17,13 +17,22 @@
  # @since Large update, most things are ZSH plugins now.
  ##
 
+ # Paths
+ export PATH="$HOME/.composer/vendor/bin:$PATH"
+ export PATH="/Applications/Sublime Text.app/Contents/SharedSupport/bin:$PATH" # subl
+ export PATH="/opt/homebrew/sbin:$PATH" # Homebrew
+ export PATH="/opt/homebrew/bin:$PATH" # Homebrew
+ export PATH="/opt/homebrew/opt/ruby/bin:$PATH" #  Ruby
+ export PATH="/opt/homebrew/opt/openssl@3/bin:$PATH" # Open SSL
+ export PATH="/opt/homebrew/lib/ruby/gems/3.0.0/bin:$PATH" # Ruby Gems
+ export PATH="/usr/local/bin:$PATH" # Just for n, where it symlinks node.
+
 ###
  # High Level Options
  #
  # @since Tuesday, April 19, 2022
  ##
 export ZSH="$HOME/.oh-my-zsh" # Path to your oh-my-zsh installation.
-touch "$HOME/.hushlogin" # Don't show last login message, e.g. you have mail, etc.
 
 ###
  # Load ZSH
@@ -57,21 +66,13 @@ if [ -e "$ZSH" ]; then
 	# Built-in plugins.
 	plugins=()
 
-	# Load
+	# Load Oh My ZSH...
 	source $ZSH/oh-my-zsh.sh
-
-	# Make sure that additonal info isn't shown on prompt.
-	precmd() {
-
-		setopt localoptions nopromptsubst
-		print -P "%F{yellow}$(cmd_exec_time)%f"
-		unset cmd_timestamp #Reset cmd exec time.
-	}
 
 	###
 	 # Antigen Plugins
 	 #
-	 # I use Antigen to source my various zsh functions and aliases.
+	 # I use Antigen to source my various zsh functions and aliases, etc.
 	 #
 	 # - Think of "bundle" as "plugin".
 	 # - E.g. `Tarrasch/zsh-bd` should clone from Github by default
@@ -88,24 +89,9 @@ if [ -e "$ZSH" ]; then
 		echo "  Homebrew: brew reinstall antigen"
 	else
 
+		# Get antigen ready.
 		source /opt/homebrew/share/antigen/antigen.zsh # brew install antigen
-
 		antigen use oh-my-zsh
-
-		# My Configurations
-		antigen bundle ssh://git@github.com/aubreypwd/zsh-plugin-my-opts
-		antigen bundle ssh://git@github.com/aubreypwd/zsh-plugin-my-vars
-		antigen bundle ssh://git@github.com/aubreypwd/zsh-plugin-my-aliases
-		antigen bundle ssh://git@github.com/aubreypwd/zsh-plugin-my-mac-defaults
-
-		# High Level Dependancies
-		antigen bundle ssh://git@github.com/aubreypwd/zsh-plugin-require # export REQUIRE_AUTO_INSTALL="off" # Un-comment to disable autoinstall.
-		antigen bundle ssh://git@github.com/aubreypwd/zsh-plugin-git-is-clean # Required by my-repos.
-
-		# My Tools
-		antigen bundle ssh://git@github.com/aubreypwd/zsh-plugin-my-functions
-		antigen bundle ssh://git@github.com/aubreypwd/zsh-plugin-my-repos
-		antigen bundle ssh://git@github.com/aubreypwd/zsh-plugin-my-require
 
 		# Other Plugins
 		antigen bundle git-extras
@@ -113,7 +99,9 @@ if [ -e "$ZSH" ]; then
 		antigen bundle osx
 		antigen bundle zsh-users/zsh-syntax-highlighting
 
-		# My Plugins
+		# Plugins I built (install as source on master).
+		antigen bundle ssh://git@github.com/aubreypwd/zsh-plugin-require # export REQUIRE_AUTO_INSTALL="off" # Un-comment to disable autoinstall.
+		antigen bundle ssh://git@github.com/aubreypwd/zsh-plugin-git-is-clean # Required by my-repos.
 		antigen bundle ssh://git@github.com/aubreypwd/zsh-plugin-x
 		antigen bundle ssh://git@github.com/aubreypwd/zsh-plugin-reload
 		antigen bundle ssh://git@github.com/aubreypwd/zsh-plugin-fzf-git-branch # Used in my "git fb" alias
@@ -128,35 +116,16 @@ if [ -e "$ZSH" ]; then
 		antigen bundle ssh://git@github.com/aubreypwd/zsh-plugin-newvwp # Easy Valet WP site creation.
 		antigen bundle ssh://git@github.com/aubreypwd/zsh-plugin-bruse # I haven't been using this much.
 
+		# My configurations (as a plugin).
+		antigen bundle ssh://git@github.com/aubreypwd/zsh-plugin-my-config
+
 		antigen apply
 	fi
 else
 
 	echo ".oh-my-zsh isn't installed!"
 	echo "  Install: https://ohmyz.sh/#install"
-
 	exit 2
-fi
-
-###
- # Terminus for Sublime Text 3 Support
- #
- # @since Monday, 9/21/2020
- ##
-if [ "$TERM_PROGRAM" = "Terminus-Sublime" ]; then
-
-	# Fix arrow keys.
-	bindkey "\e[1;3C" forward-word
-	bindkey "\e[1;3D" backward-word
-
-	# Don't use exa outside of Terminus
-	alias ls='ls -lah --color' # Use normal alias
-else
-
-	# Use exa outside of Terminus.
-	alias ls='exa -l -g --icons --tree --level=1 -a' # Enhance exa ls defaults.
-	alias ll='exa -l -g --icons --tree --level=2 -a' # Enhance exa ls defaults, but show 2 levels deep.
-
 fi
 
 autoload -Uz compinit && compinit
@@ -171,41 +140,11 @@ autoload -Uz compinit && compinit
 	brewd # Dump out a .Brewfile.
 
 	###
-	 # vcsh Repos
-	 #
-	 # @since Wednesday, April 20, 2022
-	 ##
-	vcsh write-gitignore pub # Ignore files by default.
-	vcsh write-gitignore priv # Ignore files by default.
-
-	npm config set git-tag-version true # When using npm version, automatically push a tag, instead use --git-tag-version
-
-	###
 	 # Load fzf autocomplete.
 	 #
 	 # @since Thursday, 10/1/2020
 	 ##
 	[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-
-	###
-	 # Hidden/Unhidden Files & Folders
-	 #
-	 # @since Thursday, 10/1/2020
-	 ##
-	chflags hidden "$HOME/Applications"
-	chflags nohidden "$HOME/Library"
-	chflags nohidden "$HOME/Documents"
-	chflags hidden "$HOME/Desktop"
-	chflags hidden "$HOME/Music"
-	chflags hidden "$HOME/Public"
-	chflags nohidden "$HOME/Sites/Local"
-	chflags hidden "$HOME/Applications (Parallels)"
-
-	# Make sure keys and identities make it into keychain.
-	ssh-add -q -A -k
-
-	# Directories I want to exist.
-	mkdir -p "$HOME/Pictures/Screenshots"
 
 } &> /dev/null &
 
