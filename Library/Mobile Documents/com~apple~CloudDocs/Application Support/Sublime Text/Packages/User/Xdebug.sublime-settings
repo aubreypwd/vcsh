@@ -14,9 +14,10 @@
   "break_on_exception": true,
   "pretty_output": true,
   "break_on_start": false,
-  "debug": true,
-  "max_depth": 5,
-  "max_children": 10,
+  "debug": false,
+  "max_depth": 3,
+  "max_children": 32,
+  "disable_layout": false,
   "ide_key": "",
   "port": 9003, // Yes, we have to use this now that PHP 7.4 takes over port 9000.
   "host": "localhost", // Yes, we have to use this now that PHP 7.4 takes over port 9000.
