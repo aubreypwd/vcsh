@@ -191,7 +191,7 @@ brew "peco"
 # Interactive grep tool
 brew "percol"
 # General-purpose scripting language
-brew "php@7.4", restart_service: true
+brew "php@7.4", restart_service: true, link: true
 # Protocol buffers library
 brew "protobuf-c"
 # Python 3 bindings for the Cairo graphics library
