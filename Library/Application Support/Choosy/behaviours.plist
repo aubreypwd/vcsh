@@ -353,7 +353,7 @@
 			<string>ChoosyBrowser</string>
 		</dict>
 		<key>enabled</key>
-		<false/>
+		<true/>
 		<key>predicate</key>
 		<string>URL CONTAINS "github.com"</string>
 		<key>title</key>
@@ -383,15 +383,17 @@
 		<dict>
 			<key>path</key>
 			<string>/Applications/Google Chrome.app</string>
+			<key>profileName</key>
+			<string>Profile 21</string>
 			<key>type</key>
-			<string>ChoosyBrowser</string>
+			<string>ChoosyChromeProfileMode</string>
 		</dict>
 		<key>enabled</key>
 		<true/>
 		<key>predicate</key>
-		<string>URL CONTAINS ".local" OR URL CONTAINS ".test" OR URL CONTAINS "localhost:" OR URL CONTAINS "https://a.supportally.com/"</string>
+		<string>URL CONTAINS ".local" OR URL CONTAINS ".test" OR URL CONTAINS "localhost:" OR URL CONTAINS "localhost"</string>
 		<key>title</key>
-		<string>Google Chrome</string>
+		<string>DEV</string>
 	</dict>
 	<dict>
 		<key>behaviour</key>
