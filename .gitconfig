@@ -11,7 +11,7 @@
 	g       = gui
 	gp      = guip
 	ga = "! function f() { git add . && git g; }; f" # Add all files and open the GUI.
-	glog    = "! /bin/sh $HOME/.gitscripts/towerlog.sh"
+	glog = "! /bin/sh $HOME/.gitscripts/towerlog.sh"
 
 	# Checkout.
 	co     = checkout
@@ -29,19 +29,19 @@
 	stow = "stash push -m"
 
 	## Comitting
-	c      = commit
-	cs     = commit # Commit staged
-	cm  = "! function f() { git mod && git commit; }; f"
-	ca  = "! function f() { git all && git commit; }; f"
-	ai  = "! git ls-files -m -o --exclude-standard | fzf --reverse --height 10 --print0 -m | xargs -0 -t -o git add" # https://spin.atomicobject.com/2018/04/05/fuzzy-find-git-add/
+	c = commit
+	cs = commit # Commit staged
+	cm = "! function f() { git mod && git commit; }; f"
+	ca = "! function f() { git all && git commit; }; f"
+	ai = "! git ls-files -m -o --exclude-standard | fzf --reverse --height 10 --print0 -m | xargs -0 -t -o git add" # https://spin.atomicobject.com/2018/04/05/fuzzy-find-git-add/
 	pew = "! function f() { git commit -a --allow-empty-message -m '' && git p; }; f" # Push an empty commit with all updates (dependant in other packages).
 
 	# Status
-	stat   = status
-	s      = status
-	sd     = "! function f() { git status && git diff ;}; f"
-	sds    = "! function f() { git status && git diff --staged ;}; f"
-	di     = "! git ls-files -m -o --exclude-standard | fzf --reverse --height 10 --print0 -m | xargs -0 -t -o git diff" # Interactive diff.
+	stat = status
+	s = status
+	sd = "! function f() { git status && git diff ;}; f"
+	sds = "! function f() { git status && git diff --staged ;}; f"
+	di = "! git ls-files -m -o --exclude-standard | fzf --reverse --height 10 --print0 -m | xargs -0 -t -o git diff" # Interactive diff.
 
 	# Logs
 	l = log --oneline --decorate --graph # Better log, looks better in CLI.
@@ -54,31 +54,32 @@
 	l100 = l -n 20
 
 	# Reset & Clear
-	rhh    = reset --hard HEAD # Reset easily.
-	rhhc   = "! git rhh && git clear" # Reset and remove new files.
-	clear  = clean -df # Just remove new files
+	rhh = reset --hard HEAD # Reset easily.
+	rhhc = "! git rhh && git clear" # Reset and remove new files.
+	clear = clean -df # Just remove new files
 
 	# Push/Pull
-	p      = "! git push -u origin \"$(git rev-parse --abbrev-ref HEAD)\"" # git push current branch.
-	u      = "! git pull origin \"$(git rev-parse --abbrev-ref HEAD)\"" # git pull current branch.
-	pt     = push --tags
+	p = "! git push -u origin \"$(git rev-parse --abbrev-ref HEAD)\"" # git push current branch.
+	u = "! git pull origin \"$(git rev-parse --abbrev-ref HEAD)\"" # git pull current branch.
+	pt = push --tags
+	px = "! git p && x" # Push and exit
 
 	# Branches & Tags
-	b      = "! echo $(git branch --show-current)" # Show the current branch.
-	nb     = checkout -b # New branch
-	cb     = "! git b | pbcopy" # Copy the current branch to the clipboard.
+	b = "! echo $(git branch --show-current)" # Show the current branch.
+	nb = checkout -b # New branch
+	cb = "! git b | pbcopy" # Copy the current branch to the clipboard.
 
 	## Moving Branches and tags around
-	db     = "! function f() { git branch -D $1; git push origin :$1 ;}; f"
-	dt     = "! function f() { git tag -d $1; git push origin :refs/tags/$1; }; f"
-	fb     = "! /bin/bash -c 'source $HOME/.antigen/bundles/aubreypwd/zsh-plugin-fzf-git-branch/fzf-git-branch.plugin.zsh && fzf-git-branch'" # See https://github.com/aubreypwd/zsh-plugin-fzf-git-branch
-	mt     = "! function f() { git dt $1; git tag $1; git push --tags; }; f" # Move tag here.
+	db = "! function f() { git branch -D $1; git push origin :$1 ;}; f"
+	dt = "! function f() { git tag -d $1; git push origin :refs/tags/$1; }; f"
+	fb = "! /bin/bash -c 'source $HOME/.antigen/bundles/aubreypwd/zsh-plugin-fzf-git-branch/fzf-git-branch.plugin.zsh && fzf-git-branch'" # See https://github.com/aubreypwd/zsh-plugin-fzf-git-branch
+	mt = "! function f() { git dt $1; git tag $1; git push --tags; }; f" # Move tag here.
 
 	# DIFFs
-	diffs  = diff --staged
-	ds     = diffs
-	dm     = diff
-	d      = diff
+	diffs = diff --staged
+	ds = diffs
+	dm = diff
+	d = diff
 
 [push]
 	default = current
