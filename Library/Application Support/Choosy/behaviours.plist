@@ -98,7 +98,7 @@
 			<string>ChoosyBrowser</string>
 		</dict>
 		<key>enabled</key>
-		<true/>
+		<false/>
 		<key>predicate</key>
 		<string>URL CONTAINS "youtube." OR URL CONTAINS "youtu.be"</string>
 		<key>title</key>
@@ -353,7 +353,7 @@
 			<string>ChoosyBrowser</string>
 		</dict>
 		<key>enabled</key>
-		<true/>
+		<false/>
 		<key>predicate</key>
 		<string>URL CONTAINS "github.com"</string>
 		<key>title</key>
