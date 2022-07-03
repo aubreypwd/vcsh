@@ -214,8 +214,6 @@ brew "subversion"
 brew "tag"
 # Send macOS User Notifications from the command-line
 brew "terminal-notifier"
-# Terminal multiplexer
-brew "tmux"
 # Command-line interface to the freedesktop.org trashcan
 brew "trash-cli"
 # Display directories as trees (with optional color/HTML output)
@@ -267,8 +265,6 @@ cask "alt-tab"
 cask "cakebrew"
 # Open links in any browser
 cask "choosy"
-# Free and open-source web browser
-cask "chromium"
 # System cleaner for logs, caches and more
 cask "clean-me"
 # Tool to prevent the system from going into sleep mode

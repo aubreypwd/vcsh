@@ -41,8 +41,6 @@ export ZSH="$HOME/.oh-my-zsh" # Path to your oh-my-zsh installation.
  ##
 if [ -e "$ZSH" ]; then
 
-	setopt no_monitor # For commands below eding in &, do not report done when running in background.
-
 	###
 	 # ZSH & oh-my-zsh Specific Configs
 	 #
@@ -130,11 +128,6 @@ fi
 
 autoload -Uz compinit && compinit
 
-###
- # Quietly
- #
- # @since Tuesday, April 19, 2022
- ##
 () {
 
 	brewd # Dump out a .Brewfile.
@@ -146,7 +139,7 @@ autoload -Uz compinit && compinit
 	 ##
 	[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
-} &> /dev/null &
+} &> /dev/null &!
 
 ###
  # iTerm2 History Support

@@ -348,7 +348,7 @@
 		<key>behaviourArgument</key>
 		<dict>
 			<key>path</key>
-			<string>/Applications/GitHub.app</string>
+			<string>/Applications/Github.app</string>
 			<key>type</key>
 			<string>ChoosyBrowser</string>
 		</dict>
@@ -383,10 +383,8 @@
 		<dict>
 			<key>path</key>
 			<string>/Applications/Google Chrome.app</string>
-			<key>profileName</key>
-			<string>Profile 21</string>
 			<key>type</key>
-			<string>ChoosyChromeProfileMode</string>
+			<string>ChoosyBrowser</string>
 		</dict>
 		<key>enabled</key>
 		<true/>
@@ -627,7 +625,7 @@
 			<string>ChoosyBrowser</string>
 		</dict>
 		<key>enabled</key>
-		<true/>
+		<false/>
 		<key>predicate</key>
 		<string>URL CONTAINS "meet.google.com"</string>
 		<key>title</key>
