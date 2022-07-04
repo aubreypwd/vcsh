@@ -65,7 +65,7 @@ if [ -e "$ZSH" ]; then
 	plugins=()
 
 	# Load Oh My ZSH...
-	source $ZSH/oh-my-zsh.sh
+	source $ZSH/oh-my-zsh.sh # change
 
 	###
 	 # Antigen Plugins
@@ -149,4 +149,9 @@ autoload -Uz compinit && compinit
 test -e "${HOME}/.iterm2_shell_integration.zsh" \
 	&& source "${HOME}/.iterm2_shell_integration.zsh"
 
-checkmyrepos
+if [[ $(pwd) == $HOME ]]; then
+	checkmyrepos
+fi
+
+# Show the current working directory.
+echo "\e[37m $(pwd)\e[0m"

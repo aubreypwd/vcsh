@@ -206,6 +206,8 @@ brew "python@3.8"
 brew "rsync"
 # Install various Ruby versions and implementations
 brew "ruby-build"
+# Terminal multiplexer with VT100/ANSI terminal emulation
+brew "screen"
 # Add a public key to a remote machine's authorized_keys file
 brew "ssh-copy-id"
 # Version control system designed to be a better CVS
