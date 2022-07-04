@@ -154,8 +154,10 @@ test -e "${HOME}/.iterm2_shell_integration.zsh" \
 	&& source "${HOME}/.iterm2_shell_integration.zsh"
 
 if [[ $(pwd) == $HOME ]]; then
+	archey
 	checkmyrepos
-fi
+else
 
-# Show the current working directory.
-echo "\e[37m $(pwd)\e[0m"
+	echo "\e[37m $(pwd)\e[0m" # Show the current working directory.
+	test -e ".autorun.zsh" && source ".autorun.zsh" # Run .autorun.zsh files.
+fi
