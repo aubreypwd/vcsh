@@ -17,7 +17,7 @@
  # @since Large update, most things are ZSH plugins now.
  ##
 
- # Paths
+ # PATH
  export PATH="$HOME/.composer/vendor/bin:$PATH"
  export PATH="/Applications/Sublime Text.app/Contents/SharedSupport/bin:$PATH" # subl
  export PATH="/opt/homebrew/sbin:$PATH" # Homebrew
@@ -129,6 +129,10 @@ fi
 autoload -Uz compinit && compinit
 
 () {
+
+	if [[ $(pwd) != $HOME ]]; then
+		retrun
+	fi
 
 	brewd # Dump out a .Brewfile.
 
