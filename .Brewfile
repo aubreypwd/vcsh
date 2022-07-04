@@ -20,6 +20,8 @@ tap "sidneys/homebrew"
 brew "antigen"
 # Companion library to apr, the Apache Portable Runtime library
 brew "apr-util"
+# Graphical system information display for macOS
+brew "archey"
 # C library implementing the SSH2 protocol
 brew "libssh2"
 # Download with resuming and segmented downloading
@@ -62,8 +64,6 @@ brew "cmake"
 brew "cmatrix"
 # Open source suite of directory software
 brew "openldap"
-# Get a file from an HTTP, HTTPS or FTP server
-brew "curl"
 # Libraries to talk to Microsoft SQL Server and Sybase databases
 brew "freetds"
 # Network authentication protocol
@@ -216,6 +216,8 @@ brew "subversion"
 brew "tag"
 # Send macOS User Notifications from the command-line
 brew "terminal-notifier"
+# Simplified and community-driven man pages
+brew "tldr"
 # Command-line interface to the freedesktop.org trashcan
 brew "trash-cli"
 # Display directories as trees (with optional color/HTML output)
