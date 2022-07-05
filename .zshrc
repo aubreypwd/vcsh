@@ -17,15 +17,15 @@
  # @since Large update, most things are ZSH plugins now.
  ##
 
- # PATH
- export PATH="$HOME/.composer/vendor/bin:$PATH"
- export PATH="/Applications/Sublime Text.app/Contents/SharedSupport/bin:$PATH" # subl
- export PATH="/opt/homebrew/sbin:$PATH" # Homebrew
- export PATH="/opt/homebrew/bin:$PATH" # Homebrew
- export PATH="/opt/homebrew/opt/ruby/bin:$PATH" #  Ruby
- export PATH="/opt/homebrew/opt/openssl@3/bin:$PATH" # Open SSL
- export PATH="/opt/homebrew/lib/ruby/gems/3.0.0/bin:$PATH" # Ruby Gems
- export PATH="/usr/local/bin:$PATH" # Just for n, where it symlinks node.
+# PATH
+export PATH="$HOME/.composer/vendor/bin:$PATH"
+export PATH="/Applications/Sublime Text.app/Contents/SharedSupport/bin:$PATH" # subl
+export PATH="/opt/homebrew/sbin:$PATH" # Homebrew
+export PATH="/opt/homebrew/bin:$PATH" # Homebrew
+export PATH="/opt/homebrew/opt/ruby/bin:$PATH" #  Ruby
+export PATH="/opt/homebrew/opt/openssl@3/bin:$PATH" # Open SSL
+export PATH="/opt/homebrew/lib/ruby/gems/3.0.0/bin:$PATH" # Ruby Gems
+export PATH="/usr/local/bin:$PATH" # Just for n, where it symlinks node.
 
 ###
  # High Level Options
@@ -153,8 +153,18 @@ autoload -Uz compinit && compinit
 test -e "${HOME}/.iterm2_shell_integration.zsh" \
 	&& source "${HOME}/.iterm2_shell_integration.zsh"
 
+export PF_INFO="ascii title os host kernel uptime memory shell editor"
+export PF_SEP=""
+export HOSTNAME="localhost"
+export EDITOR="$EDITOR"
+export SHELL="zsh"
+
 if [[ $(pwd) == $HOME ]]; then
-	archey
+
+	echo
+	pfetch
+	# archey
+	# macchina
 	checkmyrepos
 else
 
