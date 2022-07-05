@@ -162,6 +162,8 @@ brew "libfido2"
 brew "lynx"
 # Swiss Army Knife for macOS
 brew "m-cli"
+# System information fetcher, with an emphasis on performance and minimalism
+brew "macchina"
 # Tool to convert MDF (Alcohol 120% images) images to ISO images
 brew "mdf2iso"
 # Modern and intuitive terminal-based text editor
@@ -190,6 +192,8 @@ brew "pandoc"
 brew "peco"
 # Interactive grep tool
 brew "percol"
+# Pretty system information tool written in POSIX sh
+brew "pfetch"
 # General-purpose scripting language
 brew "php@7.4", restart_service: true, link: true
 # Protocol buffers library
