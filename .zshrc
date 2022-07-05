@@ -153,18 +153,8 @@ autoload -Uz compinit && compinit
 test -e "${HOME}/.iterm2_shell_integration.zsh" \
 	&& source "${HOME}/.iterm2_shell_integration.zsh"
 
-export PF_INFO="ascii title os host kernel uptime memory shell editor"
-export PF_SEP=""
-export HOSTNAME="localhost"
-export EDITOR="$EDITOR"
-export SHELL="zsh"
-
 if [[ $(pwd) == $HOME ]]; then
 
-	echo
-	pfetch
-	# archey
-	# macchina
 	checkmyrepos
 else
 
