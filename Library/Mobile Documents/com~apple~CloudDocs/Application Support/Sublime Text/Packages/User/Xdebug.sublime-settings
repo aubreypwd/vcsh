@@ -16,7 +16,7 @@
   "break_on_start": false,
   "debug": false,
   "max_depth": 3,
-  "max_children": 32,
+  "max_children": 64,
   "disable_layout": false,
   "ide_key": "",
   "port": 9003, // Yes, we have to use this now that PHP 7.4 takes over port 9000.
