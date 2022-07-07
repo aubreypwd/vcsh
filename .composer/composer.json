@@ -1,6 +1,5 @@
 {
     "require": {
-        "spatie/ray": "^1.34",
         "laravel/valet": "^3.1"
     },
     "repositories": {

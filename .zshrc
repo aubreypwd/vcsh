@@ -155,8 +155,7 @@ test -e "${HOME}/.iterm2_shell_integration.zsh" \
 
 if [[ $(pwd) == $HOME ]]; then
 	checkmyrepos
+	sysinfo
 else
 	test -e ".autorun.zsh" && source ".autorun.zsh" # Run .autorun.zsh files.
 fi
-
-sysinfo
