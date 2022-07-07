@@ -78,6 +78,8 @@ brew "composer"
 brew "dialog"
 # Utilities for converting macOS DMG images
 brew "dmg2img"
+# Lightweight DNS forwarder and DHCP server
+brew "dnsmasq", restart_service: true
 # Select default apps for documents and URL schemes on macOS
 brew "duti"
 # Modern replacement for 'ls'
@@ -138,8 +140,6 @@ brew "pango"
 brew "gtk+3"
 # Convert source code to formatted text with syntax highlighting
 brew "highlight"
-# Idempotent command-line utility for managing your /etc/hosts file
-brew "hostess"
 # Improved top (interactive process viewer)
 brew "htop"
 # Apache HTTP server
@@ -164,6 +164,8 @@ brew "lynx"
 brew "m-cli"
 # System information fetcher, with an emphasis on performance and minimalism
 brew "macchina"
+# Web and API based SMTP testing tool
+brew "mailhog", restart_service: true
 # Tool to convert MDF (Alcohol 120% images) images to ISO images
 brew "mdf2iso"
 # Modern and intuitive terminal-based text editor
@@ -180,6 +182,8 @@ brew "mysql", restart_service: true
 brew "n"
 # Fast, highly customisable system info script
 brew "neofetch"
+# HTTP(S) server and reverse proxy, and IMAP/POP3 proxy server
+brew "nginx", restart_service: true
 # Platform built on V8 to build network applications
 brew "node"
 # Platform built on V8 to build network applications
@@ -195,7 +199,7 @@ brew "percol"
 # Pretty system information tool written in POSIX sh
 brew "pfetch"
 # General-purpose scripting language
-brew "php@7.4", restart_service: true, link: true
+brew "php@7.4", restart_service: true
 # Protocol buffers library
 brew "protobuf-c"
 # Python 3 bindings for the Cairo graphics library
@@ -204,6 +208,8 @@ brew "py3cairo"
 brew "pyenv"
 # GNOME Python bindings (based on GObject Introspection)
 brew "pygobject3"
+# Pretty-print tabular data in Python
+brew "python-tabulate"
 # Interpreted, interactive, object-oriented programming language
 brew "python@3.8"
 # Utility that provides fast incremental file transfer
@@ -263,6 +269,8 @@ brew "zsh"
 # A simple terminal UI for git commands, written in Go
 brew "jesseduffield/lazygit/lazygit"
 brew "lucapette/tap/fakedata"
+# General-purpose scripting language
+brew "shivammathur/php/php@5.6", link: true
 # Command-line helper for the 1Password password manager
 cask "1password-cli"
 # Instant messaging application

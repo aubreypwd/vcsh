@@ -19,6 +19,8 @@
 
 	# ghq sortcut.
 	get = "! function f() { ghq get \"$1\"; }; f" # Commit all files, add message inline, and push.
+	gh  = "! function f() { gh \"$@\"; }; f"
+	gh-get = "! function f() { ghq get \"git@github.com:$1/$2.git$1\"; }; f"
 
 	## Staging
 	mod = "add -u" # Add modifed
