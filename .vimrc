@@ -19,7 +19,7 @@ set ignorecase            " Search ingnoring case
 set smartcase             " Do not ignore case if the search patter has uppercase
 set noerrorbells          " I hate bells
 set belloff=esc
-set tabstop=1             " Tab size of x spaces
+set tabstop=2             " Tab size of x spaces
 set expandtab             " Use apropiate number of spaces
 set noswapfile            " Do not leve any backup files
 set mouse=a               " Enable mouse on all modes
@@ -102,3 +102,7 @@ let g:coc_global_extensions = [
     \ 'coc-python',
 	\ 'coc-diagnostic'
     \]
+
+"@see https://askubuntu.com/questions/74485/how-to-display-hidden-characters-in-vim/74503
+set list
+set listchars=tab:→\ ,nbsp:␣,trail:•,precedes:«,extends:»
