@@ -18,7 +18,7 @@ set hlsearch              " Highlight search results
 set ignorecase            " Search ingnoring case
 set smartcase             " Do not ignore case if the search patter has uppercase
 set noerrorbells          " I hate bells
-set belloff=esc
+    set belloff=esc
 set tabstop=2             " Tab size of x spaces
 set expandtab             " Use apropiate number of spaces
 set noswapfile            " Do not leve any backup files
@@ -67,18 +67,18 @@ autocmd VimEnter * if len(filter(values(g:plugs), '!isdirectory(v:val.dir)'))
 
 "Plugins
 call plug#begin('~/.vim/plugged')
-        "Plug 'phanviet/vim-monokai-pro'
-        Plug 'patstockwell/vim-monokai-tasty'
-        Plug 'sheerun/vim-polyglot'
-        Plug 'tpope/vim-sensible'
-        Plug 'tpope/vim-surround'
-        Plug 'nathanaelkane/vim-indent-guides'
-        Plug 'mutewinter/nginx.vim'
-        Plug 'rhysd/committia.vim'
-        "Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }     " Install fuzzy finder binary
-        "Plug 'junegunn/fzf.vim'
-        Plug 'editorconfig/editorconfig-vim'  " Tab/Space trough projects
-        Plug 'neoclide/coc.nvim', {'branch': 'release'}
+    "Plug 'phanviet/vim-monokai-pro'
+    Plug 'patstockwell/vim-monokai-tasty'
+    Plug 'sheerun/vim-polyglot'
+    Plug 'tpope/vim-sensible'
+    Plug 'tpope/vim-surround'
+    Plug 'nathanaelkane/vim-indent-guides'
+    Plug 'mutewinter/nginx.vim'
+    Plug 'rhysd/committia.vim'
+    "Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }     " Install fuzzy finder binary
+    "Plug 'junegunn/fzf.vim'
+    Plug 'editorconfig/editorconfig-vim'  " Tab/Space trough projects
+    Plug 'neoclide/coc.nvim', {'branch': 'release'}
 call plug#end()
 
 " UI
@@ -91,8 +91,6 @@ hi LineNr ctermbg=16 guibg=NONE
 
 set backspace=indent,eol,start
 
-nnoremap <C-p> :Files<cr>
-
 let g:coc_global_extensions = [
     \ 'coc-tsserver',
     \ 'coc-json',
@@ -103,6 +101,5 @@ let g:coc_global_extensions = [
 	\ 'coc-diagnostic'
     \]
 
-"@see https://askubuntu.com/questions/74485/how-to-display-hidden-characters-in-vim/74503
 set list
 set listchars=tab:→\ ,nbsp:␣,trail:•,precedes:«,extends:»
