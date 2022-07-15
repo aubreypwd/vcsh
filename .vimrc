@@ -72,7 +72,7 @@ call plug#begin('~/.vim/plugged')
     Plug 'sheerun/vim-polyglot'
     Plug 'tpope/vim-sensible'
     Plug 'tpope/vim-surround'
-    Plug 'nathanaelkane/vim-indent-guides'
+    "Plug 'nathanaelkane/vim-indent-guides'
     Plug 'mutewinter/nginx.vim'
     Plug 'rhysd/committia.vim'
     "Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }     " Install fuzzy finder binary
@@ -98,7 +98,7 @@ let g:coc_global_extensions = [
     \ 'coc-css',
     \ 'coc-phpls',
     \ 'coc-python',
-	\ 'coc-diagnostic'
+    \ 'coc-diagnostic'
     \]
 
 set list
