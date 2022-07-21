@@ -28,8 +28,8 @@ set showmatch
 set termguicolors
 set splitright splitbelow
 set list lcs=tab:\¦\      "(here is a space)
-let &t_SI = "\e[6 q"      " Make cursor a line in insert
-let &t_EI = "\e[2 q"      " Make cursor a line in insert
+"let &t_SI = "\e[6 q"      " Make cursor a line in insert
+"let &t_EI = "\e[2 q"      " Make cursor a line in insert
 
 " Keep VisualMode after indent with > or <
 vmap < <gv
