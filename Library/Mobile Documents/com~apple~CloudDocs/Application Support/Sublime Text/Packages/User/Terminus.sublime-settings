@@ -3,7 +3,7 @@
   "brighten_bold_text": false,
   "unix_term": "xterm",
   "user_theme_colors": {
-    "background": "#121212",
+    "background": "#1E1E1E",
     "foreground": "#d5d2d5",
     "caret": "#78d18b",
     "selection": "#444444",
