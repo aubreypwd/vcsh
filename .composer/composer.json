@@ -1,9 +1,9 @@
 {
-    "require": {
-        "laravel/valet": "^3.1"
-    },
     "repositories": {
     },
     "config": {
+    },
+    "require": {
+        "laravel/valet": "^3.1"
     }
 }
