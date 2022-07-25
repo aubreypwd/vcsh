@@ -2,6 +2,7 @@ tap "dnicolson/bluetoothkeyboardenhancer"
 tap "dteoh/sqa"
 tap "github/gh"
 tap "hashicorp/tap"
+tap "henkrehorst/php"
 tap "homebrew/bundle"
 tap "homebrew/cask"
 tap "homebrew/cask-fonts"
@@ -26,10 +27,10 @@ brew "archey"
 brew "libssh2"
 # Download with resuming and segmented downloading
 brew "aria2"
-# Interpreted, interactive, object-oriented programming language
-brew "python@3.9"
 # Core application library for C
 brew "glib"
+# Interpreted, interactive, object-oriented programming language
+brew "python@3.9"
 # GNOME accessibility toolkit
 brew "atk"
 # Tool for generating GNU Standards-compliant Makefiles
@@ -132,6 +133,8 @@ brew "jasper"
 brew "graphicsmagick"
 # Colorize logfiles and command output
 brew "grc"
+# Fulltext search engine and column store
+brew "groonga"
 # GSettings schemas for desktop components
 brew "gsettings-desktop-schemas"
 # Framework for layout and rendering of i18n text
@@ -200,6 +203,8 @@ brew "percol"
 brew "pfetch"
 # General-purpose scripting language
 brew "php@7.4", restart_service: true
+# General-purpose scripting language
+brew "php@8.0"
 # Protocol buffers library
 brew "protobuf-c"
 # Python 3 bindings for the Cairo graphics library
@@ -271,6 +276,8 @@ brew "jesseduffield/lazygit/lazygit"
 brew "lucapette/tap/fakedata"
 # General-purpose scripting language
 brew "shivammathur/php/php@5.6", link: true
+# General-purpose scripting language
+brew "shivammathur/php/php@7.3"
 # Command-line helper for the 1Password password manager
 cask "1password-cli"
 # Instant messaging application

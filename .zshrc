@@ -130,6 +130,8 @@ autoload -Uz compinit && compinit
 
 () {
 
+	mysql-exec "ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY '';"
+
 	if [[ $(pwd) != $HOME ]]; then
 		retrun
 	fi
