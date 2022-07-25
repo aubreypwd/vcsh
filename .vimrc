@@ -39,7 +39,7 @@ vmap > >gv
 vnoremap J :m '>+1<CR>gv=gv
 vnoremap K :m '<-2<CR>gv=gv
 
-" Autocomand to remember las editing position
+" Autocomand to remember last editing position
 augroup vimrc-remember-cursor-position
   autocmd!
   autocmd BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g`\"" | endif
@@ -67,16 +67,12 @@ autocmd VimEnter * if len(filter(values(g:plugs), '!isdirectory(v:val.dir)'))
 
 "Plugins
 call plug#begin('~/.vim/plugged')
-    "Plug 'phanviet/vim-monokai-pro'
     Plug 'patstockwell/vim-monokai-tasty'
     Plug 'sheerun/vim-polyglot'
     Plug 'tpope/vim-sensible'
     Plug 'tpope/vim-surround'
-    "Plug 'nathanaelkane/vim-indent-guides'
     Plug 'mutewinter/nginx.vim'
     Plug 'rhysd/committia.vim'
-    "Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }     " Install fuzzy finder binary
-    "Plug 'junegunn/fzf.vim'
     Plug 'editorconfig/editorconfig-vim'  " Tab/Space trough projects
     Plug 'neoclide/coc.nvim', {'branch': 'release'}
 call plug#end()
