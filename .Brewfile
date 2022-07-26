@@ -71,8 +71,6 @@ brew "freetds"
 brew "krb5"
 # Postgres C API library
 brew "libpq"
-# General-purpose scripting language
-brew "php", restart_service: true
 # Dependency Manager for PHP
 brew "composer"
 # Display user-friendly message boxes from shell scripts
@@ -189,8 +187,6 @@ brew "neofetch"
 brew "nginx", restart_service: true
 # Platform built on V8 to build network applications
 brew "node"
-# Platform built on V8 to build network applications
-brew "node@14"
 # Cryptography and SSL/TLS Toolkit
 brew "openssl@3"
 # Swiss-army knife of markup format conversion
@@ -202,7 +198,9 @@ brew "percol"
 # Pretty system information tool written in POSIX sh
 brew "pfetch"
 # General-purpose scripting language
-brew "php@7.4", restart_service: true
+brew "php", link: false
+# General-purpose scripting language
+brew "php@7.4", restart_service: true, link: true
 # General-purpose scripting language
 brew "php@8.0"
 # Protocol buffers library
@@ -223,6 +221,8 @@ brew "rsync"
 brew "ruby-build"
 # Terminal multiplexer with VT100/ANSI terminal emulation
 brew "screen"
+# Static analysis and lint tool, for (ba)sh scripts
+brew "shellcheck"
 # Add a public key to a remote machine's authorized_keys file
 brew "ssh-copy-id"
 # Version control system designed to be a better CVS
@@ -290,6 +290,8 @@ cask "cakebrew"
 cask "choosy"
 # System cleaner for logs, caches and more
 cask "clean-me"
+# Offline toolbox for developers
+cask "devutils"
 # Tool to prevent the system from going into sleep mode
 cask "keepingyouawake"
 # Reverse proxy, secure introspectable tunnels to localhost
