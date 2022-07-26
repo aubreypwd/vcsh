@@ -12,6 +12,11 @@
   { "keys": ["super+."], "command": "toggle_side_bar" },
 
   /*
+   * Dash
+   */
+   { "keys": ["super+shift+1"], "command": "dash_doc" },
+
+  /*
    * Moving files across panels more easily.
    *
    * @since Wednesday, June 15, 2022
