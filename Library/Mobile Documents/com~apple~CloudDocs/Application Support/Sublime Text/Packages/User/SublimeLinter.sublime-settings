@@ -42,7 +42,7 @@
         "shellcheck": {
             "disable": false,
             "args": [],
-            "exclude": "",
+            "exclude": "SC3020,SC3033",
             "excludes": []
         },
         "jshint": {
