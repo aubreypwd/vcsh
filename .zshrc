@@ -1,4 +1,4 @@
-#!/bin/zsh
+#!/bin/bash
 
 ###
  # My .zshrc file
@@ -62,10 +62,10 @@ if [ -e "$ZSH" ]; then
 	ZSH_THEME="refined"
 
 	# Built-in plugins.
-	plugins=()
+	PLUGINS=()
 
 	# Load Oh My ZSH...
-	source $ZSH/oh-my-zsh.sh # change
+	source "$ZSH/oh-my-zsh.sh"
 
 	###
 	 # Antigen Plugins
@@ -113,6 +113,7 @@ if [ -e "$ZSH" ]; then
 		antigen bundle ssh://git@github.com/aubreypwd/zsh-plugin-download # Download files using aria2c
 		antigen bundle ssh://git@github.com/aubreypwd/zsh-plugin-newvwp # Easy Valet WP site creation.
 		antigen bundle ssh://git@github.com/aubreypwd/zsh-plugin-bruse # I haven't been using this much.
+		antigen bundle ssh://git@github.com/aubreypwd/zsh-plugin-affwp
 
 		# My configurations (as a plugin).
 		antigen bundle ssh://git@github.com/aubreypwd/zsh-plugin-my-config
@@ -128,11 +129,11 @@ fi
 
 autoload -Uz compinit && compinit
 
-() {
+( (
 
 	mysql-exec "ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY '';"
 
-	if [[ $(pwd) != $HOME ]]; then
+	if [ "$(pwd)" != "$HOME" ]; then
 		retrun
 	fi
 
@@ -143,9 +144,9 @@ autoload -Uz compinit && compinit
 	 #
 	 # @since Thursday, 10/1/2020
 	 ##
-	[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+	[ -f "$HOME/.fzf.zsh" ] && source "$HOME/.fzf.zsh"
 
-} &> /dev/null &!
+) > /dev/null & )
 
 ###
  # iTerm2 History Support
@@ -155,7 +156,7 @@ autoload -Uz compinit && compinit
 test -e "${HOME}/.iterm2_shell_integration.zsh" \
 	&& source "${HOME}/.iterm2_shell_integration.zsh"
 
-if [[ $(pwd) == $HOME ]]; then
+if [ "$(pwd)" = "$HOME" ]; then
 	checkmyrepos
 	sysinfo
 else
