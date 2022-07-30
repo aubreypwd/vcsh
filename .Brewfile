@@ -290,6 +290,8 @@ cask "cakebrew"
 cask "choosy"
 # System cleaner for logs, caches and more
 cask "clean-me"
+# Terminal emulator mimicking the old cathode display
+cask "cool-retro-term"
 # Offline toolbox for developers
 cask "devutils"
 # Tool to prevent the system from going into sleep mode
