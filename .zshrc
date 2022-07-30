@@ -146,7 +146,7 @@ autoload -Uz compinit && compinit
 	 ##
 	[ -f "$HOME/.fzf.zsh" ] && source "$HOME/.fzf.zsh"
 
-) > /dev/null & )
+) & )
 
 ###
  # iTerm2 History Support
