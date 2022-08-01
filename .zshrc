@@ -138,6 +138,8 @@ autoload -Uz compinit && compinit
 	fi
 
 	brewd # Dump out a .Brewfile.
+	checkmyrepos
+	sysinfo
 
 	###
 	 # Load fzf autocomplete.
@@ -146,7 +148,7 @@ autoload -Uz compinit && compinit
 	 ##
 	[ -f "$HOME/.fzf.zsh" ] && source "$HOME/.fzf.zsh"
 
-) & )
+) > /dev/null & )
 
 ###
  # iTerm2 History Support
