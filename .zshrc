@@ -134,12 +134,10 @@ autoload -Uz compinit && compinit
 	mysql-exec "ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY '';"
 
 	if [ "$(pwd)" != "$HOME" ]; then
-		retrun
+		return
 	fi
 
 	brewd # Dump out a .Brewfile.
-	checkmyrepos
-	sysinfo
 
 	###
 	 # Load fzf autocomplete.
@@ -148,7 +146,7 @@ autoload -Uz compinit && compinit
 	 ##
 	[ -f "$HOME/.fzf.zsh" ] && source "$HOME/.fzf.zsh"
 
-) > /dev/null & )
+) 1>&- 2>&- & )
 
 ###
  # iTerm2 History Support
