@@ -131,6 +131,7 @@ autoload -Uz compinit && compinit
 
 ( (
 
+	# Fix issue where PHP 8.1 can't access the WordPress DB.
 	mysql-exec "ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY '';"
 
 	if [ "$(pwd)" != "$HOME" ]; then
@@ -139,14 +140,14 @@ autoload -Uz compinit && compinit
 
 	brewd # Dump out a .Brewfile.
 
-	###
-	 # Load fzf autocomplete.
-	 #
-	 # @since Thursday, 10/1/2020
-	 ##
-	[ -f "$HOME/.fzf.zsh" ] && source "$HOME/.fzf.zsh"
-
 ) 1>&- 2>&- & )
+
+###
+ # Load fzf autocomplete.
+ #
+ # @since Thursday, 10/1/2020
+ ##
+[ -f "$HOME/.fzf.zsh" ] && source "$HOME/.fzf.zsh"
 
 ###
  # iTerm2 History Support
