@@ -4,6 +4,5 @@
     "config": {
     },
     "require": {
-        "laravel/valet": "^3.1"
     }
 }

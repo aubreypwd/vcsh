@@ -165,8 +165,6 @@ brew "lynx"
 brew "m-cli"
 # System information fetcher, with an emphasis on performance and minimalism
 brew "macchina"
-# Web and API based SMTP testing tool
-brew "mailhog", restart_service: true
 # Tool to convert MDF (Alcohol 120% images) images to ISO images
 brew "mdf2iso"
 # Modern and intuitive terminal-based text editor
@@ -183,8 +181,6 @@ brew "mysql", restart_service: true
 brew "n"
 # Fast, highly customisable system info script
 brew "neofetch"
-# HTTP(S) server and reverse proxy, and IMAP/POP3 proxy server
-brew "nginx", restart_service: true
 # Platform built on V8 to build network applications
 brew "node"
 # Cryptography and SSL/TLS Toolkit
