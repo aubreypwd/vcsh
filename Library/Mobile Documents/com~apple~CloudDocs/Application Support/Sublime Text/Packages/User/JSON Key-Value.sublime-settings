@@ -1,6 +1,10 @@
 {
     "extensions":
     [
+        "json",
+        "sublime-settings",
+        ".babelrc",
+        "lock"
     ],
     "translate_tabs_to_spaces": true,
     "convert_tabspaces_on_save": true,
