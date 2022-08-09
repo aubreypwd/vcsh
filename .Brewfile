@@ -71,6 +71,8 @@ brew "freetds"
 brew "krb5"
 # Postgres C API library
 brew "libpq"
+# General-purpose scripting language
+brew "php", restart_service: true, link: false
 # Dependency Manager for PHP
 brew "composer"
 # Display user-friendly message boxes from shell scripts
@@ -85,10 +87,12 @@ brew "duti"
 brew "exa"
 # Simple, fast and user-friendly alternative to find
 brew "fd"
-# Generate introspection data for GObject libraries
-brew "gobject-introspection"
 # OpenType text shaping engine
 brew "harfbuzz"
+# Image processing and image analysis library
+brew "leptonica"
+# Generate introspection data for GObject libraries
+brew "gobject-introspection"
 # Subtitle renderer for the ASS/SSA subtitle format
 brew "libass"
 # Blu-Ray disc playback library for media players like VLC
@@ -193,8 +197,6 @@ brew "peco"
 brew "percol"
 # Pretty system information tool written in POSIX sh
 brew "pfetch"
-# General-purpose scripting language
-brew "php", link: false
 # General-purpose scripting language
 brew "php@7.4", restart_service: true, link: true
 # General-purpose scripting language
