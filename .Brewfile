@@ -126,7 +126,7 @@ brew "libgcrypt"
 # GNU Pretty Good Privacy (PGP) package
 brew "gnupg"
 # Interpreted, interactive, object-oriented programming language
-brew "python@3.10"
+brew "python@3.10", link: false
 # Google Search and News from the command-line
 brew "googler"
 # Library for manipulating JPEG-2000 images
@@ -198,7 +198,7 @@ brew "percol"
 # Pretty system information tool written in POSIX sh
 brew "pfetch"
 # General-purpose scripting language
-brew "php@7.4", restart_service: true, link: true
+brew "php@7.4", restart_service: true
 # General-purpose scripting language
 brew "php@8.0"
 # Protocol buffers library
@@ -212,7 +212,7 @@ brew "pygobject3"
 # Pretty-print tabular data in Python
 brew "python-tabulate"
 # Interpreted, interactive, object-oriented programming language
-brew "python@3.8"
+brew "python@3.8", link: false
 # Utility that provides fast incremental file transfer
 brew "rsync"
 # Install various Ruby versions and implementations
@@ -227,6 +227,8 @@ brew "ssh-copy-id"
 brew "subversion"
 # Manipulate and query tags on macOS files
 brew "tag"
+# User interface to the TELNET protocol
+brew "telnet"
 # Send macOS User Notifications from the command-line
 brew "terminal-notifier"
 # Simplified and community-driven man pages
@@ -307,6 +309,8 @@ cask "rar"
 cask "spectacle"
 # Music streaming service
 cask "spotify"
+# BBS terminal program
+cask "syncterm"
 # Virtualizer for x86 hardware
 cask "virtualbox"
 # Video communication and virtual meeting platform
