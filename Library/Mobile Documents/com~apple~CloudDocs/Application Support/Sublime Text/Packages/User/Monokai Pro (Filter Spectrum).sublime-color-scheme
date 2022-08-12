@@ -1,11 +1,11 @@
 {
-	"variables":{},
-	"globals":
-	{
-		// "background": "#1E1E1E",
-		// "gutter": "#1E1E1E"
-	},
-	"rules":
-	[
-	]
+    "variables":{},
+    "globals":
+    {
+        "background": "#212121",
+        "gutter": "#212121"
+    },
+    "rules":
+    [
+    ]
 }
