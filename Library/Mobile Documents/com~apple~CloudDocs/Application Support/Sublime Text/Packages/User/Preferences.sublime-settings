@@ -133,6 +133,7 @@
   "folder_exclude_patterns":
   [
   ],
+  "font_size": 12,
   "font_face": "Menlo",
   "font_options":
   [
@@ -140,7 +141,6 @@
     "no_italic",
     "gray_antialias",
   ],
-  "font_size": 12,
   "freesia_borderless": true,
   "freesia_soft_tab_marker": true,
   "gpu_window_buffer": true,
@@ -180,7 +180,7 @@
     "*.gif",
     "*.webp"
   ],
-  "line_padding_bottom": 0,
+  "line_padding_bottom": 1,
   "line_padding_top": 0,
   "live_matching": true,
   "match_brackets" : true,
