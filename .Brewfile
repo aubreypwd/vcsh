@@ -69,8 +69,6 @@ brew "openldap"
 brew "freetds"
 # Network authentication protocol
 brew "krb5"
-# Postgres C API library
-brew "libpq"
 # General-purpose scripting language
 brew "php", restart_service: true, link: false
 # Dependency Manager for PHP
@@ -91,6 +89,8 @@ brew "fd"
 brew "harfbuzz"
 # Image processing and image analysis library
 brew "leptonica"
+# Interpreted, interactive, object-oriented programming language
+brew "python@3.10"
 # Generate introspection data for GObject libraries
 brew "gobject-introspection"
 # Subtitle renderer for the ASS/SSA subtitle format
@@ -125,8 +125,6 @@ brew "libassuan"
 brew "libgcrypt"
 # GNU Pretty Good Privacy (PGP) package
 brew "gnupg"
-# Interpreted, interactive, object-oriented programming language
-brew "python@3.10", link: false
 # Google Search and News from the command-line
 brew "googler"
 # Library for manipulating JPEG-2000 images
@@ -198,7 +196,7 @@ brew "percol"
 # Pretty system information tool written in POSIX sh
 brew "pfetch"
 # General-purpose scripting language
-brew "php@7.4", restart_service: true
+brew "php@7.4", restart_service: true, link: true
 # General-purpose scripting language
 brew "php@8.0"
 # Protocol buffers library
@@ -212,7 +210,7 @@ brew "pygobject3"
 # Pretty-print tabular data in Python
 brew "python-tabulate"
 # Interpreted, interactive, object-oriented programming language
-brew "python@3.8", link: false
+brew "python@3.8"
 # Utility that provides fast incremental file transfer
 brew "rsync"
 # Install various Ruby versions and implementations
