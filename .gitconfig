@@ -22,15 +22,16 @@
 	gh  = "! function f() { gh \"$@\"; }; f"
 	gh-get = "! function f() { ghq get \"git@github.com:$1/$2.git$1\"; }; f"
 
-	## Staging
+	# Staging
 	mod = "add -u" # Add modifed
 	all = "add ." # All all
 	rmc = "rm --cached"
+	usa = "reset" # Unstage all files.
 
 	# Stashing
 	stow = "stash push -m"
 
-	## Comitting
+	# Comitting
 	c = commit
 	cs = commit # Commit staged
 	cm = "! function f() { git mod && git commit; }; f"

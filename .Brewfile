@@ -196,7 +196,7 @@ brew "percol"
 # Pretty system information tool written in POSIX sh
 brew "pfetch"
 # General-purpose scripting language
-brew "php@7.4", restart_service: true, link: true
+brew "php@7.4", restart_service: true
 # General-purpose scripting language
 brew "php@8.0"
 # Protocol buffers library
@@ -265,8 +265,6 @@ brew "yarn"
 brew "youtube-dl"
 # Fork of youtube-dl with additional features and fixes
 brew "yt-dlp"
-# General-purpose lossless data-compression library
-brew "zlib"
 # UNIX shell (command interpreter)
 brew "zsh"
 # A simple terminal UI for git commands, written in Go
