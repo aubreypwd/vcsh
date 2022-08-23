@@ -1,0 +1,38 @@
+[
+    {
+        "caption": "XDebug",
+        "mnemonic": "X",
+        "id": "xDebug",
+        "children":
+        [
+            {
+                "caption": "Continue",
+                "command": "xdebug_continue"
+            },
+            {
+                "caption": "Evaluate",
+                "command": "xdebug_evaluate"
+            },
+            {
+                "caption": "Restart",
+                "command": "xdebug_session_restart"
+            },
+            {
+                "caption": "Stop",
+                "command": "xdebug_session_stop"
+            },
+            {
+                "caption": "Toggle Breakpoint",
+                "command": "xdebug_breakpoint"
+            },
+            {
+                "caption": "Clear All Breakpoints",
+                "command": "xdebug_clear_all_breakpoints"
+            },
+            {
+                "caption": "Start",
+                "command": "xdebug_session_start"
+            }
+        ]
+    }
+]
