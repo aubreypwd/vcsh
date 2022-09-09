@@ -87,17 +87,16 @@
 	:root {
 
 		--in-content-page-background: #191919 !important;
-		--in-content-box-background: #191919 !important;
+		--in-content-box-background: #292929 !important;
 		--in-content-box-background-odd: #191919 !important;
 		--in-content-box-info-background: #191919 !important;
-		--in-content-error-text-color: #FF9AA2 !important;
-		--in-content-button-background: #191919 !important;
-		--in-content-button-background-hover: #191919 !important;
+		--in-content-button-background: #292929 !important;
+		--in-content-button-background-hover: #292929 !important;
 		--in-content-button-background-active: #191919 !important;
 		--in-content-primary-button-text-color: #191919 !important;
-		--in-content-danger-button-background: #ff848b !important;
+		--in-content-danger-button-background: #292929 !important;
 		--in-content-danger-button-background-hover: #ffbdc5 !important;
-		--in-content-danger-button-background-active: #ffdfe7 !important;
+		--in-content-danger-button-background-active: #292929 !important;
 		--in-content-table-background: #191919 !important;
 	}
 
