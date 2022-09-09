@@ -46,12 +46,8 @@
 	--theme-highlight-yellow: #fce566 !important;
 }
 
-/**
- * New-tab page.
- *
- * @see
- */
-@-moz-document url(chrome://browser/content/browser.xul), url(about:newtab), url(about:home) {
+/* New Tab Page */
+@-moz-document url(chrome://browser/content/browser.xul), url(about:newtab), url(about:home), url(about:preferences) {
 	body {
 		--newtab-background-color: #191919 !important;
 		--newtab-border-primary-color: #4E4E4C !important;
@@ -82,5 +78,33 @@
 		--newtab-topsites-label-color: #F3F3F2 !important;
 		--trailhead-cards-background-color: #191919 !important;
 		--trailhead-header-text-color: #D4DEA9 !important;
+	}
+}
+
+/* Most screens in FF */
+@media (prefers-color-scheme: dark) {
+	:host,
+	:root {
+
+		--in-content-page-background: #191919 !important;
+		--in-content-box-background: #191919 !important;
+		--in-content-box-background-odd: #191919 !important;
+		--in-content-box-info-background: #191919 !important;
+		--in-content-error-text-color: #FF9AA2 !important;
+		--in-content-button-background: #191919 !important;
+		--in-content-button-background-hover: #191919 !important;
+		--in-content-button-background-active: #191919 !important;
+		--in-content-primary-button-text-color: #191919 !important;
+		--in-content-danger-button-background: #ff848b !important;
+		--in-content-danger-button-background-hover: #ffbdc5 !important;
+		--in-content-danger-button-background-active: #ffdfe7 !important;
+		--in-content-table-background: #191919 !important;
+	}
+
+	@media not (prefers-contrast) {
+		:root[dialogroot],
+		:host(dialog) {
+			--in-content-page-background: #191919;
+		}
 	}
 }
