@@ -263,7 +263,7 @@
 		<key>behaviourArgument</key>
 		<dict>
 			<key>path</key>
-			<string>/Applications/Chromium.app</string>
+			<string>/Applications/Slack.app</string>
 			<key>type</key>
 			<string>ChoosyBrowser</string>
 		</dict>
@@ -382,7 +382,7 @@
 		<key>behaviourArgument</key>
 		<dict>
 			<key>path</key>
-			<string>/Applications/Chromium.app</string>
+			<string>/Applications/Firefox Developer Edition.app</string>
 			<key>type</key>
 			<string>ChoosyBrowser</string>
 		</dict>
@@ -734,7 +734,7 @@
 		<key>behaviourArgument</key>
 		<dict>
 			<key>path</key>
-			<string>/Applications/Chromium.app</string>
+			<string>/Applications/Firefox Developer Edition.app</string>
 			<key>type</key>
 			<string>ChoosyBrowser</string>
 		</dict>
