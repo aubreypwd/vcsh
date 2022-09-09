@@ -70,7 +70,7 @@ brew "freetds"
 # Network authentication protocol
 brew "krb5"
 # General-purpose scripting language
-brew "php", restart_service: true, link: false
+brew "php", restart_service: true
 # Dependency Manager for PHP
 brew "composer"
 # Display user-friendly message boxes from shell scripts
@@ -271,7 +271,7 @@ brew "zsh"
 brew "jesseduffield/lazygit/lazygit"
 brew "lucapette/tap/fakedata"
 # General-purpose scripting language
-brew "shivammathur/php/php@5.6", link: true
+brew "shivammathur/php/php@5.6"
 # General-purpose scripting language
 brew "shivammathur/php/php@7.3"
 # Command-line helper for the 1Password password manager
