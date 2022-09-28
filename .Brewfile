@@ -17,6 +17,7 @@ tap "rockymadden/rockymadden"
 tap "sargsyan/github-notifier"
 tap "shivammathur/php"
 tap "sidneys/homebrew"
+tap "stripe/stripe-cli"
 # Plugin manager for zsh, inspired by oh-my-zsh and vundle
 brew "antigen"
 # Companion library to apr, the Apache Portable Runtime library
@@ -274,6 +275,8 @@ brew "lucapette/tap/fakedata"
 brew "shivammathur/php/php@5.6"
 # General-purpose scripting language
 brew "shivammathur/php/php@7.3"
+# Stripe CLI utility
+brew "stripe/stripe-cli/stripe"
 # Command-line helper for the 1Password password manager
 cask "1password-cli"
 # Instant messaging application
