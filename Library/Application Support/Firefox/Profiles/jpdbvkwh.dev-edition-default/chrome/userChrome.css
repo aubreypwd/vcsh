@@ -1,0 +1,5 @@
+@-moz-document url(chrome://browser/content/browser.xhtml){
+	#personal-bookmarks .bookmark-item:not([container]) .toolbarbutton-icon {
+		display: none !important;
+	}
+}
