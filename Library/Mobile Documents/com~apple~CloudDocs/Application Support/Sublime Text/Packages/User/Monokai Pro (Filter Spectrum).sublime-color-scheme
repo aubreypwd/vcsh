@@ -2,8 +2,10 @@
     "variables":{},
     "globals":
     {
-        "background": "#212121",
-        "gutter": "#212121"
+        // "background": "#212121",
+        // "gutter": "#212121",
+        "background": "#191919",
+        "gutter": "#191919"
     },
     "rules":
     [
