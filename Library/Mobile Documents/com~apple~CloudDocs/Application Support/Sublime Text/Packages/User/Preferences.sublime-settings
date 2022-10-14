@@ -139,7 +139,7 @@
   [
     "no_bold",
     "no_italic",
-    "gray_antialias",
+    // "gray_antialias",
   ],
   "freesia_borderless": true,
   "freesia_soft_tab_marker": true,
