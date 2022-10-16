@@ -134,7 +134,8 @@
   [
   ],
   "font_size": 12,
-  "font_face": "Menlo",
+  // "font_face": "Menlo",
+  "font_face": "JetBrains Mono Regular",
   "font_options":
   [
     "no_bold",
@@ -170,7 +171,7 @@
   ],
   "indent_guide_options":
   [
-    "draw_active"
+    "draw_normal"
   ],
   "index_exclude_patterns":
   [
@@ -180,7 +181,7 @@
     "*.gif",
     "*.webp"
   ],
-  "line_padding_bottom": 1,
+  "line_padding_bottom": 0,
   "line_padding_top": 0,
   "live_matching": true,
   "match_brackets" : true,
