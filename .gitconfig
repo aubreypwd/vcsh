@@ -36,7 +36,7 @@
 	cs = commit # Commit staged
 	cm = "! function f() { git mod && git commit; }; f"
 	ca = "! function f() { git all && git commit; }; f"
-	ai = "! git ls-files -m -o --exclude-standard | fzf --reverse --height 10 --print0 -m | xargs -0 -t -o git add" # https://spin.atomicobject.com/2018/04/05/fuzzy-find-git-add/
+	ai = "! git ls-files -m -o --exclude-standard | fzf --reverse --height 10 --print0 -m | xargs -0 -t -o git add -f" # https://spin.atomicobject.com/2018/04/05/fuzzy-find-git-add/
 	pew = "! function f() { git commit -a --allow-empty-message -m '' && git p; }; f" # Push an empty commit with all updates (dependant in other packages).
 
 	# Status
