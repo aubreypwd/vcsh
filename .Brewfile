@@ -40,6 +40,10 @@ brew "automake"
 brew "bat"
 # Convert CD images from .bin/.cue to .iso/.cdr
 brew "bchunk"
+# Platform built on V8 to build network applications
+brew "node"
+# Secure and free password manager for all of your devices
+brew "bitwarden-cli"
 # Install pip packages as homebrew formulae
 brew "brew-pip"
 # Extract files from Microsoft cabinet files
@@ -184,8 +188,6 @@ brew "mysql", restart_service: true
 brew "n"
 # Fast, highly customisable system info script
 brew "neofetch"
-# Platform built on V8 to build network applications
-brew "node"
 # Cryptography and SSL/TLS Toolkit
 brew "openssl@3"
 # Swiss-army knife of markup format conversion
