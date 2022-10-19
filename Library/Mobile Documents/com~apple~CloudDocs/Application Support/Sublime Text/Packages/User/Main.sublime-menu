@@ -37,8 +37,8 @@
     },
     {
         "caption": "Session",
-        "mnemonic": "X",
-        "id": "xDebug",
+        "mnemonic": "S",
+        "id": "SimpleSession",
         "children":
         [
             {
