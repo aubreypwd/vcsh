@@ -34,5 +34,33 @@
                 "command": "xdebug_session_start"
             }
         ]
+    },
+    {
+        "caption": "Session",
+        "mnemonic": "X",
+        "id": "xDebug",
+        "children":
+        [
+            {
+                "caption": "Save Session",
+                "command": "save_session"
+            },
+            {
+                "caption": "Load Session",
+                "command": "load_session"
+            },
+            {
+                "caption": "Save and Close Session",
+                "command": "save_and_close_session"
+            },
+            {
+                "caption": "Edit Session",
+                "command": "edit_session"
+            },
+            {
+                "caption": "Delete Session",
+                "command": "delete_session"
+            }
+        ]
     }
 ]
