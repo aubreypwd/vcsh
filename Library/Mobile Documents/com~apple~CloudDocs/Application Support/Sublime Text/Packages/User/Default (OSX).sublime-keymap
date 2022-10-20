@@ -60,9 +60,9 @@
   { "keys": ["super+alt+shift+9"], "command": "move_to_group", "args": { "group": 8 } },
 
   // Xdebug
-  { "keys": ["super+alt+d"], "command": "xdebug_session_start" },
-  { "keys": ["super+shift+alt+d"], "command": "xdebug_session_stop" },
-  { "keys": ["super+shift+alt+r"], "command": "xdebug_session_restart" },
+  { "keys": ["alt+d"], "command": "xdebug_session_start" },
+  { "keys": ["shift+alt+d"], "command": "xdebug_session_stop" },
+  { "keys": ["alt+r"], "command": "xdebug_session_restart" },
 
   // Xdebug breakpoints.
   { "keys": ["alt+b"], "command": "xdebug_breakpoint" },
