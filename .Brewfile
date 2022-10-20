@@ -75,7 +75,7 @@ brew "freetds"
 # Network authentication protocol
 brew "krb5"
 # General-purpose scripting language
-brew "php", restart_service: true
+brew "php", restart_service: true, link: false
 # Dependency Manager for PHP
 brew "composer"
 # Display user-friendly message boxes from shell scripts
@@ -199,7 +199,7 @@ brew "percol"
 # Pretty system information tool written in POSIX sh
 brew "pfetch"
 # General-purpose scripting language
-brew "php@7.4", restart_service: true
+brew "php@7.4", restart_service: true, link: true
 # General-purpose scripting language
 brew "php@8.0", restart_service: true
 # Protocol buffers library
