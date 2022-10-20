@@ -17,5 +17,5 @@
 }
 
 .tabbrowser-tab:not( [selected=true] ):not( [multiselected=true] ) .tab-background {
-	background-color: color-mix( in srgb, currentColor 10%, transparent);
+	background-color: color-mix( in srgb, currentColor 5%, transparent);
 }
