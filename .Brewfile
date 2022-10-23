@@ -305,7 +305,6 @@ cask "ngrok"
 cask "nordvpn"
 # Free and open-source SoundCloud client
 cask "nuage"
-cask "phpmon"
 # Archive manager for data compression and backups
 cask "rar"
 # Move and resize windows with ease
@@ -314,7 +313,5 @@ cask "spectacle"
 cask "spotify"
 # BBS terminal program
 cask "syncterm"
-# Virtualizer for x86 hardware
-cask "virtualbox"
 # Video communication and virtual meeting platform
 cask "zoom"
