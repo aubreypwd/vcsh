@@ -138,7 +138,7 @@ autoload -Uz compinit && compinit
 		return
 	fi
 
-	brewd # Dump out a .Brewfile.
+	brewd # Dump out a .Brewfile which show up in my public vcsh.
 
 ) 1>&- 2>&- & )
 
