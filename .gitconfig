@@ -54,6 +54,7 @@
 	sd       = "! function f() { git status && git diff ;}; f"
 	sds      = "! function f() { git status && git diff --staged ;}; f"
 	smerge   = "! function f() { smerge ./ -b; }; f"  # Sublime Merge
+	squash-all = "rebase --root -i"
 	stat     = status
 	stow     = "stash push -m"
 	tower    = "! /bin/sh $HOME/.gitscripts/tower.sh" # Tower

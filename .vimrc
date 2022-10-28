@@ -10,26 +10,31 @@ imap ii <Esc> "@see https://news.ycombinator.com/item?id=13100718
 set termguicolors "Stick to terminal colors
 
 "@see https://marioyepes.com/vim-setup-for-modern-web-development/
-set mouse=a
+set belloff=esc
 set clipboard=unnamed
-set nocompatible
-set number                " Show numbers on the left
+set clipboard=unnamed,unnamedplus     " Use the OS clipboard
+set expandtab             " Use apropiate number of spaces
 set hlsearch              " Highlight search results
 set ignorecase            " Search ingnoring case
-set smartcase             " Do not ignore case if the search patter has uppercase
-set noerrorbells          " I hate bells
-    set belloff=esc
-set tabstop=2             " Tab size of x spaces
-set expandtab             " Use apropiate number of spaces
-set noswapfile            " Do not leve any backup files
-set mouse=a               " Enable mouse on all modes
-set clipboard=unnamed,unnamedplus     " Use the OS clipboard
-set showmatch
-set termguicolors
-set splitright splitbelow
 set list lcs=tab:\¦\      "(here is a space)
+set mouse=a               " Enable mouse on all modes
+set nocompatible
+set noerrorbells          " I hate bells
+set noswapfile            " Do not leve any backup files
+set number                " Show numbers on the left
+set showmatch
+set smartcase             " Do not ignore case if the search patter has uppercase
+set splitright splitbelow
+set tabstop=2             " Tab size of x spaces
+set termguicolors
 "let &t_SI = "\e[6 q"      " Make cursor a line in insert
 "let &t_EI = "\e[2 q"      " Make cursor a line in insert
+
+if has("mouse_sgr")
+	set ttymouse=sgr
+else
+	set ttymouse=xterm2
+end
 
 " Keep VisualMode after indent with > or <
 vmap < <gv
