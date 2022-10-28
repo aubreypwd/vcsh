@@ -1,5 +1,6 @@
 [alias]
 	ai       = "! git ls-files -m -o --exclude-standard | fzf --reverse --height 10 --print0 -m | xargs -0 -t -o git add -f" # https://spin.atomicobject.com/2018/04/05/fuzzy-find-git-add/
+	aic      = "! git ai && git c"
 	all      = "add ." # All all
 	b        = "! echo $(git branch --show-current)" # Show the current branch.
 	c        = commit
@@ -12,6 +13,7 @@
 	d        = diff
 	db       = "! function f() { git branch -D $1; git push origin :$1 ;}; f"
 	di       = "! git ls-files -m -o --exclude-standard | fzf --reverse --height 10 --print0 -m | xargs -0 -t -o git diff" # Interactive diff.
+	diaic    = "! git di && git ai && git c"
 	diffs    = diff --staged
 	dm       = diff
 	ds       = diffs
