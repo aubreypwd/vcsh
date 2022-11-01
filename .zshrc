@@ -96,6 +96,7 @@ if [ -e "$ZSH" ]; then
 		antigen bundle history-substring-search
 		antigen bundle osx
 		antigen bundle zsh-users/zsh-syntax-highlighting
+		antigen bundle zsh-users/zsh-autosuggestions
 
 		# Plugins I built (install as source on master).
 		antigen bundle ssh://git@github.com/aubreypwd/zsh-plugin-require # export REQUIRE_AUTO_INSTALL="off" # Un-comment to disable autoinstall.
