@@ -19,6 +19,6 @@
   "max_children": 64,
   "disable_layout": false,
   "ide_key": "",
-  "port": 9003, // Yes, we have to use this now that PHP 7.4 takes over port 9000.
+  "port": 9021, // Yes, we have to use this now that PHP 7.4 takes over port 9000.
   "host": "localhost", // Yes, we have to use this now that PHP 7.4 takes over port 9000.
 }
