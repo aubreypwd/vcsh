@@ -65,6 +65,7 @@
 
 [push]
 	default = current
+	autoSetupRemote = true
 
 [user]
 	name          = Aubrey Portwood
