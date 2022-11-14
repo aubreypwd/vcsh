@@ -17,13 +17,14 @@
    { "keys": ["super+shift+1"], "command": "dash_doc" },
 
   /*
-   * Moving files across panels more easily.
+   * Moving files (and focus) across panels more easily.
    *
    * @since Wednesday, June 15, 2022
    */
-  { "keys": ["super+1"], "command": "move_to_group", "args": { "group": 0 } },
-  { "keys": ["super+2"], "command": "move_to_group", "args": { "group": 1 } },
-  { "keys": ["super+3"], "command": "move_to_group", "args": { "group": 2 } },
+  { "keys": ["super+alt+1"], "command": "move_to_group", "args": { "group": 0 } },
+  { "keys": ["super+alt+2"], "command": "move_to_group", "args": { "group": 1 } },
+  { "keys": ["super+alt+left"], "command": "focus_group", "args": { "group": 0 } },
+  { "keys": ["super+alt+right"], "command": "focus_group", "args": { "group": 1 } },
 
   /*
    * Marks.
@@ -49,28 +50,22 @@
   { "keys": ["alt+shift+d"], "command": "dev_docs_search_selection" },
 
   // Move to group easily.
-  { "keys": ["super+alt+shift+1"], "command": "move_to_group", "args": { "group": 0 } },
-  { "keys": ["super+alt+shift+2"], "command": "move_to_group", "args": { "group": 1 } },
-  { "keys": ["super+alt+shift+3"], "command": "move_to_group", "args": { "group": 2 } },
-  { "keys": ["super+alt+shift+4"], "command": "move_to_group", "args": { "group": 3 } },
-  { "keys": ["super+alt+shift+5"], "command": "move_to_group", "args": { "group": 4 } },
-  { "keys": ["super+alt+shift+6"], "command": "move_to_group", "args": { "group": 5 } },
-  { "keys": ["super+alt+shift+7"], "command": "move_to_group", "args": { "group": 6 } },
-  { "keys": ["super+alt+shift+8"], "command": "move_to_group", "args": { "group": 7 } },
-  { "keys": ["super+alt+shift+9"], "command": "move_to_group", "args": { "group": 8 } },
+  { "keys": ["alt+shift+1"], "command": "move_to_group", "args": { "group": 0 } },
+  { "keys": ["alt+shift+2"], "command": "move_to_group", "args": { "group": 1 } },
+  { "keys": ["alt+shift+3"], "command": "move_to_group", "args": { "group": 2 } },
 
   // Xdebug
-  { "keys": ["alt+d"], "command": "xdebug_session_start" },
-  { "keys": ["shift+alt+d"], "command": "xdebug_session_stop" },
-  { "keys": ["alt+r"], "command": "xdebug_session_restart" },
+  { "keys": ["super+alt+d"], "command": "xdebug_session_start" },
+  { "keys": ["super+shift+alt+d"], "command": "xdebug_session_stop" },
+  { "keys": ["suoer+alt+r"], "command": "xdebug_session_restart" },
 
   // Xdebug breakpoints.
-  { "keys": ["alt+b"], "command": "xdebug_breakpoint" },
-  { "keys": ["shift+alt+b"], "command": "xdebug_clear_all_breakpoints" },
+  { "keys": ["super+alt+b"], "command": "xdebug_breakpoint" },
+  { "keys": ["shift+super+alt+b"], "command": "xdebug_clear_all_breakpoints" },
 
   // Steps
-  { "keys": ["alt+c"], "command": "xdebug_continue", },
-  { "keys": ["alt+e"], "command": "xdebug_evaluate" },
+  { "keys": ["super+alt+c"], "command": "xdebug_continue", },
+  { "keys": ["super+alt+e"], "command": "xdebug_evaluate" },
 
   // AlignTab
   {
