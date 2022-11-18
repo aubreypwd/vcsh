@@ -11,8 +11,7 @@
         "phpcs": {
             "working_dir": "${file_path}",
             "env": {
-              // Note that this has to be correct.
-              "PATH": "/opt/homebrew/Cellar/php@7.4/7.4.32/bin"
+              "PATH": "/opt/homebrew/Cellar/php@7.4/7.4.33/bin" // Note that this has to be correct.
             },
             "disable": false,
             "args": [],
