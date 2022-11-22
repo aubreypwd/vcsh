@@ -1,12 +1,7 @@
 @namespace url(http://www.w3.org/1999/xhtml);
 
-/*
- * Set default monospace font.
- */
-@-moz-document regexp("chrome://browser/content/devtools/**/.*"){
-	.devtools-monospace {
-		font-family: "JetBrains Mono" !important;
-	}
+:root {
+ 	--monospace-font-family: "JetBrains Mono", Menlo, monospace !important;
 }
 
 /*

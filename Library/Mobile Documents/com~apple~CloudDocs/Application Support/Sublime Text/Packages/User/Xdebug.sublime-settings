@@ -15,10 +15,11 @@
   "pretty_output": true,
   "break_on_start": false,
   "debug": false,
-  "max_depth": 3,
+  "max_depth": 2,
   "max_children": 64,
   "disable_layout": false,
   "ide_key": "",
   "port": 9021, // Yes, we have to use this now that PHP 7.4 takes over port 9000.
   "host": "localhost", // Yes, we have to use this now that PHP 7.4 takes over port 9000.
+  "hide_password": true,
 }

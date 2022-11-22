@@ -11,6 +11,8 @@
     { "keys": ["super+shift+1"], "command": "dash_doc" },
 
     // Panels.
+    // super+alt+1: One group layout.
+    // super+alt+2: Two group layout.
     { "keys": ["alt+1"], "command": "focus_group", "args": { "group": 0 } },
     { "keys": ["alt+2"], "command": "focus_group", "args": { "group": 1 } },
     { "keys": ["shift+alt+1"], "command": "move_to_group", "args": { "group": 0 } },
@@ -22,6 +24,13 @@
     { "keys": ["shift+super+alt+m"], "command": "select_all_bookmarks" },
     { "keys": ["alt+up"], "command": "next_bookmark" },
     { "keys": ["alt+down"], "command": "prev_bookmark" },
+
+    // Xdebug
+    { "keys": ["alt+b"], "command": "xdebug_breakpoint" },
+    { "keys": ["shift+alt+b"], "command": "xdebug_clear_all_breakpoints" },
+    { "keys": ["shift+alt+d"], "command": "xdebug_session_start" },
+    { "keys": ["super+shift+alt+d"], "command": "xdebug_session_stop" },
+    { "keys": ["shift+alt+r"], "command": "xdebug_session_restart" },
 
     // Change quotes.
     { "keys": ["super+shift+'"], "command": "change_quotes" },
@@ -36,15 +45,6 @@
     // Misc.
     { "keys": ["super+ctrl+l"], "command": "alignment" }, // Not sure what this does.
     { "keys": ["alt+d"], "command": "dev_docs_search_selection" },
-
-    // Xdebug
-    { "keys": ["super+alt+d"], "command": "xdebug_session_start" },
-    { "keys": ["super+shift+alt+d"], "command": "xdebug_session_stop" },
-    { "keys": ["suoer+alt+r"], "command": "xdebug_session_restart" },
-
-    // Xdebug breakpoints.
-    { "keys": ["super+alt+b"], "command": "xdebug_breakpoint" },
-    { "keys": ["shift+super+alt+b"], "command": "xdebug_clear_all_breakpoints" },
 
     // Steps
     { "keys": ["super+alt+c"], "command": "xdebug_continue", },

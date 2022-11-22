@@ -1,7 +1,5 @@
 {
-    "debug": true,
-    "delay": 0.1,
-    "lint_mode": "background",
+    "debug": false,
     "linters": {
         "eslint": {
             "disable": false,
@@ -68,7 +66,6 @@
         ],
         "windows": []
     },
-    "show_marks_in_minimap": false,
     "syntax_map": {
         "html (django)": "html",
         "html (rails)": "html",
@@ -79,27 +76,34 @@
         "python django": "python",
         "pythonimproved": "python"
     },
+    "show_marks_in_minimap": true,
     "no_column_highlights_line": true,
+    "show_hover_line_report": true,
+    "show_hover_region_report": true,
+    "highlights.start_hidden": false,
     "gutter_theme": "Default",
     "styles": [
         {
-            "scope": "region.yellowish markup.warning.sublime_linter",
-            "types": [
-                "warning"
-            ],
-            "icon": "warning",
-            "mark_style": "solid_underline"
-        },
-        {
-            "scope": "region.redish markup.error.sublime_linter",
             "types": [
                 "error"
             ],
+            "scope": "region.redish markup.error.sublime_linter",
             "icon": "error",
-            "mark_style": "solid_underline"
+            "mark_style": "solid_underline",
+            // "phantom": "{msg}",
+            // "annotation": "{msg}",
+            "priority": 1,
         },
         {
-            "priority": 1
-        }
+            "types": [
+                "warning",
+            ],
+            "scope": "region.yellowish markup.warning.sublime_linter",
+            "icon": "warning",
+            "mark_style": "solid_underline",
+            // "phantom": "{msg}",
+            // "annotation": "{msg}",
+            "priority": 2,
+        },
     ]
 }
