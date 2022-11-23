@@ -62,4 +62,12 @@
 
     // Line keys.
     { "keys": ["shift+super+k"], "command": "run_macro_file", "args": {"file": "res://Packages/Default/Delete Line.sublime-macro"} },
+
+    // Moving by word.
+    { "keys": ["alt+b"], "command": "move", "args": {"by": "subwords", "forward": false} },
+    { "keys": ["alt+w"], "command": "move", "args": {"by": "subword_ends", "forward": true} },
+
+    // Selection by word.
+    { "keys": ["shift+alt+b"], "command": "move", "args": {"by": "subwords", "forward": false, "extend": true} },
+    { "keys": ["shift+alt+w"], "command": "move", "args": {"by": "subword_ends", "forward": true, "extend": true} },
 ]
