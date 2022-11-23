@@ -51,10 +51,7 @@
     { "keys": ["super+alt+e"], "command": "xdebug_evaluate" },
 
     // AlignTab
-    {
-    "keys": ["alt+l"], "command": "align_tab",
-    "args" : {"live_preview" : true}
-    },
+    { "keys": ["alt+l"], "command": "align_tab", "args" : { "live_preview" : true } },
 
     // Terminus
     { "keys": ["alt+`"], "command": "toggle_terminus_panel" },
