@@ -38,7 +38,7 @@
 	l50      = l -n 20
 	lg-gui   = "! function f() { ttab -w -t 'lazygit' -q 'lazygit && exit'; }; f"
 	lg-guip  = "! function f() { ttab -w -t 'lazygit' -q 'lazygit && git p && exit'; }; f"
-	lg       = "! function f() { lazygit }; f"
+	lg       = "! function f() { lazygit; }; f"
 	lgg      = lg-gui
 	lggp     = lg-guip
 	m        = merge
