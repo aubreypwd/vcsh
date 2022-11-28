@@ -26,7 +26,6 @@
 	get      = "! function f() { ghq get \"$1\"; }; f" # Commit all files, add message inline, and push.
 	gh       = "! function f() { gh \"$@\"; }; f"
 	gh-get   = "! function f() { ghq get \"git@github.com:$1/$2.git$1\"; }; f"
-	# glog     = "! /bin/sh $HOME/.gitscripts/towerlog.sh"
 	gui      = lg-gui
 	guip     = lg-guip
 	l        = log --oneline --decorate --graph # Better log, looks better in CLI.
@@ -39,7 +38,7 @@
 	l50      = l -n 20
 	lg-gui   = "! function f() { ttab -w -t 'lazygit' -q 'lazygit && exit'; }; f"
 	lg-guip  = "! function f() { ttab -w -t 'lazygit' -q 'lazygit && git p && exit'; }; f"
-	lg       = "! function f() { lazygit . }; f"
+	lg       = "! function f() { lazygit }; f"
 	lgg      = lg-gui
 	lggp     = lg-guip
 	m        = merge
