@@ -9,6 +9,7 @@
 	clear    = clean -df # Just remove new files
 	cm       = "! function f() { git mod && git commit; }; f"
 	co       = checkout
+	ko       = "! function f() { git rhhc && git co "$1" && git pull origin "$1"; }; f"
 	cs       = commit # Commit staged
 	d        = diff
 	db       = "! function f() { git branch -D $1; git push origin :$1 ;}; f"
