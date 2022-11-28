@@ -26,9 +26,8 @@
 	get      = "! function f() { ghq get \"$1\"; }; f" # Commit all files, add message inline, and push.
 	gh       = "! function f() { gh \"$@\"; }; f"
 	gh-get   = "! function f() { ghq get \"git@github.com:$1/$2.git$1\"; }; f"
-	glog     = "! /bin/sh $HOME/.gitscripts/towerlog.sh"
-	gp       = guip
-	gui      = tower
+	# glog     = "! /bin/sh $HOME/.gitscripts/towerlog.sh"
+	gui      = lg
 	guip     = lazygitp
 	l        = log --oneline --decorate --graph # Better log, looks better in CLI.
 	l1       = l -n 1
@@ -61,7 +60,7 @@
 	squash-all = "rebase --root -i"
 	stat     = status
 	stow     = "stash push -m"
-	tower    = "! /bin/sh $HOME/.gitscripts/tower.sh" # Tower
+	# tower    = "! /bin/sh $HOME/.gitscripts/tower.sh" # Tower
 	u        = "! git pull origin \"$(git rev-parse --abbrev-ref HEAD)\"" # git pull current branch.
 	usa      = "reset" # Unstage all files.
 
