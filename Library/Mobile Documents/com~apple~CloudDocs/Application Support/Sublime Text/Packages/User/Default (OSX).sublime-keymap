@@ -11,12 +11,15 @@
     { "keys": ["super+shift+1"], "command": "dash_doc" },
 
     // Panels.
-    // super+alt+1: One group layout.
-    // super+alt+2: Two group layout.
+    // super+alt+1: One group layout already in place, don't override.
+    // super+alt+2: Two group layout already in place, don't override.
+    // super+alt+3: Three group layout already in place, don't override.
     { "keys": ["alt+1"], "command": "focus_group", "args": { "group": 0 } },
     { "keys": ["alt+2"], "command": "focus_group", "args": { "group": 1 } },
+    { "keys": ["alt+3"], "command": "focus_group", "args": { "group": 3 } },
     { "keys": ["shift+alt+1"], "command": "move_to_group", "args": { "group": 0 } },
     { "keys": ["shift+alt+2"], "command": "move_to_group", "args": { "group": 1 } },
+    { "keys": ["shift+alt+3"], "command": "move_to_group", "args": { "group": 3 } },
 
     // Bookmarks.
     { "keys": ["alt+m"], "command": "toggle_bookmark" },
