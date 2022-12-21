@@ -72,8 +72,6 @@ brew "cmatrix"
 brew "openldap"
 # Libraries to talk to Microsoft SQL Server and Sybase databases
 brew "freetds"
-# Network authentication protocol
-brew "krb5"
 # General-purpose scripting language
 brew "php", restart_service: true
 # Dependency Manager for PHP
@@ -94,10 +92,8 @@ brew "fd"
 brew "harfbuzz"
 # Image processing and image analysis library
 brew "leptonica"
-# Interpreted, interactive, object-oriented programming language
-brew "python@3.10"
-# Generate introspection data for GObject libraries
-brew "gobject-introspection"
+# Multi-format archive and compression library
+brew "libarchive"
 # Subtitle renderer for the ASS/SSA subtitle format
 brew "libass"
 # Blu-Ray disc playback library for media players like VLC
@@ -130,6 +126,10 @@ brew "libassuan"
 brew "libgcrypt"
 # GNU Pretty Good Privacy (PGP) package
 brew "gnupg"
+# Interpreted, interactive, object-oriented programming language
+brew "python@3.10"
+# Generate introspection data for GObject libraries
+brew "gobject-introspection"
 # Google Search and News from the command-line
 brew "googler"
 # Library for manipulating JPEG-2000 images
@@ -180,6 +180,8 @@ brew "mdf2iso"
 brew "micro"
 # Tail multiple files in one terminal simultaneously
 brew "multitail"
+# Pretty-print tabular data in Python
+brew "python-tabulate"
 # CLI for MySQL with auto-completion and syntax highlighting
 brew "mycli"
 # Protocol buffers (Google's data interchange format)
@@ -190,6 +192,8 @@ brew "mysql", restart_service: true
 brew "n"
 # Fast, highly customisable system info script
 brew "neofetch"
+# HTTP(S) server and reverse proxy, and IMAP/POP3 proxy server
+brew "nginx", restart_service: true
 # Cryptography and SSL/TLS Toolkit
 brew "openssl@3"
 # Swiss-army knife of markup format conversion
@@ -204,6 +208,8 @@ brew "pfetch"
 brew "php@7.4", restart_service: true
 # General-purpose scripting language
 brew "php@8.0", restart_service: true
+# General-purpose scripting language
+brew "php@8.1", restart_service: true
 # Protocol buffers library
 brew "protobuf-c"
 # Python 3 bindings for the Cairo graphics library
@@ -212,8 +218,6 @@ brew "py3cairo"
 brew "pyenv"
 # GNOME Python bindings (based on GObject Introspection)
 brew "pygobject3"
-# Pretty-print tabular data in Python
-brew "python-tabulate"
 # Interpreted, interactive, object-oriented programming language
 brew "python@3.8"
 # Utility that provides fast incremental file transfer
@@ -276,9 +280,7 @@ brew "zsh"
 brew "jesseduffield/lazygit/lazygit"
 brew "lucapette/tap/fakedata"
 # General-purpose scripting language
-brew "shivammathur/php/php@5.6"
-# General-purpose scripting language
-brew "shivammathur/php/php@7.3"
+brew "shivammathur/php/php@7.3", link: true
 # Stripe CLI utility
 brew "stripe/stripe-cli/stripe"
 # Command-line helper for the 1Password password manager
@@ -295,7 +297,7 @@ cask "choosy"
 cask "clean-me"
 # Terminal emulator mimicking the old cathode display
 cask "cool-retro-term"
-# Offline toolbox for developers
+# All-in-one toolbox for developers
 cask "devutils"
 # Tool to prevent the system from going into sleep mode
 cask "keepingyouawake"

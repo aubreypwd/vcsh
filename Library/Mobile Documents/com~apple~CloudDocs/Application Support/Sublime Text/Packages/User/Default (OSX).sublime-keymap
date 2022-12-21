@@ -29,9 +29,9 @@
     { "keys": ["alt+down"], "command": "prev_bookmark" },
 
     // XDebug
+    { "keys": ["super+alt+x"], "command": "xdebug_session_start" },
     { "keys": ["alt+x"], "command": "xdebug_breakpoint" }, // Toggle.
     { "keys": ["shift+alt+x"], "command": "xdebug_clear_all_breakpoints" },
-    { "keys": ["super+alt+x"], "command": "xdebug_session_start" },
     { "keys": ["shift+super+alt+x"], "command": "xdebug_session_stop" },
     { "keys": ["super+alt+r"], "command": "xdebug_session_restart" },
     { "keys": ["super+alt+c"], "command": "xdebug_continue", },
