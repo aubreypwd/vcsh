@@ -1,7 +1,6 @@
 [
     {
         "caption": "XDebug",
-        "mnemonic": "X",
         "id": "xDebug",
         "children":
         [
@@ -9,11 +8,11 @@
                 "caption": "Start Debugging",
                 "command": "xdebug_session_start"
             },
-            {
-                "caption": "Start Debugging (Launch Browser)",
-                "command": "xdebug_session_start",
-                "args"   : {"launch_browser" : true}
-            },
+            // {
+            //     "caption": "Start Debugging (Launch Browser)",
+            //     "command": "xdebug_session_start",
+            //     "args"   : {"launch_browser" : true}
+            // },
             {
                 "caption": "Restart Session",
                 "command": "xdebug_session_restart"
@@ -22,11 +21,11 @@
                 "caption": "Stop Debugging",
                 "command": "xdebug_session_stop"
             },
-            {
-                "caption": "Stop Debugging (Launch Browser)",
-                "command": "xdebug_session_stop",
-                "args"   : {"launch_browser" : true}
-            },
+            // {
+            //     "caption": "Stop Debugging (Launch Browser)",
+            //     "command": "xdebug_session_stop",
+            //     "args"   : {"launch_browser" : true}
+            // },
             {
                 "caption": "Stop Debugging (Close Windows)",
                 "command": "xdebug_session_stop",

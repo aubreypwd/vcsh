@@ -30,11 +30,13 @@
 
     // XDebug
     { "keys": ["super+alt+x"], "command": "xdebug_session_start" },
-    { "keys": ["alt+x"], "command": "xdebug_breakpoint" }, // Toggle.
+    { "keys": ["alt+x"], "command": "xdebug_breakpoint" },
     { "keys": ["shift+alt+x"], "command": "xdebug_clear_all_breakpoints" },
-    { "keys": ["shift+super+alt+x"], "command": "xdebug_session_stop" },
+    { "keys": ["super+alt+z"], "command": "xdebug_session_stop" },
     { "keys": ["super+alt+r"], "command": "xdebug_session_restart" },
     { "keys": ["super+alt+c"], "command": "xdebug_continue", },
+    { "keys": ["super+alt+s"], "command": "xdebug_continue", "args": { "command" : "step_over" } },
+    { "keys": ["super+alt+i"], "command": "xdebug_continue", "args": { "command" : "step_into" } },
     { "keys": ["super+alt+e"], "command": "xdebug_evaluate" },
 
     // Change quotes.
