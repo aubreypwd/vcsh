@@ -70,6 +70,8 @@ brew "cmake"
 brew "cmatrix"
 # Open source suite of directory software
 brew "openldap"
+# Get a file from an HTTP, HTTPS or FTP server
+brew "curl"
 # Libraries to talk to Microsoft SQL Server and Sybase databases
 brew "freetds"
 # General-purpose scripting language
@@ -160,6 +162,8 @@ brew "hugo"
 brew "shared-mime-info"
 # ISO/IEC 23008-12:2017 HEIF file format decoder and encoder
 brew "libheif"
+# Library for reading RAW files from digital photo cameras
+brew "libraw"
 # Tools and libraries to manipulate images in many formats
 brew "imagemagick"
 # Lightweight and flexible command-line JSON processor
@@ -174,6 +178,8 @@ brew "lynx"
 brew "m-cli"
 # System information fetcher, with an emphasis on performance and minimalism
 brew "macchina"
+# Web and API based SMTP testing tool
+brew "mailhog", restart_service: true
 # Tool to convert MDF (Alcohol 120% images) images to ISO images
 brew "mdf2iso"
 # Modern and intuitive terminal-based text editor
