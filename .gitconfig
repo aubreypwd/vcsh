@@ -43,6 +43,7 @@
 	nb     = checkout -b # New branch
 	p      = pull
 	pb     = "! git push -u origin \"$(git rev-parse --abbrev-ref HEAD)\"" # git push current branch.
+	pp     = pb
 	pew    = "! function f() { git commit -a --allow-empty-message -m '' && git p; }; f" # Push an empty commit with all updates (dependant in other packages).
 	pt     = push --tags
 	rcob   = "! function f() { git rhhc && git fb && git pull; }; f" # Reset and checkout branch.
