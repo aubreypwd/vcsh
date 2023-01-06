@@ -158,6 +158,8 @@ brew "httpd", restart_service: true
 brew "httpie"
 # Configurable static site generator
 brew "hugo"
+# ID3 tag manipulation
+brew "id3lib"
 # Database of common MIME types
 brew "shared-mime-info"
 # ISO/IEC 23008-12:2017 HEIF file format decoder and encoder
