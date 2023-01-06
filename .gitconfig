@@ -34,9 +34,8 @@
 	l50    = l -n 20
 	lg     = "! function f() { lazygit; }; f"
 	lgg    = lggui
-	lggp   = lgnt
-	lggui  = "! function f() { ttab -w -t 'lazygit' -q 'lazygit && exit'; }; f"
-	lgnt   = "! function f() { ttab -w -t 'lazygit' -q 'lazygit && git p && exit'; }; f"
+	lggui  = lgnt
+	lgnt   = "! function f() { ttab -w -t 'lazygit' -q 'lazygit && exit'; }; f"
 	m      = merge
 	mod    = "add -u" # Add modifed
 	mt     = "! function f() { git dt $1; git tag $1; git push --tags; }; f" # Move tag here.
