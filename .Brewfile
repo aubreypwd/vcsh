@@ -166,6 +166,8 @@ brew "libheif"
 brew "libraw"
 # Tools and libraries to manipulate images in many formats
 brew "imagemagick"
+# Modular IRC client
+brew "irssi"
 # Lightweight and flexible command-line JSON processor
 brew "jq"
 # Command-line note taker
@@ -303,6 +305,8 @@ cask "choosy"
 cask "clean-me"
 # Terminal emulator mimicking the old cathode display
 cask "cool-retro-term"
+# Command-line display management utility
+cask "cscreen"
 # All-in-one toolbox for developers
 cask "devutils"
 # Tool to prevent the system from going into sleep mode
