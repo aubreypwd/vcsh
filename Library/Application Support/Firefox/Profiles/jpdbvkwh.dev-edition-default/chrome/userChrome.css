@@ -4,6 +4,19 @@
 	}
 }
 
+#TabsToolbar {
+	background: #1E1E1E;
+}
+
+.tab-label {
+	margin-block: 0 !important;
+	margin-top: -2px !important;
+}
+
+.tabbrowser-tab {
+	--lwt-tab-line-color: none;
+}
+
 .tab-background,
 #tabs-newtab-button,
 #tabs-newtab-button:hover {
@@ -12,10 +25,10 @@
 	border-top-left-radius: 0 !important;
 	margin-right: 0 !important;
 	margin-left: 0 !important;
-	margin-bottom: 0 !important;
+	margin-bottom: 2px !important;
 	margin-top: 0 !important;
 }
 
 .tabbrowser-tab:not( [selected=true] ):not( [multiselected=true] ) .tab-background {
-	background-color: color-mix( in srgb, currentColor 5%, transparent);
+/* 	background-color: color-mix( in srgb, currentColor 5%, transparent); */
 }
