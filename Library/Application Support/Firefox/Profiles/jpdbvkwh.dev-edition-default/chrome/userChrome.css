@@ -15,6 +15,7 @@
 
 .tabbrowser-tab {
 	--lwt-tab-line-color: none;
+	--lwt-selected-tab-background-color: #363636;
 }
 
 .tab-background,
@@ -30,5 +31,5 @@
 }
 
 .tabbrowser-tab:not( [selected=true] ):not( [multiselected=true] ) .tab-background {
-/* 	background-color: color-mix( in srgb, currentColor 5%, transparent); */
+	background-color: color-mix( in srgb, currentColor 0%, transparent);
 }
