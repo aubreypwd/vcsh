@@ -1,3 +1,4 @@
+tap "cloudflare/cloudflare"
 tap "dnicolson/bluetoothkeyboardenhancer"
 tap "dteoh/sqa"
 tap "github/gh"
@@ -286,6 +287,8 @@ brew "youtube-dl"
 brew "yt-dlp"
 # UNIX shell (command interpreter)
 brew "zsh"
+# Cloudflare Tunnel
+brew "cloudflare/cloudflare/cloudflared"
 # A simple terminal UI for git commands, written in Go
 brew "jesseduffield/lazygit/lazygit"
 brew "lucapette/tap/fakedata"
