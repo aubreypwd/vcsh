@@ -153,14 +153,14 @@
   "ignored_packages":
   [
     "EditorConfig",
+    "gruvbox 2",
     "Markdown",
     "MonokaiFree",
+    "NeoVintageous",
     "ProjectManager",
     "Six",
     "Vintage",
     "VintageES",
-    "Vintageous",
-    "gruvbox 2",
   ],
   "ignored_words":
   [
@@ -241,6 +241,6 @@
   "gravity_highlight_color_blue": true,
   "gravity_tab_font_small": true,
   "vintage_start_in_command_mode": true,
-  //"vintage_ctrl_keys": false,
+  "vintage_ctrl_keys": true,
   "neovintageous_build_version": 12700,
 }
