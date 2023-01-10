@@ -2,8 +2,8 @@
     "variables":{},
     "globals":
     {
-        "background": "#212121",
-        "gutter": "#212121",
+        "background": "#1F1F1F",
+        "gutter": "#1F1F1F",
         // "background": "#191919",
         // "gutter": "#191919"
     },

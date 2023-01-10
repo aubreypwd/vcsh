@@ -15,7 +15,17 @@
     {
         "class": "sidebar_container",
         "layer0.texture": "", // Unset, don't like the shadow.
-        "layer0.tint": "#1F1F1F" // Use a solid background instead.
+        "layer0.tint": "#292929" // Use a solid background instead.
     },
+    {
+        "class": "sidebar_label",
+        "color": [170, 170, 170],
+    },
+    // Sidebar folder entry
+    {
+        "class": "sidebar_label",
+        "parents": [{"class": "tree_row", "attributes": ["expandable"]}],
+        "color": [233, 233, 233]
+    }
   ]
 }
