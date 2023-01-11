@@ -19,5 +19,11 @@ bind M-v paste main
 bind M-x cut main
 bind M-y redo main
 bind M-z undo main
+bind M-d zap main
+bind M-/ comment main
+bind M-b prevword main
+bind M-w nextword main
+bind M-B home main
+bind M-W end main
 
 bind M-f whereis main # Find
