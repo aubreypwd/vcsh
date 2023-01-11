@@ -67,7 +67,7 @@
 	email         = code@aubreypwd.com
 
 [core]
-	editor        = vim -c 'startinsert'
+	editor        = nano --breaklonglines --unix --saveonexit --guidestripe 72
 	excludesfile  = /Users/aubreypwd/.gitignore
 
 [color]
