@@ -201,6 +201,8 @@ brew "protobuf"
 brew "mysql", restart_service: true
 # Node version management
 brew "n"
+# Free (GNU) replacement for the Pico text editor
+brew "nano"
 # Fast, highly customisable system info script
 brew "neofetch"
 # HTTP(S) server and reverse proxy, and IMAP/POP3 proxy server

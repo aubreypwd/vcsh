@@ -4,10 +4,10 @@
 	aic    = "! git ai && git c"
 	b      = "! echo $(git branch --show-current)" # Show the current branch.
 	c      = commit
-	ca     = "! function f() { git aa && git commit; }; f"
+	ca     = "! function f() { git aa && git commit -v; }; f"
 	cb     = "! git b | pbcopy" # Copy the current branch to the clipboard.
 	clear  = clean -df # Just remove new files
-	cm     = "! function f() { git mod && git commit; }; f"
+	cm     = "! function f() { git mod && git commit -v; }; f"
 	co     = checkout
 	cs     = commit # Commit staged
 	d      = diff
@@ -67,7 +67,7 @@
 	email         = code@aubreypwd.com
 
 [core]
-	editor        = nano --breaklonglines --unix --saveonexit --guidestripe 72
+	editor        = "nano --breaklonglines --unix --saveonexit --guidestripe 72"
 	excludesfile  = /Users/aubreypwd/.gitignore
 
 [color]

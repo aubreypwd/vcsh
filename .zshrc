@@ -18,7 +18,7 @@
  ##
 
 # PATH
-export PATH="$HOME/.composer/vendor/bin:$PATH"
+export PATH="/opt/homebrew/bin:$HOME/.composer/vendor/bin:$PATH"
 export PATH="/Applications/Sublime Text.app/Contents/SharedSupport/bin:$PATH" # subl
 export PATH="/opt/homebrew/sbin:$PATH" # Homebrew
 export PATH="/opt/homebrew/bin:$PATH" # Homebrew
