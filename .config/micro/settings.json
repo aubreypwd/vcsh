@@ -5,6 +5,7 @@
     "indentchar": "—",
     "infobar": false,
     "mkparents": true,
+    "paste": true,
     "rmtrailingws": true,
     "savecursor": true,
     "statusline": false,
