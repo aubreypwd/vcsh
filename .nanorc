@@ -1,0 +1,23 @@
+include /Users/aubreypwd/Repos/github.com/scopatz/nanorc/*.nanorc
+
+set autoindent
+set linenumbers
+set minibar
+set mouse
+set nohelp
+set nonewlines
+set nowrap
+set numbercolor black,normal
+set stripecolor white,red
+set titlecolor black,normal
+
+# Mimic normal editor.
+bind M-c copy main
+bind M-q exit main
+bind M-s savefile main
+bind M-v paste main
+bind M-x cut main
+bind M-y redo main
+bind M-z undo main
+
+bind M-f whereis main # Find
