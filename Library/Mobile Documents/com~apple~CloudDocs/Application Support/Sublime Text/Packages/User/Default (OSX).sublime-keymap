@@ -30,7 +30,7 @@
 
     // XDebug
     { "keys": ["super+alt+x"], "command": "xdebug_session_start" },
-    { "keys": ["alt+x"], "command": "xdebug_breakpoint" },
+    { "keys": ["alt+d"], "command": "xdebug_breakpoint" },
     { "keys": ["shift+alt+x"], "command": "xdebug_clear_all_breakpoints" },
     { "keys": ["super+alt+z"], "command": "xdebug_session_stop" },
     { "keys": ["super+alt+r"], "command": "xdebug_session_restart" },
@@ -61,13 +61,21 @@
     { "keys": ["super+alt+`"], "command": "terminus_open", "args": { "cwd": "${file_path:${folder}}", "title": "zsh", "auto_close": true } },
 
     // Line keys.
-    { "keys": ["shift+super+k"], "command": "run_macro_file", "args": {"file": "res://Packages/Default/Delete Line.sublime-macro"} },
+    { "keys": ["shift+super+k"], "command": "run_macro_file", "args": { "file": "res://Packages/Default/Delete Line.sublime-macro"} },
 
-    // Moving by word.
-    { "keys": ["alt+b"], "command": "move", "args": {"by": "subwords", "forward": false} },
-    { "keys": ["alt+w"], "command": "move", "args": {"by": "subword_ends", "forward": true} },
+    // Micro-Quickies Sync
+    { "keys": ["alt+c"], "command": "copy" },
+    { "keys": ["alt+s"], "command": "save" },
+    { "keys": ["alt+shift+s"], "command": "saveAs" },
+    { "keys": ["alt+v"], "command": "paste" },
+    { "keys": ["alt+x"], "command": "cut" },
 
-    // Selection by word.
-    { "keys": ["shift+alt+b"], "command": "move", "args": {"by": "subwords", "forward": false, "extend": true} },
-    { "keys": ["shift+alt+w"], "command": "move", "args": {"by": "subword_ends", "forward": true, "extend": true} },
+    // Other Micro-ish Syncs.
+    { "keys": ["alt+e"], "command": "show_overlay", "args": { "overlay": "command_palette" } },
+    { "keys": ["alt+b"], "command": "move", "args": { "by": "subwords", "forward": false } },
+    { "keys": ["alt+w"], "command": "move", "args": { "by": "subword_ends", "forward": true } },
+    { "keys": ["shift+alt+b"], "command": "move", "args": { "by": "subwords", "forward": false, "extend": true } },
+    { "keys": ["shift+alt+w"], "command": "move", "args": { "by": "subword_ends", "forward": true, "extend": true } },
+    { "keys": ["alt+["], "command": "move_to", "args": { "to": "bol" } },
+    { "keys": ["alt+]"], "command": "move_to", "args": { "to": "eol" } },
 ]

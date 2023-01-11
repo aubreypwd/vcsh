@@ -10,5 +10,5 @@
     "savecursor": true,
     "statusline": false,
     "tabsize": 2,
-    "xterm": true,
+    "xterm": true
 }

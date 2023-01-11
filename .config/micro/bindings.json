@@ -2,20 +2,18 @@
     "Alt-/": "lua:comment.comment",
     "CtrlUnderscore": "lua:comment.comment",
 
-    // Saving
+    // Quickies
+    "Alt-c": "Copy",
+    "Alt-p": "Paste",
+    "Alt-q": "Quit",
     "Alt-s": "Save",
     "Alt-S": "SaveAs",
-    "Alt-q": "Quit",
-
-    // Copy/paste/cut
-    "Alt-c": "Copy",
     "Alt-v": "Cut",
-    "Alt-p": "Paste",
 
     // Command mode, etc
     "Alt-e": "CommandMode",
 
     // Select word right/left
-    "Alt-l": "SelectToStartOfLine",
-    "Alt-h": "SelectToEndOfLine",
+    "Alt-[": "StartOfLine",
+    "Alt-]": "EndOfLine",
 }
