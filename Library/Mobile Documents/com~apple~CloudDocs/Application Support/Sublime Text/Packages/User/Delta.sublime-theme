@@ -5,27 +5,39 @@
   },
   "rules":
   [
+
+    // Status bar.
     {
       "class": "status_bar",
-      "layer0.texture": "Theme - Delta/images/status-bar-background.png",
       "layer0.opacity": 1,
-      "layer0.inner_margin": [2, 2],
-      "content_margin": [16, 2, 4, 4]
+      "layer0.inner_margin": [0, 0],
+      "content_margin": [0, 0, 0, 0]
     },
+
+    // Sidebar background.
     {
         "class": "sidebar_container",
         "layer0.texture": "", // Unset, don't like the shadow.
-        "layer0.tint": "#292929" // Use a solid background instead.
+        "layer0.tint": "#1F1F1F" // Use a solid background instead.
     },
+
+    // Sidebar labels.
     {
         "class": "sidebar_label",
         "color": [170, 170, 170],
     },
-    // Sidebar folder entry
+
+    // Sidebar folder labels.
     {
         "class": "sidebar_label",
         "parents": [{"class": "tree_row", "attributes": ["expandable"]}],
         "color": [233, 233, 233]
-    }
+    },
+
+    // Hides all scrollbars.
+    {
+        "class": "puck_control",
+        "content_margin": [0,0],
+    },
   ]
 }
