@@ -149,6 +149,8 @@ brew "gsettings-desktop-schemas"
 brew "pango"
 # Toolkit for creating graphical user interfaces
 brew "gtk+3"
+# Tool for glamorous shell scripts
+brew "gum"
 # Convert source code to formatted text with syntax highlighting
 brew "highlight"
 # Improved top (interactive process viewer)
