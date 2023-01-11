@@ -3,7 +3,7 @@
 	ai     = "! git ls-files -m -o --exclude-standard | fzf --reverse --height 10 --print0 -m | xargs -0 -t -o git add -f" # https://spin.atomicobject.com/2018/04/05/fuzzy-find-git-add/
 	aic    = "! git ai && git c"
 	b      = "! echo $(git branch --show-current)" # Show the current branch.
-	c      = commit
+	c      = commit -v
 	ca     = "! function f() { git aa && git commit -v; }; f"
 	cb     = "! git b | pbcopy" # Copy the current branch to the clipboard.
 	clear  = clean -df # Just remove new files
@@ -67,7 +67,7 @@
 	email         = code@aubreypwd.com
 
 [core]
-	editor        = "nano --breaklonglines --unix --saveonexit --guidestripe 72"
+	editor        = "micro --diffgutter false --colorcolumn 72 --ruler false --softwrap true --wordwrap true"
 	excludesfile  = /Users/aubreypwd/.gitignore
 
 [color]
