@@ -1,5 +1,6 @@
 {
     "autosu": true,
+    "colorscheme": "monokai",
     "ignorecase": false,
     "indentchar": "—",
     "infobar": false,
@@ -9,5 +10,5 @@
     "savecursor": true,
     "statusline": false,
     "tabsize": 2,
-    "xterm": true
+    "xterm": true,
 }
