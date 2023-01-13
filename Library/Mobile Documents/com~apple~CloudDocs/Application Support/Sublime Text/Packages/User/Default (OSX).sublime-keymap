@@ -58,6 +58,7 @@
     { "keys": ["alt+backspace"], "command": "delete_word", "args": { "forward": false, "sub_words": true } },
     { "keys": ["alt+shift+f"], "command": "show_panel", "args": { "panel": "find_in_files" } },
 
+    // These are disabled because I found out how to map my right ⌘ key to CTRL in micro.
     // { "keys": ["ctrl+s"], "command": "save", "args": { "async": true } },
     // { "keys": ["ctrl+left"], "command": "bol" },
     // { "keys": ["ctrl+right"], "command": "eol" },
