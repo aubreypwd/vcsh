@@ -152,6 +152,7 @@
   "hot_exit": true,
   "ignored_packages":
   [
+    "Debugger",
     "EditorConfig",
     "gruvbox 2",
     "Markdown",
