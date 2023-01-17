@@ -1,6 +1,6 @@
 [
     // Make Paste + Indent the default.
-    // { "keys": ["super+v"], "command": "paste_and_indent" }, // Maybe this is getting in the way.
+    { "keys": ["super+v"], "command": "paste_and_indent" }, // Maybe this is getting in the way.
     { "keys": ["super+shift+v"], "command": "paste" },
 
     // Show the sidebar easier.
