@@ -4,7 +4,7 @@
     { "keys": ["super+shift+v"], "command": "paste" },
 
     // Show the sidebar easier.
-    { "keys": ["super+."], "command": "toggle_side_bar" },
+    { "keys": ["super+\\"], "command": "toggle_side_bar" },
 
     // Panels
     // super+alt+1: One group layout already in place, don't override.
