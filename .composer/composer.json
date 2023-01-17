@@ -1,9 +1,26 @@
 {
     "repositories": {
+        "aubreypwd/php-cli-dev": {
+            "type": "path",
+            "url": "~/Repos/github.com/aubreypwd/php-cli-dev"
+        },
+        "aubreypwd/php-cli": {
+            "type": "path",
+            "url": "~/Repos/github.com/aubreypwd/php-cli"
+        },
+        "aubreypwd-php-cli-dev": {
+            "type": "path",
+            "url": "/Users/aubreypwd/Repos/github.com/aubreypwd/php-cli-dev"
+        },
+        "aubreypwd-php-cli-silly": {
+            "type": "path",
+            "url": "/Users/aubreypwd/Repos/github.com/aubreypwd/php-cli-silly"
+        }
     },
     "config": {
     },
     "require": {
         "laravel/valet": "^3.2"
-    }
+    },
+    "minimum-stability": "dev"
 }
