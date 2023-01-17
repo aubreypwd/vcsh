@@ -74,6 +74,10 @@ if [ -e "$ZSH" ]; then
 	 ##
 	__clone_and_link_bundle () {
 
+		if test ! -x "$(command -v ghq)"; then
+			echo "__clone_and_link_bundle: Please install ghq, can't clone plugin $1."
+		fi
+
 		ghq get -s "ssh://git@github.com/$1" 2> /dev/null
 
 		antigen bundle "$HOME/Repos/github.com/$1" --no-local-clone
