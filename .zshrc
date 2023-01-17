@@ -112,25 +112,25 @@ if [ -e "$ZSH" ]; then
 
 		__clone_and_link_bundle "aubreypwd/zsh-plugin-require" ## This has to be loaded first.
 
-		__clone_and_link_bundle "aubreypwd/zsh-plugin-affwp"
-		__clone_and_link_bundle "aubreypwd/zsh-plugin-bruse"
-		__clone_and_link_bundle "aubreypwd/zsh-plugin-comment"
-		__clone_and_link_bundle "aubreypwd/zsh-plugin-cvideo"
-		__clone_and_link_bundle "aubreypwd/zsh-plugin-delete"
-		__clone_and_link_bundle "aubreypwd/zsh-plugin-download"
-		__clone_and_link_bundle "aubreypwd/zsh-plugin-fd"
-		__clone_and_link_bundle "aubreypwd/zsh-plugin-fzf-git-branch"
 		__clone_and_link_bundle "aubreypwd/zsh-plugin-git-is-clean"
-		__clone_and_link_bundle "aubreypwd/zsh-plugin-hide"
-		__clone_and_link_bundle "aubreypwd/zsh-plugin-my-config"
-		__clone_and_link_bundle "aubreypwd/zsh-plugin-newvwp"
-		__clone_and_link_bundle "aubreypwd/zsh-plugin-pwdcp"
-		__clone_and_link_bundle "aubreypwd/zsh-plugin-reload"
 		__clone_and_link_bundle "aubreypwd/zsh-plugin-x"
+		__clone_and_link_bundle "aubreypwd/zsh-plugin-reload"
+		__clone_and_link_bundle "aubreypwd/zsh-plugin-fzf-git-branch"
+		__clone_and_link_bundle "aubreypwd/zsh-plugin-hide"
+		__clone_and_link_bundle "aubreypwd/zsh-plugin-delete"
+		__clone_and_link_bundle "aubreypwd/zsh-plugin-comment"
+		__clone_and_link_bundle "aubreypwd/zsh-plugin-pwdcp"
+		__clone_and_link_bundle "aubreypwd/zsh-plugin-cvideo"
 		__clone_and_link_bundle "aubreypwd/zsh-plugin-yt2mp3"
+		__clone_and_link_bundle "aubreypwd/zsh-plugin-fd"
+		__clone_and_link_bundle "aubreypwd/zsh-plugin-download"
+		__clone_and_link_bundle "aubreypwd/zsh-plugin-newvwp"
+		__clone_and_link_bundle "aubreypwd/zsh-plugin-bruse"
+		__clone_and_link_bundle "aubreypwd/zsh-plugin-affwp"
+		__clone_and_link_bundle "aubreypwd/zsh-plugin-my-config"
 
-		antigen apply
 		antigen cache-gen
+		antigen apply
 	fi
 else
 
