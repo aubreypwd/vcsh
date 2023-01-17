@@ -1,20 +1,11 @@
-#!/bin/bash
+#!/bin/zsh
 
 ###
- # My .zshrc file
+ # .zshrc
  #
- # This is my ~/.zshrc file and it does a lot of things, but mostly it helps me:
- #
- # - Setup my machine
- # - Make things easier to do in the Terminal
- # - Make development super easy
- # - Sometimes make things more complicated than they need to be
- #
- # Most actions are blocked into callable functions all prefixed with __
- # and I call them in a certain order.
- #
- # @since The beginning of time.
- # @since Large update, most things are ZSH plugins now.
+ # @since Unknown       The beginning of time.
+ # @since Unknown       Large update, most things are ZSH plugins now.
+ # @since (Jan 16, 2023) Moved a ton of configurations to aubreypwd/zsh-plugin-my-config
  ##
 
 # PATH
@@ -39,7 +30,7 @@ export ZSH="$HOME/.oh-my-zsh" # Path to your oh-my-zsh installation.
  #
  # @since   Tuesday, September 7, 2021
  ##
-if [ -e "$ZSH" ]; then
+if test -e "$ZSH"; then
 
 	###
 	 # ZSH & oh-my-zsh Specific Configs
@@ -137,6 +128,7 @@ if [ -e "$ZSH" ]; then
 
 		antigen cache-gen
 		antigen apply
+		antigen cleanup --force 2>&1 /dev/null
 	fi
 else
 
