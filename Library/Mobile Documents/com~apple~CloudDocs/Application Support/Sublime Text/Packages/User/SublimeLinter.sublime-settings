@@ -39,7 +39,9 @@
         },
         "shellcheck": {
             "disable": false,
-            "args": [],
+            "args": [
+                "--shell=bash"
+            ],
             "exclude": "SC1091", // Rules.
             "excludes": [] // Files.
         },
