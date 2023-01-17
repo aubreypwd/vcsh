@@ -105,6 +105,8 @@ if [ -e "$ZSH" ]; then
 
 		# Get antigen ready.
 		source /opt/homebrew/share/antigen/antigen.zsh # brew install antigen
+
+		# omz
 		antigen use oh-my-zsh
 
 		# Other Plugins
@@ -114,8 +116,8 @@ if [ -e "$ZSH" ]; then
 		antigen bundle zsh-users/zsh-syntax-highlighting
 		antigen bundle zsh-users/zsh-autosuggestions
 
+		# My plugins...
 		__clone_and_link_bundle "aubreypwd/zsh-plugin-require" ## This has to be loaded first.
-
 		__clone_and_link_bundle "aubreypwd/zsh-plugin-git-is-clean"
 		__clone_and_link_bundle "aubreypwd/zsh-plugin-x"
 		__clone_and_link_bundle "aubreypwd/zsh-plugin-reload"
@@ -131,7 +133,7 @@ if [ -e "$ZSH" ]; then
 		__clone_and_link_bundle "aubreypwd/zsh-plugin-newvwp"
 		__clone_and_link_bundle "aubreypwd/zsh-plugin-bruse"
 		__clone_and_link_bundle "aubreypwd/zsh-plugin-affwp"
-		__clone_and_link_bundle "aubreypwd/zsh-plugin-my-config"
+		__clone_and_link_bundle "aubreypwd/zsh-plugin-my-config" # This should be loaded last.
 
 		antigen cache-gen
 		antigen apply
@@ -140,49 +142,29 @@ else
 
 	echo ".oh-my-zsh isn't installed!"
 	echo "  Install: https://ohmyz.sh/#install"
+
 	exit 2
 fi
 
+# Autocomplete
 autoload -Uz compinit && compinit
 
-# Quietly....
-( (
-
-	# Keep sublime associated with these extensions.
-	for ext in php js json yml md sh zsh html; do
-		duti -s "osascript -e 'id of app \"Sublime Text\"'" ".$ext" all
-	done
-
-	# Fix issue where PHP 8.1 can't access the WordPress DB.
-	mysql-exec "ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY '';"
-
-	if [ "$(pwd)" != "$HOME" ]; then
-		return
-	fi
-
-	brewd # Dump out a .Brewfile which show up in my public vcsh.
-
-) 1>&- 2>&- & )
-
-###
- # Load fzf autocomplete.
- #
- # @since Thursday, 10/1/2020
- ##
+# fzf
 test -f "$HOME/.fzf.zsh" && source "$HOME/.fzf.zsh"
 
-###
- # iTerm2 History Support
- #
- # @since Monday, 9/21/2020
- ##
+# iTerm2
 test -e "${HOME}/.iterm2_shell_integration.zsh" \
 	&& source "${HOME}/.iterm2_shell_integration.zsh"
 
-if [ "$(pwd)" = "$HOME" ]; then
+# Only when loaded $HOME...
+if test "$(pwd)" = "$HOME"; then
 
 	checkmyrepos
 	sysinfo
-fi
 
-test -e "$HOME/.autorunrc" && source "$HOME/.autorunrc"
+	( ( # Quietly....
+
+		brewd # Dump out a .Brewfile which show up in my public vcsh.
+
+	) 1>&- 2>&- & )
+fi
