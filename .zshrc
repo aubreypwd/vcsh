@@ -59,10 +59,10 @@ if [ -e "$ZSH" ]; then
 	 # @since 10/1/20           ys
 	 # @since Wednesday, 10/7/2020 Switched to refined for more simplicity.
 	 ##
-	ZSH_THEME="refined"
+	export ZSH_THEME="refined"
 
 	# Built-in plugins.
-	PLUGINS=()
+	export PLUGINS=()
 
 	# Load Oh My ZSH...
 	source "$ZSH/oh-my-zsh.sh"
@@ -179,6 +179,6 @@ if [ "$(pwd)" = "$HOME" ]; then
 
 	checkmyrepos
 	sysinfo
-else
-	test -e ".autorun.zsh" && source ".autorun.zsh" # Run .autorun.zsh files.
 fi
+
+test -e "$HOME/.autorunrc" && source "$HOME/.autorunrc"
