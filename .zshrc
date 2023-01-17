@@ -165,7 +165,7 @@ autoload -Uz compinit && compinit
  #
  # @since Thursday, 10/1/2020
  ##
-[ -f "$HOME/.fzf.zsh" ] && source "$HOME/.fzf.zsh"
+test -f "$HOME/.fzf.zsh" && source "$HOME/.fzf.zsh"
 
 ###
  # iTerm2 History Support
