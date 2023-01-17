@@ -68,6 +68,18 @@ if [ -e "$ZSH" ]; then
 	source "$ZSH/oh-my-zsh.sh"
 
 	###
+	 # Used to clone and link plugins below.
+	 #
+	 # @since Jan 16, 2023
+	 ##
+	__clone_and_link_bundle () {
+
+		ghq get -s "ssh://git@github.com/$1" 2> /dev/null
+
+		antigen bundle "$HOME/Repos/github.com/$1" --no-local-clone
+	}
+
+	###
 	 # Antigen Plugins
 	 #
 	 # I use Antigen to source my various zsh functions and aliases, etc.
@@ -98,28 +110,27 @@ if [ -e "$ZSH" ]; then
 		antigen bundle zsh-users/zsh-syntax-highlighting
 		antigen bundle zsh-users/zsh-autosuggestions
 
-		# Plugins I built (install as source on master).
-		antigen bundle ssh://git@github.com/aubreypwd/zsh-plugin-require # export REQUIRE_AUTO_INSTALL="off" # Un-comment to disable autoinstall.
-		antigen bundle ssh://git@github.com/aubreypwd/zsh-plugin-git-is-clean # Required by my-repos.
-		antigen bundle ssh://git@github.com/aubreypwd/zsh-plugin-x
-		antigen bundle ssh://git@github.com/aubreypwd/zsh-plugin-reload
-		antigen bundle ssh://git@github.com/aubreypwd/zsh-plugin-fzf-git-branch # Used in my "git fb" alias
-		antigen bundle ssh://git@github.com/aubreypwd/zsh-plugin-hide # Hide and unhide folders
-		antigen bundle ssh://git@github.com/aubreypwd/zsh-plugin-delete
-		antigen bundle ssh://git@github.com/aubreypwd/zsh-plugin-comment # Add comments to a file in macOS.
-		antigen bundle ssh://git@github.com/aubreypwd/zsh-plugin-pwdcp # Copy the current pwd.
-		antigen bundle ssh://git@github.com/aubreypwd/zsh-plugin-cvideo # Compress a video with cvideo
-		antigen bundle ssh://git@github.com/aubreypwd/zsh-plugin-yt2mp3 # Download a YouTube video as an mp3.
-		antigen bundle ssh://git@github.com/aubreypwd/zsh-plugin-fd
-		antigen bundle ssh://git@github.com/aubreypwd/zsh-plugin-download # Download files using aria2c
-		antigen bundle ssh://git@github.com/aubreypwd/zsh-plugin-newvwp # Easy Valet WP site creation.
-		antigen bundle ssh://git@github.com/aubreypwd/zsh-plugin-bruse # I haven't been using this much.
-		antigen bundle ssh://git@github.com/aubreypwd/zsh-plugin-affwp
+		__clone_and_link_bundle "aubreypwd/zsh-plugin-require" ## This has to be loaded first.
 
-		# My configurations (as a plugin).
-		antigen bundle ssh://git@github.com/aubreypwd/zsh-plugin-my-config
+		__clone_and_link_bundle "aubreypwd/zsh-plugin-affwp"
+		__clone_and_link_bundle "aubreypwd/zsh-plugin-bruse"
+		__clone_and_link_bundle "aubreypwd/zsh-plugin-comment"
+		__clone_and_link_bundle "aubreypwd/zsh-plugin-cvideo"
+		__clone_and_link_bundle "aubreypwd/zsh-plugin-delete"
+		__clone_and_link_bundle "aubreypwd/zsh-plugin-download"
+		__clone_and_link_bundle "aubreypwd/zsh-plugin-fd"
+		__clone_and_link_bundle "aubreypwd/zsh-plugin-fzf-git-branch"
+		__clone_and_link_bundle "aubreypwd/zsh-plugin-git-is-clean"
+		__clone_and_link_bundle "aubreypwd/zsh-plugin-hide"
+		__clone_and_link_bundle "aubreypwd/zsh-plugin-my-config"
+		__clone_and_link_bundle "aubreypwd/zsh-plugin-newvwp"
+		__clone_and_link_bundle "aubreypwd/zsh-plugin-pwdcp"
+		__clone_and_link_bundle "aubreypwd/zsh-plugin-reload"
+		__clone_and_link_bundle "aubreypwd/zsh-plugin-x"
+		__clone_and_link_bundle "aubreypwd/zsh-plugin-yt2mp3"
 
 		antigen apply
+		antigen cache-gen
 	fi
 else
 
