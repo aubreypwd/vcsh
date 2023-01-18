@@ -26,7 +26,7 @@
 
     // Debugging
     { "keys": ["alt+d", ","], "command": "xdebug_settings" },
-    { "keys": ["alt+d", "b"], "command": "xdebug_breakpoint" },
+    { "keys": ["alt+d", "a"], "command": "xdebug_breakpoint" },
     { "keys": ["alt+d", "A"], "command": "xdebug_clear_all_breakpoints" },
     { "keys": ["alt+d", "?"], "command": "xdebug_conditional_breakpoint" },
     { "keys": ["alt+d", "s"], "command": "xdebug_session_start" },
