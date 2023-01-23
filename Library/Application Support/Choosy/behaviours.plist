@@ -608,7 +608,7 @@
 			<string>ChoosyBrowser</string>
 		</dict>
 		<key>enabled</key>
-		<false/>
+		<true/>
 		<key>predicate</key>
 		<string>URL CONTAINS "app.asana.com"</string>
 		<key>title</key>
