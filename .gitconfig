@@ -14,6 +14,7 @@
 	db     = "! function f() { git branch -D $1; git push origin :$1 ;}; f" # Delete branch.
 	di     = "! git ls-files -m -o --exclude-standard | fzf --reverse --height 10 --print0 -m | xargs -0 -t -o git diff" # Interactive diff.
 	dm     = diff
+	do     = diff master..head ':!*.min.*' ':!*/build/*' ':!*/dist/*' ':!*/vendor/*' ':!*/node_modules/*' # Log a diff excluding common build files.
 	ds     = diff --staged
 	dt     = "! function f() { git tag -d $1; git push origin :refs/tags/$1; }; f"
 	f      = "fetch"
