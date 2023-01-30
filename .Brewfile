@@ -69,6 +69,8 @@ brew "chrome-cli"
 brew "cmake"
 # Console Matrix
 brew "cmatrix"
+# Color-highlighted diff(1) output
+brew "colordiff"
 # Open source suite of directory software
 brew "openldap"
 # Get a file from an HTTP, HTTPS or FTP server
