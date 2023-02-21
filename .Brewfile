@@ -21,8 +21,12 @@ tap "sidneys/homebrew"
 tap "stripe/stripe-cli"
 # Plugin manager for zsh, inspired by oh-my-zsh and vundle
 brew "antigen"
-# Companion library to apr, the Apache Portable Runtime library
-brew "apr-util"
+# Image format providing lossless and lossy compression for web images
+brew "webp"
+# New file format for still image compression
+brew "jpeg-xl"
+# Codec library for encoding and decoding AV1 video streams
+brew "aom"
 # Graphical system information display for macOS
 brew "archey"
 # C library implementing the SSH2 protocol
@@ -41,6 +45,8 @@ brew "automake"
 brew "bat"
 # Convert CD images from .bin/.cue to .iso/.cdr
 brew "bchunk"
+# C/C++ and Java libraries for Unicode and globalization
+brew "icu4c"
 # Platform built on V8 to build network applications
 brew "node"
 # Secure and free password manager for all of your devices
@@ -71,8 +77,6 @@ brew "cmake"
 brew "cmatrix"
 # Color-highlighted diff(1) output
 brew "colordiff"
-# Open source suite of directory software
-brew "openldap"
 # Get a file from an HTTP, HTTPS or FTP server
 brew "curl"
 # Libraries to talk to Microsoft SQL Server and Sybase databases
@@ -103,6 +107,8 @@ brew "libarchive"
 brew "libass"
 # Blu-Ray disc playback library for media players like VLC
 brew "libbluray"
+# Framework for layout and rendering of i18n text
+brew "pango"
 # Play, record, convert, and stream audio and video
 brew "ffmpeg"
 # Command-line fuzzy finder written in Go
@@ -147,8 +153,6 @@ brew "grc"
 brew "groonga"
 # GSettings schemas for desktop components
 brew "gsettings-desktop-schemas"
-# Framework for layout and rendering of i18n text
-brew "pango"
 # Toolkit for creating graphical user interfaces
 brew "gtk+3"
 # Tool for glamorous shell scripts
@@ -221,8 +225,6 @@ brew "peco"
 brew "percol"
 # Pretty system information tool written in POSIX sh
 brew "pfetch"
-# General-purpose scripting language
-brew "php@7.4", restart_service: true
 # General-purpose scripting language
 brew "php@8.0", restart_service: true
 # General-purpose scripting language
@@ -299,7 +301,11 @@ brew "cloudflare/cloudflare/cloudflared"
 brew "jesseduffield/lazygit/lazygit"
 brew "lucapette/tap/fakedata"
 # General-purpose scripting language
-brew "shivammathur/php/php@7.3", link: true
+brew "shivammathur/php/php@7.1"
+# General-purpose scripting language
+brew "shivammathur/php/php@7.3"
+# General-purpose scripting language
+brew "shivammathur/php/php@7.4"
 # Stripe CLI utility
 brew "stripe/stripe-cli/stripe"
 # Command-line helper for the 1Password password manager
