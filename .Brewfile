@@ -77,8 +77,6 @@ brew "cmake"
 brew "cmatrix"
 # Color-highlighted diff(1) output
 brew "colordiff"
-# Get a file from an HTTP, HTTPS or FTP server
-brew "curl"
 # Libraries to talk to Microsoft SQL Server and Sybase databases
 brew "freetds"
 # General-purpose scripting language
@@ -181,6 +179,8 @@ brew "imagemagick"
 brew "irssi"
 # Lightweight and flexible command-line JSON processor
 brew "jq"
+# Interpreted, interactive, object-oriented programming language
+brew "python@3.11"
 # Command-line note taker
 brew "jrnl"
 # Provides library functionality for FIDO U2F & FIDO 2.0, including USB
@@ -301,8 +301,6 @@ brew "cloudflare/cloudflare/cloudflared"
 brew "jesseduffield/lazygit/lazygit"
 brew "lucapette/tap/fakedata"
 # General-purpose scripting language
-brew "shivammathur/php/php@7.1"
-# General-purpose scripting language
 brew "shivammathur/php/php@7.3"
 # General-purpose scripting language
 brew "shivammathur/php/php@7.4"
@@ -334,6 +332,7 @@ cask "ngrok"
 cask "nordvpn"
 # Free and open-source SoundCloud client
 cask "nuage"
+cask "phpmon"
 # Archive manager for data compression and backups
 cask "rar"
 # Move and resize windows with ease
