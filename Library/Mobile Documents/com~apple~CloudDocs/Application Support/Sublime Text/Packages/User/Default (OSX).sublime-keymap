@@ -70,6 +70,14 @@
     { "keys": ["alt+f", "9"], "command": "fold_by_level", "args": {"level": 9} },
     { "keys": ["alt+f", "0"], "command": "unfold_all" },
 
+    // Expand region.
+    { "keys": ["super+shift+space"], "command": "expand_region" },
+    {
+      "keys": ["super+shift+u"],
+      "command": "expand_region",
+      "args": { "undo": true },
+      "context": [ { "key": "expand_region_soft_undo" } ]
+    },
 
     // These are disabled because I found out how to map my right ⌘ key to CTRL in micro.
     // { "keys": ["ctrl+s"], "command": "save", "args": { "async": true } },

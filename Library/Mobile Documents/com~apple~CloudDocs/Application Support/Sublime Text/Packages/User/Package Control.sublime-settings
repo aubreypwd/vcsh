@@ -59,6 +59,7 @@
 		"SublimeLinter",
 		"SublimeLinter-contrib-sass-lint",
 		"SublimeLinter-eslint",
+		"SublimeLinter-jshint",
 		"SublimeLinter-json",
 		"SublimeLinter-php",
 		"SublimeLinter-phpcs",

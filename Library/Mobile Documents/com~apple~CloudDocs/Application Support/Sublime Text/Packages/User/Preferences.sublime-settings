@@ -40,7 +40,13 @@
     "cron",
     "subsite",
     "linting",
-    "excersize"
+    "excersize",
+    "bool",
+    "connectables",
+    "phpcs",
+    "Squiz",
+    "args",
+    "intval",
   ],
   "always_prompt_for_file_reload": false,
   "remember_layout": true,
@@ -111,7 +117,7 @@
   "color_scheme": "Monokai Pro (Filter Spectrum).sublime-color-scheme",
   "copy_with_empty_selection": true,
   "default_line_ending": "unix",
-  "detect_indentation": true,
+  "detect_indentation": false,
   "drag_text": false,
   "draw_indent_guides": true,
   "draw_shadows": false,
@@ -168,8 +174,9 @@
     "guid",
     "metabox",
     "modals",
+    "orderby",
     "permalink",
-    "shortcode"
+    "shortcode",
   ],
   "indent_guide_options":
   [
@@ -224,7 +231,7 @@
   "show_only_filename": true,
   "show_tab_close_buttons": true,
   "sidebar_font_small": true,
-  "spell_check": false,
+  "spell_check": true,
   "tab_size": 2,
   "tabs_small": true,
   "theirs_gutter": true,
@@ -243,4 +250,6 @@
   "vintage_start_in_command_mode": true,
   "vintage_ctrl_keys": true,
   "neovintageous_build_version": 12700,
+  "indent_to_bracket": true,
+  "auto_indent": true,
 }

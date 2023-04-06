@@ -15,6 +15,12 @@
             "args": [],
             "excludes": [],
         },
+        "jshint": {
+            "working_dir": "${file_path}",
+            "disable": true,
+            "args": [],
+            "excludes": []
+        },
         "phpcbf": {
             "working_dir": "${file_path}",
             "disable": false,
@@ -45,12 +51,6 @@
             "exclude": "SC1091", // Rules.
             "excludes": [] // Files.
         },
-        "jshint": {
-            "working_dir": "${file_path}",
-            "disable": true,
-            "args": [],
-            "excludes": []
-        },
         "csslint": {
             "working_dir": "${file_path}",
             "disable": true,
@@ -64,7 +64,8 @@
     "paths": {
         "linux": [],
         "osx": [
-          "/opt/homebrew/bin"
+          "/opt/homebrew/bin",
+          "/usr/local/bin/"
         ],
         "windows": []
     },

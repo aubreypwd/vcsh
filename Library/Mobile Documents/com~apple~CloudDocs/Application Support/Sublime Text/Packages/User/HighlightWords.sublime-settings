@@ -5,6 +5,7 @@
 		{ "keyword": "var_dump", "color": "embedding.php text.html.basic meta.embedded.block.php source.php meta.class.php meta.block.php meta.function.php meta.block.php meta.catch.php meta.path.php support.class.exception.php", "flag": 3 },
 		{ "keyword": "var_export", "color": "embedding.php text.html.basic meta.embedded.block.php source.php meta.class.php meta.block.php meta.function.php meta.block.php meta.catch.php meta.path.php support.class.exception.php", "flag": 3 },
 		{ "keyword": "@LEFTOFF", "color": "text.html.basic source.php.embedded.block.html keyword.control.php", "flag": 3 },
-    { "keyword": "xdebug_break();", "color": "text.html.basic source.php.embedded.block.html keyword.control.php", "flag": 3 },
+		{ "keyword": "xdebug_break();", "color": "text.html.basic source.php.embedded.block.html keyword.control.php", "flag": 3 },
+		{ "keyword": "affilaite", "color": "text.html.basic source.php.embedded.block.html keyword.control.php", "flag": 3 },
 	]
 }
