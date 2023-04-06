@@ -46,11 +46,12 @@ if test -e "$ZSH"; then
 	 #
 	 # - Must be done before you shource oh-my-zsh.
 	 #
-	 # @since Monday, 9/21/2020 frisk
-	 # @since 10/1/20           ys
+	 # @since Monday, 9/21/2020    frisk
+	 # @since 10/1/20              ys
 	 # @since Wednesday, 10/7/2020 Switched to refined for more simplicity.
+	 # @since Apr 6, 2023          Turned off for custom PS1 Prompt.
 	 ##
-	export ZSH_THEME="refined"
+	# export ZSH_THEME="refined"
 
 	# Built-in plugins.
 	export PLUGINS=()
