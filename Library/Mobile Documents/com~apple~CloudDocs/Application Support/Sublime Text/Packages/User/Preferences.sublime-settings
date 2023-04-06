@@ -235,7 +235,7 @@
   "tree_animation_enabled": false,
   "trim_trailing_white_space_on_save": "all",
   "ui_separator": true,
-  "update_check": true,
+  "update_check": false,
   "use_simple_full_screen": true,
   "use_tab_stops": false,
   "word_wrap": false,
