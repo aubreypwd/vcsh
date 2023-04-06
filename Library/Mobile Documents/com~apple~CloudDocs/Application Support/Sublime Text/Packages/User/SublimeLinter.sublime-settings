@@ -46,7 +46,7 @@
         "shellcheck": {
             "disable": false,
             "args": [
-                "--shell=bash"
+                // "--shell=bash"
             ],
             "exclude": "SC1091", // Rules.
             "excludes": [] // Files.

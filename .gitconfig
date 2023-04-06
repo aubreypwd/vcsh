@@ -68,8 +68,8 @@
 	email         = code@aubreypwd.com
 
 [core]
-	# editor        = "micro --savecursor false --diffgutter false --colorcolumn 72 --ruler false --softwrap true --wordwrap true"
-	editor        = code --wait --new-window
+	editor        = "micro --savecursor false --diffgutter false --colorcolumn 72 --ruler false --softwrap true --wordwrap true"
+	# editor        = code --wait --new-window
 	excludesfile  = /Users/aubreypwd/.gitignore
 
 [color]
