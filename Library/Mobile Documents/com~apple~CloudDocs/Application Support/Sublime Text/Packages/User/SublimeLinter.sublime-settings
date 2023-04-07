@@ -48,7 +48,7 @@
             "args": [
                 // "--shell=bash"
             ],
-            "exclude": "SC1091", // Rules.
+            "exclude": "SC1091,SC3033", // Rules.
             "excludes": [] // Files.
         },
         "csslint": {
