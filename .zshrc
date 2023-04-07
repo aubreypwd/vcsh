@@ -1,4 +1,4 @@
-#!/bin/zsh
+#!/bin/sh
 
 ###
  # .zshrc
@@ -6,9 +6,14 @@
  # @since Unknown       The beginning of time.
  # @since Unknown       Large update, most things are ZSH plugins now.
  # @since (Jan 16, 2023) Moved a ton of configurations to aubreypwd/zsh-plugin-my-config
+ #
+ # shellcheck disable=SC3030
+ # shellcheck disable=SC3046
  ##
 
-# PATH
+###
+ # PATH
+ ##
 export PATH="/opt/homebrew/bin:$HOME/.composer/vendor/bin:$PATH"
 export PATH="/Applications/Sublime Text.app/Contents/SharedSupport/bin:$PATH" # subl
 export PATH="/opt/homebrew/sbin:$PATH" # Homebrew
@@ -89,7 +94,7 @@ if test -e "$ZSH"; then
 	 #
 	 # @since Monday, 9/21/2020
 	 ##
-	if [[ ! -f "/opt/homebrew/share/antigen/antigen.zsh" ]]; then
+	if [ ! -f "/opt/homebrew/share/antigen/antigen.zsh" ]; then
 
 		echo "Please install antigen and reload to install ZSH plugins:"
 		echo "  Homebrew: brew reinstall antigen"
@@ -143,7 +148,8 @@ fi
 autoload -Uz compinit && compinit
 
 # fzf
-test -f "$HOME/.fzf.zsh" && source "$HOME/.fzf.zsh"
+test -f "$HOME/.fzf.zsh" && \
+	source "$HOME/.fzf.zsh"
 
 # iTerm2
 test -e "${HOME}/.iterm2_shell_integration.zsh" \
@@ -152,12 +158,8 @@ test -e "${HOME}/.iterm2_shell_integration.zsh" \
 # Only when loaded $HOME...
 if test "$(pwd)" = "$HOME"; then
 
-	checkmyrepos
+	check-repos
 	sysinfo
-
-	( ( # Quietly....
-
-		brewd # Dump out a .Brewfile which show up in my public vcsh.
-
-	) 1>&- 2>&- & )
 fi
+
+quietly "brewd" # Dump the .Brewfile.
