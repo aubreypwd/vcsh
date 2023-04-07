@@ -267,6 +267,8 @@ brew "telnet"
 brew "terminal-notifier"
 # Simplified and community-driven man pages
 brew "tldr"
+# Terminal multiplexer
+brew "tmux"
 # Command-line interface to the freedesktop.org trashcan
 brew "trash-cli"
 # Display directories as trees (with optional color/HTML output)
