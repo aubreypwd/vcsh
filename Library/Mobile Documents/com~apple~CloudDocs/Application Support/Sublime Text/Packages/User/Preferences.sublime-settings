@@ -47,6 +47,8 @@
     "Squiz",
     "args",
     "intval",
+    "shellcheck",
+    "zsh",
   ],
   "always_prompt_for_file_reload": false,
   "remember_layout": true,

@@ -107,6 +107,8 @@ brew "libass"
 brew "libbluray"
 # Framework for layout and rendering of i18n text
 brew "pango"
+# OCR (Optical Character Recognition) engine
+brew "tesseract"
 # Play, record, convert, and stream audio and video
 brew "ffmpeg"
 # Command-line fuzzy finder written in Go
@@ -117,6 +119,8 @@ brew "fzy"
 brew "gdk-pixbuf"
 # GitHub command-line tool
 brew "gh"
+# Interpreter for PostScript and PDF
+brew "ghostscript"
 # Remote repository management made easy
 brew "ghq"
 # GIF image/animation creator/editor
@@ -136,9 +140,11 @@ brew "libgcrypt"
 # GNU Pretty Good Privacy (PGP) package
 brew "gnupg"
 # Interpreted, interactive, object-oriented programming language
-brew "python@3.10"
+brew "python@3.11"
 # Generate introspection data for GObject libraries
 brew "gobject-introspection"
+# Interpreted, interactive, object-oriented programming language
+brew "python@3.10"
 # Google Search and News from the command-line
 brew "googler"
 # Library for manipulating JPEG-2000 images
@@ -179,8 +185,6 @@ brew "imagemagick"
 brew "irssi"
 # Lightweight and flexible command-line JSON processor
 brew "jq"
-# Interpreted, interactive, object-oriented programming language
-brew "python@3.11"
 # Command-line note taker
 brew "jrnl"
 # Provides library functionality for FIDO U2F & FIDO 2.0, including USB
@@ -197,6 +201,8 @@ brew "mailhog", restart_service: true
 brew "mdf2iso"
 # Modern and intuitive terminal-based text editor
 brew "micro"
+# Terminal-based visual file manager
+brew "midnight-commander"
 # Tail multiple files in one terminal simultaneously
 brew "multitail"
 # Pretty-print tabular data in Python
