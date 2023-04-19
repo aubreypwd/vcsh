@@ -49,6 +49,10 @@
     "intval",
     "shellcheck",
     "zsh",
+    "Select2",
+    "ajax",
+    "url",
+    "json",
   ],
   "always_prompt_for_file_reload": false,
   "remember_layout": true,
@@ -168,13 +172,18 @@
   ],
   "ignored_words":
   [
+    "Goto",
+    "affiliatewp",
     "blog",
     "guid",
     "metabox",
     "modals",
     "orderby",
     "permalink",
+    "selectable",
     "shortcode",
+    "shortcodes",
+    "wp",
   ],
   "indent_guide_options":
   [
