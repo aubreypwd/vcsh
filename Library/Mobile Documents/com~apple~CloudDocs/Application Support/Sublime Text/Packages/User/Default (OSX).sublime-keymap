@@ -1,4 +1,5 @@
 [
+
     // Make Paste + Indent the default.
     { "keys": ["super+shift+v"], "command": "paste" },
     { "keys": ["super+v"], "command": "paste_and_indent" },
@@ -69,4 +70,14 @@
 
     // My Command (Goto Line).
     { "keys": ["alt+g", "alt+g"], "command": "show_overlay", "args": {"overlay": "goto", "text": ":"} },
+
+    // My Commands (Files).
+    { "keys": ["alt+f", "alt+n"], "command": "new_file" },
+    { "keys": ["alt+f", "alt+s"], "command": "save", "args": { "async": true } },
+    { "keys": ["alt+f", "alt+s", "alt+a"], "command": "prompt_save_as" },
+
+    // My Commands (Windows).
+    { "keys": ["alt+p", "alt+w"], "command": "next_os_tab" },
+    { "keys": ["alt+n", "alt+w"], "command": "prev_os_tab" },
+    { "keys": ["alt+c", "alt+w"], "command": "close_window" },
 ]
