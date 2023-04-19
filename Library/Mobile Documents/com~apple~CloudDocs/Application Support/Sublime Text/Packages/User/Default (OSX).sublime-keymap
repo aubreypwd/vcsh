@@ -80,4 +80,12 @@
     { "keys": ["alt+p", "alt+w"], "command": "next_os_tab" },
     { "keys": ["alt+n", "alt+w"], "command": "prev_os_tab" },
     { "keys": ["alt+c", "alt+w"], "command": "close_window" },
+
+    // My Commands (Insert Lines).
+    { "keys": ["alt+o"], "command": "run_macro_file", "args": {"file": "res://Packages/Default/Add Line.sublime-macro"}, "context":
+        [
+            { "key": "overlay_has_focus", "operator": "equal", "operand": false },
+        ],
+    },
+    { "keys": ["alt+i"], "command": "run_macro_file", "args": {"file": "res://Packages/Default/Add Line Before.sublime-macro"} },
 ]
