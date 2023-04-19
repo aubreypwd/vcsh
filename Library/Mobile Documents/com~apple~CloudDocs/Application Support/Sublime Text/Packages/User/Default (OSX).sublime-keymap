@@ -82,4 +82,5 @@
     { "keys": ["alt+p", "alt+."], "command": "next_os_tab" }, // Alternate.
     { "keys": ["alt+p", "alt+,"], "command": "prev_os_tab" }, // Alternate.
     { "keys": ["alt+c", "alt+w"], "command": "close_window" }, // Closes entire native tab.
+        { "keys": ["ctrl+c"], "command": "close_window" }, // Alternate (useful for subl -w).
 ]
