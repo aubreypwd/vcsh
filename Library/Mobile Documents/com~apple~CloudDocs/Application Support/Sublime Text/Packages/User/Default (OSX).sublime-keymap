@@ -37,23 +37,23 @@
     { "keys": ["alt+p", "alt+m", "alt+3"], "command": "move_to_group", "args": { "group": 3 } },
 
     // My Commands (Code Folding).
-    { "keys": ["alt+c", "alt+f", "alt+1"], "command": "fold_by_level", "args": {"level": 1} },
-    { "keys": ["alt+c", "alt+f", "alt+2"], "command": "fold_by_level", "args": {"level": 2} },
-    { "keys": ["alt+c", "alt+f", "alt+3"], "command": "fold_by_level", "args": {"level": 3} },
-    { "keys": ["alt+c", "alt+f", "alt+4"], "command": "fold_by_level", "args": {"level": 4} },
-    { "keys": ["alt+c", "alt+f", "alt+5"], "command": "fold_by_level", "args": {"level": 5} },
-    { "keys": ["alt+c", "alt+f", "alt+6"], "command": "fold_by_level", "args": {"level": 6} },
-    { "keys": ["alt+c", "alt+f", "alt+7"], "command": "fold_by_level", "args": {"level": 7} },
-    { "keys": ["alt+c", "alt+f", "alt+8"], "command": "fold_by_level", "args": {"level": 8} },
-    { "keys": ["alt+c", "alt+f", "alt+9"], "command": "fold_by_level", "args": {"level": 9} },
-    { "keys": ["alt+c", "alt+f", "alt+0"], "command": "unfold_all" },
+    { "keys": ["alt+f", "alt+1"], "command": "fold_by_level", "args": {"level": 1} },
+    { "keys": ["alt+f", "alt+2"], "command": "fold_by_level", "args": {"level": 2} },
+    { "keys": ["alt+f", "alt+3"], "command": "fold_by_level", "args": {"level": 3} },
+    { "keys": ["alt+f", "alt+4"], "command": "fold_by_level", "args": {"level": 4} },
+    { "keys": ["alt+f", "alt+5"], "command": "fold_by_level", "args": {"level": 5} },
+    { "keys": ["alt+f", "alt+6"], "command": "fold_by_level", "args": {"level": 6} },
+    { "keys": ["alt+f", "alt+7"], "command": "fold_by_level", "args": {"level": 7} },
+    { "keys": ["alt+f", "alt+8"], "command": "fold_by_level", "args": {"level": 8} },
+    { "keys": ["alt+f", "alt+9"], "command": "fold_by_level", "args": {"level": 9} },
+    { "keys": ["alt+f", "alt+0"], "command": "unfold_all" },
 
     // My Commands (Align Text).
     { "keys": ["alt+a", "alt+t"], "command": "align_tab", "args" : { "live_preview" : true } },
 
-    // My Commands (Select Region).
-    { "keys": ["alt+s", "alt+="], "command": "expand_region" },
-    { "keys": ["alt+s", "alt+-"], "command": "expand_region", "args": {"undo": true}, "context": [{"key": "expand_region_soft_undo"}] },
+    // My Commands (Expand Region).
+    { "keys": ["alt+="], "command": "expand_region" },
+    { "keys": ["alt+-"], "command": "expand_region", "args": {"undo": true}, "context": [{"key": "expand_region_soft_undo"}] },
 
     // My Commands (Toggle Quotes).
     { "keys": ["alt+t", "alt+q"], "command": "change_quotes" },
@@ -62,24 +62,25 @@
     { "keys": ["alt+t", "alt+w"], "command": "toggle_word"},
 
     // My Command (Marks)
-    { "keys": ["alt+m", "alt+a"], "command": "toggle_bookmark" },
-    { "keys": ["alt+m", "alt+c"], "command": "clear_bookmarks" },
-    { "keys": ["alt+m", "alt+s", "alt+a" ], "command": "select_all_bookmarks" },
-    { "keys": ["alt+m", "alt+up"], "command": "next_bookmark" },
-    { "keys": ["alt+m", "alt+down"], "command": "prev_bookmark" },
+    { "keys": ["alt+t", "alt+m"], "command": "toggle_bookmark" },
+    { "keys": ["alt+c", "alt+m"], "command": "clear_bookmarks" },
+    { "keys": ["alt+s", "alt+a", "alt+m" ], "command": "select_all_bookmarks" },
+    { "keys": ["alt+n", "alt+m"], "command": "next_bookmark" },
+    { "keys": ["alt+p", "alt+m"], "command": "prev_bookmark" },
 
     // My Command (Goto Line).
     { "keys": ["alt+g", "alt+g"], "command": "show_overlay", "args": {"overlay": "goto", "text": ":"} },
 
     // My Commands (Files).
-    { "keys": ["alt+f", "alt+n"], "command": "new_file" },
-    { "keys": ["alt+f", "alt+s"], "command": "save", "args": { "async": true } },
-    { "keys": ["alt+f", "alt+s", "alt+a"], "command": "prompt_save_as" },
+    { "keys": ["alt+c", "alt+f"], "command": "close" },
+    { "keys": ["alt+n", "alt+f"], "command": "new_file" },
+    { "keys": ["alt+s", "alt+f"], "command": "save", "args": { "async": true } },
+    { "keys": ["alt+s", "alt+a"], "command": "prompt_save_as" },
 
     // My Commands (Windows).
-    { "keys": ["alt+p", "alt+w"], "command": "next_os_tab" },
-    { "keys": ["alt+n", "alt+w"], "command": "prev_os_tab" },
-    { "keys": ["alt+c", "alt+w"], "command": "close_window" },
+    { "keys": ["alt+n", "alt+p"], "command": "next_os_tab" },
+    { "keys": ["alt+p", "alt+p"], "command": "prev_os_tab" },
+    { "keys": ["alt+c", "alt+w"], "command": "close_window" }, // Closes entire native tab.
 
     // My Commands (Insert Lines).
     { "keys": ["alt+o"], "command": "run_macro_file", "args": {"file": "res://Packages/Default/Add Line.sublime-macro"}, "context":
