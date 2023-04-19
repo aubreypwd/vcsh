@@ -591,7 +591,7 @@
 			<string>ChoosyBrowser</string>
 		</dict>
 		<key>enabled</key>
-		<false/>
+		<true/>
 		<key>predicate</key>
 		<string>URL CONTAINS "affiliatewp.com/account" OR URL CONTAINS "docs.affiliatewp.com" OR URL CONTAINS "team.affiliatewp.com/feature-requests"</string>
 		<key>title</key>
@@ -603,9 +603,13 @@
 		<key>behaviourArgument</key>
 		<dict>
 			<key>path</key>
-			<string>/Applications/Asana.app</string>
+			<string>/Applications/Google Chrome.app</string>
+			<key>profileName</key>
+			<string>Default</string>
+			<key>supportPath</key>
+			<string>/Users/aubreypwd/Library/Application Support/Google/Chrome</string>
 			<key>type</key>
-			<string>ChoosyBrowser</string>
+			<string>ChoosyChromeProfileMode</string>
 		</dict>
 		<key>enabled</key>
 		<true/>
