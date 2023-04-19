@@ -61,15 +61,15 @@
     // My Command (Toggle Word).
     { "keys": ["alt+t", "alt+w"], "command": "toggle_word"},
 
-    // My Command (Marks)
-    { "keys": ["alt+t", "alt+m"], "command": "toggle_bookmark" },
-    { "keys": ["alt+c", "alt+m"], "command": "clear_bookmarks" },
+    // My Command (Marks).
+    { "keys": ["alt+t", "alt+m"], "command": "toggle_bookmark" }, // Toggle mark.
+    { "keys": ["alt+c", "alt+a", "alt+m"], "command": "clear_bookmarks" }, // Clear all marks.
     { "keys": ["alt+s", "alt+a", "alt+m" ], "command": "select_all_bookmarks" },
-    { "keys": ["alt+n", "alt+m"], "command": "next_bookmark" },
-    { "keys": ["alt+p", "alt+m"], "command": "prev_bookmark" },
+    { "keys": ["alt+m", "alt+."], "command": "next_bookmark" }, // Alternate.
+    { "keys": ["alt+m", "alt+,"], "command": "prev_bookmark" }, // Alternate.
 
     // My Command (Goto Line).
-    { "keys": ["alt+g", "alt+g"], "command": "show_overlay", "args": {"overlay": "goto", "text": ":"} },
+    { "keys": ["alt+g", "alt+l"], "command": "show_overlay", "args": {"overlay": "goto", "text": ":"} },
 
     // My Commands (Files).
     { "keys": ["alt+c", "alt+f"], "command": "close" },
@@ -78,15 +78,7 @@
     { "keys": ["alt+s", "alt+a"], "command": "prompt_save_as" },
 
     // My Commands (Windows).
-    { "keys": ["alt+n", "alt+p"], "command": "next_os_tab" },
-    { "keys": ["alt+p", "alt+p"], "command": "prev_os_tab" },
+    { "keys": ["alt+p", "alt+."], "command": "next_os_tab" }, // Alternate.
+    { "keys": ["alt+p", "alt+,"], "command": "prev_os_tab" }, // Alternate.
     { "keys": ["alt+c", "alt+w"], "command": "close_window" }, // Closes entire native tab.
-
-    // My Commands (Insert Lines).
-    { "keys": ["alt+o"], "command": "run_macro_file", "args": {"file": "res://Packages/Default/Add Line.sublime-macro"}, "context":
-        [
-            { "key": "overlay_has_focus", "operator": "equal", "operand": false },
-        ],
-    },
-    { "keys": ["alt+i"], "command": "run_macro_file", "args": {"file": "res://Packages/Default/Add Line Before.sublime-macro"} },
 ]
