@@ -5,7 +5,8 @@
     { "keys": ["super+v"], "command": "paste_and_indent" },
 
     // Show the sidebar easier.
-    { "keys": ["super+\\"], "command": "toggle_side_bar" },
+    { "keys": ["super+shift+\\"], "command": "toggle_side_bar" },
+    { "keys": ["super+\\"], "command": "focus_side_bar" }, // Focus on the sidebar (reveal in sidebar).
 
     // My Commands (Misc).
     { "keys": ["alt+d", "alt+b", "alt+w"], "command": "delete_word", "args": { "forward": false, "sub_words": true } },
@@ -30,11 +31,9 @@
 
     // My Commands (Panels).
     { "keys": ["alt+p", "alt+1"], "command": "focus_group", "args": { "group": 0 } },
+        { "keys": ["alt+p", "alt+["], "command": "focus_group", "args": { "group": 0 } }, // Alternate.
     { "keys": ["alt+p", "alt+2"], "command": "focus_group", "args": { "group": 1 } },
-    { "keys": ["alt+p", "alt+3"], "command": "focus_group", "args": { "group": 3 } },
-    { "keys": ["alt+p", "alt+m", "alt+1"], "command": "move_to_group", "args": { "group": 0 } },
-    { "keys": ["alt+p", "alt+m", "alt+2"], "command": "move_to_group", "args": { "group": 1 } },
-    { "keys": ["alt+p", "alt+m", "alt+3"], "command": "move_to_group", "args": { "group": 3 } },
+        { "keys": ["alt+p", "alt+]"], "command": "focus_group", "args": { "group": 1 } }, // Alternate.
 
     // My Commands (Code Folding).
     { "keys": ["alt+f", "alt+1"], "command": "fold_by_level", "args": {"level": 1} },
@@ -60,14 +59,14 @@
         { "keys": ["alt+t", "alt+q"], "command": "change_quotes" }, // Alternate.
 
     // My Command (Toggle Word).
-    { "keys": ["alt+w", "alt+w"], "command": "toggle_word" },
+    { "keys": ["alt+w“", "alt+w"], "command": "toggle_word" }, // Alternate.
 
     // My Command (Marks).
-    { "keys": ["alt+m", "alt+m"], "command": "toggle_bookmark" },
-    { "keys": ["alt+c", "alt+a", "alt+m"], "command": "clear_bookmarks" }, // Clear all marks.
+    { "keys": ["alt+t", "alt+m"], "command": "toggle_bookmark" },
+    { "keys": ["alt+c", "alt+m"], "command": "clear_bookmarks" }, // Clear marks.
     { "keys": ["alt+s", "alt+a", "alt+m" ], "command": "select_all_bookmarks" },
-    { "keys": ["alt+m", "alt+."], "command": "next_bookmark" },
-    { "keys": ["alt+m", "alt+,"], "command": "prev_bookmark" },
+    { "keys": ["alt+m", "alt+]"], "command": "next_bookmark" },
+    { "keys": ["alt+m", "alt+["], "command": "prev_bookmark" },
 
     // My Command (Goto Line).
     { "keys": ["alt+g"], "command": "show_overlay", "args": {"overlay": "goto", "text": ":"} },
@@ -79,8 +78,14 @@
     { "keys": ["alt+s", "alt+a"], "command": "prompt_save_as" },
 
     // My Commands (Windows).
-    { "keys": ["alt+p", "alt+."], "command": "next_os_tab" }, // Alternate.
-    { "keys": ["alt+p", "alt+,"], "command": "prev_os_tab" }, // Alternate.
+    { "keys": ["alt+w", "alt+]"], "command": "next_os_tab" }, // Alternate.
+    { "keys": ["alt+w", "alt+["], "command": "prev_os_tab" }, // Alternate.
     { "keys": ["alt+c", "alt+w"], "command": "close_window" }, // Closes entire native tab.
         { "keys": ["ctrl+c"], "command": "close_window" }, // Alternate (useful for subl -w).
+
+    // My Commands (Tabs/Panes).
+    { "keys": ["alt+t", "alt+]"], "command": "next_view" },
+    { "keys": ["alt+t", "alt+["], "command": "prev_view" },
+    { "keys": ["alt+t", "alt+p", "alt+["], "command": "move_to_group", "args": { "group": 0 } },
+    { "keys": ["alt+t", "alt+p", "alt+]"], "command": "move_to_group", "args": { "group": 1 } },
 ]
