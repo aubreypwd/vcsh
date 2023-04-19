@@ -56,20 +56,21 @@
     { "keys": ["alt+-"], "command": "expand_region", "args": {"undo": true}, "context": [{"key": "expand_region_soft_undo"}] },
 
     // My Commands (Toggle Quotes).
-    { "keys": ["alt+t", "alt+q"], "command": "change_quotes" },
+    { "keys": ["super+shift+'"], "command": "change_quotes" },
+        { "keys": ["alt+t", "alt+q"], "command": "change_quotes" }, // Alternate.
 
     // My Command (Toggle Word).
-    { "keys": ["alt+t", "alt+w"], "command": "toggle_word"},
+    { "keys": ["alt+w", "alt+w"], "command": "toggle_word" },
 
     // My Command (Marks).
-    { "keys": ["alt+t", "alt+m"], "command": "toggle_bookmark" }, // Toggle mark.
+    { "keys": ["alt+m", "alt+m"], "command": "toggle_bookmark" },
     { "keys": ["alt+c", "alt+a", "alt+m"], "command": "clear_bookmarks" }, // Clear all marks.
     { "keys": ["alt+s", "alt+a", "alt+m" ], "command": "select_all_bookmarks" },
-    { "keys": ["alt+m", "alt+."], "command": "next_bookmark" }, // Alternate.
-    { "keys": ["alt+m", "alt+,"], "command": "prev_bookmark" }, // Alternate.
+    { "keys": ["alt+m", "alt+."], "command": "next_bookmark" },
+    { "keys": ["alt+m", "alt+,"], "command": "prev_bookmark" },
 
     // My Command (Goto Line).
-    { "keys": ["alt+g", "alt+l"], "command": "show_overlay", "args": {"overlay": "goto", "text": ":"} },
+    { "keys": ["alt+g"], "command": "show_overlay", "args": {"overlay": "goto", "text": ":"} },
 
     // My Commands (Files).
     { "keys": ["alt+c", "alt+f"], "command": "close" },
