@@ -1,101 +1,72 @@
 [
     // Make Paste + Indent the default.
-    { "keys": ["super+v"], "command": "paste_and_indent" }, // Maybe this is getting in the way.
     { "keys": ["super+shift+v"], "command": "paste" },
+    { "keys": ["super+v"], "command": "paste_and_indent" },
 
     // Show the sidebar easier.
     { "keys": ["super+\\"], "command": "toggle_side_bar" },
 
-    // Panels
-    // super+alt+1: One group layout already in place, don't override.
-    // super+alt+2: Two group layout already in place, don't override.
-    // super+alt+3: Three group layout already in place, don't override.
-    { "keys": ["alt+1"], "command": "focus_group", "args": { "group": 0 } },
-    { "keys": ["alt+2"], "command": "focus_group", "args": { "group": 1 } },
-    { "keys": ["alt+3"], "command": "focus_group", "args": { "group": 3 } },
-    { "keys": ["shift+alt+1"], "command": "move_to_group", "args": { "group": 0 } },
-    { "keys": ["shift+alt+2"], "command": "move_to_group", "args": { "group": 1 } },
-    { "keys": ["shift+alt+3"], "command": "move_to_group", "args": { "group": 3 } },
+    // My Commands (Misc).
+    { "keys": ["alt+d", "alt+b", "alt+w"], "command": "delete_word", "args": { "forward": false, "sub_words": true } },
+    { "keys": ["alt+d", "alt+f", "alt+w"], "command": "delete_word", "args": { "forward": true, "sub_words": true } },
+    { "keys": ["alt+d", "alt+l"], "command": "duplicate_line" },
+    { "keys": ["alt+l", "alt+j"], "command": "join_lines" },
+    { "keys": ["alt+d", "alt+d"], "command": "run_macro_file", "args": {"file": "res://Packages/Default/Delete Line.sublime-macro"} },
 
-    // Marks
-    { "keys": ["alt+m", "a"], "command": "toggle_bookmark" },
-    { "keys": ["alt+m", "c"], "command": "clear_bookmarks" },
-    { "keys": ["alt+m", "A" ], "command": "select_all_bookmarks" },
-    { "keys": ["alt+up"], "command": "next_bookmark" },
-    { "keys": ["alt+down"], "command": "prev_bookmark" },
+    // My Commands (XDebug).
+    { "keys": ["alt+x", ","], "command": "xdebug_settings" },
+    { "keys": ["alt+x", "a"], "command": "xdebug_breakpoint" },
+    { "keys": ["alt+x", "A"], "command": "xdebug_clear_all_breakpoints" },
+    { "keys": ["alt+x", "?"], "command": "xdebug_conditional_breakpoint" },
+    { "keys": ["alt+x", "s"], "command": "xdebug_session_start" },
+    { "keys": ["alt+x", "x"], "command": "xdebug_session_stop" }, // Exit
+    { "keys": ["alt+x", "c"], "command": "xdebug_continue", },
+    { "keys": ["alt+x", "o"], "command": "xdebug_continue", "args": { "command" : "step_over" } },
+    { "keys": ["alt+x", "i"], "command": "xdebug_continue", "args": { "command" : "step_into" } },
+    { "keys": ["alt+x", "l"], "command": "xdebug_continue", "args": { "command" : "xdebug_run_to_line" } },
+    { "keys": ["alt+x", "e"], "command": "xdebug_evaluate" },
+    { "keys": ["alt+x", "r"], "command": "xdebug_session_restart" },
 
-    // Debugging
-    { "keys": ["alt+d", ","], "command": "xdebug_settings" },
-    { "keys": ["alt+d", "a"], "command": "xdebug_breakpoint" },
-    { "keys": ["alt+d", "A"], "command": "xdebug_clear_all_breakpoints" },
-    { "keys": ["alt+d", "?"], "command": "xdebug_conditional_breakpoint" },
-    { "keys": ["alt+d", "s"], "command": "xdebug_session_start" },
-    { "keys": ["alt+d", "x"], "command": "xdebug_session_stop" }, // Exit
-    { "keys": ["alt+d", "c"], "command": "xdebug_continue", },
-    { "keys": ["alt+d", "o"], "command": "xdebug_continue", "args": { "command" : "step_over" } },
-    { "keys": ["alt+d", "i"], "command": "xdebug_continue", "args": { "command" : "step_into" } },
-    { "keys": ["alt+d", "l"], "command": "xdebug_continue", "args": { "command" : "xdebug_run_to_line" } },
-    { "keys": ["alt+d", "e"], "command": "xdebug_evaluate" },
-    { "keys": ["alt+d", "r"], "command": "xdebug_session_restart" },
-    // { "keys": ["alt+d", "X"], "command": "chain", "args": { "commands": [ "xdebug_clear_all_breakpoints", "xdebug_session_stop" ] } }, // Can't get to work.
+    // My Commands (Panels).
+    { "keys": ["alt+p", "alt+1"], "command": "focus_group", "args": { "group": 0 } },
+    { "keys": ["alt+p", "alt+2"], "command": "focus_group", "args": { "group": 1 } },
+    { "keys": ["alt+p", "alt+3"], "command": "focus_group", "args": { "group": 3 } },
+    { "keys": ["alt+p", "alt+m", "alt+1"], "command": "move_to_group", "args": { "group": 0 } },
+    { "keys": ["alt+p", "alt+m", "alt+2"], "command": "move_to_group", "args": { "group": 1 } },
+    { "keys": ["alt+p", "alt+m", "alt+3"], "command": "move_to_group", "args": { "group": 3 } },
 
-    // Quotes
-    { "keys": ["super+shift+'"], "command": "change_quotes" },
+    // My Commands (Code Folding).
+    { "keys": ["alt+c", "alt+f", "alt+1"], "command": "fold_by_level", "args": {"level": 1} },
+    { "keys": ["alt+c", "alt+f", "alt+2"], "command": "fold_by_level", "args": {"level": 2} },
+    { "keys": ["alt+c", "alt+f", "alt+3"], "command": "fold_by_level", "args": {"level": 3} },
+    { "keys": ["alt+c", "alt+f", "alt+4"], "command": "fold_by_level", "args": {"level": 4} },
+    { "keys": ["alt+c", "alt+f", "alt+5"], "command": "fold_by_level", "args": {"level": 5} },
+    { "keys": ["alt+c", "alt+f", "alt+6"], "command": "fold_by_level", "args": {"level": 6} },
+    { "keys": ["alt+c", "alt+f", "alt+7"], "command": "fold_by_level", "args": {"level": 7} },
+    { "keys": ["alt+c", "alt+f", "alt+8"], "command": "fold_by_level", "args": {"level": 8} },
+    { "keys": ["alt+c", "alt+f", "alt+9"], "command": "fold_by_level", "args": {"level": 9} },
+    { "keys": ["alt+c", "alt+f", "alt+0"], "command": "unfold_all" },
 
-    // Toggle Words.
-    { "keys": ["super+shift+enter"], "command": "toggle_word"},
+    // My Commands (Align Text).
+    { "keys": ["alt+a", "alt+t"], "command": "align_tab", "args" : { "live_preview" : true } },
 
-    // AlignTab
-    { "keys": ["alt+shift+l"], "command": "align_tab", "args" : { "live_preview" : true } },
+    // My Commands (Select Region).
+    { "keys": ["alt+s", "alt+="], "command": "expand_region" },
+    { "keys": ["alt+s", "alt+-"], "command": "expand_region", "args": {"undo": true}, "context": [{"key": "expand_region_soft_undo"}] },
 
-    // Terminus
-    { "keys": ["alt+`"], "command": "toggle_terminus_panel" },
-    { "keys": ["super+alt+`"], "command": "terminus_open", "args": { "cwd": "${file_path:${folder}}", "title": "zsh", "auto_close": true } },
+    // My Commands (Toggle Quotes).
+    { "keys": ["alt+t", "alt+q"], "command": "change_quotes" },
 
-    // Micro Parity
-    { "keys": ["alt+up"], "command": "swap_line_up" },
-    { "keys": ["alt+down"], "command": "swap_line_down" },
-    { "keys": ["alt+backspace"], "command": "delete_word", "args": { "forward": false, "sub_words": true } },
-    { "keys": ["alt+shift+f"], "command": "show_panel", "args": { "panel": "find_in_files" } },
+    // My Command (Toggle Word).
+    { "keys": ["alt+t", "alt+w"], "command": "toggle_word"},
 
-    // Folding
-    { "keys": ["alt+f", "1"], "command": "fold_by_level", "args": {"level": 1} },
-    { "keys": ["alt+f", "2"], "command": "fold_by_level", "args": {"level": 2} },
-    { "keys": ["alt+f", "3"], "command": "fold_by_level", "args": {"level": 3} },
-    { "keys": ["alt+f", "4"], "command": "fold_by_level", "args": {"level": 4} },
-    { "keys": ["alt+f", "5"], "command": "fold_by_level", "args": {"level": 5} },
-    { "keys": ["alt+f", "6"], "command": "fold_by_level", "args": {"level": 6} },
-    { "keys": ["alt+f", "7"], "command": "fold_by_level", "args": {"level": 7} },
-    { "keys": ["alt+f", "8"], "command": "fold_by_level", "args": {"level": 8} },
-    { "keys": ["alt+f", "9"], "command": "fold_by_level", "args": {"level": 9} },
-    { "keys": ["alt+f", "0"], "command": "unfold_all" },
+    // My Command (Marks)
+    { "keys": ["alt+m", "alt+a"], "command": "toggle_bookmark" },
+    { "keys": ["alt+m", "alt+c"], "command": "clear_bookmarks" },
+    { "keys": ["alt+m", "alt+s", "alt+a" ], "command": "select_all_bookmarks" },
+    { "keys": ["alt+m", "alt+up"], "command": "next_bookmark" },
+    { "keys": ["alt+m", "alt+down"], "command": "prev_bookmark" },
 
-    // Expand region.
-    { "keys": ["super+shift+space"], "command": "expand_region" },
-    {
-      "keys": ["super+shift+u"],
-      "command": "expand_region",
-      "args": { "undo": true },
-      "context": [ { "key": "expand_region_soft_undo" } ]
-    },
-
-    // These are disabled because I found out how to map my right ⌘ key to CTRL in micro.
-    // { "keys": ["ctrl+s"], "command": "save", "args": { "async": true } },
-    // { "keys": ["ctrl+left"], "command": "bol" },
-    // { "keys": ["ctrl+right"], "command": "eol" },
-    // { "keys": ["ctrl+o"], "command": "prompt_open" },
-    // { "keys": ["ctrl+z"], "command": "undo" },
-    // { "keys": ["ctrl+y"], "command": "redo" },
-    // { "keys": ["ctrl+c"], "command": "copy" },
-    // { "keys": ["ctrl+x"], "command": "cut" },
-    // { "keys": ["ctrl+d"], "command": "duplicate_line" },
-    // { "keys": ["ctrl+v"], "command": "paste" },
-    // { "keys": ["ctrl+a"], "command": "select_all" },
-    // { "keys": ["ctrl+b"], "command": "toggle_terminus_panel" },
-    // { "keys": ["ctrl+q"], "command": "close" },
-    // { "keys": ["ctrl+up"], "command": "move_to", "args": { "to": "bof" } },
-    // { "keys": ["ctrl+down"], "command": "move_to", "args": { "to": "eof" } },
-    // { "keys": ["ctrl+f"], "command": "show_panel", "args": { "panel": "find", "reverse": false } },
-    // { "keys": ["ctrl+t"], "command": "show_overlay", "args": {"overlay": "goto", "show_files": true} }, // Hurts transpose, but never use.
-    // { "keys": ["ctrl+e"], "command": "show_overlay", "args": {"overlay": "command_palette"} },
+    // My Command (Goto Line).
+    { "keys": ["alt+g", "alt+g"], "command": "show_overlay", "args": {"overlay": "goto", "text": ":"} },
 ]
