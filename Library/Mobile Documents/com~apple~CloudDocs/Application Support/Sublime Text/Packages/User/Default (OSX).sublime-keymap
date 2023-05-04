@@ -5,8 +5,8 @@
     // { "keys": ["super+v"], "command": "paste_and_indent" },
 
     // Show the sidebar easier.
-    { "keys": ["super+shift+\\"], "command": "toggle_side_bar" },
-    { "keys": ["super+\\"], "command": "focus_side_bar" }, // Focus on the sidebar (reveal in sidebar).
+    { "keys": ["super+\\"], "command": "toggle_side_bar" },
+    { "keys": ["super+shift+\\"], "command": "focus_side_bar" }, // Focus on the sidebar (reveal in sidebar).
 
     // My Commands (Misc).
     { "keys": ["alt+d", "alt+b", "alt+w"], "command": "delete_word", "args": { "forward": false, "sub_words": true } },
