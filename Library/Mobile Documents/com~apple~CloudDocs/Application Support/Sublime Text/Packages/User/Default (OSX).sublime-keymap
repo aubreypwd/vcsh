@@ -1,8 +1,8 @@
 [
 
     // Make Paste + Indent the default.
-    { "keys": ["super+shift+v"], "command": "paste" },
-    { "keys": ["super+v"], "command": "paste_and_indent" },
+    // { "keys": ["super+shift+v"], "command": "paste" },
+    // { "keys": ["super+v"], "command": "paste_and_indent" },
 
     // Show the sidebar easier.
     { "keys": ["super+shift+\\"], "command": "toggle_side_bar" },
@@ -37,6 +37,7 @@
 
     // My Commands (Code Folding).
     { "keys": ["alt+f", "alt+1"], "command": "fold_by_level", "args": {"level": 1} },
+        { "keys": ["alt+f", "alt+f"], "command": "fold_by_level", "args": {"level": 1} }, // Alternate.
     { "keys": ["alt+f", "alt+2"], "command": "fold_by_level", "args": {"level": 2} },
     { "keys": ["alt+f", "alt+3"], "command": "fold_by_level", "args": {"level": 3} },
     { "keys": ["alt+f", "alt+4"], "command": "fold_by_level", "args": {"level": 4} },
@@ -88,4 +89,16 @@
     { "keys": ["alt+t", "alt+["], "command": "prev_view" },
     { "keys": ["alt+t", "alt+p", "alt+["], "command": "move_to_group", "args": { "group": 0 } },
     { "keys": ["alt+t", "alt+p", "alt+]"], "command": "move_to_group", "args": { "group": 1 } },
+
+    // Surround.
+    {
+        "keys": ["alt+s", "alt+s"],
+        "command": "insert_snippet",
+        "args": {
+            "contents": "$1( ${0:${SELECTION}} )"
+        },
+        "context": [
+            { "key": "selector", "operator": "equal", "operand": "" },
+        ]
+    },
 ]

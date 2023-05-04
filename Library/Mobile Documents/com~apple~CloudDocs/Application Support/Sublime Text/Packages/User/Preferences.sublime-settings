@@ -53,6 +53,7 @@
     "ajax",
     "url",
     "json",
+    "charset",
   ],
   "always_prompt_for_file_reload": false,
   "remember_layout": true,

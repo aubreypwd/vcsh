@@ -163,3 +163,4 @@ if test "$(pwd)" = "$HOME"; then
 fi
 
 quietly "brewd" # Dump the .Brewfile.
+export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"

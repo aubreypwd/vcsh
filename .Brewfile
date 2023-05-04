@@ -223,6 +223,8 @@ brew "neofetch"
 brew "neovim"
 # HTTP(S) server and reverse proxy, and IMAP/POP3 proxy server
 brew "nginx", restart_service: true
+# Development kit for the Java programming language
+brew "openjdk"
 # Cryptography and SSL/TLS Toolkit
 brew "openssl@3"
 # Swiss-army knife of markup format conversion
@@ -351,5 +353,7 @@ cask "spectacle"
 cask "spotify"
 # BBS terminal program
 cask "syncterm"
+# JDK from the Eclipse Foundation (Adoptium)
+cask "temurin"
 # Video communication and virtual meeting platform
 cask "zoom"
