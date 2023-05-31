@@ -579,7 +579,7 @@
 			<key>path</key>
 			<string>/Applications/Google Chrome.app</string>
 			<key>profileName</key>
-			<string>Profile 6</string>
+			<string>Default</string>
 			<key>supportPath</key>
 			<string>/Users/aubreypwd/Library/Application Support/Google/Chrome</string>
 			<key>type</key>
@@ -600,7 +600,7 @@
 			<key>path</key>
 			<string>/Applications/Google Chrome.app</string>
 			<key>profileName</key>
-			<string>Profile 6</string>
+			<string>Default</string>
 			<key>supportPath</key>
 			<string>/Users/aubreypwd/Library/Application Support/Google/Chrome</string>
 			<key>type</key>
@@ -638,7 +638,7 @@
 			<key>path</key>
 			<string>/Applications/Google Chrome.app</string>
 			<key>profileName</key>
-			<string>Profile 6</string>
+			<string>Default</string>
 			<key>supportPath</key>
 			<string>/Users/aubreypwd/Library/Application Support/Google/Chrome</string>
 			<key>type</key>

@@ -22,6 +22,7 @@ export PATH="/opt/homebrew/opt/ruby/bin:$PATH" #  Ruby
 export PATH="/opt/homebrew/opt/openssl@3/bin:$PATH" # Open SSL
 export PATH="/opt/homebrew/lib/ruby/gems/3.0.0/bin:$PATH" # Ruby Gems
 export PATH="/usr/local/bin:$PATH" # Just for n, where it symlinks node.
+export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
 
 ###
  # High Level Options
@@ -163,4 +164,3 @@ if test "$(pwd)" = "$HOME"; then
 fi
 
 quietly "brewd" # Dump the .Brewfile.
-export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"

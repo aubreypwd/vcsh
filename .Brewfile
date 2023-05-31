@@ -334,8 +334,8 @@ cask "clean-me"
 cask "cool-retro-term"
 # Command-line display management utility
 cask "cscreen"
-# All-in-one toolbox for developers
-cask "devutils"
+# Utilities designed to make common development tasks easier
+cask "devtoys"
 # Tool to prevent the system from going into sleep mode
 cask "keepingyouawake"
 # Reverse proxy, secure introspectable tunnels to localhost
@@ -344,6 +344,8 @@ cask "ngrok"
 cask "nordvpn"
 # Free and open-source SoundCloud client
 cask "nuage"
+# Finder Toolbar app to open the current directory in Terminal or Editor
+cask "openinterminal"
 cask "phpmon"
 # Archive manager for data compression and backups
 cask "rar"
@@ -357,3 +359,24 @@ cask "syncterm"
 cask "temurin"
 # Video communication and virtual meeting platform
 cask "zoom"
+vscode "alefragnani.Bookmarks"
+vscode "bmewburn.vscode-intelephense-client"
+vscode "bradlc.vscode-tailwindcss"
+vscode "christian-kohler.path-intellisense"
+vscode "dbaeumer.vscode-eslint"
+vscode "DEVSENSE.composer-php-vscode"
+vscode "ecmel.vscode-html-css"
+vscode "EditorConfig.EditorConfig"
+vscode "formulahendry.auto-rename-tag"
+vscode "GitHub.vscode-pull-request-github"
+vscode "ivanzusko.theme-chrome-devtools-dark"
+vscode "johnbillion.vscode-wordpress-hooks"
+vscode "mechatroner.rainbow-csv"
+vscode "mikestead.dotenv"
+vscode "monokai.theme-monokai-pro-vscode"
+vscode "mrmlnc.vscode-scss"
+vscode "Phu1237.vs-browser"
+vscode "streetsidesoftware.code-spell-checker"
+vscode "timonwong.shellcheck"
+vscode "valeryanm.vscode-phpsab"
+vscode "Zignd.html-css-class-completion"

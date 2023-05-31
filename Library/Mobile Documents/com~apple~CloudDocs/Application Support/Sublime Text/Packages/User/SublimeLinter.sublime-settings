@@ -1,4 +1,6 @@
 {
+    "highlights.time_to_idle": 0.5,
+    "lint_mode": "save",
     "debug": false,
     "linters": {
         "eslint": {
