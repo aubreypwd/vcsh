@@ -226,7 +226,7 @@ brew "nginx", restart_service: true
 # Development kit for the Java programming language
 brew "openjdk"
 # Cryptography and SSL/TLS Toolkit
-brew "openssl@3"
+brew "openssl@3", link: false
 # Swiss-army knife of markup format conversion
 brew "pandoc"
 # Simplistic interactive filtering tool
