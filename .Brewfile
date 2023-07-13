@@ -69,6 +69,8 @@ brew "cask"
 brew "ccat"
 # CD/DVD/Blu-ray premastering and recording software
 brew "cdrtools"
+# Interpreted, interactive, object-oriented programming language
+brew "python@3.11"
 # Control Google Chrome from the command-line
 brew "chrome-cli"
 # Cross-platform make
@@ -139,8 +141,6 @@ brew "libassuan"
 brew "libgcrypt"
 # GNU Pretty Good Privacy (PGP) package
 brew "gnupg"
-# Interpreted, interactive, object-oriented programming language
-brew "python@3.11"
 # Generate introspection data for GObject libraries
 brew "gobject-introspection"
 # Interpreted, interactive, object-oriented programming language
@@ -209,8 +209,6 @@ brew "multitail"
 brew "python-tabulate"
 # CLI for MySQL with auto-completion and syntax highlighting
 brew "mycli"
-# Protocol buffers (Google's data interchange format)
-brew "protobuf"
 # Open source relational database management system
 brew "mysql", restart_service: true
 # Node version management
@@ -225,8 +223,6 @@ brew "neovim"
 brew "nginx", restart_service: true
 # Development kit for the Java programming language
 brew "openjdk"
-# Cryptography and SSL/TLS Toolkit
-brew "openssl@3", link: false
 # Swiss-army knife of markup format conversion
 brew "pandoc"
 # Simplistic interactive filtering tool
@@ -239,6 +235,8 @@ brew "pfetch"
 brew "php@8.0", restart_service: true
 # General-purpose scripting language
 brew "php@8.1", restart_service: true
+# Protocol buffers (Google's data interchange format)
+brew "protobuf"
 # Protocol buffers library
 brew "protobuf-c"
 # Python 3 bindings for the Cairo graphics library
