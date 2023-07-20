@@ -5,10 +5,8 @@ tap "github/gh"
 tap "hashicorp/tap"
 tap "henkrehorst/php"
 tap "homebrew/bundle"
-tap "homebrew/cask"
 tap "homebrew/cask-fonts"
 tap "homebrew/cask-versions"
-tap "homebrew/core"
 tap "homebrew/services"
 tap "jesseduffield/lazygit"
 tap "jhawthorn/fzy"
@@ -210,7 +208,7 @@ brew "python-tabulate"
 # CLI for MySQL with auto-completion and syntax highlighting
 brew "mycli"
 # Open source relational database management system
-brew "mysql"
+brew "mysql", restart_service: true
 # Node version management
 brew "n"
 # Free (GNU) replacement for the Pico text editor
