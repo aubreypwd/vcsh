@@ -101,4 +101,7 @@
             { "key": "selector", "operator": "equal", "operand": "" },
         ]
     },
+
+    // Terminal
+    { "keys": ["alt+o", "alt+t"], "command": "open_terminal" },
 ]
