@@ -12,17 +12,17 @@
  ##
 
 ###
- # PATH
+ # Early PATH Settings
+ #
+ # See my-path.php in zsh-my-config for more.
  ##
 export PATH="/opt/homebrew/bin:$HOME/.composer/vendor/bin:$PATH"
-export PATH="/Applications/Sublime Text.app/Contents/SharedSupport/bin:$PATH" # subl
 export PATH="/opt/homebrew/sbin:$PATH" # Homebrew
 export PATH="/opt/homebrew/bin:$PATH" # Homebrew
 export PATH="/opt/homebrew/opt/ruby/bin:$PATH" #  Ruby
 export PATH="/opt/homebrew/opt/openssl@3/bin:$PATH" # Open SSL
 export PATH="/opt/homebrew/lib/ruby/gems/3.0.0/bin:$PATH" # Ruby Gems
 export PATH="/usr/local/bin:$PATH" # Just for n, where it symlinks node.
-export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
 
 ###
  # High Level Options
