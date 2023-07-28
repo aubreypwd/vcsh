@@ -61,6 +61,7 @@
     "dropdowns",
     "typehint",
     "onchange",
+    "foreach",
   ],
   "always_prompt_for_file_reload": false,
   "remember_layout": true,
