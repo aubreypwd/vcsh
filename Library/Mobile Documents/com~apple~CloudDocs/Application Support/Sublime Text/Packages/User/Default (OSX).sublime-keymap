@@ -70,7 +70,7 @@
     { "keys": ["alt+m", "alt+["], "command": "prev_bookmark" },
 
     // My Command (Goto Line).
-    { "keys": ["alt+g"], "command": "show_overlay", "args": {"overlay": "goto", "text": ":"} },
+    { "keys": ["alt+g","alt+l"], "command": "show_overlay", "args": {"overlay": "goto", "text": ":"} },
 
     // My Commands (Files).
     { "keys": ["alt+c", "alt+f"], "command": "close" },
