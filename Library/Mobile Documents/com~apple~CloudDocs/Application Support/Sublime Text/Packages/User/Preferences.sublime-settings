@@ -62,6 +62,7 @@
     "typehint",
     "onchange",
     "foreach",
+    "inheritdoc",
   ],
   "always_prompt_for_file_reload": false,
   "remember_layout": true,
@@ -269,4 +270,5 @@
   "indent_to_bracket": true,
   "auto_indent": true,
   "trim_automatic_white_space": true,
+  "mde.auto_fold_link.enabled": false,
 }

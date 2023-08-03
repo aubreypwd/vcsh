@@ -17,6 +17,7 @@ tap "sargsyan/github-notifier"
 tap "shivammathur/php"
 tap "sidneys/homebrew"
 tap "stripe/stripe-cli"
+tap "xvxx/code"
 # Plugin manager for zsh, inspired by oh-my-zsh and vundle
 brew "antigen"
 # Image format providing lossless and lossy compression for web images
@@ -314,6 +315,8 @@ brew "shivammathur/php/php@7.3"
 brew "shivammathur/php/php@7.4"
 # Stripe CLI utility
 brew "stripe/stripe-cli/stripe"
+# quick lil gopher client
+brew "xvxx/code/phetch"
 # Command-line helper for the 1Password password manager
 cask "1password-cli"
 # Instant messaging application
