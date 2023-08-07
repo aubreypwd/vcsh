@@ -238,7 +238,7 @@
   "show_navigation_bar": false,
   "close_deleted_files": true,
   "show_full_path": true,
-  "show_rel_path": true,
+  // "show_rel_path": true,
   "show_git_status": false,
   "show_line_endings": true,
   "sublime_merge_path": null,

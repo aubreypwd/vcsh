@@ -359,7 +359,7 @@
 		<key>enabled</key>
 		<true/>
 		<key>predicate</key>
-		<string>URL CONTAINS "github.com"</string>
+		<string>URL CONTAINS "github.com/awesomemotive"</string>
 		<key>title</key>
 		<string>Github</string>
 	</dict>

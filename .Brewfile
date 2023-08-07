@@ -26,6 +26,8 @@ brew "webp"
 brew "jpeg-xl"
 # Codec library for encoding and decoding AV1 video streams
 brew "aom"
+# Cryptography and SSL/TLS Toolkit
+brew "openssl@3"
 # Graphical system information display for macOS
 brew "archey"
 # C library implementing the SSH2 protocol
