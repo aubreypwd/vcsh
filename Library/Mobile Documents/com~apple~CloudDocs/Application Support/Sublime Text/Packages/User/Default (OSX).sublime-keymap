@@ -17,7 +17,9 @@
 
     // My Commands (Page View), requires https://gist.github.com/justsml/1cc1627fd69adbcd453a2dd54962cbff
     { "keys": ["alt+up"], "command": "scroll_lines_fixed", "args": {"by": "pages", "amount": 1.0 } },
+        { "keys": ["alt+shift+k"], "command": "scroll_lines_fixed", "args": {"by": "pages", "amount": 1.0 } },
     { "keys": ["alt+down"], "command": "scroll_lines_fixed", "args": {"by": "pages", "amount": -1.0 } },
+        { "keys": ["alt+shift+j"], "command": "scroll_lines_fixed", "args": {"by": "pages", "amount": -1.0 } },
 
     // My Commands (XDebug).
     { "keys": ["alt+x", ","], "command": "xdebug_settings" },
@@ -50,16 +52,7 @@
         { "keys": ["alt+m", "alt+t", "alt+p", "alt+2"], "command": "move_to_group", "args": { "group": 1 } },
 
     // My Commands (Code Folding).
-    { "keys": ["alt+f", "alt+1"], "command": "fold_by_level", "args": {"level": 1} },
-        { "keys": ["alt+f", "alt+f"], "command": "fold_by_level", "args": {"level": 1} }, // Alternate.
-    { "keys": ["alt+f", "alt+2"], "command": "fold_by_level", "args": {"level": 2} },
-    { "keys": ["alt+f", "alt+3"], "command": "fold_by_level", "args": {"level": 3} },
-    { "keys": ["alt+f", "alt+4"], "command": "fold_by_level", "args": {"level": 4} },
-    { "keys": ["alt+f", "alt+5"], "command": "fold_by_level", "args": {"level": 5} },
-    { "keys": ["alt+f", "alt+6"], "command": "fold_by_level", "args": {"level": 6} },
-    { "keys": ["alt+f", "alt+7"], "command": "fold_by_level", "args": {"level": 7} },
-    { "keys": ["alt+f", "alt+8"], "command": "fold_by_level", "args": {"level": 8} },
-    { "keys": ["alt+f", "alt+9"], "command": "fold_by_level", "args": {"level": 9} },
+    { "keys": ["alt+f", "alt+1"], "command": "fold_by_level", "args": {"level": 1 } },
     { "keys": ["alt+f", "alt+0"], "command": "unfold_all" },
 
     // My Commands (Align Text).
@@ -85,6 +78,10 @@
 
     // My Command (Goto Line).
     { "keys": ["alt+g","alt+l"], "command": "show_overlay", "args": {"overlay": "goto", "text": ":"} },
+
+    // Vim like navigation
+    { "keys": ["alt+k"], "command": "move", "args": { "by": "lines", "forward": false } },
+    { "keys": ["alt+j"], "command": "move", "args": { "by": "lines", "forward": true } },
 
     // My Commands (Files).
     { "keys": ["alt+c", "alt+f"], "command": "close" },

@@ -63,6 +63,7 @@
     "onchange",
     "foreach",
     "inheritdoc",
+    "sanitization",
   ],
   "always_prompt_for_file_reload": false,
   "remember_layout": true,
@@ -158,6 +159,7 @@
   "font_size": 12,
   // "font_face": "Menlo",
   "font_face": "JetBrains Mono NL Regular",
+  // "font_face": "Glass TTY VT220",
   "font_options":
   [
     "no_bold",

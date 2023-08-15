@@ -843,14 +843,14 @@
 		<key>behaviourArgument</key>
 		<dict>
 			<key>path</key>
-			<string>/Applications/Bandcamp.app</string>
+			<string>/Users/aubreypwd/Applications/Chrome Apps.localized/Bandcamp.app</string>
 			<key>type</key>
 			<string>ChoosyBrowser</string>
 		</dict>
 		<key>enabled</key>
 		<true/>
 		<key>predicate</key>
-		<string>URL CONTAINS "bandcamp.com"</string>
+		<string>URL CONTAINS "bandcamp.com" OR URL CONTAINS "businesscasual.biz"</string>
 		<key>title</key>
 		<string>Bandcamp</string>
 	</dict>
