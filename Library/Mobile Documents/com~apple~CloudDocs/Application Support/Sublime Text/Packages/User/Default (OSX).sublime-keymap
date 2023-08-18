@@ -1,114 +1,118 @@
 [
 
-/** Sidebar */
+/** Shortcuts */
 
-    /* Toggle Sidebar */ { "keys": ["super+\\"], "command": "toggle_side_bar" },
-    /* Goto Sidebar */   { "keys": ["super+shift+\\"], "command": "focus_side_bar" }, // Focus on the sidebar (reveal in sidebar).
+    /* Sidebar */
 
-/** My Commands (Misc) */
+        /* Toggle Sidebar */ { "keys": ["super+\\"], "command": "toggle_side_bar" },
+        /* Goto Sidebar */   { "keys": ["super+shift+\\"], "command": "focus_side_bar" }, // Focus on the sidebar (reveal in sidebar).
 
-    /* Delete Word (Backwards) */ { "keys": ["alt+d", "alt+b", "alt+w"], "command": "delete_word", "args": { "forward": false, "sub_words": true } },
-    /* Delete Word (Forward) */   { "keys": ["alt+d", "alt+f", "alt+w"], "command": "delete_word", "args": { "forward": true, "sub_words": true } },
-    /* Duplicate line */          { "keys": ["alt+d", "alt+l"], "command": "duplicate_line" },
-    /* Join Lines */              { "keys": ["alt+l", "alt+j"], "command": "join_lines" },
-    /* Delete Line */             { "keys": ["alt+d", "alt+d"], "command": "run_macro_file", "args": {"file": "res://Packages/Default/Delete Line.sublime-macro"} },
+    /* Vim Like Navigation */
 
-/** My Commands (Page View), Requires https://gist.github.com/justsml/1cc1627fd69adbcd453a2dd54962cbff */
+        /* Up One Line */   { "keys": ["alt+k"], "command": "move", "args": { "by": "lines", "forward": false } },
+        /* Down One Line */ { "keys": ["alt+j"], "command": "move", "args": { "by": "lines", "forward": true } },
 
-    /* Page Up */ { "keys": ["alt+up"], "command": "scroll_lines_fixed", "args": {"by": "pages", "amount": 1.0 } },
-    /* Page Up with j/k */ { "keys": ["alt+shift+k"], "command": "scroll_lines_fixed", "args": {"by": "pages", "amount": 1.0 } }, // Alternate.
-    /* Page Down */ { "keys": ["alt+down"], "command": "scroll_lines_fixed", "args": {"by": "pages", "amount": -1.0 } },
-    /* Page Down with j/k */ { "keys": ["alt+shift+j"], "command": "scroll_lines_fixed", "args": {"by": "pages", "amount": -1.0 } }, // Alternate.
+    /* Terminal */
 
-/** My Commands (XDebug) */
+        /* Open Terminal */ { "keys": ["alt+o", "alt+t"], "command": "open_terminal" },
 
-    /* Settings */                   { "keys": ["alt+x", ","], "command": "xdebug_settings" },
-    /* Add Breakpoint */             { "keys": ["alt+x", "a"], "command": "xdebug_breakpoint" },
-    /* Clear All Breakpoints */      { "keys": ["alt+x", "A"], "command": "xdebug_clear_all_breakpoints" },
-    /* Add Conditional Breakpoint */ { "keys": ["alt+x", "?"], "command": "xdebug_conditional_breakpoint" },
-    /* Start Debugging */            { "keys": ["alt+x", "s"], "command": "xdebug_session_start" },
-    /* Stop Debugging */             { "keys": ["alt+x", "x"], "command": "xdebug_session_stop" }, // Exit
-    /* Continue */                   { "keys": ["alt+x", "c"], "command": "xdebug_continue", },
-    /* Step Over */                  { "keys": ["alt+x", "o"], "command": "xdebug_continue", "args": { "command" : "step_over" } },
-    /* Step Into */                  { "keys": ["alt+x", "i"], "command": "xdebug_continue", "args": { "command" : "step_into" } },
-    /* Run to Line */                { "keys": ["alt+x", "l"], "command": "xdebug_continue", "args": { "command" : "xdebug_run_to_line" } },
-    /* Eval Code */                  { "keys": ["alt+x", "e"], "command": "xdebug_evaluate" },
-    /* Restart */                    { "keys": ["alt+x", "r"], "command": "xdebug_session_restart" },
+/** My Commands */
 
-/** My Commands (Panels) */
+    /* Misc */
 
-    /* Select Pane 1 */      { "keys": ["alt+s", "alt+p", "alt+1"], "command": "focus_group", "args": { "group": 0 } },
-    /* Select Pane with [ */ { "keys": ["alt+s", "alt+p", "alt+["], "command": "focus_group", "args": { "group": 0 } }, // Alternate.
-    /* Select Pane 2 */      { "keys": ["alt+s", "alt+p", "alt+2"], "command": "focus_group", "args": { "group": 1 } },
-    /* Select Pane with ] */ { "keys": ["alt+s", "alt+p", "alt+]"], "command": "focus_group", "args": { "group": 1 } }, // Alternate.
+        /* Delete Word (Backwards) */ { "keys": ["alt+d", "alt+b", "alt+w"], "command": "delete_word", "args": { "forward": false, "sub_words": true } },
+        /* Delete Word (Forward) */   { "keys": ["alt+d", "alt+f", "alt+w"], "command": "delete_word", "args": { "forward": true, "sub_words": true } },
+        /* Duplicate line */          { "keys": ["alt+d", "alt+l"], "command": "duplicate_line" },
+        /* Join Lines */              { "keys": ["alt+l", "alt+j"], "command": "join_lines" },
+        /* Delete Line */             { "keys": ["alt+d", "alt+d"], "command": "run_macro_file", "args": {"file": "res://Packages/Default/Delete Line.sublime-macro"} },
 
-/** My Commands (Switching Tabs/Panes) */
+    /* Page Up/Down -- Requires https://gist.github.com/justsml/1cc1627fd69adbcd453a2dd54962cbf */
 
-    /* Select Tab (right) */ { "keys": ["alt+s", "alt+t", "alt+]"], "command": "next_view" },
-    /* Select Tab (left) */  { "keys": ["alt+s", "alt+t", "alt+["], "command": "prev_view" },
+        /* Page Up */ { "keys": ["alt+up"], "command": "scroll_lines_fixed", "args": {"by": "pages", "amount": 1.0 } },
+        /* Page Up with j/k */ { "keys": ["alt+shift+k"], "command": "scroll_lines_fixed", "args": {"by": "pages", "amount": 1.0 } }, // Alternate.
+        /* Page Down */ { "keys": ["alt+down"], "command": "scroll_lines_fixed", "args": {"by": "pages", "amount": -1.0 } },
+        /* Page Down with j/k */ { "keys": ["alt+shift+j"], "command": "scroll_lines_fixed", "args": {"by": "pages", "amount": -1.0 } }, // Alternate.
 
-/** My Commands (Moving Tabs). */
+    /* XDebug */
 
-    /* Move Tab to Pane 1 */      { "keys": ["alt+m", "alt+t", "alt+p", "alt+1"], "command": "move_to_group", "args": { "group": 0 } },
-    /* Move Tab to Pane with [ */ { "keys": ["alt+m", "alt+t", "alt+p", "alt+["], "command": "move_to_group", "args": { "group": 0 } }, // Alternate.
-    /* Move Tab to Pane 2 */      { "keys": ["alt+m", "alt+t", "alt+p", "alt+2"], "command": "move_to_group", "args": { "group": 1 } },
-    /* Move Tab to Pane with ] */ { "keys": ["alt+m", "alt+t", "alt+p", "alt+]"], "command": "move_to_group", "args": { "group": 1 } }, // Alternate.
+        /* Settings */                        { "keys": ["alt+x", "alt+,"], "command": "xdebug_settings" },
+        /* Add Breakpoint */                  { "keys": ["alt+x", "alt+a"], "command": "xdebug_breakpoint" },
+        /* Clear All Breakpoints */           { "keys": ["alt+x", "alt+c"], "command": "xdebug_clear_all_breakpoints" },
+        /* Add Conditional (if) Breakpoint */ { "keys": ["alt+x", "alt+i"], "command": "xdebug_conditional_breakpoint" },
+        /* Start Debugging */                 { "keys": ["alt+x", "alt+s"], "command": "xdebug_session_start" },
+        /* Stop Debugging */                  { "keys": ["alt+x", "alt+x"], "command": "xdebug_session_stop" }, // Exit
+        /* Continue */                        { "keys": ["alt+x", "alt+c"], "command": "xdebug_continue", },
+        /* Step Over */                       { "keys": ["alt+x", "alt+o"], "command": "xdebug_continue", "args": { "command" : "step_over" } },
+        /* Step Into */                       { "keys": ["alt+x", "alt+i"], "command": "xdebug_continue", "args": { "command" : "step_into" } },
+        /* Run to Line */                     { "keys": ["alt+x", "alt+l"], "command": "xdebug_continue", "args": { "command" : "xdebug_run_to_line" } },
+        /* Eval Code */                       { "keys": ["alt+x", "alt+e"], "command": "xdebug_evaluate" },
+        /* Restart */                         { "keys": ["alt+x", "alt+r"], "command": "xdebug_session_restart" },
 
-/** My Commands (Code Folding) */
+    /* Panels */
 
-    /* Fold Level 1 */ { "keys": ["alt+f", "alt+1"], "command": "fold_by_level", "args": {"level": 1 } },
-    /* Unfold All */   { "keys": ["alt+f", "alt+0"], "command": "unfold_all" },
+        /* Select Pane 1 */      { "keys": ["alt+s", "alt+p", "alt+1"], "command": "focus_group", "args": { "group": 0 } },
+        /* Select Pane with [ */ { "keys": ["alt+s", "alt+p", "alt+["], "command": "focus_group", "args": { "group": 0 } }, // Alternate.
+        /* Select Pane 2 */      { "keys": ["alt+s", "alt+p", "alt+2"], "command": "focus_group", "args": { "group": 1 } },
+        /* Select Pane with ] */ { "keys": ["alt+s", "alt+p", "alt+]"], "command": "focus_group", "args": { "group": 1 } }, // Alternate.
 
-/** My Commands (Align Text) */
+    /* Switching Tabs/Panes */
 
-    /* Align Tab */ { "keys": ["alt+a", "alt+t"], "command": "align_tab", "args" : { "live_preview" : true } },
+        /* Select Tab (right) */ { "keys": ["alt+s", "alt+t", "alt+]"], "command": "next_view" },
+        /* Select Tab (left) */  { "keys": ["alt+s", "alt+t", "alt+["], "command": "prev_view" },
 
-/** My Commands (Expand Region) */
+    /* Windows or Native Tabs */
 
-    /* Expand + */ { "keys": ["alt+="], "command": "expand_region" }, // Expand region.
-    /* Shrink - */ { "keys": ["alt+-"], "command": "expand_region", "args": { "undo": true }, "context": [ { "key": "expand_region_soft_undo" } ] },
+        /* Switch to Next Window */     { "keys": ["alt+s", "alt+w", "alt+]"], "command": "next_os_tab" },
+        /* Switch to Previous Window */ { "keys": ["alt+s", "alt+w", "alt+["], "command": "prev_os_tab" },
+        /* Close Window */              { "keys": ["alt+c", "alt+w"], "command": "close_window" },
+        /* Close Window with CTRL+C  */ { "keys": ["ctrl+c"], "command": "close_window" }, // Alternate.
 
-/** My Commands (Toggle Quotes) */
+    /* Moving Tabs) */
 
-    /* Toggle Quote w/ " */     { "keys": ["super+shift+'"], "command": "change_quotes" },
-    /* Toggle Quite with a+t */ { "keys": ["alt+t", "alt+q"], "command": "change_quotes" }, // Alternate.
+        /* Move Tab to Pane 1 */      { "keys": ["alt+m", "alt+t", "alt+p", "alt+1"], "command": "move_to_group", "args": { "group": 0 } },
+        /* Move Tab to Pane with [ */ { "keys": ["alt+m", "alt+t", "alt+p", "alt+["], "command": "move_to_group", "args": { "group": 0 } }, // Alternate.
+        /* Move Tab to Pane 2 */      { "keys": ["alt+m", "alt+t", "alt+p", "alt+2"], "command": "move_to_group", "args": { "group": 1 } },
+        /* Move Tab to Pane with ] */ { "keys": ["alt+m", "alt+t", "alt+p", "alt+]"], "command": "move_to_group", "args": { "group": 1 } }, // Alternate.
 
-/** My Command (Toggle Word) */
+    /* Code Folding */
 
-    /* Swap Value */ { "keys": ["alt+s", "alt+v"], "command": "toggle_word" }, // Alternate.
+        /* Fold Level 1 */ { "keys": ["alt+f", "alt+1"], "command": "fold_by_level", "args": {"level": 1 } },
+        /* Unfold All */   { "keys": ["alt+f", "alt+0"], "command": "unfold_all" },
 
-/** My Command (Marks) */
+    /* Align Text */
 
-    /* Toggle Mark */      { "keys": ["alt+t", "alt+m"], "command": "toggle_bookmark" },
-    /* Clear Marks */      { "keys": ["alt+c", "alt+m"], "command": "clear_bookmarks" },
-    /* Select All Marks */ { "keys": ["alt+s", "alt+a", "alt+m" ], "command": "select_all_bookmarks" },
-    /* Next Mark ] */      { "keys": ["alt+m", "alt+]"], "command": "next_bookmark" },
-    /* Previous Mark [ */  { "keys": ["alt+m", "alt+["], "command": "prev_bookmark" },
+        /* Align Tab */ { "keys": ["alt+a", "alt+t"], "command": "align_tab", "args" : { "live_preview" : true } },
 
-/** My Command (Goto Line) */
+    /* Expand Region */
 
-    /* Goto Line */ { "keys": ["alt+g","alt+l"], "command": "show_overlay", "args": {"overlay": "goto", "text": ":"} },
+        /* Expand + */ { "keys": ["alt+="], "command": "expand_region" }, // Expand region.
+        /* Shrink - */ { "keys": ["alt+-"], "command": "expand_region", "args": { "undo": true }, "context": [ { "key": "expand_region_soft_undo" } ] },
 
-/** Vim Like Navigation */
+    /* Toggle Quotes */
 
-    /* Up One Line */   { "keys": ["alt+k"], "command": "move", "args": { "by": "lines", "forward": false } },
-    /* Down One Line */ { "keys": ["alt+j"], "command": "move", "args": { "by": "lines", "forward": true } },
+        /* Toggle Quote w/ " */     { "keys": ["super+shift+'"], "command": "change_quotes" },
+        /* Toggle Quite with a+t */ { "keys": ["alt+t", "alt+q"], "command": "change_quotes" }, // Alternate.
 
-/** My Commands (Files) */
+    /* Toggle Word */
 
-    /* Close File */ { "keys": ["alt+c", "alt+f"], "command": "close" },
-    /* New File */   { "keys": ["alt+n", "alt+f"], "command": "new_file" },
-    /* Save File */  { "keys": ["alt+s", "alt+f"], "command": "save", "args": { "async": true } },
-    /* Save As... */ { "keys": ["alt+s", "alt+a"], "command": "prompt_save_as" },
+        /* Swap Value */ { "keys": ["alt+s", "alt+v"], "command": "toggle_word" }, // Alternate.
 
-/** My Commands (Windows or Native Tabs) */
+    /* Marks */
 
-    /* Switch to Next Window */     { "keys": ["alt+s", "alt+w", "alt+]"], "command": "next_os_tab" },
-    /* Switch to Previous Window */ { "keys": ["alt+s", "alt+w", "alt+["], "command": "prev_os_tab" },
-    /* Close Window */              { "keys": ["alt+c", "alt+w"], "command": "close_window" },
-    /* Close Window with CTRL+C  */ { "keys": ["ctrl+c"], "command": "close_window" }, // Alternate.
+        /* Toggle Mark */      { "keys": ["alt+t", "alt+m"], "command": "toggle_bookmark" },
+        /* Clear Marks */      { "keys": ["alt+c", "alt+m"], "command": "clear_bookmarks" },
+        /* Select All Marks */ { "keys": ["alt+s", "alt+a", "alt+m" ], "command": "select_all_bookmarks" },
+        /* Next Mark ] */      { "keys": ["alt+m", "alt+]"], "command": "next_bookmark" },
+        /* Previous Mark [ */  { "keys": ["alt+m", "alt+["], "command": "prev_bookmark" },
 
-/** Terminal */
+    /* Goto Line */
 
-    /* Open Terminal */ { "keys": ["alt+o", "alt+t"], "command": "open_terminal" },
+        /* Goto Line */ { "keys": ["alt+g","alt+l"], "command": "show_overlay", "args": {"overlay": "goto", "text": ":"} },
+
+    /* Files */
+
+        /* Close File */ { "keys": ["alt+c", "alt+f"], "command": "close" },
+        /* New File */   { "keys": ["alt+n", "alt+f"], "command": "new_file" },
+        /* Save File */  { "keys": ["alt+s", "alt+f"], "command": "save", "args": { "async": true } },
+        /* Save As... */ { "keys": ["alt+s", "alt+a"], "command": "prompt_save_as" },
 ]
