@@ -12,7 +12,7 @@
 		},
 		{
 			"path": "/Users/aubreypwd",
-			"name": "~/.*",
+			"name": "~/.* (pub)",
 			"folder_exclude_patterns": [
 				"/Users/aubreypwd/",
 				".config/micro/buffers",
@@ -37,7 +37,7 @@
 		},
 		{
 			"path": "/Users/aubreypwd/.config",
-			"name": "~/.config",
+			"name": "~/.config (pub)",
 			"folder_exclude_patterns": [
 				".config/micro/buffers",
 				".config/micro/backups",
@@ -52,7 +52,7 @@
 		},
 		{
 			"path": "/Users/aubreypwd/Library/Application Support/Firefox/Profiles/jpdbvkwh.dev-edition-default/chrome",
-			"name": "~/.../Firefox/chrome",
+			"name": "~/.../Firefox/chrome (pub)",
 			"folder_exclude_patterns": [
 			],
 			"file_exclude_patterns": [
@@ -64,7 +64,7 @@
 		},
 		{
 			"path": "/Users/aubreypwd/.cloudflared/",
-			// "name": "~/.../Firefox/chrome",
+			"name": ".cloudflared (pub)",
 			"folder_exclude_patterns": [
 			],
 			"file_exclude_patterns": [
@@ -78,7 +78,7 @@
 		},
 		{
 			"path": "/opt/homebrew/etc/php",
-			"name": "etc/php",
+			"name": "etc/php (pub)",
 			"folder_exclude_patterns": [
 			],
 			"file_exclude_patterns": [
@@ -90,7 +90,7 @@
 		},
 		{
 			"path": "/Users/aubreypwd/Library/Mobile Documents/com~apple~CloudDocs/Application Support/Sublime Text/Packages/User/",
-			"name": "Sublime Text/Packages/User",
+			"name": "Sublime Text/Packages/User (pub/git)",
 			"folder_exclude_patterns": [
 			],
 			"file_exclude_patterns": [
@@ -103,7 +103,7 @@
 		},
 		{
 			"path": "/Users/aubreypwd/Repos/github.com/aubreypwd/zsh-plugin-my-config/",
-			"name": "zsh-plugin-my-config",
+			"name": "zsh-plugin-my-config (git)",
 			"folder_exclude_patterns": [
 				".git/",
 			],
@@ -116,7 +116,7 @@
 		},
 		{
 			"path": "/Users/aubreypwd/Sublime Text/",
-			"name": "~/Sublime Text",
+			"name": "~/Sublime Text (pub/git)",
 			"folder_exclude_patterns": [
 			],
 			"file_exclude_patterns": [
