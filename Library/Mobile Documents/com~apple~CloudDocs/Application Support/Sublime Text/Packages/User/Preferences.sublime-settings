@@ -110,6 +110,7 @@
     // "*.min.*",
     "*.ttf",
     "*.zip",
+    ".cloudflared/cert.pem",
     ".db/*",
     ".git/*",
     ".hg/*",
@@ -121,7 +122,7 @@
     "debug.log",
     "logs/*",
     "node_modules/*",
-    "vendor/*"
+    "vendor/*",
   ],
   "bold_folder_labels": false,
   "trim_only_modified_white_space": true,

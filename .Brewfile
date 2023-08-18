@@ -339,6 +339,8 @@ cask "cscreen"
 cask "devtoys"
 # Tool to prevent the system from going into sleep mode
 cask "keepingyouawake"
+# Create apps from groups of websites
+cask "multi"
 # Reverse proxy, secure introspectable tunnels to localhost
 cask "ngrok"
 # VPN client for secure internet access and private browsing
