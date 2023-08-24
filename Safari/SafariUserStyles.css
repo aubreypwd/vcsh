@@ -1,0 +1,14 @@
+/**
+ * Safari Custom StyleSheet
+ *
+ * Select me in Settings > Advanced
+ *
+ * @since Aug 24, 2023
+ *
+ * @author Aubrey Portwood
+ */
+
+/* Hide CNN Annoying Ad-bar */
+body.cnn .ad-slot-header__wrapper {
+	display: none !important;
+}
