@@ -657,7 +657,7 @@
 		<key>behaviourArgument</key>
 		<dict>
 			<key>path</key>
-			<string>/Applications/Help Scout.app</string>
+			<string>/Applications/Google Chrome.app</string>
 			<key>type</key>
 			<string>ChoosyBrowser</string>
 		</dict>
@@ -843,14 +843,14 @@
 		<key>behaviourArgument</key>
 		<dict>
 			<key>path</key>
-			<string>/Users/aubreypwd/Applications/Chrome Apps.localized/Bandcamp.app</string>
+			<string>/Users/aubreypwd/Applications/Fluid Apps/Bandcamp.app</string>
 			<key>type</key>
 			<string>ChoosyBrowser</string>
 		</dict>
 		<key>enabled</key>
 		<true/>
 		<key>predicate</key>
-		<string>URL CONTAINS "bandcamp.com" OR URL CONTAINS "businesscasual.biz"</string>
+		<string>URL CONTAINS "bandcamp.com/aubreypwd"</string>
 		<key>title</key>
 		<string>Bandcamp</string>
 	</dict>
