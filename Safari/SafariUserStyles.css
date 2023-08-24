@@ -14,6 +14,6 @@ body.cnn .ad-slot-header__wrapper {
 }
 
 /* Rounded-corner videos on YouTube */
-.html5-video-player.ytp-transparent {
+.html5-video-player.ytp-large-width-mode {
 	border-radius: 10px !important;
 }
