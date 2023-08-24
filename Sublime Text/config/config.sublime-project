@@ -32,8 +32,8 @@
 				".nanorc",
 				".*rc",
 			],
-			/*"folder_include_patterns": [
-			],*/
+			"folder_include_patterns": [
+			],
 		},
 		{
 			"path": "/Users/aubreypwd/.config",
@@ -45,61 +45,61 @@
 			"file_exclude_patterns": [
 				".config/phetch/history.gph",
 			],
-			/*"file_include_patterns": [
-			],*/
-			/*"folder_include_patterns": [
-			],*/
+			"file_include_patterns": [
+			],
+			"folder_include_patterns": [
+			],
 		},
 		{
 			"path": "/Users/aubreypwd/Library/Application Support/Firefox/Profiles/jpdbvkwh.dev-edition-default/chrome",
 			"name": "~/.../Firefox/chrome (pub)",
-			/*"folder_exclude_patterns": [
-			],*/
-			/*"file_exclude_patterns": [
-			],*/
-			/*"file_include_patterns": [
-			],*/
-			/*"folder_include_patterns": [
-			],*/
+			"folder_exclude_patterns": [
+			],
+			"file_exclude_patterns": [
+			],
+			"file_include_patterns": [
+			],
+			"folder_include_patterns": [
+			],
 		},
 		{
 			"path": "/Users/aubreypwd/.cloudflared",
 			"name": ".cloudflared (pub)",
-			/*"folder_exclude_patterns": [
-			],*/
+			"folder_exclude_patterns": [
+			],
 			"file_exclude_patterns": [
 				".cloudflared/a4e6f8c6-3608-4569-9604-f26c079c28a3.json",
 				".cloudflared/cert.pem",
 			],
-			/*"file_include_patterns": [
-			],*/
-			/*"folder_include_patterns": [
-			],*/
+			"file_include_patterns": [
+			],
+			"folder_include_patterns": [
+			],
 		},
 		{
 			"path": "/opt/homebrew/etc/php",
 			"name": "etc/php (pub)",
-			/*"folder_exclude_patterns": [
-			],*/
-			/*"file_exclude_patterns": [
-			],*/
-			/*"file_include_patterns": [
-			],*/
-			/*"folder_include_patterns": [
-			],*/
+			"folder_exclude_patterns": [
+			],
+			"file_exclude_patterns": [
+			],
+			"file_include_patterns": [
+			],
+			"folder_include_patterns": [
+			],
 		},
 		{
 			"path": "/Users/aubreypwd/Library/Mobile Documents/com~apple~CloudDocs/Application Support/Sublime Text/Packages/User",
 			"name": "Sublime Text/Packages/User (pub/git)",
-			/*"folder_exclude_patterns": [
-			],*/
-			/*"file_exclude_patterns": [
-			],*/
+			"folder_exclude_patterns": [
+			],
+			"file_exclude_patterns": [
+			],
 			"file_include_patterns": [
 				"*.sublime-*"
 			],
-			/*"folder_include_patterns": [
-			],*/
+			"folder_include_patterns": [
+			],
 		},
 		{
 			"path": "/Users/aubreypwd/Repos/github.com/aubreypwd/zsh-plugin-my-config",
@@ -107,25 +107,25 @@
 			"folder_exclude_patterns": [
 				".git/",
 			],
-			/*"file_exclude_patterns": [
-			],*/
-			/*"file_include_patterns": [
-			],*/
-			/*"folder_include_patterns": [
-			],*/
+			"file_exclude_patterns": [
+			],
+			"file_include_patterns": [
+			],
+			"folder_include_patterns": [
+			],
 		},
 		{
 			"path": "/Users/aubreypwd/Sublime Text",
 			"name": "~/Sublime Text (pub/git)",
-			/*"folder_exclude_patterns": [
-			],*/
-			/*"file_exclude_patterns": [
-			],*/
-			"file_include_patterns": [
-				"config.sublime-project",
+			"folder_exclude_patterns": [
 			],
-			/*"folder_include_patterns": [
-			],*/
+			"file_exclude_patterns": [
+			],
+			"file_include_patterns": [
+			],
+			"folder_include_patterns": [
+				"/Users/aubreypwd/Sublime Text/"
+			],
 		},
 		{
 			"path": "/Users/aubreypwd/Safari"
