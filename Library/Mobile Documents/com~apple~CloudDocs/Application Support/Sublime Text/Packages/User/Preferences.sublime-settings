@@ -1,4 +1,5 @@
 {
+  "hide_sidebar_change_count_trigger": 2,
   "adaptive_dividers": true,
   "allow_git_home_dir": false,
   "always_prompt_for_file_reload": false,
