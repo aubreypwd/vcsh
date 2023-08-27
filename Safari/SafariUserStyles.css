@@ -7,13 +7,3 @@
  *
  * @author Aubrey Portwood
  */
-
-/* Hide CNN Annoying Ad-bar */
-body.cnn .ad-slot-header__wrapper {
-	display: none !important;
-}
-
-/* Rounded-corner videos on YouTube */
-.html5-video-player.ytp-large-width-mode {
-	border-radius: 10px !important;
-}
