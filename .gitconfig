@@ -65,7 +65,8 @@
 
 [user]
 	name          = Aubrey Portwood
-	email         = code@aubreypwd.com
+	email         = aubreypwd@icloud.com
+	signingkey = 8691F6F5E25C5E23
 
 [core]
 	editor        = "micro --savecursor false --diffgutter false --colorcolumn 72 --ruler false --softwrap true --wordwrap true"
@@ -151,3 +152,4 @@
 	tool = smerge
 [commit]
 	verbose = true
+	gpgsign = true
