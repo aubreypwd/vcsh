@@ -236,6 +236,8 @@ brew "pfetch"
 brew "php@8.0", restart_service: true
 # General-purpose scripting language
 brew "php@8.1", restart_service: true
+# Pinentry for GPG on Mac
+brew "pinentry-mac"
 # Protocol buffers (Google's data interchange format)
 brew "protobuf"
 # Protocol buffers library
