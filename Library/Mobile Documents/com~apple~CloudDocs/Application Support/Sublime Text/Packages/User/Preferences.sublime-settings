@@ -257,7 +257,8 @@
   ],
   "rulers":
   [
-    72, // Commit subjects.
+    50, // Commit subjects.
+    72, // Commit comments.
     80, // Normal rulers
   ],
 }

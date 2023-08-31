@@ -16,7 +16,16 @@
 
         /* Open Terminal */ { "keys": ["alt+o", "alt+t"], "command": "open_terminal" },
 
+    /* Tab Filter */
+
+        /* Trigger Tab Filter */ { "keys": ["super+alt+p"], "command": "tab_filter" },
+        /* Trigger Tab Filter */ { "keys": ["super+shift+alt+p"], "command": "tab_filter", "args": { "active_group_only": true } },
+
 /** My Commands */
+
+    /* Tab Filter */
+
+        /* Trigger Tab Filter */ { "keys": ["alt+g", "alt+t"], "command": "tab_filter" }, // Alternative: Goto Tab.
 
     /* Misc */
 
@@ -67,7 +76,7 @@
         /* Close Window */              { "keys": ["alt+c", "alt+w"], "command": "close_window" },
         /* Close Window with CTRL+C  */ { "keys": ["ctrl+c"], "command": "close_window" }, // Alternate.
 
-    /* Moving Tabs) */
+    /* Moving Tabs */
 
         /* Move Tab to Pane 1 */      { "keys": ["alt+m", "alt+t", "alt+p", "alt+1"], "command": "move_to_group", "args": { "group": 0 } },
         /* Move Tab to Pane with [ */ { "keys": ["alt+m", "alt+t", "alt+p", "alt+["], "command": "move_to_group", "args": { "group": 0 } }, // Alternate.
