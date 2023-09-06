@@ -12,17 +12,19 @@
  ##
 
 ###
- # Early PATH Settings
+ # PATH
  #
  # See my-path.php in zsh-my-config for more.
  ##
-export PATH="/opt/homebrew/bin:$HOME/.composer/vendor/bin:$PATH"
-export PATH="/opt/homebrew/sbin:$PATH" # Homebrew
-export PATH="/opt/homebrew/bin:$PATH" # Homebrew
+export PATH="/usr/local/bin:$PATH" # Just for n, where it symlinks node.
+export PATH="$PATH:/opt/homebrew/bin:/opt/homebrew/sbin" # Homebrew (always preferring e.g. LocalWP).
+export PATH="$PATH:$HOME/.composer/vendor/bin" # Composer.
 export PATH="/opt/homebrew/opt/ruby/bin:$PATH" #  Ruby
 export PATH="/opt/homebrew/opt/openssl@3/bin:$PATH" # Open SSL
 export PATH="/opt/homebrew/lib/ruby/gems/3.0.0/bin:$PATH" # Ruby Gems
-export PATH="/usr/local/bin:$PATH" # Just for n, where it symlinks node.
+export PATH="/opt/homebrew/opt/openjdk/bin:$PATH" # OpenJDK.
+export PATH="/Applications/UTM.app/Contents/MacOS/:$PATH" # UTM
+export PATH="/Applications/Sublime Text.app/Contents/SharedSupport/bin:$PATH" # subl
 
 ###
  # High Level Options
@@ -164,3 +166,7 @@ if test "$(pwd)" = "$HOME"; then
 fi
 
 quietly "brewd" # Dump the .Brewfile.
+
+if [ $ITERM_SESSION_ID ]; then
+  # export PROMPT_COMMAND='echo -ne "\033];${PWD##*/}\007"; ':"$PROMPT_COMMAND";
+fi

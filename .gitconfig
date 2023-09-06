@@ -10,6 +10,7 @@
 	cm     = "! function f() { git mod && git commit -v; }; f"
 	co     = checkout
 	cs     = commit # Commit staged
+	cwb    = "worktree add"
 	d      = diff
 	db     = "! function f() { git branch -D $1; git push origin :$1 ;}; f" # Delete branch.
 	di     = "! git ls-files -m -o --exclude-standard | fzf --reverse --height 10 --print0 -m | xargs -0 -t -o git diff" # Interactive diff.
@@ -66,7 +67,7 @@
 [user]
 	name          = Aubrey Portwood
 	email         = aubreypwd@icloud.com
-	signingkey = 8691F6F5E25C5E23
+	signingkey    = 8691F6F5E25C5E23
 
 [core]
 	editor        = "micro --savecursor false --diffgutter false --colorcolumn 72 --ruler false --softwrap true --wordwrap true"

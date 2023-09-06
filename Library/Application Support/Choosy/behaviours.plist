@@ -357,7 +357,7 @@
 			<string>ChoosyChromeProfileMode</string>
 		</dict>
 		<key>enabled</key>
-		<true/>
+		<false/>
 		<key>predicate</key>
 		<string>URL CONTAINS "github.com/awesomemotive"</string>
 		<key>title</key>
@@ -586,7 +586,7 @@
 			<string>ChoosyChromeProfileMode</string>
 		</dict>
 		<key>enabled</key>
-		<true/>
+		<false/>
 		<key>predicate</key>
 		<string>URL CONTAINS "hub.awesomemotive.com" OR URL CONTAINS "awesomemotive.bamboohr.com" OR URL CONTAINS "app.gusto.com" OR URL CONTAINS "awesomemotive" OR URL CONTAINS "https://secure.helpscout.net/conversation/2225936640/"</string>
 		<key>title</key>
@@ -607,7 +607,7 @@
 			<string>ChoosyChromeProfileMode</string>
 		</dict>
 		<key>enabled</key>
-		<true/>
+		<false/>
 		<key>predicate</key>
 		<string>URL CONTAINS "affiliatewp.com/account" OR URL CONTAINS "docs.affiliatewp.com" OR URL CONTAINS "team.affiliatewp.com/feature-requests"</string>
 		<key>title</key>
@@ -624,7 +624,7 @@
 			<string>ChoosyBrowser</string>
 		</dict>
 		<key>enabled</key>
-		<true/>
+		<false/>
 		<key>predicate</key>
 		<string>URL CONTAINS "app.asana.com"</string>
 		<key>title</key>
@@ -645,7 +645,7 @@
 			<string>ChoosyChromeProfileMode</string>
 		</dict>
 		<key>enabled</key>
-		<true/>
+		<false/>
 		<key>predicate</key>
 		<string>URL CONTAINS "meet.google.com"</string>
 		<key>title</key>
@@ -662,7 +662,7 @@
 			<string>ChoosyBrowser</string>
 		</dict>
 		<key>enabled</key>
-		<true/>
+		<false/>
 		<key>predicate</key>
 		<string>URL CONTAINS "helpscout.net"</string>
 		<key>title</key>
@@ -831,7 +831,7 @@
 			<string>ChoosyChromeProfileMode</string>
 		</dict>
 		<key>enabled</key>
-		<true/>
+		<false/>
 		<key>predicate</key>
 		<string>URL CONTAINS "https://github.com/awesomemotive"</string>
 		<key>title</key>
@@ -848,7 +848,7 @@
 			<string>ChoosyBrowser</string>
 		</dict>
 		<key>enabled</key>
-		<true/>
+		<false/>
 		<key>predicate</key>
 		<string>URL CONTAINS "bandcamp.com/aubreypwd"</string>
 		<key>title</key>

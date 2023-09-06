@@ -36,6 +36,8 @@ brew "libssh2"
 brew "aria2"
 # Core application library for C
 brew "glib"
+# Cryptography and SSL/TLS Toolkit
+brew "openssl@1.1"
 # Interpreted, interactive, object-oriented programming language
 brew "python@3.9"
 # GNOME accessibility toolkit
@@ -160,6 +162,8 @@ brew "groonga"
 brew "gsettings-desktop-schemas"
 # Toolkit for creating graphical user interfaces
 brew "gtk+3"
+# Toolkit for creating graphical user interfaces
+brew "gtk4"
 # Tool for glamorous shell scripts
 brew "gum"
 # Convert source code to formatted text with syntax highlighting
