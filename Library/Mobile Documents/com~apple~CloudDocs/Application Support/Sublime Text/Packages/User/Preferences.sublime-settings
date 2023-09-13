@@ -28,7 +28,7 @@
   "centurion_color_orange": true,
   "close_deleted_files": true,
   "close_windows_when_empty": false,
-  "color_scheme": "Packages/Theme - Afterglow/Afterglow-monokai.tmTheme",
+  "color_scheme": "Packages/Theme - Alpenglow/Alpenglow-monokai.tmTheme",
   "console_max_history_lines": 100,
   "copy_with_empty_selection": true,
   "create_window_at_startup": false,
@@ -237,6 +237,9 @@
   [
     "no_bold",
     "no_italic",
+    // "gray_antialias",
+    "no_liga",
+    // "no_round"
   ],
   "ignored_packages":
   [
