@@ -1,3 +1,4 @@
+tap "browsh-org/browsh"
 tap "cloudflare/cloudflare"
 tap "dnicolson/bluetoothkeyboardenhancer"
 tap "dteoh/sqa"
@@ -312,6 +313,8 @@ brew "youtube-dl"
 brew "yt-dlp"
 # UNIX shell (command interpreter)
 brew "zsh"
+# The modern, text-based browser
+brew "browsh-org/browsh/browsh"
 # Cloudflare Tunnel
 brew "cloudflare/cloudflare/cloudflared"
 # A simple terminal UI for git commands, written in Go
@@ -325,7 +328,7 @@ brew "shivammathur/php/php@7.4"
 brew "stripe/stripe-cli/stripe"
 # quick lil gopher client
 brew "xvxx/code/phetch"
-# Command-line helper for the 1Password password manager
+# Command-line interface for 1Password
 cask "1password-cli"
 # Instant messaging application
 cask "adium"
