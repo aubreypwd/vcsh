@@ -92,7 +92,7 @@
             "types": [
                 "error"
             ],
-            "scope": "region.redish markup.error.sublime_linter",
+            // "scope": "region.redish markup.error.sublime_linter",
             "icon": "error",
             "mark_style": "solid_underline",
             // "phantom": "{msg}",
@@ -103,7 +103,7 @@
             "types": [
                 "warning",
             ],
-            "scope": "region.yellowish markup.warning.sublime_linter",
+            // "scope": "region.yellowish markup.warning.sublime_linter",
             "icon": "warning",
             "mark_style": "solid_underline",
             // "phantom": "{msg}",

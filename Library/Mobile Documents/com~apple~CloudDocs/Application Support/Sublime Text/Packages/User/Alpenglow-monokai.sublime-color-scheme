@@ -1,12 +1,13 @@
 // Documentation at https://www.sublimetext.com/docs/color_schemes.html
+// Built to enhance: https://packagecontrol.io/packages/Theme%20-%20Alpenglow
 {
 	"variables":
 	{
 	},
 	"globals":
 	{
-		"background": "#262626",
-		"gutter": "#262626",
+		"background": "#2B2B2B",
+		"gutter": "#2B2B2B",
 	},
 	"rules":
 	[
