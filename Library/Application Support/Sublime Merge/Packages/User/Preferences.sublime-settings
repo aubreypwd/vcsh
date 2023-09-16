@@ -8,8 +8,8 @@
 	"color_scheme": "Meetio Darker.sublime-color-scheme",
 	"trim_trailing_white_space_on_save": false,
 	"auto_diff_style_min_chars": 72,
-	"font_size": 12,
+	"font_size": 13,
 	"image_diff_style": "onion-skin",
 	"theme": "Merge Dark.sublime-theme",
-	"font_face": "JetBrains Mono NL Regular",
+	"font_face": "Menlo",
 }
