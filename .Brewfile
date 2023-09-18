@@ -216,7 +216,7 @@ brew "python-tabulate"
 # CLI for MySQL with auto-completion and syntax highlighting
 brew "mycli"
 # Open source relational database management system
-brew "mysql", restart_service: true
+brew "mysql"
 # Node version management
 brew "n"
 # Free (GNU) replacement for the Pico text editor
