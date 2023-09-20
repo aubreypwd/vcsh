@@ -62,11 +62,11 @@ brew "cabextract"
 # XML-based font configuration API for X Windows
 brew "fontconfig"
 # Validating, recursive, caching DNS resolver
-brew "unbound", restart_service: true
+brew "unbound"
 # GNU Transport Layer Security (TLS) Library
 brew "gnutls"
 # GNU Emacs text editor
-brew "emacs", restart_service: true
+brew "emacs"
 # Emacs dependency management
 brew "cask"
 # Like cat but displays content with syntax highlighting
@@ -86,7 +86,7 @@ brew "colordiff"
 # Libraries to talk to Microsoft SQL Server and Sybase databases
 brew "freetds"
 # General-purpose scripting language
-brew "php", restart_service: true
+brew "php"
 # Dependency Manager for PHP
 brew "composer"
 # Display user-friendly message boxes from shell scripts
@@ -94,7 +94,7 @@ brew "dialog"
 # Utilities for converting macOS DMG images
 brew "dmg2img"
 # Lightweight DNS forwarder and DHCP server
-brew "dnsmasq", restart_service: true
+brew "dnsmasq"
 # Select default apps for documents and URL schemes on macOS
 brew "duti"
 # Modern replacement for 'ls'
@@ -172,7 +172,7 @@ brew "highlight"
 # Improved top (interactive process viewer)
 brew "htop"
 # Apache HTTP server
-brew "httpd", restart_service: true
+brew "httpd"
 # User-friendly cURL replacement (command-line HTTP client)
 brew "httpie"
 # Configurable static site generator
@@ -202,7 +202,7 @@ brew "m-cli"
 # System information fetcher, with an emphasis on performance and minimalism
 brew "macchina"
 # Web and API based SMTP testing tool
-brew "mailhog", restart_service: true
+brew "mailhog"
 # Tool to convert MDF (Alcohol 120% images) images to ISO images
 brew "mdf2iso"
 # Modern and intuitive terminal-based text editor
@@ -226,7 +226,7 @@ brew "neofetch"
 # Ambitious Vim-fork focused on extensibility and agility
 brew "neovim"
 # HTTP(S) server and reverse proxy, and IMAP/POP3 proxy server
-brew "nginx", restart_service: true
+brew "nginx"
 # Development kit for the Java programming language
 brew "openjdk"
 # Swiss-army knife of markup format conversion
@@ -238,9 +238,9 @@ brew "percol"
 # Pretty system information tool written in POSIX sh
 brew "pfetch"
 # General-purpose scripting language
-brew "php@8.0", restart_service: true
+brew "php@8.0"
 # General-purpose scripting language
-brew "php@8.1", restart_service: true
+brew "php@8.1"
 # Pinentry for GPG on Mac
 brew "pinentry-mac"
 # Protocol buffers (Google's data interchange format)
@@ -346,6 +346,8 @@ cask "cool-retro-term"
 cask "cscreen"
 # Utilities designed to make common development tasks easier
 cask "devtoys"
+# Utility to hide menu bar items
+cask "hiddenbar"
 # Tool to prevent the system from going into sleep mode
 cask "keepingyouawake"
 # Create apps from groups of websites

@@ -161,7 +161,7 @@ test -e "${HOME}/.iterm2_shell_integration.zsh" \
 # Only when loaded $HOME...
 if test "$(pwd)" = "$HOME"; then
 
-	check-repos
+	checkrepos
 	sysinfo
 fi
 
