@@ -8,6 +8,5 @@
     "paste": true,
     "rmtrailingws": true,
     "statusline": false,
-    "tabsize": 2,
-    "xterm": true
+    "tabsize": 2
 }
