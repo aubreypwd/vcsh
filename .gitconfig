@@ -70,7 +70,7 @@
 	signingkey    = 8691F6F5E25C5E23
 
 [core]
-	editor        = "micro --savecursor false --diffgutter false --colorcolumn 72 --ruler false --softwrap true --wordwrap true"
+	editor        = "micro --savecursor false --diffgutter false --colorcolumn 72 --ruler false --softwrap true --wordwrap true --eofnewline false"
 	# editor        = subl -n -w
 	# editor        = code --wait --new-window
 	excludesfile  = /Users/aubreypwd/.gitignore
