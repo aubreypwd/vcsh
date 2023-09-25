@@ -73,7 +73,7 @@
   "native_tabs": "disabled",
   "open_files_in_new_window": "always",
   "ours_gutter": true,
-  "overlay_scroll_bars": "disabled",
+  "overlay_scroll_bars": "enabled",
   "preview_on_click": false,
   "reload_file_on_change": true,
   "remember_full_screen": true,
