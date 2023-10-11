@@ -170,3 +170,4 @@ quietly "brewd" # Dump the .Brewfile.
 if [ $ITERM_SESSION_ID ]; then
   # export PROMPT_COMMAND='echo -ne "\033];${PWD##*/}\007"; ':"$PROMPT_COMMAND";
 fi
+[[ "$TERM_PROGRAM" == "CodeEditApp_Terminal" ]] && . "/Applications/CodeEdit.app/Contents/Resources/codeedit_shell_integration.zsh"
