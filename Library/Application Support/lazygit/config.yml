@@ -5,5 +5,7 @@ gui:
   showCommandLog: false
   commandLogSize: 20
   expandFocusedSidePanel: true
+files:
+  commitChangesWithEditor: 'c'
 refresher:
   refreshInterval: 1 # file/submodule refresh interval in seconds
