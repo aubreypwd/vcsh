@@ -124,4 +124,8 @@
         /* New File */   { "keys": ["alt+n", "alt+f"], "command": "new_file" },
         /* Save File */  { "keys": ["alt+s", "alt+f"], "command": "save", "args": { "async": true } },
         /* Save As... */ { "keys": ["alt+s", "alt+a"], "command": "prompt_save_as" },
+
+    /* Edit Navigation */
+        /* Navigate Backwards */ { "keys": ["super+alt+left"], "command": "jump_back" },
+        /* Navigate Forward */   { "keys": ["super+alt+right"], "command": "jump_forward" }
 ]
