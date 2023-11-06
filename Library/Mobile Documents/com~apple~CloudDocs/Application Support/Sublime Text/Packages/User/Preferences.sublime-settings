@@ -187,6 +187,7 @@
     "zsh",
     "cli",
     "Symlink",
+    "screencast",
   ],
   "binary_file_patterns":
   [
@@ -250,6 +251,7 @@
   ],
   "ignored_words":
   [
+    "atts",
     "formatters",
   ],
   "indent_guide_options":

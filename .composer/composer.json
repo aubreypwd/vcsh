@@ -19,8 +19,5 @@
     },
     "config": {
     },
-    "require": {
-        "laravel/valet": "^3.2"
-    },
     "minimum-stability": "dev"
 }

@@ -45,16 +45,13 @@
     /* XDebug */
 
         /* Settings */                        { "keys": ["alt+x", "alt+,"], "command": "xdebug_settings" },
-        /* Add Breakpoint */                  { "keys": ["alt+x", "alt+a"], "command": "xdebug_breakpoint" },
-        /* Clear All Breakpoints */           { "keys": ["alt+x", "alt+c"], "command": "xdebug_clear_all_breakpoints" },
+        /* Add Breakpoint */                  { "keys": ["alt+x", "alt+b"], "command": "xdebug_breakpoint" },
+        /* Clear All Breakpoints */           { "keys": ["alt+x", "alt+k"], "command": "xdebug_clear_all_breakpoints" },
         /* Add Conditional (if) Breakpoint */ { "keys": ["alt+x", "alt+i"], "command": "xdebug_conditional_breakpoint" },
         /* Start Debugging */                 { "keys": ["alt+x", "alt+s"], "command": "xdebug_session_start" },
         /* Stop Debugging */                  { "keys": ["alt+x", "alt+x"], "command": "xdebug_session_stop" }, // Exit
-        /* Continue */                        { "keys": ["alt+x", "alt+c"], "command": "xdebug_continue", },
-        /* Step Over */                       { "keys": ["alt+x", "alt+o"], "command": "xdebug_continue", "args": { "command" : "step_over" } },
-        /* Step Into */                       { "keys": ["alt+x", "alt+i"], "command": "xdebug_continue", "args": { "command" : "step_into" } },
-        /* Run to Line */                     { "keys": ["alt+x", "alt+l"], "command": "xdebug_continue", "args": { "command" : "xdebug_run_to_line" } },
-        /* Eval Code */                       { "keys": ["alt+x", "alt+e"], "command": "xdebug_evaluate" },
+        /* Continue */                        { "keys": ["alt+x", "alt+t"], "command": "xdebug_continue", },
+        /* Eval Code */                       { "keys": ["alt+x", "alt+v"], "command": "xdebug_evaluate" },
         /* Restart */                         { "keys": ["alt+x", "alt+r"], "command": "xdebug_session_restart" },
 
     /* Panels */
@@ -112,6 +109,7 @@
         /* Clear Marks */      { "keys": ["alt+c", "alt+m"], "command": "clear_bookmarks" },
         /* Select All Marks */ { "keys": ["alt+s", "alt+a", "alt+m" ], "command": "select_all_bookmarks" },
         /* Next Mark ] */      { "keys": ["alt+m", "alt+]"], "command": "next_bookmark" },
+            /* Next Mark Fast */      { "keys": ["alt+shift+m"], "command": "next_bookmark" },
         /* Previous Mark [ */  { "keys": ["alt+m", "alt+["], "command": "prev_bookmark" },
 
     /* Goto Line */
@@ -126,6 +124,8 @@
         /* Save As... */ { "keys": ["alt+s", "alt+a"], "command": "prompt_save_as" },
 
     /* Edit Navigation */
-        /* Navigate Backwards */ { "keys": ["super+alt+left"], "command": "jump_back" },
-        /* Navigate Forward */   { "keys": ["super+alt+right"], "command": "jump_forward" }
+        /* Navigate Backwards */ { "keys": ["super+alt+["], "command": "jump_back" },
+            /* Navigate Backwards */ { "keys": ["super+alt+right"], "command": "jump_back" },
+        /* Navigate Forward */   { "keys": ["super+alt+left"], "command": "jump_forward" },
+            /* Navigate Forward */   { "keys": ["super+alt+]"], "command": "jump_forward" },
 ]
