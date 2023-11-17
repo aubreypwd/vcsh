@@ -226,7 +226,7 @@
   ],
   "file_exclude_patterns":
   [
-    "*.min.*",
+    // "*.min.*",
     "._*",
     ".DS_Store",
   ],
