@@ -1,0 +1,18 @@
+#!/bin/sh
+
+###
+ # Used to warn me if I am committing to master or main.
+ #
+ # @since Dec 7, 2023
+##
+
+BRANCH="$(git rev-parse --abbrev-ref HEAD)"
+
+echo "$BRANCH"
+
+if [ "$BRANCH" = 'master' ] || [ "$BRANCH" = 'main' ]; then
+
+	echo "\033[0;31mYou are on the master or main branch, are you sure you wanted to commit that? \033[0m"
+
+	# exit 1 # Un-comment to cause it to completely fail.
+fi
