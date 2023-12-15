@@ -72,10 +72,10 @@ if test -e "$ZSH"; then
 	 #
 	 # @since Jan 16, 2023
 	 ##
-	__clone_and_link_bundle () {
+	_clone-and-link-antigen-bundle () {
 
 		if test ! -x "$(command -v ghq)"; then
-			echo "__clone_and_link_bundle: Please install ghq, can't clone plugin $1."
+			echo "_clone-and-link-antigen-bundle: Please install ghq, can't clone plugin $1."
 		fi
 
 		ghq get -s "ssh://git@github.com/$1" 2> /dev/null
@@ -117,23 +117,23 @@ if test -e "$ZSH"; then
 		antigen bundle zsh-users/zsh-autosuggestions
 
 		# My plugins...
-		__clone_and_link_bundle "aubreypwd/zsh-plugin-require" ## This has to be loaded first.
-		__clone_and_link_bundle "aubreypwd/zsh-plugin-git-is-clean"
-		__clone_and_link_bundle "aubreypwd/zsh-plugin-x"
-		__clone_and_link_bundle "aubreypwd/zsh-plugin-reload"
-		__clone_and_link_bundle "aubreypwd/zsh-plugin-fzf-git-branch"
-		__clone_and_link_bundle "aubreypwd/zsh-plugin-hide"
-		__clone_and_link_bundle "aubreypwd/zsh-plugin-delete"
-		__clone_and_link_bundle "aubreypwd/zsh-plugin-comment"
-		__clone_and_link_bundle "aubreypwd/zsh-plugin-pwdcp"
-		__clone_and_link_bundle "aubreypwd/zsh-plugin-cvideo"
-		__clone_and_link_bundle "aubreypwd/zsh-plugin-yt2mp3"
-		__clone_and_link_bundle "aubreypwd/zsh-plugin-fd"
-		__clone_and_link_bundle "aubreypwd/zsh-plugin-download"
-		__clone_and_link_bundle "aubreypwd/zsh-plugin-newvwp"
-		__clone_and_link_bundle "aubreypwd/zsh-plugin-bruse"
-		__clone_and_link_bundle "aubreypwd/zsh-plugin-affwp"
-		__clone_and_link_bundle "aubreypwd/zsh-plugin-my-config" # This should be loaded last.
+		_clone-and-link-antigen-bundle "aubreypwd/zsh-plugin-require" ## This has to be loaded first.
+		_clone-and-link-antigen-bundle "aubreypwd/zsh-plugin-git-is-clean"
+		_clone-and-link-antigen-bundle "aubreypwd/zsh-plugin-x"
+		_clone-and-link-antigen-bundle "aubreypwd/zsh-plugin-reload"
+		_clone-and-link-antigen-bundle "aubreypwd/zsh-plugin-fzf-git-branch"
+		_clone-and-link-antigen-bundle "aubreypwd/zsh-plugin-hide"
+		_clone-and-link-antigen-bundle "aubreypwd/zsh-plugin-delete"
+		_clone-and-link-antigen-bundle "aubreypwd/zsh-plugin-comment"
+		_clone-and-link-antigen-bundle "aubreypwd/zsh-plugin-pwdcp"
+		_clone-and-link-antigen-bundle "aubreypwd/zsh-plugin-cvideo"
+		_clone-and-link-antigen-bundle "aubreypwd/zsh-plugin-yt2mp3"
+		_clone-and-link-antigen-bundle "aubreypwd/zsh-plugin-fd"
+		_clone-and-link-antigen-bundle "aubreypwd/zsh-plugin-download"
+		_clone-and-link-antigen-bundle "aubreypwd/zsh-plugin-newvwp"
+		_clone-and-link-antigen-bundle "aubreypwd/zsh-plugin-bruse"
+		_clone-and-link-antigen-bundle "aubreypwd/zsh-plugin-affwp"
+		_clone-and-link-antigen-bundle "aubreypwd/zsh-plugin-my-config" # This should be loaded last.
 
 		antigen cache-gen
 		antigen apply
@@ -161,13 +161,8 @@ test -e "${HOME}/.iterm2_shell_integration.zsh" \
 # Only when loaded $HOME...
 if test "$(pwd)" = "$HOME"; then
 
-	checkrepos
+	repo-statuses
 	sysinfo
 fi
 
-quietly "brewd" # Dump the .Brewfile.
-
-if [ $ITERM_SESSION_ID ]; then
-  # export PROMPT_COMMAND='echo -ne "\033];${PWD##*/}\007"; ':"$PROMPT_COMMAND";
-fi
 [[ "$TERM_PROGRAM" == "CodeEditApp_Terminal" ]] && . "/Applications/CodeEdit.app/Contents/Resources/codeedit_shell_integration.zsh"
