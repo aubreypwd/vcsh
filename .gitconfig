@@ -14,7 +14,7 @@
 	d      = diff
 	db     = "! function f() { git branch -D $1; git push origin :$1 ;}; f" # Delete branch.
 	di     = "! git ls-files -m -o --exclude-standard | fzf --reverse --height 10 --print0 -m | xargs -0 -t -o git diff" # Interactive diff.
-	dm     = diff
+	dm     = "diff"
 	do     = diff master..head ':!*.min.*' ':!*/build/*' ':!*/dist/*' ':!*/vendor/*' ':!*/node_modules/*' # Log a diff excluding common build files.
 	ds     = diff --staged
 	dt     = "! function f() { git tag -d $1; git push origin :refs/tags/$1; }; f"
@@ -25,7 +25,6 @@
 	get    = "! function f() { ghq get \"$1\"; }; f" # Commit all files, add message inline, and push.
 	gh     = "! function f() { gh \"$@\"; }; f"
 	ghget  = "! function f() { ghq get \"git@github.com:$1/$2.git$1\"; }; f"
-	gui    = lggui
 	l      = log --oneline --decorate --graph # Better log, looks better in CLI.
 	l1     = l -n 1
 	l10    = l -n 10
@@ -35,8 +34,6 @@
 	l5     = l -n 5
 	l50    = l -n 20
 	lg     = "! function f() { lazygit; }; f"
-	lgg    = lggui
-	lggui  = lgnt
 	lgnt   = "! function f() { ttab -w -t 'lazygit' -q 'lazygit && exit'; }; f"
 	m      = merge
 	mod    = "add -u" # Add modifed
@@ -66,11 +63,11 @@
 
 [user]
 	name          = Aubrey Portwood
-	email         = aubreypwd@icloud.com
+	email = aubreypwd@users.noreply.github.com
 	signingkey    = 8691F6F5E25C5E23
 
 [core]
-	editor        = "micro --savecursor false --diffgutter false --colorcolumn 72 --ruler false --softwrap true --wordwrap true --eofnewline false"
+	#editor        = "micro --savecursor false --diffgutter false --colorcolumn 72 --ruler false --softwrap true --wordwrap true --eofnewline false"
 	# editor        = subl -n -w
 	# editor        = code --wait --new-window
 	excludesfile  = /Users/aubreypwd/.gitignore
@@ -116,20 +113,23 @@
 	diff = false
 	show = false
 
-[mergetool "smerge"] # Sublime Merge as mergetool
+[mergetool "sublime"]
+	cmd           = subl -w $MERGED
+	trustExitCode = true
+
+[mergetool "smerge"]
 	cmd           = smerge mergetool \"$BASE\" \"$LOCAL\" \"$REMOTE\" -o \"$MERGED\"
 	trustExitCode = true
 
 [mergetool "meld"]
-	trustExitCode = true
 	cmd           = open -W -a Meld --fresh --new --args --auto-merge \"$PWD/$LOCAL\" \"$PWD/$BASE\" \"$PWD/$REMOTE\" --output=\"$PWD/$MERGED\"
-
-[mergetool "sublime"]
-	cmd           = subl -w $MERGED
-	trustExitCode = false
+	trustExitCode = true
 
 [mergetool]
 	keepBackup = false
+
+[merge]
+	tool = smerge
 
 [pull]
 	rebase = false
@@ -149,8 +149,6 @@
 [diff "plist"]
 	textconv = plutil -convert xml1 -o -
 
-[merge]
-	tool = smerge
 [commit]
 	verbose = true
 	gpgsign = true
