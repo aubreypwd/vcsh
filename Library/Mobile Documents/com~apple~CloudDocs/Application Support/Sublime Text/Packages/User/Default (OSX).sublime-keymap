@@ -1,131 +1,106 @@
 [
 
-/** Shortcuts */
+    /* Aligns */
+    { "keys": ["alt+a", "alt+t"], "command": "align_tab", "args" : { "live_preview" : true } },  /* Align Tab */
 
-    /* Sidebar */
+    /* (Book) Marks */
+    { "keys": ["alt+b", "t"], "command": "toggle_bookmark" },  /* Toggle Mark */
+    { "keys": ["alt+b", "c"], "command": "clear_bookmarks" },  /* Clear Marks */
+    { "keys": ["alt+b", "s", "a" ], "command": "select_all_bookmarks" },  /* Select All Marks */
+    { "keys": ["alt+b", "n"], "command": "next_bookmark" },  /* Next Mark ] */
+    { "keys": ["alt+b", "p"], "command": "prev_bookmark" },  /* Previous Mark [ */
 
-        /* Toggle Sidebar */ { "keys": ["super+\\"], "command": "toggle_side_bar" },
-        /* Goto Sidebar */   { "keys": ["super+shift+\\"], "command": "focus_side_bar" }, // Focus on the sidebar (reveal in sidebar).
+    /* Copying */
+    { "keys": ["alt+c", "l"], "command": "duplicate_line" },  /* Duplicate/Copy line */
 
-    /* Vim Like Navigation */
+    /* Conflicts */
+    { "keys": ["alt+c", "alt+n"], "command": "find_next_conflict" },  /* Next Conflict */
+    { "keys": ["alt+c", "alt+f"], "command": "list_conflict_files" },  /* Conflicted Files */
 
-        /* Up One Line */   { "keys": ["alt+k"], "command": "move", "args": { "by": "lines", "forward": false } },
-        /* Down One Line */ { "keys": ["alt+j"], "command": "move", "args": { "by": "lines", "forward": true } },
-
-    /* Terminal */
-
-        /* Open Terminal */ { "keys": ["alt+o", "alt+t"], "command": "open_terminal" },
-
-    /* Tab Filter */
-
-        /* Trigger Tab Filter */ { "keys": ["super+alt+p"], "command": "tab_filter" },
-        /* Trigger Tab Filter */ { "keys": ["super+shift+alt+p"], "command": "tab_filter", "args": { "active_group_only": true } },
-
-/** My Commands */
-
-    /* Tab Filter */
-
-        /* Trigger Tab Filter */ { "keys": ["alt+g", "alt+t"], "command": "tab_filter" }, // Alternative: Goto Tab.
-
-    /* Misc */
-
-        /* Delete Word (Backwards) */ { "keys": ["alt+d", "alt+b", "alt+w"], "command": "delete_word", "args": { "forward": false, "sub_words": true } },
-        /* Delete Word (Forward) */   { "keys": ["alt+d", "alt+f", "alt+w"], "command": "delete_word", "args": { "forward": true, "sub_words": true } },
-        /* Duplicate line */          { "keys": ["alt+d", "alt+l"], "command": "duplicate_line" },
-        /* Join Lines */              { "keys": ["alt+l", "alt+j"], "command": "join_lines" },
-        /* Delete Line */             { "keys": ["alt+d", "alt+d"], "command": "run_macro_file", "args": {"file": "res://Packages/Default/Delete Line.sublime-macro"} },
-
-    /* Page Up/Down -- Requires https://gist.github.com/justsml/1cc1627fd69adbcd453a2dd54962cbf */
-
-        /* Page Up */ { "keys": ["alt+up"], "command": "scroll_lines_fixed", "args": {"by": "pages", "amount": 1.0 } },
-        /* Page Up with j/k */ { "keys": ["alt+shift+k"], "command": "scroll_lines_fixed", "args": {"by": "pages", "amount": 1.0 } }, // Alternate.
-        /* Page Down */ { "keys": ["alt+down"], "command": "scroll_lines_fixed", "args": {"by": "pages", "amount": -1.0 } },
-        /* Page Down with j/k */ { "keys": ["alt+shift+j"], "command": "scroll_lines_fixed", "args": {"by": "pages", "amount": -1.0 } }, // Alternate.
-
-    /* XDebug */
-
-        /* Settings */                        { "keys": ["alt+x", "alt+,"], "command": "xdebug_settings" },
-        /* Add Breakpoint */                  { "keys": ["alt+x", "alt+b"], "command": "xdebug_breakpoint" },
-        /* Clear All Breakpoints */           { "keys": ["alt+x", "alt+k"], "command": "xdebug_clear_all_breakpoints" },
-        /* Add Conditional (if) Breakpoint */ { "keys": ["alt+x", "alt+i"], "command": "xdebug_conditional_breakpoint" },
-        /* Start Debugging */                 { "keys": ["alt+x", "alt+s"], "command": "xdebug_session_start" },
-        /* Stop Debugging */                  { "keys": ["alt+x", "alt+x"], "command": "xdebug_session_stop" }, // Exit
-        /* Continue */                        { "keys": ["alt+x", "alt+t"], "command": "xdebug_continue", },
-        /* Eval Code */                       { "keys": ["alt+x", "alt+v"], "command": "xdebug_evaluate" },
-        /* Restart */                         { "keys": ["alt+x", "alt+r"], "command": "xdebug_session_restart" },
-
-    /* Panels */
-
-        /* Select Pane 1 */      { "keys": ["alt+s", "alt+p", "alt+1"], "command": "focus_group", "args": { "group": 0 } },
-        /* Select Pane with [ */ { "keys": ["alt+s", "alt+p", "alt+["], "command": "focus_group", "args": { "group": 0 } }, // Alternate.
-        /* Select Pane 2 */      { "keys": ["alt+s", "alt+p", "alt+2"], "command": "focus_group", "args": { "group": 1 } },
-        /* Select Pane with ] */ { "keys": ["alt+s", "alt+p", "alt+]"], "command": "focus_group", "args": { "group": 1 } }, // Alternate.
-
-    /* Switching Tabs/Panes */
-
-        /* Select Tab (right) */ { "keys": ["alt+s", "alt+t", "alt+]"], "command": "next_view" },
-        /* Select Tab (left) */  { "keys": ["alt+s", "alt+t", "alt+["], "command": "prev_view" },
-
-    /* Windows or Native Tabs */
-
-        /* Switch to Next Window */     { "keys": ["alt+s", "alt+w", "alt+]"], "command": "next_os_tab" },
-        /* Switch to Previous Window */ { "keys": ["alt+s", "alt+w", "alt+["], "command": "prev_os_tab" },
-        /* Close Window */              { "keys": ["alt+c", "alt+w"], "command": "close_window" },
-        /* Close Window with CTRL+C  */ { "keys": ["ctrl+c"], "command": "close_window" }, // Alternate.
-
-    /* Moving Tabs */
-
-        /* Move Tab to Pane 1 */      { "keys": ["alt+m", "alt+t", "alt+p", "alt+1"], "command": "move_to_group", "args": { "group": 0 } },
-        /* Move Tab to Pane with [ */ { "keys": ["alt+m", "alt+t", "alt+p", "alt+["], "command": "move_to_group", "args": { "group": 0 } }, // Alternate.
-        /* Move Tab to Pane 2 */      { "keys": ["alt+m", "alt+t", "alt+p", "alt+2"], "command": "move_to_group", "args": { "group": 1 } },
-        /* Move Tab to Pane with ] */ { "keys": ["alt+m", "alt+t", "alt+p", "alt+]"], "command": "move_to_group", "args": { "group": 1 } }, // Alternate.
-
-    /* Code Folding */
-
-        /* Fold Level 1 */ { "keys": ["alt+f", "alt+1"], "command": "fold_by_level", "args": {"level": 1 } },
-        /* Unfold All */   { "keys": ["alt+f", "alt+0"], "command": "unfold_all" },
-
-    /* Align Text */
-
-        /* Align Tab */ { "keys": ["alt+a", "alt+t"], "command": "align_tab", "args" : { "live_preview" : true } },
-
-    /* Expand Region */
-
-        /* Expand + */ { "keys": ["alt+="], "command": "expand_region" }, // Expand region.
-        /* Shrink - */ { "keys": ["alt+-"], "command": "expand_region", "args": { "undo": true }, "context": [ { "key": "expand_region_soft_undo" } ] },
-
-    /* Toggle Quotes */
-
-        /* Toggle Quote w/ " */     { "keys": ["super+shift+'"], "command": "change_quotes" },
-        /* Toggle Quite with a+t */ { "keys": ["alt+t", "alt+q"], "command": "change_quotes" }, // Alternate.
-
-    /* Toggle Word */
-
-        /* Swap Value */ { "keys": ["alt+s", "alt+v"], "command": "toggle_word" }, // Alternate.
-
-    /* Marks */
-
-        /* Toggle Mark */      { "keys": ["alt+t", "alt+m"], "command": "toggle_bookmark" },
-        /* Clear Marks */      { "keys": ["alt+c", "alt+m"], "command": "clear_bookmarks" },
-        /* Select All Marks */ { "keys": ["alt+s", "alt+a", "alt+m" ], "command": "select_all_bookmarks" },
-        /* Next Mark ] */      { "keys": ["alt+m", "alt+]"], "command": "next_bookmark" },
-            /* Next Mark Fast */      { "keys": ["alt+shift+m"], "command": "next_bookmark" },
-        /* Previous Mark [ */  { "keys": ["alt+m", "alt+["], "command": "prev_bookmark" },
-
-    /* Goto Line */
-
-        /* Goto Line */ { "keys": ["alt+g","alt+l"], "command": "show_overlay", "args": {"overlay": "goto", "text": ":"} },
-
-    /* Files */
-
-        /* Close File */ { "keys": ["alt+c", "alt+f"], "command": "close" },
-        /* New File */   { "keys": ["alt+n", "alt+f"], "command": "new_file" },
-        /* Save File */  { "keys": ["alt+s", "alt+f"], "command": "save", "args": { "async": true } },
-        /* Save As... */ { "keys": ["alt+s", "alt+a"], "command": "prompt_save_as" },
+    /* Debugging */
+    { "keys": ["alt+x", ","], "command": "xdebug_settings" },  /* Settings */
+    { "keys": ["alt+x", "b", "a"], "command": "xdebug_breakpoint" },  /* Add Breakpoint */
+    { "keys": ["alt+x", "b", "k"], "command": "xdebug_clear_all_breakpoints" },  /* Clear All Breakpoints */
+    { "keys": ["alt+x", "b", "i"], "command": "xdebug_conditional_breakpoint" },  /* Add Conditional (if) Breakpoint */
+    { "keys": ["alt+x", "s"], "command": "xdebug_session_start" },  /* Start Debugging */
+    { "keys": ["alt+x", "x"], "command": "xdebug_session_stop" },  // Exit /* Stop Debugging */
+    { "keys": ["alt+x", "c"], "command": "xdebug_continue", },  /* Continue */
+    { "keys": ["alt+x", "e"], "command": "xdebug_evaluate" },  /* Eval Code */
+    { "keys": ["alt+x", "r"], "command": "xdebug_session_restart" },  /* Restart */
 
     /* Edit Navigation */
-        /* Navigate Backwards */ { "keys": ["super+alt+["], "command": "jump_back" },
-            /* Navigate Backwards */ { "keys": ["super+alt+right"], "command": "jump_back" },
-        /* Navigate Forward */   { "keys": ["super+alt+left"], "command": "jump_forward" },
-            /* Navigate Forward */   { "keys": ["super+alt+]"], "command": "jump_forward" },
+    { "keys": ["super+alt+p"], "command": "jump_back" },  /* Navigate Backwards */
+    { "keys": ["super+alt+n"], "command": "jump_forward" },  /* Navigate Forward */
+
+    /* Deletes */
+    { "keys": ["alt+d", "w"], "command": "delete_word", "args": { "forward": true, "sub_words": true } },  /* Delete Word (Forward) */
+    { "keys": ["alt+d", "b"], "command": "delete_word", "args": { "forward": false, "sub_words": true } },  /* Delete Word (Backwards) */
+    { "keys": ["alt+d", "d"], "command": "run_macro_file", "args": {"file": "res://Packages/Default/Delete Line.sublime-macro"} },  /* Delete Line */
+
+    /* Expand Region */
+    { "keys": ["alt+="], "command": "expand_region" },  // Expand region. /* Expand + */
+    { "keys": ["alt+-"], "command": "expand_region", "args": { "undo": true },  "context": [ { "key": "expand_region_soft_undo" } ] }, /* Shrink - */
+
+
+    /* Files */
+    { "keys": ["alt+f", "c"], "command": "close_file" },  /* Close File */
+
+    /* Folding */
+    { "keys": ["alt+f", "."], "command": "fold_by_level", "args": {"level": 1 } },  /* Fold Level 1 */
+    { "keys": ["alt+f", "="], "command": "unfold_all" },  /* Unfold All */
+
+    /* Gotos */
+    { "keys": ["alt+g", "p", "1"], "command": "focus_group", "args": { "group": 0 } },  /* Select Pane 1 */
+    { "keys": ["alt+g", "p", "["], "command": "focus_group", "args": { "group": 0 } },  // Alternate. /* Select Pane with [ */
+    { "keys": ["alt+g", "p", "2"], "command": "focus_group", "args": { "group": 1 } },  /* Select Pane 2 */
+    { "keys": ["alt+g", "p", "]"], "command": "focus_group", "args": { "group": 1 } },  // Alternate. /* Select Pane with ] */
+    { "keys": ["alt+g", "t", "]"], "command": "next_view" },  /* Select Tab (right) */
+    { "keys": ["alt+g", "t", "["], "command": "prev_view" },  /* Select Tab (left) */
+    { "keys": ["alt+g", "w", "]"], "command": "next_os_tab" },  /* Switch to Next Window */
+    { "keys": ["alt+g", "w", "["], "command": "prev_os_tab" },  /* Switch to Previous Window */
+    { "keys": ["alt+g", "l"], "command": "show_overlay", "args": {"overlay": "goto", "text": ":"} },  /* Goto Line */
+
+    /* Lines */
+    { "keys": ["alt+l", "j"], "command": "join_lines" },  /* Join Lines */
+
+    /* Misc */
+    { "keys": ["super+alt+p"], "command": "tab_filter" },  /* Trigger Tab Filter */
+    { "keys": ["super+shift+alt+p"], "command": "tab_filter", "args": { "active_group_only": true } },  /* Trigger Tab Filter */
+    { "keys": ["ctrl+c"], "command": "close_window" },  // Alternate. /* Close Window with CTRL+C  */
+    { "keys": ["super+shift+'"], "command": "change_quotes" },  /* Toggle Quote w/ " */
+
+    /* Moving */
+    { "keys": ["alt+m", "t", "p", "1"], "command": "move_to_group", "args": { "group": 0 } },  /* Move Tab to Pane 1 */
+    { "keys": ["alt+m", "t", "p", "["], "command": "move_to_group", "args": { "group": 0 } },  // Alternate. /* Move Tab to Pane with [ */
+    { "keys": ["alt+m", "t", "p", "2"], "command": "move_to_group", "args": { "group": 1 } },  /* Move Tab to Pane 2 */
+    { "keys": ["alt+m", "t", "p", "]"], "command": "move_to_group", "args": { "group": 1 } },  // Alternate. /* Move Tab to Pane with ] */
+    { "keys": ["alt+m", "t", "p", "2"], "command": "move_to_group", "args": { "group": 1 } },  /* Move Tab to Pane 2 */
+
+    /* New */
+    { "keys": ["alt+n", "alt+f"], "command": "new_file" },  /* New File */
+
+    /* Opens */
+    { "keys": ["alt+o", ">"], "command": "open_terminal" },  /* Open Terminal */
+
+    /* Page Up/Down -- Requires https://gist.github.com/justsml/1cc1627fd69adbcd453a2dd54962cbf */
+    { "keys": ["alt+up"], "command": "scroll_lines_fixed", "args": {"by": "pages", "amount": 1.0 } },  /* Page Up */
+    { "keys": ["alt+shift+k"], "command": "scroll_lines_fixed", "args": {"by": "pages", "amount": 1.0 } },  // Alternate. /* Page Up with j/k */
+    { "keys": ["alt+down"], "command": "scroll_lines_fixed", "args": {"by": "pages", "amount": -1.0 } },  /* Page Down */
+    { "keys": ["alt+shift+j"], "command": "scroll_lines_fixed", "args": {"by": "pages", "amount": -1.0 } },  // Alternate. /* Page Down with j/k */
+
+    /* Sidebar */
+    { "keys": ["super+\\"], "command": "toggle_side_bar" },  /* Toggle Sidebar */
+    { "keys": ["super+shift+\\"], "command": "focus_side_bar" },  // Focus on the sidebar (reveal in sidebar). /* Goto Sidebar */
+
+    /* Toggles */
+    { "keys": ["alt+t", "v"], "command": "toggle_word" },  // Alternate. /* Swap/Toggle Value */
+    { "keys": ["alt+t", "'"], "command": "change_quotes" },  // Alternate. /* Toggle Quite with a+t */
+
+
+    /* Vim Like Navigation */
+    { "keys": ["alt+k"], "command": "move", "args": { "by": "lines", "forward": false } },  /* Up One Line */
+    { "keys": ["alt+j"], "command": "move", "args": { "by": "lines", "forward": true } },  /* Down One Line */
+
+    /* Windows */
+    { "keys": ["alt+w", "c"], "command": "close_window" },  /* Close Window */
 ]
