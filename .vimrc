@@ -8,6 +8,7 @@ set listchars=tab:→\ ,nbsp:␣,trail:•,precedes:«,extends:»
 "@see https://marioyepes.com/vim-setup-for-modern-web-development/
 set belloff=esc
 set clipboard=unnamed,unnamedplus " Use the OS clipboard
+
 set expandtab             " Use apropiate number of spaces
 set hlsearch              " Highlight search results
 set ignorecase            " Search ingnoring case
@@ -15,7 +16,7 @@ set list lcs=tab:\¦\      "(here is a space)
 set mouse=a               " Enable mouse on all modes
 set nocompatible
 set noerrorbells          " I hate bells
-set noswapfile            " Do not leve any backup files
+set noswapfile            " Do not leave any backup files
 set number                " Show numbers on the left
 set showmatch
 set smartcase             " Do not ignore case if the search patter has uppercase
@@ -35,7 +36,7 @@ end
 " Keep VisualMode after indent with > or <
 vmap < <gv
 vmap > >gv
-"
+
 " Move Visual blocks with J an K
 vnoremap J :m '>+1<CR>gv=gv
 vnoremap K :m '<-2<CR>gv=gv
@@ -47,7 +48,7 @@ augroup vimrc-remember-cursor-position
 augroup END
 
 autocmd BufRead,BufNewFile *.md,*.txt setlocal wrap " DO wrap on markdown files
-autocmd BufRead,BufNewFile * start "Start in insert mode
+"autocmd BufRead,BufNewFile * start "Start in insert mode
 
 "For committing
 set cc=51,71
@@ -77,9 +78,13 @@ call plug#begin('~/.vim/plugged')
 call plug#end()
 
 " UI
-"colorscheme monokai_pro
 colorscheme vim-monokai-tasty
 
 hi Normal ctermbg=16 guibg=NONE
 hi LineNr ctermbg=16 guibg=NONE
 
+let &t_SI = "\<Esc>]50;CursorShape=1\x7"
+let &t_SR = "\<Esc>]50;CursorShape=2\x7"
+let &t_EI = "\<Esc>]50;CursorShape=0\x7"
+
+autocmd VimLeave * silent !echo -ne "\033[0 q"
