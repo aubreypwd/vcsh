@@ -96,11 +96,11 @@
     { "keys": ["alt+t", "v"], "command": "toggle_word" },  // Alternate. /* Swap/Toggle Value */
     { "keys": ["alt+t", "'"], "command": "change_quotes" },  // Alternate. /* Toggle Quite with a+t */
 
-
     /* Vim Like Navigation */
     { "keys": ["alt+k"], "command": "move", "args": { "by": "lines", "forward": false } },  /* Up One Line */
     { "keys": ["alt+j"], "command": "move", "args": { "by": "lines", "forward": true } },  /* Down One Line */
 
     /* Windows */
     { "keys": ["alt+w", "c"], "command": "close_window" },  /* Close Window */
+    { "keys": ["super+q"], "command": "close_window" },  /* Close Window */
 ]

@@ -138,5 +138,9 @@
 				"Library/Application Support/lazygit/project-wdsx-wordpress"
 			],
 		},
+		{
+			"name": "~/.config/php",
+			"path": "/Users/aubreypwd/.config/php"
+		},
 	],
 }
