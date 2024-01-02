@@ -15,7 +15,6 @@
 	db     = "! function f() { git branch -D $1; git push origin :$1 ;}; f" # Delete branch.
 	di     = "! git ls-files -m -o --exclude-standard | fzf --reverse --height 10 --print0 -m | xargs -0 -t -o git diff" # Interactive diff.
 	dm     = "diff"
-	do     = diff master..head ':!*.min.*' ':!*/build/*' ':!*/dist/*' ':!*/vendor/*' ':!*/node_modules/*' # Log a diff excluding common build files.
 	ds     = diff --staged
 	dt     = "! function f() { git tag -d $1; git push origin :refs/tags/$1; }; f"
 	f      = "fetch"
@@ -68,6 +67,7 @@
 
 [core]
 	excludesfile  = /Users/aubreypwd/.gitignore
+	editor        = "micro --clipboard external --infobar false --keepautoindent false --savecursor false --diffgutter false --colorcolumn 72 --ruler false --softwrap true --wordwrap true --eofnewline false --rmtrailingws true"
 
 [color]
 	ui          = true
@@ -98,6 +98,7 @@
 
 [gui]
 	tabsize = 2
+	warndetachedcommit = true
 
 [diff]
 	noprefix = true
@@ -127,6 +128,7 @@
 
 [merge]
 	tool = smerge
+	summary = true
 
 [pull]
 	rebase = false
