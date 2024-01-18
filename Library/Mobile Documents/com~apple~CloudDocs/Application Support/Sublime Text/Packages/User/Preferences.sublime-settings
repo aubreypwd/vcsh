@@ -188,6 +188,7 @@
 		"cli",
 		"Symlink",
 		"screencast",
+		"arg",
 	],
 	"binary_file_patterns":
 	[
@@ -214,6 +215,7 @@
 		".git/*",
 		".hg/*",
 		".sass-cache/*",
+		".sublime-workspaces/**",
 		".svn/*",
 		"/Users/aubreypwd/Library/Application Support/lazygit/project-wdsx-wordpress/**",
 		"bower*/*",

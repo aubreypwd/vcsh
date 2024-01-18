@@ -160,9 +160,9 @@ test -e "${HOME}/.iterm2_shell_integration.zsh" \
 
 # Only when loaded $HOME...
 if test "$(pwd)" = "$HOME"; then
-
 	repo-statuses
 	sysinfo
 fi
+
 
 [[ "$TERM_PROGRAM" == "CodeEditApp_Terminal" ]] && . "/Applications/CodeEdit.app/Contents/Resources/codeedit_shell_integration.zsh"

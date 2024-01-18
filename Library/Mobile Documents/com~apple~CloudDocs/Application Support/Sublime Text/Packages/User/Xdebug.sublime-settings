@@ -2,7 +2,7 @@
   "close_on_stop": true,
   "break_on_exception": [
     // "InvalidArgumentException",
-    "Exception",
+    // "Exception",
     "Fatal error", // E_ERROR, E_CORE_ERROR, E_COMPILE_ERROR, E_USER_ERROR
     "Catchable fatal error", // E_RECOVERABLE_ERROR (since PHP 5.2.0)
     "Parse error", // E_PARSE
@@ -25,4 +25,8 @@
   "port": 9021, // Yes, we have to use this now that PHP 7.4 takes over port 9000.
   "host": "localhost", // Yes, we have to use this now that PHP 7.4 takes over port 9000.
   "hide_password": true,
+  "breakpoint_enabled": "circle",
+  "breakpoint_disabled": "dot",
+  "breakpoint_current": "",
+  "current_line": "bookmark",
 }
