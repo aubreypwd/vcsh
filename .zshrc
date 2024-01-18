@@ -164,5 +164,9 @@ if test "$(pwd)" = "$HOME"; then
 	sysinfo
 fi
 
+# Show git status in repos.
+if [ -e "./.git" ]; then git s; fi
 
-[[ "$TERM_PROGRAM" == "CodeEditApp_Terminal" ]] && . "/Applications/CodeEdit.app/Contents/Resources/codeedit_shell_integration.zsh"
+# CodeEdit shell integration.
+[ "$TERM_PROGRAM" == "CodeEditApp_Terminal" ] && \
+	. "/Applications/CodeEdit.app/Contents/Resources/codeedit_shell_integration.zsh"
