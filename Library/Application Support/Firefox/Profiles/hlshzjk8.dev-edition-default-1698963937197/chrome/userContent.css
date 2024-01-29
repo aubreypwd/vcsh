@@ -4,11 +4,12 @@
 :root.theme-dark {
 
 	--dark-grey: #1F1F1F;
-	--semi-dark-grey: #d5d2d5;
+	--super-light-grey: #d5d2d5;
 	--light-grey: #69676C;
+	--med-grey: #2E2E2E;
 
 	/* Backgrounds */
-	--theme-tab-toolbar-background: var(--dark-grey) !important;
+	--theme-tab-toolbar-background: var(--med-grey) !important;
 	--theme-toolbar-background: var(--dark-grey) !important;
 	--theme-body-background: var(--dark-grey) !important;
 	--theme-sidebar-background: var(--dark-grey) !important;
@@ -23,11 +24,11 @@
 	--theme-splitter-color: #000000 !important;
 
 	/* Text */
-	--theme-body-color: var(--semi-dark-grey) !important;
+	--theme-body-color: var(--super-light-grey) !important;
 	--theme-body-color-alt: #d7dde6 !important;
 	--theme-content-color1: #a1c983 !important;
-	--theme-content-color2: var(--semi-dark-grey) !important;
-	--theme-content-color3: var(--semi-dark-grey) !important;
+	--theme-content-color2: var(--super-light-grey) !important;
+	--theme-content-color3: var(--super-light-grey) !important;
 
 	/* Color Scheme */
 	--theme-highlight-blue: #5bd2e5 !important;
@@ -39,5 +40,5 @@
 	--theme-highlight-green: #7cd88b !important;
 	--theme-highlight-yellow: #f6e059 !important;
 
-	--theme-highlight-bluegrey: var(--semi-dark-grey) !important;
+	--theme-highlight-bluegrey: var(--super-light-grey) !important;
 }
