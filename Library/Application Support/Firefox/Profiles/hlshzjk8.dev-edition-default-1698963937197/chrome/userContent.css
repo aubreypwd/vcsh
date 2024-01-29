@@ -13,10 +13,12 @@
 	--theme-body-background: var(--dark-grey) !important;
 	--theme-sidebar-background: var(--dark-grey) !important;
 	--theme-contrast-background: var(--dark-grey) !important;
-	--theme-selection-background: var(--light-grey) !important;
 
-	/* Selection & Etc */
-	--theme-selection-color: var(--light-grey) !important;
+	/* Selection */
+	--theme-selection-background: #0C84FF !important; /* Blue */
+	--theme-selection-color: #ffffff !important; /* White */
+
+	/* Etc */
 	--theme-comment: var(--light-grey) !important;
 	--theme-splitter-color: #000000 !important;
 
