@@ -1,0 +1,41 @@
+/**
+ * Monokai Pro Spectrum for Firefox Devtools
+ */
+:root.theme-dark {
+
+	--dark-grey: #1F1F1F;
+	--semi-dark-grey: #d5d2d5;
+	--light-grey: #69676C;
+
+	/* Backgrounds */
+	--theme-tab-toolbar-background: var(--dark-grey) !important;
+	--theme-toolbar-background: var(--dark-grey) !important;
+	--theme-body-background: var(--dark-grey) !important;
+	--theme-sidebar-background: var(--dark-grey) !important;
+	--theme-contrast-background: var(--dark-grey) !important;
+	--theme-selection-background: var(--light-grey) !important;
+
+	/* Selection & Etc */
+	--theme-selection-color: var(--light-grey) !important;
+	--theme-comment: var(--light-grey) !important;
+	--theme-splitter-color: #000000 !important;
+
+	/* Text */
+	--theme-body-color: var(--semi-dark-grey) !important;
+	--theme-body-color-alt: #d7dde6 !important;
+	--theme-content-color1: #a1c983 !important;
+	--theme-content-color2: var(--semi-dark-grey) !important;
+	--theme-content-color3: var(--semi-dark-grey) !important;
+
+	/* Color Scheme */
+	--theme-highlight-blue: #5bd2e5 !important;
+	--theme-highlight-purple: #fb618f !important;
+	--theme-highlight-pink: #FB618F !important;
+	--theme-highlight-red: #a1c983 !important;
+	--theme-highlight-orange: #fc934f !important;
+	--theme-highlight-lightorange: #d99b28 !important;
+	--theme-highlight-green: #7cd88b !important;
+	--theme-highlight-yellow: #f6e059 !important;
+
+	--theme-highlight-bluegrey: var(--semi-dark-grey) !important;
+}
