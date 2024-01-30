@@ -140,7 +140,10 @@
 		},
 		{
 			"name": "~/.config/php",
-			"path": "/Users/aubreypwd/.config/php"
+			"path": "/Users/aubreypwd/.config/php",
+		},
+		{
+			"path": "/Users/aubreypwd/Library/Application Support/Firefox/Profiles/hlshzjk8.dev-edition-default-1698963937197/chrome"
 		},
 	],
 }
