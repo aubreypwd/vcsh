@@ -28,11 +28,13 @@
     // { "keys": ["alt+x", "alt+v"], "command": "xdebug_evaluate" },  /* Eval Code */
     // { "keys": ["alt+x", "alt+r"], "command": "xdebug_session_restart" },  /* Restart */
 
-    // Debugger (xDebug) (p, q, s, t)
+    // Debugger (xDebug) (p, q) - https://github.com/daveleroy/SublimeDebugger/blob/master/contributes/Commands/Default.sublime-commands
     { "keys": ["alt+x", "alt+p"], "command": "debugger", "args": { "action": "open" } }, // Trigger Panel
     { "keys": ["alt+x", "alt+q"], "command": "debugger", "args": { "action": "quit" } }, // Quit (Close Panel)
-    { "keys": ["alt+x", "alt+s"], "command": "debugger", "args": { "action": "start" } }, // Start (debugging)
-    { "keys": ["alt+x", "alt+t"], "command": "debugger", "args": { "action": "stop" } }, // Stop (debugging)
+
+        // Start (s) / Stop (t)
+        { "keys": ["alt+x", "alt+s"], "command": "debugger", "args": { "action": "start" } }, // Start (debugging)
+        { "keys": ["alt+x", "alt+t"], "command": "debugger", "args": { "action": "stop" } }, // Stop (debugging)
 
         // Clear Console (k)
         { "keys": ["alt+x", "alt+k"], "command": "debugger", "args": { "action": "clear_console" } },
