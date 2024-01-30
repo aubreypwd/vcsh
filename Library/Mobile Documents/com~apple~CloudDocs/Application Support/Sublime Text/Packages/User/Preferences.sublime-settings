@@ -189,6 +189,8 @@
 		"Symlink",
 		"screencast",
 		"arg",
+		"Webhooks",
+		"Webhook",
 	],
 	"binary_file_patterns":
 	[
