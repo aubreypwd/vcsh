@@ -1,34 +1,39 @@
 /**
  * Monokai Pro Spectrum for Firefox Devtools
  */
-:root.theme-dark {
 
-	--dark-grey: #1F1F1F;
-	--super-light-grey: #d5d2d5;
-	--light-grey: #69676C;
-	--med-grey: #2E2E2E;
+:root.theme-dark,
+:root[lwt-newtab-brighttext] {
+
+	--mkp-dark-grey: #1F1F1F;
+	--mkp-super-light-grey: #d5d2d5;
+	--mkp-light-grey: #69676C;
+	--mkp-med-grey: #2E2E2E;
+
+	/* Other UI Tweaks */
+	--newtab-background-color: var(--mkp-dark-grey) !important;
 
 	/* Backgrounds */
-	--theme-tab-toolbar-background: var(--med-grey) !important;
-	--theme-toolbar-background: var(--dark-grey) !important;
-	--theme-body-background: var(--dark-grey) !important;
-	--theme-sidebar-background: var(--dark-grey) !important;
-	--theme-contrast-background: var(--dark-grey) !important;
+	--theme-tab-toolbar-background: var(--mkp-med-grey) !important;
+	--theme-toolbar-background: var(--mkp-dark-grey) !important;
+	--theme-body-background: var(--mkp-dark-grey) !important;
+	--theme-sidebar-background: var(--mkp-dark-grey) !important;
+	--theme-contrast-background: var(--mkp-dark-grey) !important;
 
 	/* Selection */
 	--theme-selection-background: #0C84FF !important; /* Blue */
 	--theme-selection-color: #ffffff !important; /* White */
 
 	/* Etc */
-	--theme-comment: var(--light-grey) !important;
+	--theme-comment: var(--mkp-light-grey) !important;
 	--theme-splitter-color: #000000 !important;
 
 	/* Text */
-	--theme-body-color: var(--super-light-grey) !important;
+	--theme-body-color: var(--mkp-super-light-grey) !important;
 	--theme-body-color-alt: #d7dde6 !important;
 	--theme-content-color1: #a1c983 !important;
-	--theme-content-color2: var(--super-light-grey) !important;
-	--theme-content-color3: var(--super-light-grey) !important;
+	--theme-content-color2: var(--mkp-super-light-grey) !important;
+	--theme-content-color3: var(--mkp-super-light-grey) !important;
 
 	/* Color Scheme */
 	--theme-highlight-blue: #5bd2e5 !important;
@@ -40,5 +45,5 @@
 	--theme-highlight-green: #7cd88b !important;
 	--theme-highlight-yellow: #f6e059 !important;
 
-	--theme-highlight-bluegrey: var(--super-light-grey) !important;
+	--theme-highlight-bluegrey: var(--mkp-super-light-grey) !important;
 }
