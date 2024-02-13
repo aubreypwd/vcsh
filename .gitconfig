@@ -44,10 +44,11 @@
 	pew    = "! function f() { git commit -a --allow-empty-message -m '' && git pb; }; f" # Push an empty commit with all updates (dependant in other packages).
 	pp     = pb
 	pt     = push --tags
+	ui     = ! git diff --name-only --cached | fzf --reverse --height 10 --print0 -m | xargs -0 -t -o git restore --staged # Un-stage interactively.
 	rcob   = "! function f() { git rhhc && git fb && git pull; }; f" # Reset and checkout branch.
 	rhh    = reset --hard HEAD # Reset easily.
 	rhhc   = "! git rhh && git clear" # Reset and remove new files.
-	rmc    = "rm --cached"
+	us     = "rm --cached" # Un-stage a file
 	s      = status
 	sa     = "rebase --root -i" # Squash all
 	sco    = "sparse-checkout set" # Sparse checkout, list folders
