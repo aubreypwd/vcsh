@@ -17,7 +17,7 @@
   "break_on_start": false,
   "debug": false,
   "max_depth": 4,
-  "max_data": 1024,
+  "max_data": 2048,
   "max_children": 64,
   "super_globals": true,
   "disable_layout": false,
