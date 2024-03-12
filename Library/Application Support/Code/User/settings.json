@@ -1,4 +1,15 @@
 {
+    "launch": {
+        "configurations": [
+            {
+                "name": "Xdebug",
+                "type": "php",
+                "request": "launch",
+                "port": 9022
+            }
+        ],
+        "compounds": [],
+    },
     "workbench.colorTheme": "Monokai Pro (Filter Spectrum)",
     "editor.tokenColorCustomizations": "Monokai Pro (Filter Spectrum)",
     "editor.minimap.enabled": false,
@@ -60,6 +71,7 @@
             "color": "#2B2B2B"
         },
     ],
+    "debug.toolBarLocation": "docked",
     "window.nativeTabs": false,
     "editor.stickyScroll.enabled": false,
     "workbench.editor.decorations.colors": false,
