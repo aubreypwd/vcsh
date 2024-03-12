@@ -44,7 +44,22 @@
         "sideBar.dropBackground": "#1E1E1E",
         "sideBarSectionHeader.background": "#2B2B2B",
         "activityBar.background": "#2B2B2B",
+        "editorWhitespace.foreground": "#383838"
     },
+    "editor.rulers": [
+        {
+            "column": 80,
+            "color": "#2B2B2B"
+        },
+        {
+            "column": 72,
+            "color": "#2B2B2B"
+        },
+        {
+            "column": 50,
+            "color": "#2B2B2B"
+        },
+    ],
     "window.nativeTabs": false,
     "editor.stickyScroll.enabled": false,
     "workbench.editor.decorations.colors": false,
