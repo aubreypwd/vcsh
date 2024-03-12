@@ -39,6 +39,7 @@
         "titleBar.activeBackground": "#3D3D3D",
         "titleBar.activeForeground":  "#ffffff",
         "titleBar.inactiveForeground":  "#ffffff",
+        "editorGroup.emptyBackground": "#292929"
     },
     "window.nativeTabs": false,
     "workbench.editor.decorations.colors": false,
