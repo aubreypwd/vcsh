@@ -166,3 +166,5 @@ fi
 
 # Show git status in repos.
 if [ -e "./.git" ]; then git s; fi
+
+export GPG_TTY=$(tty)

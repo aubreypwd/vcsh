@@ -65,12 +65,13 @@
 	autoSetupRemote = true
 
 [user]
-	name          = Aubrey Portwood
-	email = aubreypwd@users.noreply.github.com
-	signingkey    = 8691F6F5E25C5E23
+	name       = Aubrey Portwood
+	email      = aubreypwd@users.noreply.github.com
+	signingkey = 8691F6F5E25C5E23
 
 [core]
 	excludesfile  = /Users/aubreypwd/.gitignore
+	#editor         = "vim"
 	editor        = "micro --clipboard external --infobar false --keepautoindent false --savecursor false --diffgutter false --colorcolumn 72 --ruler false --softwrap true --wordwrap true --eofnewline false --rmtrailingws true"
 
 [color]

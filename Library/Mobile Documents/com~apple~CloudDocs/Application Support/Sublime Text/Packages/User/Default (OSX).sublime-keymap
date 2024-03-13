@@ -135,4 +135,36 @@
     /* Windows */
     { "keys": ["alt+w", "c"], "command": "close_window" },  /* Close Window */
     // { "keys": ["super+q"], "command": "close_window" },  /* Close Window */
+
+    /* Vintage */
+    {"keys": [ "g", "t" ], "command": "next_view", "context": [ {"key": "setting.command_mode"} ] },
+    {"keys": [ "g", "n" ], "command": "focus_side_bar", "context": [{"key": "setting.command_mode"}]},
+    {"keys": [ "v", "p" ], "command": "expand_selection_to_paragraph", "context": [{"key": "setting.command_mode"}]},
+    {"keys": ["ctrl+j"], "command": "select_lines", "args": {"forward": true}},
+    {"keys": ["ctrl+k"], "command": "select_lines", "args": {"forward": false}},
+
+    {"keys": [ ",", "," ], "command": "show_overlay", "args": { "overlay": "command_palette" }, "context": [ { "key": "setting.command_mode" } ] }, // Leader, or command pallet.
+
+    {"keys": [ ",", "t", "m" ], "command": "toggle_bookmark", "context": [ { "key": "setting.command_mode" } ] }, // Toggle Mark
+    {"keys": [ ",", "v", "m" ], "command": "view_bookmarks", "context": [ { "key": "setting.command_mode" } ] }, // View all Marks
+
+    { "keys": [",", "x", ","], "command": "xdebug_settings", "context": [ { "key": "setting.command_mode" } ] },  /* Settings */
+    { "keys": [",", "x", "b"], "command": "xdebug_breakpoint", "context": [ { "key": "setting.command_mode" } ] },  /* Add Breakpoint */
+    { "keys": [",", "x", "k"], "command": "xdebug_clear_all_breakpoints", "context": [ { "key": "setting.command_mode" } ] },  /* Clear All Breakpoints */
+    { "keys": [",", "x", "s"], "command": "xdebug_session_start", "context": [ { "key": "setting.command_mode" } ] },  /* Start Debugging */
+    { "keys": [",", "x", "x"], "command": "xdebug_session_stop", "context": [ { "key": "setting.command_mode" } ] },  // Exit /* Stop Debugging */
+    { "keys": [",", "x", "c"], "command": "xdebug_continue", },  /* Continue */
+    { "keys": [",", "x", "v"], "command": "xdebug_evaluate", "context": [ { "key": "setting.command_mode" } ] },  /* Eval Code */
+    { "keys": [",", "x", "r"], "command": "xdebug_session_restart", "context": [ { "key": "setting.command_mode" } ] },  /* Restart */
+
+    /* Copilot */
+    {
+        "keys": ["alt+enter"],
+        "command": "copilot_accept_completion",
+        "context": [
+            {
+                "key": "setting.copilot.completion.is_visible"
+            }
+        ]
+    }
 ]
