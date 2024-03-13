@@ -21,6 +21,7 @@
     "window.density.editorTabHeight": "compact",
     "editor.guides.bracketPairs": "active",
     "editor.renderLineHighlight": "gutter",
+    "editor.multiCursorModifier": "ctrlCmd",
     "terminal.integrated.tabs.enabled": false, 
     "workbench.colorCustomizations": {
         // "terminal.background": "#1D1E1D",
@@ -81,6 +82,8 @@
             "color": "#2B2B2B"
         },
     ],
+    // "editor.bracketPairColorization.enabled": true,
+    // "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
     "debug.toolBarLocation": "docked",
     "window.nativeTabs": false,
     "editor.stickyScroll.enabled": false,
