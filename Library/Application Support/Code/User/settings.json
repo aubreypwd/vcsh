@@ -19,6 +19,7 @@
     "window.autoDetectHighContrast": false,
     "workbench.settings.useSplitJSON": true,
     "window.density.editorTabHeight": "compact",
+		"editor.guides.bracketPairs": "active",
     "editor.renderLineHighlight": "gutter",
     "terminal.integrated.tabs.enabled": false, 
     "workbench.colorCustomizations": {
@@ -55,7 +56,8 @@
         "sideBar.dropBackground": "#1E1E1E",
         "sideBarSectionHeader.background": "#2B2B2B",
         "activityBar.background": "#2B2B2B",
-        "editorWhitespace.foreground": "#383838"
+        "editorWhitespace.foreground": "#383838",
+        "panel.background": "#2A2A2A",
     },
     "editor.rulers": [
         {
@@ -123,5 +125,9 @@
     "window.commandCenter": false,
     "breadcrumbs.enabled": false,
     "workbench.activityBar.location": "top",
-    "workbench.editor.showTabs": "none"
+    "workbench.editor.showTabs": "none",
+    "editor.autoIndent": "full",
+    "editor.emptySelectionClipboard": true,
+    "editor.detectIndentation": true,
+    "editor.dragAndDrop": false
 }
