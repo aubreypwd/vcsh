@@ -19,7 +19,7 @@
     "window.autoDetectHighContrast": false,
     "workbench.settings.useSplitJSON": true,
     "window.density.editorTabHeight": "compact",
-		"editor.guides.bracketPairs": "active",
+    "editor.guides.bracketPairs": "active",
     "editor.renderLineHighlight": "gutter",
     "terminal.integrated.tabs.enabled": false, 
     "workbench.colorCustomizations": {
@@ -51,6 +51,7 @@
         "titleBar.activeBackground": "#3D3D3D",
         "titleBar.activeForeground":  "#ffffff",
         "titleBar.inactiveForeground":  "#ffffff",
+        
         "editorGroup.emptyBackground": "#292929",
         "sideBar.background": "#1E1E1E",
         "sideBar.dropBackground": "#1E1E1E",
@@ -58,6 +59,13 @@
         "activityBar.background": "#2B2B2B",
         "editorWhitespace.foreground": "#383838",
         "panel.background": "#2A2A2A",
+
+        "editorBracketPairGuide.activeBackground1": "#69676C",
+        "editorBracketPairGuide.activeBackground2": "#69676C",
+        "editorBracketPairGuide.activeBackground3": "#69676C",
+        "editorBracketPairGuide.activeBackground4": "#69676C",
+        "editorBracketPairGuide.activeBackground5": "#69676C",
+        "editorBracketPairGuide.activeBackground6": "#69676C",
     },
     "editor.rulers": [
         {
@@ -129,5 +137,7 @@
     "editor.autoIndent": "full",
     "editor.emptySelectionClipboard": true,
     "editor.detectIndentation": true,
-    "editor.dragAndDrop": false
+    "editor.dragAndDrop": false,
+    "editor.formatOnPaste": true,
+    "editor.snippetSuggestions": "top",
 }

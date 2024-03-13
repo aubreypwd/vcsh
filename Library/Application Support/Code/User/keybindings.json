@@ -19,5 +19,15 @@
 		"key": "shift+cmd+o",
 		"command": "-workbench.action.gotoSymbol",
 		"when": "!accessibilityHelpIsShown && !accessibleViewIsShown"
+	},
+	{
+		"key": "shift+alt+cmd+d",
+		"command": "workbench.view.debug",
+		"when": "viewContainer.workbench.view.debug.enabled"
+	},
+	{
+		"key": "shift+cmd+d",
+		"command": "-workbench.view.debug",
+		"when": "viewContainer.workbench.view.debug.enabled"
 	}
 ]
