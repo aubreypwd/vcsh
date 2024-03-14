@@ -16,10 +16,17 @@
     "search.useIgnoreFiles": false, // Don't break search using .gitignore
     "workbench.editor.closeEmptyGroups": false,
     "workbench.iconTheme": "Monokai Pro (Filter Spectrum) Icons",
+    "editor.lineDecorationsWidth": 5,
+    "git.decorations.enabled": false,
+    // "editor.glyphMargin": false,
+    "editor.lineNumbersMinChars": 0,
     "window.autoDetectHighContrast": false,
     "workbench.settings.useSplitJSON": true,
+    "diffEditor.renderMarginRevertIcon": false,
     "window.density.editorTabHeight": "compact",
+    "editor.lightbulb.enabled": "onCode",
     "editor.guides.bracketPairs": "active",
+    "editor.showFoldingControls": "always",
     "editor.renderLineHighlight": "gutter",
     "editor.multiCursorModifier": "ctrlCmd",
     "terminal.integrated.tabs.enabled": false, 
@@ -118,7 +125,10 @@
     "window.openFilesInNewWindow": "default",
     "workbench.preferredDarkColorTheme": "Monokai Pro (Filter Spectrum)",
     "editor.accessibilitySupport": "off",
-    "workbench.statusBar.visible": false,
+    "accessibility.signals.clear": {
+        "sound": "off",
+        "announcement": "off",
+    },
     "editor.language.colorizedBracketPairs": [
 
     ],
@@ -143,4 +153,16 @@
     "editor.dragAndDrop": false,
     "editor.formatOnPaste": true,
     "editor.snippetSuggestions": "top",
+
+    // PHP Docblocker.
+    "php-docblocker.qualifyClassNames": true,
+    "php-docblocker.alignParams": true,
+    "php-docblocker.paramDescription": true,
+    "php-docblocker.returnDescription": true,
+    "php-docblocker.extra": [
+        "@since ${100:AFFWPN} $200",
+    ],
+    "php-docblocker.gap": true,
+    "php-docblocker.returnGap": true,
+    "workbench.statusBar.visible": false,
 }

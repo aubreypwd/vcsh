@@ -29,5 +29,26 @@
 		"key": "shift+cmd+d",
 		"command": "-workbench.view.debug",
 		"when": "viewContainer.workbench.view.debug.enabled"
+	},
+	{
+		"key": "ctrl+cmd+p",
+		"command": "workbench.action.openRecent"
+	},
+	{
+		"key": "ctrl+r",
+		"command": "-workbench.action.openRecent"
+	},
+	{
+		"key": "shift+alt+cmd+s",
+		"command": "workbench.action.saveWorkspaceAs"
+	},
+	{
+		"key": "alt+cmd+k",
+		"command": "bookmarks.toggleLabeled"
+	},
+	{
+		"key": "alt+cmd+k",
+		"command": "-bookmarks.toggle",
+		"when": "editorTextFocus"
 	}
 ]
