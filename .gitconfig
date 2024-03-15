@@ -132,7 +132,7 @@
 	keepBackup = false
 
 [merge]
-	tool = smerge
+	tool = vscode
 	summary = true
 
 [pull]
@@ -170,3 +170,5 @@
 	repo = /Users/aubreypwd/Repos/github.com/awesomemotive/affiliate-wp
 	auto = false
 	strategy = incremental
+[mergetool "vscode"]
+	cmd = "code --wait --merge    "
