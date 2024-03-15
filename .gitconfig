@@ -170,5 +170,6 @@
 	repo = /Users/aubreypwd/Repos/github.com/awesomemotive/affiliate-wp
 	auto = false
 	strategy = incremental
+
 [mergetool "vscode"]
-	cmd = "code --wait --merge    "
+	cmd = "code --wait --merge $REMOTE $LOCAL $BASE $MERGED"
