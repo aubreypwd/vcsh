@@ -165,4 +165,16 @@
     "php-docblocker.gap": true,
     "php-docblocker.returnGap": true,
     "workbench.statusBar.visible": false,
+    "workspaceSidebar.rootFolders": [
+
+        { "path": "/Users/aubreypwd/Sites", "depth": 4, "excludeHiddenFolders": false }
+    ],
+    "workspaceSidebar.showFileIcons": false,
+    "workspace-manager.includeGlobPattern": [
+        "/Users/aubreypwd/Sites/Valet/**/.code-workspaces/*"
+    ],
+    "workspace-manager.advanced.deep": 5,
+    "workspaceSidebar.depth": 5,
+    "workspaceSidebar.excludeHiddenFolders": false,
+    "workspaceSidebar.showFolderHierarchy": true,
 }
