@@ -10,7 +10,6 @@
         ],
         "compounds": [],
     },
-    "workbench.colorTheme": "Monokai Pro (Filter Spectrum)",
     "editor.tokenColorCustomizations": "Monokai Pro (Filter Spectrum)",
     "editor.minimap.enabled": false,
     "search.useIgnoreFiles": false, // Don't break search using .gitignore
@@ -31,6 +30,32 @@
     "editor.multiCursorModifier": "ctrlCmd",
     "terminal.integrated.tabs.enabled": false, 
     "workbench.colorCustomizations": {
+        "[Monokai Pro (Filter Spectrum)]": {
+            "activityBar.background": "#2B2B2B",
+            "editorGroup.emptyBackground": "#292929",
+            "editorWhitespace.foreground": "#383838",
+            "panel.background": "#2A2A2A",
+            "sideBar.background": "#3C3C3C",
+            "sideBar.dropBackground": "#1E1E1E",
+            "sideBarSectionHeader.background": "#363537",
+            "sideBarSectionHeader.foreground": "#fff",
+            "sideBarTitle.foreground": "#ffffff",
+            "sideBar.foreground": "#fff",
+            "sideBar.border": "#3C3C3C",
+            "titleBar.activeBackground": "#3D3D3D",
+            "titleBar.activeForeground":  "#ffffff",
+            "titleBar.border": "#3C3C3C",
+            "titleBar.inactiveBackground": "#3D3D3D",
+            "titleBar.inactiveForeground":  "#ffffff",
+        },
+        "[Chrome DevTools Old]": {
+            "editorWhitespace.foreground": "#383838",
+            "editor.background": "#282828",
+            "panel.background": "#3C3C3C",
+            "sideBar.background": "#3C3C3C",
+            // "sideBar.border": "#282828",
+        },
+        
         // "terminal.background": "#1D1E1D",
         // "terminal.ansiBlack": "#706e73",
         // "terminal.ansiBlue": "#5ad4e6",
@@ -55,19 +80,12 @@
         // "editorGroupHeader.tabsBorder": "#191919",
         // "tab.hoverBorder": "#222222",
         // "tab.inactiveBackground": "#292929",
-        "titleBar.inactiveBackground": "#3D3D3D",
-        "titleBar.activeBackground": "#3D3D3D",
-        "titleBar.activeForeground":  "#ffffff",
-        "titleBar.inactiveForeground":  "#ffffff",
         
-        "editorGroup.emptyBackground": "#292929",
-        "sideBar.background": "#1E1E1E",
-        "sideBar.dropBackground": "#1E1E1E",
-        "sideBarSectionHeader.background": "#2B2B2B",
-        "activityBar.background": "#2B2B2B",
-        "editorWhitespace.foreground": "#383838",
-        "panel.background": "#2A2A2A",
+        // Remove any shadows.
+        "scrollbar.shadow": "#ffffff00",
+        "widget.shadow": "#ffffff00",
 
+        // Not-so intrusive guides.
         "editorBracketPairGuide.activeBackground1": "#69676C",
         "editorBracketPairGuide.activeBackground2": "#69676C",
         "editorBracketPairGuide.activeBackground3": "#69676C",
@@ -177,4 +195,8 @@
     "workspaceSidebar.depth": 5,
     "workspaceSidebar.excludeHiddenFolders": false,
     "workspaceSidebar.showFolderHierarchy": true,
+    "intelephense.completion.fullyQualifyGlobalConstantsAndFunctions": true,
+    "intelephense.completion.maxItems": 10,
+    "php.validate.executablePath": "/opt/homebrew/opt/php@7.4/bin/php",
+    "workbench.colorTheme": "Monokai Pro (Filter Spectrum)",
 }

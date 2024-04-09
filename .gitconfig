@@ -172,4 +172,4 @@
 	strategy = incremental
 
 [mergetool "vscode"]
-	cmd = "code --wait --merge $REMOTE $LOCAL $BASE $MERGED"
+	cmd = "code --new-window --wait --merge $REMOTE $LOCAL $BASE $MERGED"

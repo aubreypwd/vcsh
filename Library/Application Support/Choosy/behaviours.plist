@@ -574,7 +574,7 @@
 			<string>ChoosyBrowser</string>
 		</dict>
 		<key>enabled</key>
-		<true/>
+		<false/>
 		<key>predicate</key>
 		<string>URL CONTAINS "hub.awesomemotive.com" OR URL CONTAINS "awesomemotive.bamboohr.com" OR URL CONTAINS "app.gusto.com"</string>
 		<key>title</key>
@@ -607,12 +607,12 @@
 		<key>behaviourArgument</key>
 		<dict>
 			<key>path</key>
-			<string>/Applications/Asana.app</string>
+			<string>/Users/aubreypwd/Applications/Unite Apps/Asana.app</string>
 			<key>type</key>
 			<string>ChoosyBrowser</string>
 		</dict>
 		<key>enabled</key>
-		<false/>
+		<true/>
 		<key>predicate</key>
 		<string>URL CONTAINS "app.asana.com"</string>
 		<key>title</key>
