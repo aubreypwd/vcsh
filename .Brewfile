@@ -1,7 +1,9 @@
+tap "browsers-software/tap"
 tap "browsh-org/browsh"
 tap "cloudflare/cloudflare"
 tap "dnicolson/bluetoothkeyboardenhancer"
 tap "dteoh/sqa"
+tap "dwarvesf/tap"
 tap "github/gh"
 tap "hashicorp/tap"
 tap "henkrehorst/php"
@@ -21,6 +23,8 @@ tap "stripe/stripe-cli"
 tap "xvxx/code"
 # Plugin manager for zsh, inspired by oh-my-zsh and vundle
 brew "antigen"
+# General-purpose data compression with high compression ratio
+brew "xz"
 # Image format providing lossless and lossy compression for web images
 brew "webp"
 # New file format for still image compression
@@ -35,22 +39,18 @@ brew "archey"
 brew "libssh2"
 # Download with resuming and segmented downloading
 brew "aria2"
+# Interpreted, interactive, object-oriented programming language
+brew "python@3.12"
 # Core application library for C
 brew "glib"
-# Cryptography and SSL/TLS Toolkit
-brew "openssl@1.1"
-# Interpreted, interactive, object-oriented programming language
-brew "python@3.9"
-# GNOME accessibility toolkit
-brew "atk"
+# Protocol definitions and daemon for D-Bus at-spi
+brew "at-spi2-core"
 # Tool for generating GNU Standards-compliant Makefiles
 brew "automake"
 # Clone of cat(1) with syntax highlighting and Git integration
 brew "bat"
 # Convert CD images from .bin/.cue to .iso/.cdr
 brew "bchunk"
-# C/C++ and Java libraries for Unicode and globalization
-brew "icu4c"
 # Platform built on V8 to build network applications
 brew "node"
 # Secure and free password manager for all of your devices
@@ -73,8 +73,10 @@ brew "cask"
 brew "ccat"
 # CD/DVD/Blu-ray premastering and recording software
 brew "cdrtools"
-# Interpreted, interactive, object-oriented programming language
-brew "python@3.11"
+# C parser in Python
+brew "pycparser"
+# C Foreign Function Interface for Python
+brew "cffi"
 # Control Google Chrome from the command-line
 brew "chrome-cli"
 # Cross-platform make
@@ -83,18 +85,26 @@ brew "cmake"
 brew "cmatrix"
 # Color-highlighted diff(1) output
 brew "colordiff"
+# Get a file from an HTTP, HTTPS or FTP server
+brew "curl"
 # Libraries to talk to Microsoft SQL Server and Sybase databases
 brew "freetds"
+# Library for encoding and decoding .avif files
+brew "libavif"
 # General-purpose scripting language
-brew "php"
+brew "php", restart_service: true
 # Dependency Manager for PHP
 brew "composer"
+# Cryptographic recipes and primitives for Python
+brew "cryptography"
 # Display user-friendly message boxes from shell scripts
 brew "dialog"
+# Cryptography and SSL/TLS Toolkit
+brew "openssl@1.1"
 # Utilities for converting macOS DMG images
 brew "dmg2img"
 # Lightweight DNS forwarder and DHCP server
-brew "dnsmasq"
+brew "dnsmasq", restart_service: true
 # Select default apps for documents and URL schemes on macOS
 brew "duti"
 # Modern replacement for 'ls'
@@ -111,6 +121,12 @@ brew "libarchive"
 brew "libass"
 # Blu-Ray disc playback library for media players like VLC
 brew "libbluray"
+# Light HTTP/1.1 server library
+brew "libmicrohttpd"
+# Optimized BLAS library
+brew "openblas"
+# Open Visual Inference And Optimization toolkit for AI inference
+brew "openvino"
 # Framework for layout and rendering of i18n text
 brew "pango"
 # OCR (Optical Character Recognition) engine
@@ -133,6 +149,8 @@ brew "ghq"
 brew "gifsicle"
 # Distributed revision control system
 brew "git"
+# Tcl/Tk UI for the git revision control system
+brew "git-gui"
 # Git extension for versioning large files
 brew "git-lfs"
 # GNU implementation of the famous stream editor
@@ -183,6 +201,8 @@ brew "id3lib"
 brew "shared-mime-info"
 # ISO/IEC 23008-12:2017 HEIF file format decoder and encoder
 brew "libheif"
+# Interpreted, interactive, object-oriented programming language
+brew "python@3.9"
 # Library for reading RAW files from digital photo cameras
 brew "libraw"
 # Tools and libraries to manipulate images in many formats
@@ -191,6 +211,8 @@ brew "imagemagick"
 brew "irssi"
 # Lightweight and flexible command-line JSON processor
 brew "jq"
+# Easy way to access the system keyring service from python
+brew "keyring"
 # Command-line note taker
 brew "jrnl"
 # Provides library functionality for FIDO U2F & FIDO 2.0, including USB
@@ -202,7 +224,7 @@ brew "m-cli"
 # System information fetcher, with an emphasis on performance and minimalism
 brew "macchina"
 # Web and API based SMTP testing tool
-brew "mailhog"
+brew "mailhog", restart_service: true
 # Tool to convert MDF (Alcohol 120% images) images to ISO images
 brew "mdf2iso"
 # Modern and intuitive terminal-based text editor
@@ -211,12 +233,10 @@ brew "micro"
 brew "midnight-commander"
 # Tail multiple files in one terminal simultaneously
 brew "multitail"
-# Pretty-print tabular data in Python
-brew "python-tabulate"
 # CLI for MySQL with auto-completion and syntax highlighting
 brew "mycli"
 # Open source relational database management system
-brew "mysql"
+brew "mysql", restart_service: true
 # Node version management
 brew "n"
 # Free (GNU) replacement for the Pico text editor
@@ -226,7 +246,7 @@ brew "neofetch"
 # Ambitious Vim-fork focused on extensibility and agility
 brew "neovim"
 # HTTP(S) server and reverse proxy, and IMAP/POP3 proxy server
-brew "nginx"
+brew "nginx", restart_service: true
 # Development kit for the Java programming language
 brew "openjdk"
 # Swiss-army knife of markup format conversion
@@ -238,9 +258,9 @@ brew "percol"
 # Pretty system information tool written in POSIX sh
 brew "pfetch"
 # General-purpose scripting language
-brew "php@8.0"
-# General-purpose scripting language
-brew "php@8.1"
+brew "php@8.2", restart_service: true
+# Web interface for MySQL and MariaDB
+brew "phpmyadmin"
 # Pinentry for GPG on Mac
 brew "pinentry-mac"
 # Protocol buffers (Google's data interchange format)
@@ -253,6 +273,10 @@ brew "py3cairo"
 brew "pyenv"
 # GNOME Python bindings (based on GObject Introspection)
 brew "pygobject3"
+# Pretty-print tabular data in Python
+brew "python-tabulate"
+# Interpreted, interactive, object-oriented programming language
+brew "python@3.11"
 # Interpreted, interactive, object-oriented programming language
 brew "python@3.8"
 # Utility that provides fast incremental file transfer
@@ -291,6 +315,8 @@ brew "vcsh"
 brew "vim"
 # Terminal emulator widget used by GNOME terminal
 brew "vte3"
+# Terminal navigator
+brew "walk"
 # Executes a program periodically, showing output fullscreen
 brew "watch"
 # Execute commands when watched files change
@@ -309,21 +335,21 @@ brew "yara"
 brew "yarn"
 # Download YouTube videos from the command-line
 brew "youtube-dl"
-# Fork of youtube-dl with additional features and fixes
+# Feature-rich command-line audio/video downloader
 brew "yt-dlp"
 # UNIX shell (command interpreter)
 brew "zsh"
 # The modern, text-based browser
 brew "browsh-org/browsh/browsh"
 # Cloudflare Tunnel
-brew "cloudflare/cloudflare/cloudflared"
+brew "cloudflare/cloudflare/cloudflared", link: false
 # A simple terminal UI for git commands, written in Go
 brew "jesseduffield/lazygit/lazygit"
 brew "lucapette/tap/fakedata"
 # General-purpose scripting language
-brew "shivammathur/php/php@7.3"
-# General-purpose scripting language
 brew "shivammathur/php/php@7.4"
+# General-purpose scripting language
+brew "shivammathur/php/php@8.0"
 # Stripe CLI utility
 brew "stripe/stripe-cli/stripe"
 # quick lil gopher client
@@ -336,6 +362,8 @@ cask "adium"
 cask "alt-tab"
 # GUI app for Homebrew
 cask "cakebrew"
+# PlayStation remote play client
+cask "chiaki"
 # Open links in any browser
 cask "choosy"
 # System cleaner for logs, caches and more
@@ -356,41 +384,44 @@ cask "multi"
 cask "ngrok"
 # VPN client for secure internet access and private browsing
 cask "nordvpn"
-# Free and open-source SoundCloud client
-cask "nuage"
-# Finder Toolbar app to open the current directory in Terminal or Editor
-cask "openinterminal"
-cask "phpmon"
 # Archive manager for data compression and backups
 cask "rar"
+# View Spaces / Virtual Desktops in the menu bar
+cask "spaceman"
 # Move and resize windows with ease
 cask "spectacle"
 # Music streaming service
 cask "spotify"
+# Native Discord client built in Swift
+cask "swiftcord"
 # BBS terminal program
 cask "syncterm"
 # JDK from the Eclipse Foundation (Adoptium)
 cask "temurin"
 # Video communication and virtual meeting platform
 cask "zoom"
-vscode "alefragnani.Bookmarks"
+vscode "alefragnani.bookmarks"
 vscode "bmewburn.vscode-intelephense-client"
-vscode "bradlc.vscode-tailwindcss"
+vscode "britesnow.vscode-toggle-quotes"
 vscode "christian-kohler.path-intellisense"
 vscode "dbaeumer.vscode-eslint"
-vscode "DEVSENSE.composer-php-vscode"
 vscode "ecmel.vscode-html-css"
-vscode "EditorConfig.EditorConfig"
+vscode "editorconfig.editorconfig"
 vscode "formulahendry.auto-rename-tag"
-vscode "GitHub.vscode-pull-request-github"
-vscode "ivanzusko.theme-chrome-devtools-dark"
+vscode "github.copilot"
+vscode "github.copilot-chat"
+vscode "github.vscode-pull-request-github"
+vscode "ivankinder.one-monokai-darker-spectrum"
 vscode "johnbillion.vscode-wordpress-hooks"
 vscode "mechatroner.rainbow-csv"
 vscode "mikestead.dotenv"
 vscode "monokai.theme-monokai-pro-vscode"
-vscode "mrmlnc.vscode-scss"
-vscode "Phu1237.vs-browser"
-vscode "streetsidesoftware.code-spell-checker"
+vscode "ms-vscode.sublime-keybindings"
+vscode "neilbrayfield.php-docblocker"
+vscode "shevaua.phpcs"
+vscode "sketchbuch.vsc-workspace-sidebar"
 vscode "timonwong.shellcheck"
-vscode "valeryanm.vscode-phpsab"
-vscode "Zignd.html-css-class-completion"
+vscode "waderyan.gitblame"
+vscode "wordpresstoolbox.wordpress-toolbox"
+vscode "xdebug.php-debug"
+vscode "zignd.html-css-class-completion"

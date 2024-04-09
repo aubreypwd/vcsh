@@ -6,6 +6,7 @@
     "minimum-stability": "dev",
     "require": {
         "laravel/valet": "~4.0",
-        "beyondcode/expose": "dev-master"
+        "beyondcode/expose": "dev-master",
+        "laravel/installer": "dev-master"
     }
 }
