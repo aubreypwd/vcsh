@@ -161,12 +161,12 @@
 		<key>behaviourArgument</key>
 		<dict>
 			<key>path</key>
-			<string>/Users/aubreypwd/Applications/Unite Apps/Mini Browser.app</string>
+			<string>/System/Volumes/Preboot/Cryptexes/App/System/Applications/Safari.app</string>
 			<key>type</key>
 			<string>ChoosyBrowser</string>
 		</dict>
 		<key>enabled</key>
-		<true/>
+		<false/>
 		<key>predicate</key>
 		<string>URL CONTAINS "://google.com/search" OR URL CONTAINS "://www.google.com/search"</string>
 		<key>title</key>
@@ -263,7 +263,7 @@
 		<key>behaviourArgument</key>
 		<dict>
 			<key>path</key>
-			<string>/Users/aubreypwd/Applications/Slack for Web.app</string>
+			<string>/Users/aubreypwd/Applications/Unite Apps/Mini Browser.app</string>
 			<key>type</key>
 			<string>ChoosyBrowser</string>
 		</dict>
@@ -348,7 +348,7 @@
 		<key>behaviourArgument</key>
 		<dict>
 			<key>path</key>
-			<string>/Users/aubreypwd/Applications/Unite Apps/GitHub.app</string>
+			<string>/Applications/Firefox Developer Edition.app</string>
 			<key>type</key>
 			<string>ChoosyBrowser</string>
 		</dict>
@@ -365,16 +365,16 @@
 		<key>behaviourArgument</key>
 		<dict>
 			<key>path</key>
-			<string>/Applications/Twitter.app</string>
+			<string>/Users/aubreypwd/Applications/X.app</string>
 			<key>type</key>
 			<string>ChoosyBrowser</string>
 		</dict>
 		<key>enabled</key>
-		<false/>
+		<true/>
 		<key>predicate</key>
 		<string>URL CONTAINS "twitter.com"</string>
 		<key>title</key>
-		<string>Twitter</string>
+		<string>Twitter/X</string>
 	</dict>
 	<dict>
 		<key>behaviour</key>
@@ -391,7 +391,7 @@
 		<key>predicate</key>
 		<string>URL CONTAINS ".local" OR URL CONTAINS ".test" OR URL CONTAINS "localhost:" OR URL CONTAINS "localhost"</string>
 		<key>title</key>
-		<string>Firefox DE</string>
+		<string>Locals</string>
 	</dict>
 	<dict>
 		<key>behaviour</key>
@@ -484,12 +484,12 @@
 		<key>behaviourArgument</key>
 		<dict>
 			<key>path</key>
-			<string>/Applications/Safari.app</string>
+			<string>/Users/aubreypwd/Applications/Facebook.app</string>
 			<key>type</key>
 			<string>ChoosyBrowser</string>
 		</dict>
 		<key>enabled</key>
-		<false/>
+		<true/>
 		<key>predicate</key>
 		<string>URL CONTAINS "facebook.com"</string>
 		<key>title</key>
@@ -607,9 +607,13 @@
 		<key>behaviourArgument</key>
 		<dict>
 			<key>path</key>
-			<string>/Users/aubreypwd/Applications/Unite Apps/Asana.app</string>
+			<string>/Applications/Google Chrome.app</string>
+			<key>profileName</key>
+			<string>Profile 12</string>
+			<key>supportPath</key>
+			<string>/Users/aubreypwd/Library/Application Support/Google/Chrome</string>
 			<key>type</key>
-			<string>ChoosyBrowser</string>
+			<string>ChoosyChromeProfileMode</string>
 		</dict>
 		<key>enabled</key>
 		<true/>
@@ -624,9 +628,13 @@
 		<key>behaviourArgument</key>
 		<dict>
 			<key>path</key>
-			<string>/Applications/MeetInOne.app</string>
+			<string>/Applications/Google Chrome.app</string>
+			<key>profileName</key>
+			<string>Profile 12</string>
+			<key>supportPath</key>
+			<string>/Users/aubreypwd/Library/Application Support/Google/Chrome</string>
 			<key>type</key>
-			<string>ChoosyBrowser</string>
+			<string>ChoosyChromeProfileMode</string>
 		</dict>
 		<key>enabled</key>
 		<false/>
@@ -641,14 +649,18 @@
 		<key>behaviourArgument</key>
 		<dict>
 			<key>path</key>
-			<string>/Users/aubreypwd/Applications/Unite Apps/HelpScout.app</string>
+			<string>/Applications/Google Chrome.app</string>
+			<key>profileName</key>
+			<string>Profile 12</string>
+			<key>supportPath</key>
+			<string>/Users/aubreypwd/Library/Application Support/Google/Chrome</string>
 			<key>type</key>
-			<string>ChoosyBrowser</string>
+			<string>ChoosyChromeProfileMode</string>
 		</dict>
 		<key>enabled</key>
 		<true/>
 		<key>predicate</key>
-		<string>URL CONTAINS "secure.helpscout.net/"</string>
+		<string>URL CONTAINS "secure.helpscout.net"</string>
 		<key>title</key>
 		<string>Help Scout</string>
 	</dict>
@@ -743,12 +755,12 @@
 		<key>behaviourArgument</key>
 		<dict>
 			<key>path</key>
-			<string>/Users/aubreypwd/Applications/Unite Apps/Google Drive.app</string>
+			<string>/Users/aubreypwd/Applications/Google Drive.app</string>
 			<key>type</key>
 			<string>ChoosyBrowser</string>
 		</dict>
 		<key>enabled</key>
-		<true/>
+		<false/>
 		<key>predicate</key>
 		<string>URL CONTAINS "drive.google.com" OR URL CONTAINS "docs.google.com" OR URL CONTAINS "sheets.google.com"</string>
 		<key>title</key>
@@ -782,7 +794,7 @@
 			<string>ChoosyBrowser</string>
 		</dict>
 		<key>enabled</key>
-		<true/>
+		<false/>
 		<key>predicate</key>
 		<string>URL CONTAINS "https://droplr.com/" OR URL CONTAINS "https://d.pr" OR URL CONTAINS "https://a.supportally.com"</string>
 		<key>title</key>
@@ -917,12 +929,12 @@
 		<key>behaviourArgument</key>
 		<dict>
 			<key>path</key>
-			<string>/Applications/Arc.app</string>
+			<string>/Applications/Google Chrome.app</string>
 			<key>type</key>
 			<string>ChoosyBrowser</string>
 		</dict>
 		<key>enabled</key>
-		<false/>
+		<true/>
 		<key>predicate</key>
 		<string>URL CONTAINS "hub.awesome"</string>
 		<key>title</key>
@@ -934,7 +946,7 @@
 		<key>behaviourArgument</key>
 		<dict>
 			<key>path</key>
-			<string>/Users/aubreypwd/Applications/Unite Apps/Mini Browser.app</string>
+			<string>/Applications/Firefox Developer Edition.app</string>
 			<key>type</key>
 			<string>ChoosyBrowser</string>
 		</dict>
@@ -951,7 +963,7 @@
 		<key>behaviourArgument</key>
 		<dict>
 			<key>path</key>
-			<string>/Users/aubreypwd/Applications/Unite Apps/Mini Browser.app</string>
+			<string>/Applications/Firefox Developer Edition.app</string>
 			<key>type</key>
 			<string>ChoosyBrowser</string>
 		</dict>
