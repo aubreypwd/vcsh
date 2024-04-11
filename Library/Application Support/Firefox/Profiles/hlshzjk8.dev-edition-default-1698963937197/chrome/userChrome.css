@@ -1,2 +1,8 @@
 /* Load transparent toolbar: can slow down performance. */
 /* @import "../../../../../../Repos/github.com/zvuc/firefox-macos-native-tabbar/macos-native-tabbar.css" */
+
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+
+browser {
+	background-color: #f0f0f0 !important
+}
