@@ -789,12 +789,12 @@
 		<key>behaviourArgument</key>
 		<dict>
 			<key>path</key>
-			<string>/Users/aubreypwd/Applications/Unite Apps/Mini Browser.app</string>
+			<string>/Applications/Arc.app</string>
 			<key>type</key>
 			<string>ChoosyBrowser</string>
 		</dict>
 		<key>enabled</key>
-		<false/>
+		<true/>
 		<key>predicate</key>
 		<string>URL CONTAINS "https://droplr.com/" OR URL CONTAINS "https://d.pr" OR URL CONTAINS "https://a.supportally.com"</string>
 		<key>title</key>
