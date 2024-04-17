@@ -24,6 +24,7 @@
     "editor.lightbulb.enabled": "onCode",
     "editor.guides.bracketPairs": "active",
     "editor.showFoldingControls": "always",
+    "security.workspace.trust.untrustedFiles": "open",
     "editor.renderLineHighlight": "gutter",
     "editor.multiCursorModifier": "ctrlCmd",
     "terminal.integrated.tabs.enabled": false, 
@@ -168,7 +169,7 @@
     "editor.emptySelectionClipboard": true,
     "editor.detectIndentation": true,
     "editor.dragAndDrop": false,
-    "editor.formatOnPaste": true,
+    "editor.formatOnPaste": false,
     "editor.snippetSuggestions": "top",
 
     // PHP Docblocker.
