@@ -198,5 +198,5 @@
     "intelephense.completion.fullyQualifyGlobalConstantsAndFunctions": true,
     "intelephense.completion.maxItems": 10,
     "php.validate.executablePath": "/opt/homebrew/opt/php@7.4/bin/php",
-    "workbench.colorTheme": "Chrome DevTools Old",
+    "workbench.colorTheme": "Monokai Pro (Filter Spectrum)",
 }
