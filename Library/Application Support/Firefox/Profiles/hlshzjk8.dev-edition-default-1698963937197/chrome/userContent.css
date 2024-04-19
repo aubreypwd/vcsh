@@ -2,33 +2,34 @@
 :root[lwt-newtab-brighttext] {
 
 	/* Monokai Pro Spectrum Colors */
-	/* --user-dark-grey: #1F1F1F;
-	--user-super-light-grey: #d5d2d5;
-	--user-light-grey: #69676C;
-	--user-med-grey: #2E2E2E;
 	--user-blue: #5bd2e5 !important;
-	--user-purple: #fb618f !important;
-	--user-pink: #FB618F !important;
-	--user-red: #a1c983 !important;
-	--user-orange: #fc934f !important;
-	--user-lightorange: #d99b28 !important;
+	--user-dark-grey: #1F1F1F !important;
 	--user-green: #7cd88b !important;
-	--user-yellow: #f6e059 !important; */
+	--user-light-grey: #69676C !important;
+	--user-lightorange: #d99b28 !important;
+	--user-med-grey: #2E2E2E !important;
+	--user-orange: #fc934f !important;
+	--user-pink: #FB618F !important;
+	--user-purple: #fb618f !important;
+	--user-red: #a1c983 !important;
+	--user-super-light-grey: #d5d2d5 !important;
+	--user-white: #d7dde6 !important;
+	--user-yellow: #f6e059 !important;
 
 	/* Google Chrome Devtools */
+	/* --user-blue: #5db0d7 !important;
 	--user-dark-grey: #282828;
-	--user-super-light-grey: #d5d5d5;
-	--user-light-grey: #d5d5d5;
-	--user-med-grey: #303030;
-	--user-blue: #5db0d7 !important;
-	--user-purple: #9e89c4 !important;
-	--user-pink: #d7bada !important;
-	--user-red: #fe8080 !important;
-	--user-orange: #fc934f !important;
-	--user-lightorange: #ff9f61 !important;
 	--user-green: #a0f8b6 !important;
-	--user-yellow: #e5ce5b !important;
+	--user-light-grey: #d5d5d5;
+	--user-lightorange: #ff9f61 !important;
+	--user-med-grey: #303030;
+	--user-orange: #fc934f !important;
+	--user-pink: #d7bada !important;
+	--user-purple: #9e89c4 !important;
+	--user-red: #fe8080 !important;
+	--user-super-light-grey: #d5d5d5;
 	--user-white: #d7dde6 !important;
+	--user-yellow: #e5ce5b !important; */
 
 	/* Other UI Tweaks */
 	--newtab-background-color: var(--user-dark-grey) !important;
@@ -54,7 +55,7 @@
 	--theme-accordion-header-background: var(--user-med-grey) !important;
 
 	/* Tabs */
-	--tab-line-selected-color: var(--user-orange) !important;
+	--tab-line-selected-color: var(--user-light-grey) !important;
 
 	/* Text */
 	--theme-body-color: var(--user-super-light-grey) !important;
@@ -67,11 +68,10 @@
 	--theme-highlight-blue: var(--user-blue) !important;
 	--theme-highlight-purple: var(--user-purple) !important;
 	--theme-highlight-pink: var(--user-pink) !important;
-	--theme-highlight-red: var(--user-orange) !important;
+	--theme-highlight-red: var(--user-blue) !important;
 	--theme-highlight-orange: var(--user-red) !important;
 	--theme-highlight-lightorange: var(--user-lightorange) !important;
 	--theme-highlight-green: var(--user-green) !important;
 	--theme-highlight-yellow: var(--user-yellow) !important;
-
 	--theme-highlight-bluegrey: var(--user-super-light-grey) !important;
 }
