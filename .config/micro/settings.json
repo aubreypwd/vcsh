@@ -7,7 +7,6 @@
     "mkparents": true,
     "paste": true,
     "rmtrailingws": true,
-    "softwrap": true,
     "statusline": false,
     "tabsize": 2
 }
