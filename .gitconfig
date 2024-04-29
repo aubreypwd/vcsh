@@ -172,4 +172,4 @@
 	strategy = incremental
 
 [mergetool "vscode"]
-	cmd = "code --new-window --wait --merge $REMOTE $LOCAL $BASE $MERGED"
+	cmd = "code --new-window --wait --disable-extension shevaua.phpcs --merge  $REMOTE $LOCAL $BASE $MERGED" # 3-way merge.
