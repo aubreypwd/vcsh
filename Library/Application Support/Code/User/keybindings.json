@@ -21,7 +21,7 @@
 		"when": "!accessibilityHelpIsShown && !accessibleViewIsShown"
 	},
 	{
-		"key": "shift+alt+cmd+d",
+		"key": "shift+alt+cmd+y",
 		"command": "workbench.view.debug",
 		"when": "viewContainer.workbench.view.debug.enabled"
 	},
@@ -54,5 +54,33 @@
 	{
 		"key": "ctrl+cmd+o",
 		"command": "workbench.action.openWorkspace"
+	},
+	{
+		"key": "shift+alt+t",
+		"command": "workbench.action.quickOpenLeastRecentlyUsedEditorInGroup",
+		"when": "!activeEditorGroupEmpty"
+	},
+	{
+		"key": "ctrl+shift+tab",
+		"command": "-workbench.action.quickOpenLeastRecentlyUsedEditorInGroup",
+		"when": "!activeEditorGroupEmpty"
+	},
+	{
+		"key": "shift+alt+t",
+		"command": "workbench.action.quickOpenNavigatePreviousInEditorPicker",
+		"when": "inEditorsPicker && inQuickOpen"
+	},
+	{
+		"key": "ctrl+shift+tab",
+		"command": "-workbench.action.quickOpenNavigatePreviousInEditorPicker",
+		"when": "inEditorsPicker && inQuickOpen"
+	},
+	{
+		"key": "alt+t",
+		"command": "workbench.action.showAllEditors"
+	},
+	{
+		"key": "alt+cmd+tab",
+		"command": "-workbench.action.showAllEditors"
 	}
 ]
