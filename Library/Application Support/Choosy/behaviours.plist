@@ -365,7 +365,7 @@
 		<key>behaviourArgument</key>
 		<dict>
 			<key>path</key>
-			<string>/Users/aubreypwd/Applications/X.app</string>
+			<string>/System/Volumes/Preboot/Cryptexes/App/System/Applications/Safari.app</string>
 			<key>type</key>
 			<string>ChoosyBrowser</string>
 		</dict>
