@@ -10,6 +10,7 @@
         ],
         "compounds": [],
     },
+    "phpSniffer.autoDetect": true,
     "editor.fontSize": 11.7,
     "editor.tokenColorCustomizations": "Monokai Pro (Filter Spectrum)",
     "editor.minimap.enabled": false,
@@ -53,7 +54,14 @@
             "titleBar.border": "#3C3C3C",
             "titleBar.inactiveBackground": "#3D3D3D",
             "titleBar.inactiveForeground":  "#ffffff",
-            
+            "tab.border": "#212121",
+            "tab.activeBorder": "#3D3D3D",
+            "tab.inactiveModifiedBorder": "#212121",
+            "tab.unfocusedActiveBorder": "#212121",
+            "tab.hoverBorder": "#212121",
+            "editorGroupHeader.tabsBackground": "#292929",
+            "tab.activeBackground": "#3D3D3D",
+            "tab.inactiveBackground": "#292929",
         },
         "[Chrome DevTools Old]": {
             "editorWhitespace.foreground": "#383838",
@@ -62,7 +70,7 @@
             "sideBar.background": "#3C3C3C",
             // "sideBar.border": "#282828",
         },
-        
+    
         // "terminal.background": "#1D1E1D",
         // "terminal.ansiBlack": "#706e73",
         // "terminal.ansiBlue": "#5ad4e6",
@@ -158,9 +166,7 @@
     ],
     "editor.renderWhitespace": "all",
     "editor.insertSpaces": false,
-    "github.copilot.advanced": {
-        
-    },
+    "github.branchProtection": true,
     "accessibility.signals.terminalBell": {
         "sound": "on"
     },
@@ -206,6 +212,7 @@
     "workbench.colorTheme": "Monokai Pro (Filter Spectrum)",
     "autoHide.panelDelay": 2000,
     "autoHide.sideBarDelay": 2000,
-    "workbench.editor.showTabs": "none",
     "workbench.sideBar.location": "right",
+    "explorer.confirmDelete": false,
+    "phpsab.fixerEnable": false,
 }
