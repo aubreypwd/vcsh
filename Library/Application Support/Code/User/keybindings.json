@@ -82,5 +82,21 @@
 	{
 		"key": "alt+cmd+tab",
 		"command": "-workbench.action.showAllEditors"
+	},
+	{
+		"key": "cmd+\\",
+		"command": "workbench.action.toggleSidebarVisibility"
+	},
+	{
+		"key": "cmd+b",
+		"command": "-workbench.action.toggleSidebarVisibility"
+	},
+	{
+		"key": "shift+cmd+/",
+		"command": "workbench.action.splitEditor"
+	},
+	{
+		"key": "cmd+\\",
+		"command": "-workbench.action.splitEditor"
 	}
 ]
