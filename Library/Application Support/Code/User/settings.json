@@ -10,8 +10,14 @@
         ],
         "compounds": [],
     },
+    "files.useExperimentalFileWatcher": false,
     "phpSniffer.autoDetect": true,
     "editor.fontSize": 11.7,
+    "files.watcherExclude": {
+        "**/.git/": true,
+        "**/node_modules/*/**": true,
+        "**/vendor/*/**": true,
+    },
     "editor.tokenColorCustomizations": "Monokai Pro (Filter Spectrum)",
     "editor.minimap.enabled": false,
     "github.copilot.editor.enableCodeActions": false,
@@ -70,6 +76,9 @@
             "titleBar.inactiveBackground": "#3D3D3D",
             "titleBar.inactiveForeground":  "#ffffff",
             "sideBar.border": "#181818",
+            "sideBarStickyScroll.background": "#464546",
+            "sideBarStickyScroll.border": "#464546",
+            "sideBarStickyScroll.shadow": "#464546",
         },
         "[Chrome DevTools Old]": {
             "editorWhitespace.foreground": "#383838",
@@ -184,7 +193,7 @@
     "window.commandCenter": false,
     "breadcrumbs.enabled": false,
     "workbench.activityBar.location": "top",
-    "editor.autoIndent": "full",
+    "editor.autoIndent": "advanced",
     "editor.emptySelectionClipboard": true,
     "editor.detectIndentation": true,
     "editor.dragAndDrop": false,
@@ -223,4 +232,11 @@
     "workbench.sideBar.location": "right",
     "explorer.confirmDelete": false,
     "phpsab.fixerEnable": false,
+    "phpcs.ignorePatterns": [
+        "*/vendor/**",
+        "*/node_modules/**",
+        "*/dist/**"
+    ],
+    "phpcs.lintOnType": false,
+    "phpcs.standard": "",
 }
