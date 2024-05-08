@@ -98,5 +98,22 @@
 	{
 		"key": "cmd+\\",
 		"command": "-workbench.action.splitEditor"
+	},
+
+	// Paste and Intent.
+	{
+			"key": "cmd+v",
+			"command": "pasteAndIndent.action",
+			"when": "editorTextFocus && !editorReadonly"
+	},
+	{
+			"key": "cmd+v",
+			"command": "editor.action.clipboardPasteAction",
+			"when": "!editorTextFocus"
+	},
+	{
+			"key": "cmd+shift+v",
+			"command": "editor.action.clipboardPasteAction",
+			"when": "editorTextFocus && !editorReadonly"
 	}
 ]
