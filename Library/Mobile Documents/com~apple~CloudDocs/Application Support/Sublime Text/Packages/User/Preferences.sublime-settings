@@ -2,7 +2,7 @@
 	"hide_sidebar_change_count_trigger": 2,
 	"adaptive_dividers": true,
 	"allow_git_home_dir": false,
-	"always_prompt_for_file_reload": false,
+	"always_prompt_for_file_reload": true,
 	"always_show_minimap_viewport": false,
 	"ancestor_gutter": true,
 	"animation_enabled": false,
@@ -12,7 +12,7 @@
 	"auto_complete_preserve_order": "none",
 	"auto_complete_trailing_spaces": true,
 	"auto_complete_trailing_symbols": true,
-	"auto_complete_use_history": false,
+	"auto_complete_use_history": true,
 	"auto_complete_use_index": true,
 	"auto_complete_with_fields": false,
 	"auto_find_in_selection": true,
@@ -26,7 +26,7 @@
 	"caret_extra_width": 0,
 	"caret_style": "phase",
 	"centurion_color_orange": true,
-	"close_deleted_files": true,
+	"close_deleted_files": false,
 	"close_windows_when_empty": false,
 	"color_scheme": "Monokai Pro (Filter Spectrum).sublime-color-scheme",
 	"console_max_history_lines": 100,
@@ -40,9 +40,10 @@
 	"draw_white_space": "all",
 	"enable_tab_scrolling": true,
 	"ensure_newline_at_eof_on_save": true,
+	"hide_tab_scrolling_buttons": true,
 	"fade_fold_buttons": false,
 	"fallback_encoding": "UTF-16",
-	"file_tab_style": "square",
+	"file_tab_style": "rounded",
 	// "font_face": "JetBrains Mono NL Regular",
 	"font_face": "Menlo",
 	"font_size": 12,
@@ -84,13 +85,16 @@
 	"show_full_path": false,
 	"show_git_status": false,
 	"show_git_status_in_status_bar": false,
-	"show_line_endings": true,
+	"show_encoding": false,
+	"show_line_endings": false,
+	"show_indentation": false,
+	"show_syntax": true,
 	"show_minimap": false,
 	"show_navigation_bar": false,
+	"show_spelling_errors": false,
 	"show_only_filename": true,
 	"show_project_first": true,
 	"show_rel_path": true,
-	"show_syntax": true,
 	"show_tab_close_buttons": true,
 	"sidebar_font_small": true,
 	"spell_check": true,
@@ -268,7 +272,9 @@
 	],
 	"indent_guide_options":
 	[
-		"draw_normal"
+		"draw_normal",
+		"draw_active",
+		"draw_active_single",
 	],
 	"index_exclude_patterns":
 	[
@@ -277,13 +283,16 @@
 		"*.png",
 		"*.webp",
 		"*.zip",
+		"*.log",
+		"*.min.*",
 	],
 	"rulers":
 	[
 		50, // Commit subjects.
 		72, // Commit comments.
-		80, // Normal rulers
+		80, // Normal rulers.
 	],
+	"ruler_width": 0.3,
 	"vintage_start_in_command_mode": true,
 	"vintage_use_clipboard": false,
 	"vintage_ctrl_keys": true,

@@ -4,8 +4,13 @@
     {
         "background": "#1F1F1F",
         "gutter": "#1F1F1F",
+        "misspelling": "#5CD4E7",
+        "invisibles": "#262626",
+        "guide": "#656468",
+        "active_guide": "#ECD756",
     },
     "rules":
     [
+
     ]
 }
