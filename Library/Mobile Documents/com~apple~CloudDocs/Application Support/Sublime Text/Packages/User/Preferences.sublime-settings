@@ -251,16 +251,13 @@
 	],
 	"ignored_packages":
 	[
-		"Find PHP Vulnerabilities",
 		"LSP-bash",
-		"LSP-copilot",
 		"LSP-css",
 		"LSP-eslint",
 		"LSP-html",
 		"LSP-intelephense",
 		"LSP-tailwindcss",
 		"PHP Completions Kit",
-		"PHP Namespace Monkey",
 		"SublimeLinter-php",
 		"Vintage",
 	],

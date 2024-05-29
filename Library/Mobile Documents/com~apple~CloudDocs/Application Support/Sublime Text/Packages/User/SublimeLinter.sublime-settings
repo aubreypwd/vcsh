@@ -1,8 +1,8 @@
 {
-    "highlights.time_to_idle": 1,
+    "highlights.time_to_idle": 1.5,
     "lint_mode": "background",
     "debug": false,
-    "delay": 1,
+    "delay": 0.1,
     "linters": {
         "eslint": {
             "disable": false,
@@ -16,14 +16,14 @@
             },
             "disable": false,
             "args": [
-                // "--ignore=*/vendor/*",
-                // "--ignore=*/node_modules/*",
-                // "--ignore=*/dist/*",
+                "--ignore=*/vendor/*",
+                "--ignore=*/node_modules/*",
+                "--ignore=*/dist/*",
             ],
             "excludes": [
-                "node_modules/",
-                "vendor/",
-                "dist/",
+                "*/node_modules/*",
+                "*/vendor/*",
+                "*/dist/*",
             ],
         },
         "jshint": {
@@ -95,30 +95,24 @@
     "no_column_highlights_line": true,
     "show_hover_line_report": true,
     "show_hover_region_report": true,
-    "highlights.start_hidden": false,
+    "highlights.start_hidden": [
+        "phantoms",
+    ],
+    "statusbar.show_active_linters": false,
+    "statusbar.messages_template": "{type}: {message}",
     "gutter_theme": "Default",
     "styles": [
         {
             "types": [
-                "error"
-            ],
-            // "scope": "region.redish markup.error.sublime_linter",
-            "icon": "error",
-            "mark_style": "solid_underline",
-            // "phantom": "{msg}",
-            // "annotation": "{msg}",
-            "priority": 1,
-        },
-        {
-            "types": [
+                "error",
                 "warning",
             ],
-            // "scope": "region.yellowish markup.warning.sublime_linter",
-            "icon": "warning",
-            "mark_style": "solid_underline",
+            "icon": "diamond-outline",
+            "mark_style": "outline",
+            "priority": 0,
             // "phantom": "{msg}",
             // "annotation": "{msg}",
-            "priority": 2,
+            // "scope": "comment markup.error.sublime_linter"
         },
-    ]
+    ],
 }
