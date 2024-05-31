@@ -7,6 +7,10 @@
 
     // Sublime Parity
     "Ctrlg": "command-edit:goto ",
-    "Ctrll": "ToggleHelp"
+    "Ctrll": "ToggleHelp",
+
+    // Quit (and save) easier.
+    "Alt-q": "Quit",
+    "Alt-s": "Save",
 }
 
