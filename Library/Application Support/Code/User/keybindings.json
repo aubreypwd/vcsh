@@ -340,5 +340,15 @@
 	{
 		"key": "alt+b cmd+,",
 		"command": "bookmarks.openSettings"
+	},
+	{
+		"key": "alt+o alt+t",
+		"command": "workbench.action.terminal.openNativeConsole",
+		"when": "!terminalFocus"
+	},
+	{
+		"key": "shift+cmd+c",
+		"command": "-workbench.action.terminal.openNativeConsole",
+		"when": "!terminalFocus"
 	}
 ]

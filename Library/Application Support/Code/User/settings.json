@@ -15,15 +15,6 @@
                     "max_data": 4096,
                 }
             },
-            // {
-            //     "type": "firefox",
-            //     "request": "launch",
-            //     "name": "Launch My Firefox",
-            //     "url": "http://affiliatewp-ai-affiliate-mod.test/",
-            //     "webRoot": "${workspaceFolder}",
-            //     "timeout": 3600,
-            //     // "tmpDir": "~/tmp/"
-            // },
         ],
         "compounds": [],
     },
@@ -76,7 +67,7 @@
             "panel.background": "#2B2B2B",
             "scrollbarSlider.background": "#575757",
             "selection.background": "#264F78",
-            "sideBar.background": "#333333",
+            "sideBar.background": "#2B2B2B",
             "sideBar.border": "#4D4D4D",
             "sideBarSectionHeader.background": "#2B2B2B",
             "sideBarSectionHeader.foreground": "#fff",
@@ -85,7 +76,7 @@
             "tab.activeBorderTop": "#2B2B2B",
             "tab.activeForeground": "#ffffff",
             "tab.border": "#575757",
-            "tab.hoverBackground": "#1E1E1E",
+            "tab.hoverBackground": "#2E2E2E",
             "tab.hoverBorder": "#2B2B2B",
             "tab.hoverForeground": "#D5D5D5",
             "tab.inactiveBackground": "#1E1E1E",
@@ -93,11 +84,14 @@
             "tab.unfocusedActiveBorder": "#575757",
             "tab.unfocusedActiveBorderTop": "#2B2B2B",
             "tab.unfocusedActiveForeground": "#ffffff",
+            "tab.unfocusedActiveBackground": "#1E1E1E",
             "tab.unfocusedHoverBorder": "#2B2B2B",
             "tab.unfocusedHoverForeground": "#ffffff",
             "tab.unfocusedInactiveForeground": "#ffffff",
-            "titleBar.activeBackground": "#2B2B2B",
+            "tab.unfocusedInactiveBackground": "#1E1E1E",
+            "titleBar.activeBackground": "#363636",
             "titleBar.border": "#2B2B2B",
+            "editor.lineHighlightBackground": "#2B2B2B"
         },
         "[Monokai Pro (Filter Spectrum)]": {
             "activityBar.background": "#2B2B2B",
@@ -308,9 +302,12 @@
     "phpcs.showSources": true,
     "phpcs.trace.server": "messages",
     "cSpell.userWords": [
+        "Monokai",
         "phpcs",
         "Squiz",
-        "Traited"
+        "Traited",
+        "wpdb",
+        "xdebug"
     ],
     "bookmarks.saveBookmarksInProject": true,
     "bookmarks.sideBar.countBadge": "off",
