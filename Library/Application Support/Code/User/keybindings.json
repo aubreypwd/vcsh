@@ -21,7 +21,7 @@
 		"when": "!accessibilityHelpIsShown && !accessibleViewIsShown"
 	},
 	{
-		"key": "shift+alt+cmd+y",
+		"key": "alt+s alt+d",
 		"command": "workbench.view.debug",
 		"when": "viewContainer.workbench.view.debug.enabled"
 	},
@@ -43,7 +43,7 @@
 		"command": "workbench.action.saveWorkspaceAs"
 	},
 	{
-		"key": "alt+cmd+k",
+		"key": "alt+b alt+l",
 		"command": "bookmarks.toggleLabeled"
 	},
 	{
@@ -115,5 +115,230 @@
 			"key": "cmd+shift+v",
 			"command": "editor.action.clipboardPasteAction",
 			"when": "editorTextFocus && !editorReadonly"
+	},
+
+	// Continued...
+	{
+		"key": "cmd+o",
+		"command": "-workbench.action.files.openFolderViaWorkspace",
+		"when": "!openFolderWorkspaceSupport && workbenchState == 'workspace'"
+	},
+	{
+		"key": "cmd+o",
+		"command": "-workbench.action.files.openFileFolder",
+		"when": "isMacNative && openFolderWorkspaceSupport"
+	},
+	{
+		"key": "cmd+o",
+		"command": "-workbench.action.files.openLocalFileFolder",
+		"when": "remoteFileDialogVisible"
+	},
+	{
+		"key": "cmd+o",
+		"command": "-workbench.action.files.openFile",
+		"when": "false"
+	},
+	{
+		"key": "cmd+o",
+		"command": "workbench.action.addRootFolder"
+	},
+	{
+		"key": "alt+d alt+s",
+		"command": "workbench.action.debug.start",
+		"when": "debuggersAvailable && debugState == 'inactive'"
+	},
+	{
+		"key": "f5",
+		"command": "-workbench.action.debug.start",
+		"when": "debuggersAvailable && debugState == 'inactive'"
+	},
+	{
+		"key": "alt+d alt+x",
+		"command": "workbench.action.debug.stop",
+		"when": "inDebugMode && !focusedSessionIsAttach"
+	},
+	{
+		"key": "shift+f5",
+		"command": "-workbench.action.debug.stop",
+		"when": "inDebugMode && !focusedSessionIsAttach"
+	},
+	{
+		"key": "alt+d alt+c",
+		"command": "workbench.action.debug.continue",
+		"when": "debugState == 'stopped'"
+	},
+	{
+		"key": "f5",
+		"command": "-workbench.action.debug.continue",
+		"when": "debugState == 'stopped'"
+	},
+	{
+		"key": "alt+d alt+r",
+		"command": "workbench.action.debug.restart",
+		"when": "inDebugMode"
+	},
+	{
+		"key": "shift+cmd+f5",
+		"command": "-workbench.action.debug.restart",
+		"when": "inDebugMode"
+	},
+	{
+		"key": "alt+d alt+n",
+		"command": "workbench.action.debug.stepOver",
+		"when": "debugState == 'stopped'"
+	},
+	{
+		"key": "f10",
+		"command": "-workbench.action.debug.stepOver",
+		"when": "debugState == 'stopped'"
+	},
+	{
+		"key": "alt+c alt+k",
+		"command": "bookmarks.clearFromAllFiles"
+	},
+	{
+		"key": "alt+b alt+a",
+		"command": "bookmarks.listFromAllFiles"
+	},
+	{
+		"key": "alt+b alt+c",
+		"command": "bookmarks.clear"
+	},
+	{
+		"key": "shift+cmd+,",
+		"command": "workbench.action.openGlobalKeybindings"
+	},
+	{
+		"key": "cmd+k cmd+s",
+		"command": "-workbench.action.openGlobalKeybindings"
+	},
+	{
+		"key": "shift+cmd+,",
+		"command": "-editor.action.inPlaceReplace.up",
+		"when": "editorTextFocus && !editorReadonly"
+	},
+	{
+		"key": "cmd+e",
+		"command": "-editor.action.toggleScreenReaderAccessibilityMode",
+		"when": "accessibilityHelpIsShown"
+	},
+	{
+		"key": "cmd+e",
+		"command": "-actions.findWithSelection"
+	},
+	{
+		"key": "shift+cmd+e",
+		"command": "-workbench.view.explorer",
+		"when": "viewContainer.workbench.view.explorer.enabled"
+	},
+	{
+		"key": "alt+s alt+f",
+		"command": "workbench.files.action.showActiveFileInExplorer"
+	},
+	{
+		"key": "alt+s alt+b",
+		"command": "workbench.view.extension.bookmarks"
+	},
+	{
+		"key": "alt+s alt+x",
+		"command": "workbench.view.extensions",
+		"when": "viewContainer.workbench.view.extensions.enabled"
+	},
+	{
+		"key": "shift+cmd+x",
+		"command": "-workbench.view.extensions",
+		"when": "viewContainer.workbench.view.extensions.enabled"
+	},
+	{
+		"key": "cmd+k e",
+		"command": "-workbench.files.action.focusOpenEditorsView",
+		"when": "workbench.explorer.openEditorsView.active"
+	},
+	{
+		"key": "cmd+k cmd+e",
+		"command": "-keybindings.editor.defineWhenExpression",
+		"when": "inKeybindings && keybindingFocus"
+	},
+	{
+		"key": "alt+x alt+i",
+		"command": "workbench.action.debug.stepInto",
+		"when": "debugState != 'inactive'"
+	},
+	{
+		"key": "f11",
+		"command": "-workbench.action.debug.stepInto",
+		"when": "debugState != 'inactive'"
+	},
+	{
+		"key": "alt+d alt+o",
+		"command": "workbench.action.debug.stepOut",
+		"when": "debugState == 'stopped'"
+	},
+	{
+		"key": "shift+f11",
+		"command": "-workbench.action.debug.stepOut",
+		"when": "debugState == 'stopped'"
+	},
+	{
+		"key": "alt+d alt+v",
+		"command": "workbench.debug.action.toggleRepl",
+		"when": "workbench.panel.repl.view.active"
+	},
+	{
+		"key": "shift+cmd+y",
+		"command": "-workbench.debug.action.toggleRepl",
+		"when": "workbench.panel.repl.view.active"
+	},
+	{
+		"key": "alt+d alt+d",
+		"command": "editor.action.deleteLines",
+		"when": "textInputFocus && !editorReadonly"
+	},
+	{
+		"key": "shift+cmd+k",
+		"command": "-editor.action.deleteLines",
+		"when": "textInputFocus && !editorReadonly"
+	},
+	{
+		"key": "alt+d alt+d",
+		"command": "editor.action.deleteLines",
+		"when": "editorFocus"
+	},
+	{
+		"key": "ctrl+shift+k",
+		"command": "-editor.action.deleteLines",
+		"when": "editorFocus"
+	},
+	{
+		"key": "alt+b alt+]",
+		"command": "bookmarks.jumpToNext",
+		"when": "editorTextFocus"
+	},
+	{
+		"key": "alt+cmd+l",
+		"command": "-bookmarks.jumpToNext",
+		"when": "editorTextFocus"
+	},
+	{
+		"key": "alt+b alt+[",
+		"command": "bookmarks.jumpToPrevious",
+		"when": "editorTextFocus"
+	},
+	{
+		"key": "alt+cmd+j",
+		"command": "-bookmarks.jumpToPrevious",
+		"when": "editorTextFocus"
+	},
+	{
+		"key": "alt+b alt+f",
+		"command": "bookmarks.list"
+	},
+	{
+		"key": "alt+b alt+t",
+		"command": "bookmarks.toggle"
+	},
+	{
+		"key": "alt+b cmd+,",
+		"command": "bookmarks.openSettings"
 	}
 ]

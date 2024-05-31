@@ -5,8 +5,25 @@
                 "name": "Xdebug",
                 "type": "php",
                 "request": "launch",
-                "port": 9022
-            }
+                "port": 9022,
+                "ignore": [
+                    "**/vendor/**/*.php",
+                    "**/node_modules/**/*.php",
+                    "**/dist/**/*.php",
+                ],
+                "xdebugSettings": {
+                    "max_data": 4096,
+                }
+            },
+            // {
+            //     "type": "firefox",
+            //     "request": "launch",
+            //     "name": "Launch My Firefox",
+            //     "url": "http://affiliatewp-ai-affiliate-mod.test/",
+            //     "webRoot": "${workspaceFolder}",
+            //     "timeout": 3600,
+            //     // "tmpDir": "~/tmp/"
+            // },
         ],
         "compounds": [],
     },
@@ -18,6 +35,7 @@
         "**/node_modules/*/**": true,
         "**/vendor/*/**": true,
     },
+    "window.title": "${folderName}${separator}${activeEditorMedium}${separator}${focusedView}",
     "editor.tokenColorCustomizations": "Monokai Pro (Filter Spectrum)",
     "editor.minimap.enabled": false,
     "github.copilot.editor.enableCodeActions": false,
@@ -28,12 +46,13 @@
     "window.autoDetectHighContrast": false,
     "editor.lineDecorationsWidth": 10,
     "editor.lineNumbersMinChars": 0,
+    "editor.parameterHints.enabled": false, // This is so goddamn annoying!
     "editor.glyphMargin": true,
     "explorer.decorations.colors": false,
     "workbench.settings.useSplitJSON": true,
     "diffEditor.renderMarginRevertIcon": false,
     "window.density.editorTabHeight": "compact",
-    "editor.lightbulb.enabled": "onCode",
+    "editor.lightbulb.enabled": "off",
     "editor.guides.bracketPairs": "active",
     "editor.showFoldingControls": "never",
     "security.workspace.trust.untrustedFiles": "open",
@@ -43,6 +62,43 @@
     "editor.multiCursorModifier": "ctrlCmd",
     "terminal.integrated.tabs.enabled": false, 
     "workbench.colorCustomizations": {
+        "[Chromer Theme]": {
+
+            // Modify to look like Safari Devtools!
+            "button.background": "#44465E",
+            "button.hoverBackground": "#5D6291",
+            "editor.background" : "#2B2B2B",
+            "editor.outlineSelectionBackground": "#264F78",
+            "editorGroupHeader.border": "#575757",
+            "editorGroupHeader.tabsBackground": "#1E1E1E",
+            "list.hoverBackground": "#5D6291",
+            "list.hoverForeground": "#ffffff",
+            "panel.background": "#2B2B2B",
+            "scrollbarSlider.background": "#575757",
+            "selection.background": "#264F78",
+            "sideBar.background": "#333333",
+            "sideBar.border": "#4D4D4D",
+            "sideBarSectionHeader.background": "#2B2B2B",
+            "sideBarSectionHeader.foreground": "#fff",
+            "tab.activeBackground": "#2B2B2B",
+            "tab.activeBorder": "#2B2B2B",
+            "tab.activeBorderTop": "#2B2B2B",
+            "tab.activeForeground": "#ffffff",
+            "tab.border": "#575757",
+            "tab.hoverBackground": "#1E1E1E",
+            "tab.hoverBorder": "#2B2B2B",
+            "tab.hoverForeground": "#D5D5D5",
+            "tab.inactiveBackground": "#1E1E1E",
+            "tab.lastPinnedBorder": "#575757",
+            "tab.unfocusedActiveBorder": "#575757",
+            "tab.unfocusedActiveBorderTop": "#2B2B2B",
+            "tab.unfocusedActiveForeground": "#ffffff",
+            "tab.unfocusedHoverBorder": "#2B2B2B",
+            "tab.unfocusedHoverForeground": "#ffffff",
+            "tab.unfocusedInactiveForeground": "#ffffff",
+            "titleBar.activeBackground": "#2B2B2B",
+            "titleBar.border": "#2B2B2B",
+        },
         "[Monokai Pro (Filter Spectrum)]": {
             "activityBar.background": "#2B2B2B",
             "editorGroup.emptyBackground": "#292929",
@@ -191,13 +247,13 @@
     "workbench.settings.editor": "json",
     "workbench.editor.editorActionsLocation": "titleBar",
     "window.commandCenter": false,
-    "breadcrumbs.enabled": false,
     "workbench.activityBar.location": "top",
-    "editor.autoIndent": "advanced",
+    "editor.autoIndent": "full",
     "editor.emptySelectionClipboard": true,
     "editor.detectIndentation": true,
     "editor.dragAndDrop": false,
     "editor.formatOnPaste": false,
+    "pasteAndIndent.selectAfter": true,
     "editor.snippetSuggestions": "top",
 
     // PHP Docblocker.
@@ -212,8 +268,11 @@
     "php-docblocker.returnGap": true,
     "workbench.statusBar.visible": false,
     "workspaceSidebar.rootFolders": [
-
-        { "path": "/Users/aubreypwd/Sites", "depth": 4, "excludeHiddenFolders": false }
+        { 
+            "path": "/Users/aubreypwd/VSCode/Workspaces", 
+            "depth": 1, 
+            "excludeHiddenFolders": true 
+        }
     ],
     "workspaceSidebar.showFileIcons": false,
     "workspace-manager.includeGlobPattern": [
@@ -226,10 +285,8 @@
     "intelephense.completion.fullyQualifyGlobalConstantsAndFunctions": true,
     "intelephense.completion.maxItems": 10,
     "php.validate.executablePath": "/opt/homebrew/opt/php@7.4/bin/php",
-    "workbench.colorTheme": "Monokai Pro (Filter Spectrum)",
     "autoHide.panelDelay": 2000,
     "autoHide.sideBarDelay": 2000,
-    "workbench.sideBar.location": "right",
     "explorer.confirmDelete": false,
     "phpsab.fixerEnable": false,
     "phpcs.ignorePatterns": [
@@ -239,4 +296,29 @@
     ],
     "phpcs.lintOnType": false,
     "phpcs.standard": "",
+    "firefox.profileDir": "/Users/aubreypwd/Library/Application Support/Firefox/Profiles/hlshzjk8.dev-edition-default-1698963937197",
+    "workspaceExplorer.workspaceStorageDirectory": "/Users/aubreypwd/VSCode/Workspaces",
+    "workspaceExplorer.enableCustomIconSearch": false,
+    "debug.closeReadonlyTabsOnEnd": true,
+    "debug.confirmOnExit": "always",
+    "debug.console.closeOnEnd": true,
+    "github.copilot.editor.enableAutoCompletions": true,
+    "php.debug.ideKey": "",
+    "php.debug.executablePath": "",
+    "phpcs.showSources": true,
+    "phpcs.trace.server": "messages",
+    "cSpell.userWords": [
+        "phpcs",
+        "Squiz",
+        "Traited"
+    ],
+    "bookmarks.saveBookmarksInProject": true,
+    "bookmarks.sideBar.countBadge": "off",
+    "scm.autoReveal": false,
+    "workbench.sideBar.location": "right",
+    "bookmarks.keepBookmarksOnLineDelete": true,
+    "bookmarks.multicursor.toggleMode": "eachLineIndependently",
+    "bookmarks.sideBar.expanded": true,
+    "breadcrumbs.enabled": false,
+    "workbench.colorTheme": "Chromer Theme",
 }
