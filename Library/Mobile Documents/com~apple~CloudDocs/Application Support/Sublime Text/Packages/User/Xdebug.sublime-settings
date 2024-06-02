@@ -18,11 +18,11 @@
   "debug": false,
   "max_depth": 4,
   "max_data": 2048,
-  "max_children": 64,
-  "super_globals": true,
+  "max_children": 16,
+  "super_globals": false,
   "disable_layout": false,
   "ide_key": "",
-  "port": 9021, // Yes, we have to use this now that PHP 7.4 takes over port 9000.
+  "port": 9022, // Yes, we have to use this now that PHP 7.4 takes over port 9000.
   "host": "localhost", // Yes, we have to use this now that PHP 7.4 takes over port 9000.
   "hide_password": true,
   "breakpoint_enabled": "circle",

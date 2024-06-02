@@ -1,5 +1,11 @@
 {
-	"hide_sidebar_change_count_trigger": 2,
+	"hide_sidebar_change_count_trigger": 5,
+	"show_sidebar_on_activated": false,
+	"show_sidebar_on_save": false,
+	"show_sidebar_on_load": false,
+	"show_sidebar_on_new": false,
+	"show_sidebar_on_clone": true,
+	"show_sidebar_on_close": true,
 	"adaptive_dividers": true,
 	"allow_git_home_dir": false,
 	"always_prompt_for_file_reload": true,
@@ -75,7 +81,7 @@
 	"open_files_in_new_window": "always",
 	"ours_gutter": true,
 	"overlay_scroll_bars": "enabled",
-	"preview_on_click": false,
+	"preview_on_click": true,
 	"reload_file_on_change": true,
 	"remember_full_screen": true,
 	"remember_layout": true,
@@ -255,6 +261,7 @@
 	],
 	"ignored_packages":
 	[
+		"Auto Hide Sidebar",
 		"LSP-bash",
 		"LSP-css",
 		"LSP-eslint",
