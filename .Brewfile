@@ -109,30 +109,30 @@ brew "dnsmasq", restart_service: true
 brew "duti"
 # Modern replacement for 'ls'
 brew "exa"
+# Significantly faster alternative to the classic Unix cp(1) command
+brew "fcp"
 # Simple, fast and user-friendly alternative to find
 brew "fd"
+# Simple file manager written in bash
+brew "fff"
 # OpenType text shaping engine
 brew "harfbuzz"
 # Image processing and image analysis library
 brew "leptonica"
-# Multi-format archive and compression library
-brew "libarchive"
 # Subtitle renderer for the ASS/SSA subtitle format
 brew "libass"
 # Blu-Ray disc playback library for media players like VLC
 brew "libbluray"
 # Light HTTP/1.1 server library
 brew "libmicrohttpd"
-# Optimized BLAS library
-brew "openblas"
-# Open Visual Inference And Optimization toolkit for AI inference
-brew "openvino"
 # Framework for layout and rendering of i18n text
 brew "pango"
 # OCR (Optical Character Recognition) engine
 brew "tesseract"
 # Play, record, convert, and stream audio and video
 brew "ffmpeg"
+# Tool to install, manage and use Progressive Web Apps in Mozilla Firefox
+brew "firefoxpwa"
 # Command-line fuzzy finder written in Go
 brew "fzf"
 # Fast, simple fuzzy text selector with an advanced scoring algorithm
@@ -224,7 +224,7 @@ brew "m-cli"
 # System information fetcher, with an emphasis on performance and minimalism
 brew "macchina"
 # Web and API based SMTP testing tool
-brew "mailhog", restart_service: true
+brew "mailhog"
 # Tool to convert MDF (Alcohol 120% images) images to ISO images
 brew "mdf2iso"
 # Modern and intuitive terminal-based text editor
@@ -246,9 +246,15 @@ brew "neofetch"
 # Ambitious Vim-fork focused on extensibility and agility
 brew "neovim"
 # HTTP(S) server and reverse proxy, and IMAP/POP3 proxy server
-brew "nginx", restart_service: true
+brew "nginx"
+# Optimized BLAS library
+brew "openblas"
 # Development kit for the Java programming language
 brew "openjdk"
+# Open Visual Inference And Optimization toolkit for AI inference
+brew "openvino"
+# 7-Zip (high compression file archiver) implementation
+brew "p7zip"
 # Swiss-army knife of markup format conversion
 brew "pandoc"
 # Simplistic interactive filtering tool
@@ -257,6 +263,8 @@ brew "peco"
 brew "percol"
 # Pretty system information tool written in POSIX sh
 brew "pfetch"
+# General-purpose scripting language
+brew "php@8.1"
 # General-purpose scripting language
 brew "php@8.2", restart_service: true
 # Web interface for MySQL and MariaDB
@@ -283,6 +291,8 @@ brew "python@3.8"
 brew "rsync"
 # Install various Ruby versions and implementations
 brew "ruby-build"
+# Web search from the terminal
+brew "s-search"
 # Terminal multiplexer with VT100/ANSI terminal emulation
 brew "screen"
 # Static analysis and lint tool, for (ba)sh scripts
@@ -362,6 +372,10 @@ cask "adium"
 cask "alt-tab"
 # GUI app for Homebrew
 cask "cakebrew"
+# OpenAI's official ChatGPT desktop app
+cask "chatgpt"
+# Tool to list all active shortcuts of the current application
+cask "cheatsheet"
 # PlayStation remote play client
 cask "chiaki"
 # Open links in any browser
@@ -398,28 +412,42 @@ cask "swiftcord"
 cask "syncterm"
 # JDK from the Eclipse Foundation (Adoptium)
 cask "temurin"
+cask "vimmotion"
 # Video communication and virtual meeting platform
 cask "zoom"
 vscode "alefragnani.bookmarks"
 vscode "bmewburn.vscode-intelephense-client"
 vscode "britesnow.vscode-toggle-quotes"
+vscode "chouzz.vscode-better-align"
 vscode "christian-kohler.path-intellisense"
+vscode "davidbwaters.macos-modern-theme"
 vscode "dbaeumer.vscode-eslint"
+vscode "deerawan.vscode-dash"
 vscode "ecmel.vscode-html-css"
 vscode "editorconfig.editorconfig"
 vscode "formulahendry.auto-rename-tag"
 vscode "github.copilot"
 vscode "github.copilot-chat"
 vscode "github.vscode-pull-request-github"
-vscode "ivankinder.one-monokai-darker-spectrum"
+vscode "goodbyte.uy-chrome-devtools-theme"
+vscode "iceliu.highlight-icemode"
+vscode "includable.file-duplicate"
 vscode "johnbillion.vscode-wordpress-hooks"
 vscode "mechatroner.rainbow-csv"
 vscode "mikestead.dotenv"
 vscode "monokai.theme-monokai-pro-vscode"
+vscode "ms-python.debugpy"
+vscode "ms-python.python"
+vscode "ms-python.vscode-pylance"
 vscode "ms-vscode.sublime-keybindings"
 vscode "neilbrayfield.php-docblocker"
+vscode "posseus.chromer-theme"
+vscode "rifi2k.format-html-in-php"
+vscode "rubymaniac.vscode-paste-and-indent"
 vscode "shevaua.phpcs"
-vscode "sketchbuch.vsc-workspace-sidebar"
+vscode "smartlive.chrome-devtools-theme"
+vscode "streetsidesoftware.code-spell-checker"
+vscode "thomasbergersen.xcode-default-dark"
 vscode "timonwong.shellcheck"
 vscode "waderyan.gitblame"
 vscode "wordpresstoolbox.wordpress-toolbox"

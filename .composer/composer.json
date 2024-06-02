@@ -8,5 +8,8 @@
         "laravel/valet": "~4.0",
         "beyondcode/expose": "dev-master",
         "laravel/installer": "dev-master"
+    },
+    "require-dev": {
+        "squizlabs/php_codesniffer": "4.0.x-dev"
     }
 }

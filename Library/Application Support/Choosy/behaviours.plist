@@ -353,7 +353,7 @@
 			<string>ChoosyBrowser</string>
 		</dict>
 		<key>enabled</key>
-		<true/>
+		<false/>
 		<key>predicate</key>
 		<string>URL CONTAINS "github.com"</string>
 		<key>title</key>
@@ -370,7 +370,7 @@
 			<string>ChoosyBrowser</string>
 		</dict>
 		<key>enabled</key>
-		<true/>
+		<false/>
 		<key>predicate</key>
 		<string>URL CONTAINS "twitter.com"</string>
 		<key>title</key>
@@ -387,7 +387,7 @@
 			<string>ChoosyBrowser</string>
 		</dict>
 		<key>enabled</key>
-		<true/>
+		<false/>
 		<key>predicate</key>
 		<string>URL CONTAINS ".local" OR URL CONTAINS ".test" OR URL CONTAINS "localhost:" OR URL CONTAINS "localhost"</string>
 		<key>title</key>
@@ -489,7 +489,7 @@
 			<string>ChoosyBrowser</string>
 		</dict>
 		<key>enabled</key>
-		<true/>
+		<false/>
 		<key>predicate</key>
 		<string>URL CONTAINS "facebook.com"</string>
 		<key>title</key>
@@ -616,7 +616,7 @@
 			<string>ChoosyChromeProfileMode</string>
 		</dict>
 		<key>enabled</key>
-		<true/>
+		<false/>
 		<key>predicate</key>
 		<string>URL CONTAINS "app.asana.com"</string>
 		<key>title</key>
@@ -654,7 +654,7 @@
 			<string>ChoosyBrowser</string>
 		</dict>
 		<key>enabled</key>
-		<true/>
+		<false/>
 		<key>predicate</key>
 		<string>URL CONTAINS "secure.helpscout.net"</string>
 		<key>title</key>
@@ -790,7 +790,7 @@
 			<string>ChoosyBrowser</string>
 		</dict>
 		<key>enabled</key>
-		<true/>
+		<false/>
 		<key>predicate</key>
 		<string>URL CONTAINS "https://droplr.com/" OR URL CONTAINS "https://d.pr" OR URL CONTAINS "https://a.supportally.com"</string>
 		<key>title</key>
@@ -930,7 +930,7 @@
 			<string>ChoosyBrowser</string>
 		</dict>
 		<key>enabled</key>
-		<true/>
+		<false/>
 		<key>predicate</key>
 		<string>URL CONTAINS "hub.awesome"</string>
 		<key>title</key>
@@ -942,12 +942,12 @@
 		<key>behaviourArgument</key>
 		<dict>
 			<key>path</key>
-			<string>/Applications/Firefox Developer Edition.app</string>
+			<string>/System/Volumes/Preboot/Cryptexes/App/System/Applications/Safari.app</string>
 			<key>type</key>
 			<string>ChoosyBrowser</string>
 		</dict>
 		<key>enabled</key>
-		<true/>
+		<false/>
 		<key>predicate</key>
 		<string>URL CONTAINS "php.net"</string>
 		<key>title</key>
@@ -959,12 +959,12 @@
 		<key>behaviourArgument</key>
 		<dict>
 			<key>path</key>
-			<string>/Applications/Firefox Developer Edition.app</string>
+			<string>/System/Volumes/Preboot/Cryptexes/App/System/Applications/Safari.app</string>
 			<key>type</key>
 			<string>ChoosyBrowser</string>
 		</dict>
 		<key>enabled</key>
-		<true/>
+		<false/>
 		<key>predicate</key>
 		<string>URL CONTAINS "wordpress.org"</string>
 		<key>title</key>
@@ -976,7 +976,7 @@
 		<key>behaviourArgument</key>
 		<string></string>
 		<key>enabled</key>
-		<false/>
+		<true/>
 		<key>predicate</key>
 		<string>localFile == 0</string>
 		<key>title</key>
