@@ -52,22 +52,69 @@
     "editor.renderLineHighlight": "gutter",
     "editor.multiCursorModifier": "ctrlCmd",
     "terminal.integrated.tabs.enabled": false, 
+
+    // Blue: #0978D4
+    // Blue Dull: #175295
+
+    // Lialac: #5D6291
+    // Lialiac Dull: #626472
+
+    "editor.tokenColorCustomizations": {
+        "[Chromer Theme]": {
+            "textMateRules": [
+
+                // Get more blue in there, it's too purple.
+                {
+                    "scope": "support.function",
+                    "settings": {
+
+                        // Bulltin functions in PHP.
+                        "foreground": "#8AABFF",
+                    }
+                },
+                {
+                    "scope": "storage.modifier",
+                    "settings": {
+                        "foreground": "#8AABFF",
+                    }
+                },
+                {
+                    "scope": "storage.type",
+                    "settings": {
+                        "foreground": "#8AABFF",
+                    }
+                }
+            ]
+        }
+    },
     "workbench.colorCustomizations": {
         "[Chromer Theme]": {
-
+        
             // Modify to look like Safari Devtools!
-            "button.background": "#44465E",
-            "button.hoverBackground": "#5D6291",
+            "button.background": "#0978D4", 
+            "button.hoverBackground": "#0978D4",
             "editor.background" : "#2B2B2B",
+            "focusBorder": "#0978D4",
             "editor.lineHighlightBackground": "#2B2B2B",
-            "editor.outlineSelectionBackground": "#264F78",
+            "editor.outlineSelectionBackground": "#0978D4",
+            "editor.selectionBackground": "#175295",
+            "editor.selectionForeground": "#ffffff",
+            "editor.selectionHighlightBackground": "#175295",
+            "editor.selectionHighlightForeground": "#ffffff",
             "editorGroupHeader.border": "#575757",
+            "editorWidget.resizeBorder": "#0978D4",
             "editorGroupHeader.tabsBackground": "#1E1E1E",
-            "list.hoverBackground": "#5D6291",
+            "list.hoverBackground": "#0978D4",
+            "textLink.foreground": "#569CD6",
+            "textLink.activeForeground": "#569CD6",
+            "input.border": "#175295",
             "list.hoverForeground": "#ffffff",
+            "menu.selectionBorder": "#175295",
+            "panel.border": "#175295",
+            "widget.border": "#454545",
             "panel.background": "#2B2B2B",
             "scrollbarSlider.background": "#575757",
-            "selection.background": "#264F78",
+            "selection.background": "#626472",
             "sideBar.background": "#2B2B2B",
             "sideBar.border": "#4D4D4D",
             "sideBarSectionHeader.background": "#2B2B2B",
@@ -91,7 +138,7 @@
             "tab.unfocusedInactiveBackground": "#1E1E1E",
             "tab.unfocusedInactiveForeground": "#ffffff",
             "titleBar.activeBackground": "#363636",
-            "titleBar.border": "#2B2B2B",
+            "titleBar.border": "#1E1E1E",
             "titleBar.inactiveBackground": "#363636",
         },
         "[Monokai Pro (Filter Spectrum)]": {
