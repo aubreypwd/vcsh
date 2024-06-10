@@ -637,7 +637,7 @@
 			<string>ChoosyChromeProfileMode</string>
 		</dict>
 		<key>enabled</key>
-		<false/>
+		<true/>
 		<key>predicate</key>
 		<string>URL CONTAINS "meet.google.com"</string>
 		<key>title</key>
