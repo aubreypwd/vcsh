@@ -62,16 +62,15 @@
     "editor.tokenColorCustomizations": {
         "[Chromer Theme]": {
             "textMateRules": [
-
-                // Get more blue in there, it's too purple.
-                {
+               {
+                    // Bulltin functions in PHP.
                     "scope": "support.function",
                     "settings": {
-
-                        // Bulltin functions in PHP.
                         "foreground": "#8AABFF",
                     }
                 },
+
+                // public static, private function, etc...
                 {
                     "scope": "storage.modifier",
                     "settings": {
@@ -93,8 +92,7 @@
             // Modify to look like Safari Devtools!
             "button.background": "#0978D4", 
             "button.hoverBackground": "#0978D4",
-            "editor.background" : "#2B2B2B",
-            "focusBorder": "#0978D4",
+            "editor.background" : "#272727",
             "editor.lineHighlightBackground": "#2B2B2B",
             "editor.outlineSelectionBackground": "#0978D4",
             "editor.selectionBackground": "#175295",
@@ -102,44 +100,47 @@
             "editor.selectionHighlightBackground": "#175295",
             "editor.selectionHighlightForeground": "#ffffff",
             "editorGroupHeader.border": "#575757",
+            "editorGroupHeader.tabsBackground": "#1F1F1F",
             "editorWidget.resizeBorder": "#0978D4",
-            "editorGroupHeader.tabsBackground": "#1E1E1E",
-            "list.hoverBackground": "#0978D4",
-            "textLink.foreground": "#569CD6",
-            "textLink.activeForeground": "#569CD6",
+            "focusBorder": "#0978D4",
             "input.border": "#175295",
+            "list.hoverBackground": "#0978D4",
             "list.hoverForeground": "#ffffff",
             "menu.selectionBorder": "#175295",
-            "panel.border": "#175295",
-            "widget.border": "#454545",
             "panel.background": "#2B2B2B",
+            "panel.border": "#175295",
             "scrollbarSlider.background": "#575757",
             "selection.background": "#626472",
             "sideBar.background": "#2B2B2B",
             "sideBar.border": "#4D4D4D",
             "sideBarSectionHeader.background": "#2B2B2B",
             "sideBarSectionHeader.foreground": "#fff",
-            "tab.activeBackground": "#2B2B2B",
-            "tab.activeBorder": "#2B2B2B",
+            "tab.activeBackground": "#272727",
+            "tab.activeBorder": "#272727",
             "tab.activeBorderTop": "#2B2B2B",
             "tab.activeForeground": "#ffffff",
             "tab.border": "#575757",
-            "tab.hoverBackground": "#2E2E2E",
+            "tab.hoverBackground": "#272727",
             "tab.hoverBorder": "#2B2B2B",
             "tab.hoverForeground": "#D5D5D5",
-            "tab.inactiveBackground": "#1E1E1E",
+            "tab.inactiveBackground": "#1F1F1F",
+            "tab.inactiveModifiedBorder": "#1F1F1F",
+            "tab.unfocusedInactiveModifiedBorder": "#1F1F1F",
             "tab.lastPinnedBorder": "#575757",
-            "tab.unfocusedActiveBackground": "#1E1E1E",
+            "tab.unfocusedActiveBackground": "#1F1F1F",
             "tab.unfocusedActiveBorder": "#575757",
-            "tab.unfocusedActiveBorderTop": "#2B2B2B",
+            "tab.unfocusedActiveBorderTop": "#1F1F1F",
             "tab.unfocusedActiveForeground": "#ffffff",
             "tab.unfocusedHoverBorder": "#2B2B2B",
             "tab.unfocusedHoverForeground": "#ffffff",
-            "tab.unfocusedInactiveBackground": "#1E1E1E",
+            "tab.unfocusedInactiveBackground": "#1F1F1F",
             "tab.unfocusedInactiveForeground": "#ffffff",
+            "textLink.activeForeground": "#569CD6",
+            "textLink.foreground": "#569CD6",
             "titleBar.activeBackground": "#363636",
-            "titleBar.border": "#1E1E1E",
+            "titleBar.border": "#1F1F1F",
             "titleBar.inactiveBackground": "#363636",
+            "widget.border": "#454545",
         },
         "[Monokai Pro (Filter Spectrum)]": {
             "activityBar.background": "#2B2B2B",
