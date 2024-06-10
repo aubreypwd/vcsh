@@ -350,5 +350,15 @@
 		"key": "shift+cmd+c",
 		"command": "-workbench.action.terminal.openNativeConsole",
 		"when": "!terminalFocus"
+	},
+	{
+		"key": "alt+v alt+p",
+		"command": "workbench.actions.view.problems",
+		"when": "workbench.panel.markers.view.active"
+	},
+	{
+		"key": "shift+cmd+m",
+		"command": "-workbench.actions.view.problems",
+		"when": "workbench.panel.markers.view.active"
 	}
 ]
