@@ -5,7 +5,7 @@
                 "name": "Xdebug",
                 "type": "php",
                 "request": "launch",
-                "port": 9022,
+                "port": 9000,
                 "ignore": [
                     "**/vendor/**/*.php",
                     "**/node_modules/**/*.php",
@@ -26,7 +26,7 @@
         "**/node_modules/*/**": true,
         "**/vendor/*/**": true,
     },
-    "window.title": "${folderName}${separator}${activeEditorMedium}${separator}${focusedView}",
+    "window.title": "${folderPath}${separator}${activeEditorMedium}${separator}${focusedView}",
     "editor.tokenColorCustomizations": "Monokai Pro (Filter Spectrum)",
     "editor.minimap.enabled": false,
     "github.copilot.editor.enableCodeActions": false,
@@ -290,7 +290,7 @@
     "workbench.settings.editor": "json",
     "workbench.editor.editorActionsLocation": "titleBar",
     "window.commandCenter": false,
-    "workbench.activityBar.location": "top",
+    "workbench.activityBar.location": "hidden",
     "editor.autoIndent": "full",
     "editor.emptySelectionClipboard": true,
     "editor.detectIndentation": true,
@@ -353,6 +353,7 @@
     "cSpell.userWords": [
         "absint",
         "ABSPATH",
+        "affiliatewp",
         "AFFWPN",
         "Monokai",
         "multisite",
@@ -361,6 +362,7 @@
         "Squiz",
         "subpackage",
         "Traited",
+        "untrailingslashit",
         "userdata",
         "wpdb",
         "xdebug"
@@ -372,7 +374,7 @@
     "bookmarks.keepBookmarksOnLineDelete": true,
     "bookmarks.multicursor.toggleMode": "eachLineIndependently",
     "bookmarks.sideBar.expanded": true,
-    "breadcrumbs.enabled": false,
     "workbench.colorTheme": "Chromer Theme",
     "phpcs.executablePath": "/Users/aubreypwd/.composer/vendor/bin/phpcs",
+    "breadcrumbs.enabled": false,
 }

@@ -976,7 +976,7 @@
 		<key>behaviourArgument</key>
 		<string></string>
 		<key>enabled</key>
-		<true/>
+		<false/>
 		<key>predicate</key>
 		<string>localFile == 0</string>
 		<key>title</key>

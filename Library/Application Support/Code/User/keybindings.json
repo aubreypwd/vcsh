@@ -21,7 +21,7 @@
 		"when": "!accessibilityHelpIsShown && !accessibleViewIsShown"
 	},
 	{
-		"key": "alt+s alt+d",
+		"key": "alt+p alt+r",
 		"command": "workbench.view.debug",
 		"when": "viewContainer.workbench.view.debug.enabled"
 	},
@@ -193,7 +193,7 @@
 		"when": "debugState == 'stopped'"
 	},
 	{
-		"key": "alt+c alt+k",
+		"key": "alt+b alt+k",
 		"command": "bookmarks.clearFromAllFiles"
 	},
 	{
@@ -236,11 +236,7 @@
 		"command": "workbench.files.action.showActiveFileInExplorer"
 	},
 	{
-		"key": "alt+s alt+b",
-		"command": "workbench.view.extension.bookmarks"
-	},
-	{
-		"key": "alt+s alt+x",
+		"key": "alt+p alt+x",
 		"command": "workbench.view.extensions",
 		"when": "viewContainer.workbench.view.extensions.enabled"
 	},
@@ -280,7 +276,7 @@
 		"when": "debugState == 'stopped'"
 	},
 	{
-		"key": "alt+d alt+v",
+		"key": "alt+p alt+d",
 		"command": "workbench.debug.action.toggleRepl",
 		"when": "workbench.panel.repl.view.active"
 	},
@@ -352,13 +348,36 @@
 		"when": "!terminalFocus"
 	},
 	{
-		"key": "alt+v alt+p",
-		"command": "workbench.actions.view.problems",
-		"when": "workbench.panel.markers.view.active"
+		"key": "alt+p alt+p",
+		"command": "workbench.actions.view.problems"
 	},
 	{
 		"key": "shift+cmd+m",
 		"command": "-workbench.actions.view.problems",
 		"when": "workbench.panel.markers.view.active"
+	},
+	{
+		"key": "shift+alt+[",
+		"command": "workbench.action.navigateBack",
+		"when": "editorFocus"
+	},
+	{
+		"key": "ctrl+-",
+		"command": "-workbench.action.navigateBack",
+		"when": "canNavigateBack"
+	},
+	{
+		"key": "shift+alt+]",
+		"command": "workbench.action.navigateForward",
+		"when": "editorFocus"
+	},
+	{
+		"key": "ctrl+shift+-",
+		"command": "-workbench.action.navigateForward",
+		"when": "canNavigateForward"
+	},
+	{
+		"key": "alt+p alt+b",
+		"command": "bookmarksExplorer.focus"
 	}
 ]
