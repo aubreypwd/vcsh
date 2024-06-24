@@ -2,7 +2,7 @@
     "launch": {
         "configurations": [
             {
-                "name": "Xdebug:9000",
+                "name": "Xdebug (9000)",
                 "type": "php",
                 "request": "launch",
                 "port": 9000,
@@ -16,7 +16,7 @@
                 }
             },
             {
-                "name": "Xdebug:9003",
+                "name": "Xdebug (9003)",
                 "type": "php",
                 "request": "launch",
                 "port": 9003,
@@ -118,7 +118,6 @@
             "editorGroupHeader.border": "#3A3A3A",
             "editorGroupHeader.tabsBackground": "#1F1F1F",
             "editorWidget.resizeBorder": "#0978D4",
-            "focusBorder": "#0978D4",
             "input.border": "#175295",
             "list.hoverBackground": "#0978D4",
             "list.hoverForeground": "#ffffff",
@@ -157,6 +156,15 @@
             "titleBar.border": "#1F1F1F",
             "titleBar.inactiveBackground": "#363636",
             "widget.border": "#454545",
+            
+            // Panel borders...
+            "focusBorder": "#4D4D4D",
+            "panelSectionHeader.border": "#4D4D4D",
+            "panel.dropBorder": "#4D4D4D",
+            "panelSection.border": "#4D4D4D",
+            "panelTitle.activeBorder": "#2B2B2B", // No border.
+            "panelTitle.activeForeground": "#ffffff",
+            "panel.border": "#4D4D4D",
         },
         "[Monokai Pro (Filter Spectrum)]": {
             "activityBar.background": "#2B2B2B",
@@ -281,6 +289,7 @@
         "master",
         "main"
     ],
+    "workbench.editor.enablePreviewFromQuickOpen": true,
     "git.fetchOnPull": true,
     "github.gitProtocol": "ssh",
     "phpsab.snifferShowSources": true,
@@ -364,7 +373,7 @@
     "workspaceExplorer.enableCustomIconSearch": false,
     "debug.closeReadonlyTabsOnEnd": true,
     "debug.confirmOnExit": "always",
-    "debug.console.closeOnEnd": true,
+    "debug.console.closeOnEnd": false,
     "github.copilot.editor.enableAutoCompletions": true,
     "php.debug.ideKey": "",
     "php.debug.executablePath": "",
