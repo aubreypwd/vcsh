@@ -2,7 +2,7 @@
     "launch": {
         "configurations": [
             {
-                "name": "Xdebug",
+                "name": "Xdebug:9000",
                 "type": "php",
                 "request": "launch",
                 "port": 9000,
@@ -15,6 +15,21 @@
                     "max_data": 8096,
                 }
             },
+            {
+                "name": "Xdebug:9003",
+                "type": "php",
+                "request": "launch",
+                "port": 9003,
+                "ignore": [
+                    "**/vendor/**/*.php",
+                    "**/node_modules/**/*.php",
+                    "**/dist/**/*.php",
+                ],
+                "xdebugSettings": {
+                    "max_data": 8096,
+                }
+            },
+
         ],
         "compounds": [],
     },
@@ -29,6 +44,7 @@
     "window.title": "${folderPath}${separator}${activeEditorMedium}${separator}${focusedView}",
     "editor.tokenColorCustomizations": "Monokai Pro (Filter Spectrum)",
     "editor.minimap.enabled": false,
+    "editor.inlineSuggest.enabled": false,
     "github.copilot.editor.enableCodeActions": false,
     "search.useIgnoreFiles": false, // Don't break search using .gitignore
     "workbench.editor.closeEmptyGroups": false,
@@ -238,6 +254,11 @@
             "color": "#2B2B2B"
         },
     ],
+    "[git-commit][scminput]": {
+        "editor.rulers": [ 50, 72 ],
+        "editor.wordWrap": "wordWrapColumn", // or "off"
+        "editor.wordWrapColumn": 70,
+    },
     // "editor.bracketPairColorization.enabled": true,
     // "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
     "debug.toolBarLocation": "docked",
@@ -251,7 +272,8 @@
     "terminal.integrated.cursorStyle": "line",
     "workbench.startupEditor": "none",
     "terminal.integrated.fontFamily": "Hack Nerd Font Mono",
-    "editor.fontFamily": "Hack Nerd Font Mono, Menlo, JetBrains Mono NL, Menlo, Monaco, 'Courier New', monospace",
+    "editor.fontFamily": "Hack Nerd Font Mono, Menlo",
+    "scm.inputFontFamily": "Hack Nerd Font Mono, Menlo",
     "editor.scrollbar.horizontalScrollbarSize": 0,
     "editor.scrollbar.verticalScrollbarSize": 0,
     "git.autofetch": true,
@@ -289,7 +311,6 @@
     "terminal.integrated.enableVisualBell": true,
     "workbench.settings.editor": "json",
     "workbench.editor.editorActionsLocation": "titleBar",
-    "window.commandCenter": false,
     "workbench.activityBar.location": "hidden",
     "editor.autoIndent": "full",
     "editor.emptySelectionClipboard": true,
@@ -309,7 +330,6 @@
     ],
     "php-docblocker.gap": true,
     "php-docblocker.returnGap": true,
-    "workbench.statusBar.visible": false,
     "workspaceSidebar.rootFolders": [
         { 
             "path": "/Users/aubreypwd/VSCode/Workspaces", 
@@ -376,5 +396,9 @@
     "bookmarks.sideBar.expanded": true,
     "workbench.colorTheme": "Chromer Theme",
     "phpcs.executablePath": "/Users/aubreypwd/.composer/vendor/bin/phpcs",
+    "workbench.statusBar.visible": false,
+    "window.commandCenter": false,
+    "git.confirmSync": false,
     "breadcrumbs.enabled": false,
+    "git.enableSmartCommit": true,
 }

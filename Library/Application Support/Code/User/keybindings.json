@@ -21,7 +21,7 @@
 		"when": "!accessibilityHelpIsShown && !accessibleViewIsShown"
 	},
 	{
-		"key": "alt+p alt+r",
+		"key": "alt+p alt+d",
 		"command": "workbench.view.debug",
 		"when": "viewContainer.workbench.view.debug.enabled"
 	},
@@ -276,7 +276,7 @@
 		"when": "debugState == 'stopped'"
 	},
 	{
-		"key": "alt+p alt+d",
+		"key": "alt+p alt+c",
 		"command": "workbench.debug.action.toggleRepl",
 		"when": "workbench.panel.repl.view.active"
 	},
@@ -348,10 +348,6 @@
 		"when": "!terminalFocus"
 	},
 	{
-		"key": "alt+p alt+p",
-		"command": "workbench.actions.view.problems"
-	},
-	{
 		"key": "shift+cmd+m",
 		"command": "-workbench.actions.view.problems",
 		"when": "workbench.panel.markers.view.active"
@@ -379,5 +375,72 @@
 	{
 		"key": "alt+p alt+b",
 		"command": "bookmarksExplorer.focus"
+	},
+	{
+		"key": "cmd+j",
+		"command": "-workbench.action.togglePanel"
+	},
+	{
+		"key": "alt+p alt+m",
+		"command": "workbench.action.toggleMaximizedPanel"
+	},
+	{
+		"key": "shift+cmd+\\",
+		"command": "-workbench.action.terminal.focusTabs",
+		"when": "terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported || terminalHasBeenCreated && terminalTabsFocus || terminalProcessSupported && terminalTabsFocus"
+	},
+	{
+		"key": "shift+cmd+\\",
+		"command": "-editor.action.jumpToBracket",
+		"when": "editorTextFocus"
+	},
+	{
+		"key": "alt+p alt+p",
+		"command": "workbench.action.problems.focus"
+	},
+	{
+		"key": "ctrl+shift+g",
+		"command": "-workbench.view.scm",
+		"when": "workbench.scm.active"
+	},
+	{
+		"key": "alt+g alt+p",
+		"command": "git.push"
+	},
+	{
+		"key": "shift+cmd+\\",
+		"command": "workbench.action.togglePanel"
+	},
+	{
+		"key": "alt+g alt+a",
+		"command": "git.stageAll"
+	},
+	{
+		"key": "alt+d alt+b",
+		"command": "editor.debug.action.toggleBreakpoint",
+		"when": "debuggersAvailable && disassemblyViewFocus || debuggersAvailable && editorTextFocus"
+	},
+	{
+		"key": "f9",
+		"command": "-editor.debug.action.toggleBreakpoint",
+		"when": "debuggersAvailable && disassemblyViewFocus || debuggersAvailable && editorTextFocus"
+	},
+	{
+		"key": "alt+c alt+s",
+		"command": "editor.action.inlineSuggest.trigger",
+		"when": "config.github.copilot.inlineSuggest.enable && editorTextFocus && !editorHasSelection && !inlineSuggestionsVisible"
+	},
+	{
+		"key": "alt+\\",
+		"command": "-editor.action.inlineSuggest.trigger",
+		"when": "config.github.copilot.inlineSuggest.enable && editorTextFocus && !editorHasSelection && !inlineSuggestionsVisible"
+	},
+	{
+		"key": "alt+g alt+c",
+		"command": "workbench.scm.focus"
+	},
+	{
+		"key": "alt+p alt+s",
+		"command": "workbench.view.scm"
 	}
 ]
