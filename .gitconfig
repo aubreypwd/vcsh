@@ -73,7 +73,7 @@
 	excludesfile  = /Users/aubreypwd/.gitignore
 	# editor         = "vim"
 	# editor        = "micro --clipboard external --infobar false --keepautoindent false --savecursor false --diffgutter false --colorcolumn 72 --ruler false --softwrap true --wordwrap true --eofnewline false --rmtrailingws true"
-	editor        = "code -n -w --disable-extension shevaua.phpcs --user-data-dir='/Users/aubreypwd/Library/Application Support/Code/User'"
+	editor        = "code -n -w --disable-extension shevaua.phpcs --user-data-dir='/Users/aubreypwd/Library/Application Support/Code'"
 
 [color]
 	ui          = true
