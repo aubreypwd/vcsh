@@ -168,3 +168,9 @@ fi
 if [ -e "./.git" ]; then git s; fi
 
 export GPG_TTY=$(tty)
+
+if [[ "$TERM_PROGRAM" == 'vscode' ]]; then
+
+	alias x="echo 'Kill terminal in VSCode Instead.'"
+	alias exit="echo 'Kill terminal in VSCode Instead'"
+fi
