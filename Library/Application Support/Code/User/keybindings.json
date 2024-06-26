@@ -442,5 +442,30 @@
 	{
 		"key": "alt+p alt+s",
 		"command": "workbench.view.scm"
+	},
+	{
+		"key": "alt+p alt+t",
+		"command": "workbench.action.terminal.toggleTerminal",
+		"when": "terminal.active"
+	},
+	{
+		"key": "ctrl+`",
+		"command": "-workbench.action.terminal.toggleTerminal",
+		"when": "terminal.active"
+	},
+	{
+		"key": "alt+t alt+n",
+		"command": "workbench.action.terminal.new",
+		"when": "terminalProcessSupported || terminalWebExtensionContributedProfile"
+	},
+	{
+		"key": "ctrl+shift+`",
+		"command": "-workbench.action.terminal.new",
+		"when": "terminalProcessSupported || terminalWebExtensionContributedProfile"
+	},
+	{
+		"key": "alt+t alt+c",
+		"command": "workbench.action.terminal.kill",
+		"when": "terminalCount > 1 "
 	}
 ]
