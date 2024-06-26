@@ -155,7 +155,7 @@
 	textconv = plutil -convert xml1 -o -
 
 [commit]
-	verbose = false
+	verbose = true
 	gpgsign = true
 
 [rerere]
