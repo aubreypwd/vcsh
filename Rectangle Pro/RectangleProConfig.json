@@ -110,7 +110,7 @@
       "float" : 0.3
     },
     "footprintAnimationDurationMultiplier" : {
-      "float" : 0.75
+      "float" : 0
     },
     "footprintBorderWidth" : {
       "float" : 2
@@ -203,7 +203,7 @@
       "int" : 250
     },
     "moveCursorAcrossDisplays" : {
-      "int" : 0
+      "int" : 1
     },
     "multiWindowAllDisplays" : {
       "int" : 0
@@ -263,7 +263,7 @@
       "int" : 2
     },
     "reticleColor" : {
-      "string" : "{\"green\":0.3,\"red\":0.8,\"alpha\":0.5,\"blue\":0.2}"
+      "string" : "{\"alpha\":0.5,\"green\":0.3,\"blue\":0.2,\"red\":0.8}"
     },
     "reticleDisplayMinDist" : {
       "float" : 0
@@ -452,7 +452,7 @@
       "int" : 0
     },
     "windowSnapping" : {
-      "int" : 0
+      "int" : 2
     },
     "windowStopVelocity" : {
       "float" : 3
@@ -510,6 +510,6 @@
       "modifierFlags" : 1572864
     }
   },
-  "timestamp" : 741808896.361166,
+  "timestamp" : 741808971.751353,
   "version" : "169"
 }
