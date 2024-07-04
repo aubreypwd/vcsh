@@ -353,19 +353,9 @@
 		"when": "workbench.panel.markers.view.active"
 	},
 	{
-		"key": "shift+alt+[",
-		"command": "workbench.action.navigateBack",
-		"when": "editorFocus"
-	},
-	{
 		"key": "ctrl+-",
 		"command": "-workbench.action.navigateBack",
 		"when": "canNavigateBack"
-	},
-	{
-		"key": "shift+alt+]",
-		"command": "workbench.action.navigateForward",
-		"when": "editorFocus"
 	},
 	{
 		"key": "ctrl+shift+-",
@@ -467,5 +457,15 @@
 		"key": "alt+t alt+c",
 		"command": "workbench.action.terminal.kill",
 		"when": "terminalCount > 1 "
+	},
+	{
+		"key": "alt+[",
+		"command": "workbench.action.navigateBackInEditLocations",
+		"when": "editorFocus"
+	},
+	{
+		"key": "alt+]",
+		"command": "workbench.action.navigateForwardInEditLocations",
+		"when": "editorFocus"
 	}
 ]
