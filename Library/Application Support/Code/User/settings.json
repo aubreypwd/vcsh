@@ -2,20 +2,6 @@
     "launch": {
         "configurations": [
             {
-                "name": "Xdebug (9000)",
-                "type": "php",
-                "request": "launch",
-                "port": 9000,
-                "ignore": [
-                    "**/vendor/**/*.php",
-                    "**/node_modules/**/*.php",
-                    "**/dist/**/*.php",
-                ],
-                "xdebugSettings": {
-                    "max_data": 8096,
-                }
-            },
-            {
                 "name": "Xdebug (9003)",
                 "type": "php",
                 "request": "launch",
@@ -29,14 +15,34 @@
                     "max_data": 8096,
                 }
             },
-
+            {
+                "name": "Xdebug (9000)",
+                "type": "php",
+                "request": "launch",
+                "port": 9000,
+                "ignore": [
+                    "**/vendor/**/*.php",
+                    "**/node_modules/**/*.php",
+                    "**/dist/**/*.php",
+                ],
+                "xdebugSettings": {
+                    "max_data": 8096,
+                }
+            },
         ],
         "compounds": [],
     },
+    "scm.providerCountBadge": "hidden",
+    "scm.showActionButton": false,
+    "scm.showInputActionButton": false,
+    "localWPShells.folderPath": "/Users/aubreypwd/Library/Application Support/Local/ssh-entry",
     // "window.restoreWindows": "one",
     "files.useExperimentalFileWatcher": false,
     "phpSniffer.autoDetect": true,
     "editor.fontSize": 12,
+    "terminal.integrated.commandsToSkipShell": [
+        "workbench.action.closePanel"
+    ],
     "files.watcherExclude": {
         "**/.git/": true,
         "**/node_modules/*/**": true,
@@ -68,7 +74,7 @@
     "scm.diffDecorationsGutterWidth": 1,
     "editor.renderLineHighlight": "gutter",
     "editor.multiCursorModifier": "ctrlCmd",
-    "terminal.integrated.tabs.enabled": false, 
+    
 
     // Blue: #0978D4
     // Blue Dull: #175295
@@ -107,22 +113,42 @@
         "[Chromer Theme]": {
         
             // Modify to look like Safari Devtools!
-            "button.background": "#0978D4", 
-            "button.hoverBackground": "#0978D4",
+
+            // Blue
+            // "button.background": "#0978D4", 
+            // "button.hoverBackground": "#0978D4",
+            // "editor.selectionBackground": "#175295",
+            // "editor.selectionHighlightBackground": "#175295",
+            // "editorWidget.resizeBorder": "#0978D4",
+            // "list.hoverBackground": "#0978D4",
+            // "input.border": "#175295",
+            // "menu.selectionBorder": "#175295",
+            // "textLink.activeForeground": "#569CD6",
+            // "textLink.foreground": "#569CD6",
+            // "badge.background": "#0978D4",
+
+            // Purple
+            "button.background": "#5D6291", 
+            "button.hoverBackground": "#5D6291",
+            "editor.selectionBackground": "#494d76",
+            "editor.selectionHighlightBackground": "#494d76",
+            "editorWidget.resizeBorder": "#5D6291",
+            "list.hoverBackground": "#5D6291",
+            "input.border": "#494d76",
+            "menu.selectionBorder": "#494d76",
+            "editor.outlineSelectionBackground": "#5D6291",
+            "textLink.activeForeground": "#5D6291",
+            "textLink.foreground": "#5D6291",
+            "badge.background": "#5D6291",
+
+            // The rest
             "editor.background" : "#272727",
             "editor.lineHighlightBackground": "#2B2B2B",
-            "editor.outlineSelectionBackground": "#0978D4",
-            "editor.selectionBackground": "#175295",
             "editor.selectionForeground": "#ffffff",
-            "editor.selectionHighlightBackground": "#175295",
             "editor.selectionHighlightForeground": "#ffffff",
             "editorGroupHeader.border": "#3A3A3A",
             "editorGroupHeader.tabsBackground": "#1F1F1F",
-            "editorWidget.resizeBorder": "#0978D4",
-            "input.border": "#175295",
-            "list.hoverBackground": "#0978D4",
             "list.hoverForeground": "#ffffff",
-            "menu.selectionBorder": "#175295",
             "panel.background": "#2B2B2B",
             "panel.border": "#175295",
             "scrollbarSlider.background": "#3A3A3A",
@@ -151,8 +177,6 @@
             "tab.unfocusedHoverForeground": "#ffffff",
             "tab.unfocusedInactiveBackground": "#1F1F1F",
             "tab.unfocusedInactiveForeground": "#ffffff",
-            "textLink.activeForeground": "#569CD6",
-            "textLink.foreground": "#569CD6",
             "titleBar.activeBackground": "#363636",
             "titleBar.border": "#1F1F1F",
             "titleBar.inactiveBackground": "#363636",
@@ -398,6 +422,7 @@
         "Traited",
         "untrailingslashit",
         "userdata",
+        "woocommerce",
         "wpdb",
         "xdebug"
     ],
@@ -420,4 +445,8 @@
     "terminal.integrated.hideOnStartup": "whenEmpty",
     "terminal.integrated.macOptionIsMeta": true,
     "terminal.integrated.scrollback": 10000,
+    "terminal.integrated.tabs.location": "left",
+    "terminal.integrated.tabs.title": "${cwdFolder}${separator}${workspaceFolder}",
+    "localWPShells.folderPath": "/Users/aubreypwd/Library/Application Support/Local/ssh-entry",
+    "git.replaceTagsWhenPull": true,
 }
