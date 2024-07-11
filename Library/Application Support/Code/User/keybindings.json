@@ -467,5 +467,14 @@
 		"key": "alt+]",
 		"command": "workbench.action.navigateForwardInEditLocations",
 		"when": "editorFocus"
+	},
+	{
+		"key": "escape",
+		"command": "workbench.action.closePanel",
+		"when": "panelFocus "
+	},
+	{
+		"key": "alt+t alt+w",
+		"command": "workbench.action.terminal.moveIntoNewWindow"
 	}
 ]
