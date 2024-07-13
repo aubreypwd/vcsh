@@ -74,7 +74,6 @@
     "scm.diffDecorationsGutterWidth": 1,
     "editor.renderLineHighlight": "gutter",
     "editor.multiCursorModifier": "ctrlCmd",
-    
 
     // Blue: #0978D4
     // Blue Dull: #175295
@@ -149,11 +148,10 @@
             "editor.lineHighlightBackground": "#2B2B2B",
             "editor.selectionForeground": "#ffffff",
             "editor.selectionHighlightForeground": "#ffffff",
-            // "editor.selectionHighlightBorder": "#2B2B2B",
             "editorGroupHeader.border": "#181818",
             "list.hoverForeground": "#ffffff",
             "panel.background": "#2B2B2B",
-            "panel.border": "#175295",
+            "panel.border": "#4D4D4D",
             "scrollbarSlider.background": "#00000000",
             "sideBar.background": "#2B2B2B",
             "sideBar.border": "#4D4D4D",
@@ -176,7 +174,6 @@
             "tab.unfocusedActiveBackground": "#202020",
             "tab.unfocusedActiveBorder": "#181818",
             "tab.unfocusedActiveBorderTop": "#1F1F1F",
-            // "tab.unfocusedHoverBorder": "red",
             "tab.unfocusedHoverForeground": "#ffffff",
             "tab.unfocusedInactiveBackground": "#202020",
             "tab.unfocusedInactiveForeground": "#909090",
@@ -184,7 +181,7 @@
             
             "titleBar.activeBackground": "#363636",
             "titleBar.border": "#363636",
-            "titleBar.inactiveBackground": "#363636",
+            "titleBar.inactiveBackground": "#282828",
             "widget.border": "#454545",
             
             // Panel borders...
@@ -194,7 +191,8 @@
             "panelSection.border": "#4D4D4D",
             "panelTitle.activeBorder": "#2B2B2B", // No border.
             "panelTitle.activeForeground": "#ffffff",
-            "panel.border": "#000000",
+            "panel.border": "#4D4D4D",
+            "panel.background": "#333333",
 
             // Terminal Colors
             "terminal.background": "#272727",
@@ -220,7 +218,7 @@
             "editorGroup.emptyBackground": "#292929",
             "editorGroupHeader.tabsBackground": "#292929",
             "editorWhitespace.foreground": "#383838",
-            "panel.background": "#2A2A2A",
+            "panel.background": "#333333",
             "sideBar.background": "#3C3C3C",
             "sideBar.border": "#3C3C3C",
             "sideBar.dropBackground": "#1E1E1E",
