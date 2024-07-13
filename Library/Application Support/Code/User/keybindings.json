@@ -76,7 +76,7 @@
 		"when": "inEditorsPicker && inQuickOpen"
 	},
 	{
-		"key": "alt+t",
+		"key": "shift+cmd+t",
 		"command": "workbench.action.showAllEditors"
 	},
 	{
@@ -509,5 +509,9 @@
 	{
 		"key": "alt+cmd+2",
 		"command": "-workbench.action.splitEditor"
+	},
+	{
+		"key": "cmd+t",
+		"command": "-workbench.action.quickOpen"
 	}
 ]
