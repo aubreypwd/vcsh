@@ -476,5 +476,38 @@
 	{
 		"key": "alt+t alt+w",
 		"command": "workbench.action.terminal.moveIntoNewWindow"
+	},
+	{
+		"key": "shift+cmd+=",
+		"command": "editor.action.smartSelect.expand",
+		"when": "editorTextFocus"
+	},
+	{
+		"key": "ctrl+shift+right",
+		"command": "-editor.action.smartSelect.expand",
+		"when": "editorTextFocus"
+	},
+	{
+		"key": "ctrl+shift+cmd+right",
+		"command": "-editor.action.smartSelect.expand",
+		"when": "editorTextFocus"
+	},
+	{
+		"key": "shift+cmd+-",
+		"command": "editor.action.smartSelect.shrink",
+		"when": "editorTextFocus"
+	},
+	{
+		"key": "ctrl+shift+left",
+		"command": "-editor.action.smartSelect.shrink",
+		"when": "editorTextFocus"
+	},
+	{
+		"key": "alt+cmd+2",
+		"command": "workbench.action.editorLayoutTwoColumns"
+	},
+	{
+		"key": "alt+cmd+2",
+		"command": "-workbench.action.splitEditor"
 	}
 ]
