@@ -174,3 +174,4 @@ if [[ "$TERM_PROGRAM" == 'vscode' ]]; then
 	alias x="echo 'Kill terminal in VSCode Instead.'"
 	alias exit="echo 'Kill terminal in VSCode Instead'"
 fi
+[[ "$TERM_PROGRAM" == "CodeEditApp_Terminal" ]] && . "/Applications/CodeEdit.app/Contents/Resources/codeedit_shell_integration.zsh"

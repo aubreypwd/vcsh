@@ -170,7 +170,7 @@
       "string" : "{\"id\":0}"
     },
     "manualSpecs" : {
-      "string" : "[{\"loc\":0,\"h\":\"975\",\"id\":56,\"shortcut\":{\"keyCode\":28,\"modifierFlags\":1572864},\"name\":\"Slim\",\"w\":\"993\",\"display\":-3},{\"shortcut\":{\"keyCode\":28,\"modifierFlags\":1703936},\"display\":0,\"name\":\"Smashed\",\"w\":\"1571\",\"h\":\"622\",\"loc\":0,\"id\":88},{\"display\":0,\"h\":\"885\",\"w\":\"1590\",\"loc\":0,\"name\":\"Wide\",\"shortcut\":{\"keyCode\":25,\"modifierFlags\":1572864},\"id\":41},{\"loc\":0,\"shortcut\":{\"modifierFlags\":1703936,\"keyCode\":25},\"display\":-3,\"h\":\"971\",\"id\":92,\"name\":\"Big\",\"w\":\"1538\"},{\"shortcut\":{\"keyCode\":29,\"modifierFlags\":1572864},\"title\":\"ZWotfNMgnIM1lUWkSk7hhJQT+FStQSQRE1Oj3x6nQZKdKUoiq8w4UNkBM+bAVZbHTkIWftfbGz5utY1K5bTznDhnAQ==\",\"name\":\"Full\",\"w\":\"1654\",\"loc\":0,\"id\":99,\"h\":\"1028\",\"display\":-3},{\"w\":\"1710\",\"shortcut\":{\"modifierFlags\":1703936,\"keyCode\":29},\"title\":\"k9c66JwM6qqBbOeAKXx09UXYR6BE\\\/Uc7W9TKHM+moWvXRNpDCHYqNfj\\\/Lr6tsOtL6tgviBdO7pgX4l\\\/ncQAUf4k3HQ==\",\"name\":\"Max\",\"x\":\"0\",\"loc\":9,\"h\":\"1069\",\"display\":0,\"y\":\"0\",\"id\":95}]"
+      "string" : "[{\"id\":56,\"loc\":0,\"name\":\"Slim\",\"w\":\"993\",\"shortcut\":{\"modifierFlags\":1572864,\"keyCode\":28},\"h\":\"975\",\"display\":-3},{\"w\":\"1571\",\"loc\":0,\"display\":0,\"name\":\"Smashed\",\"shortcut\":{\"modifierFlags\":1703936,\"keyCode\":28},\"h\":\"622\",\"id\":88},{\"id\":92,\"w\":\"1538\",\"name\":\"Big\",\"loc\":0,\"h\":\"971\",\"shortcut\":{\"keyCode\":25,\"modifierFlags\":1572864},\"display\":-3},{\"loc\":0,\"h\":\"885\",\"w\":\"1590\",\"id\":41,\"shortcut\":{\"modifierFlags\":1703936,\"keyCode\":25},\"name\":\"Wide\",\"display\":0},{\"name\":\"Full\",\"w\":\"1654\",\"loc\":0,\"display\":-3,\"title\":\"lAfst9yelofUMVrkXSXzWL75Ol6vek8gnnnSJ0jWnlA4u6FAEkplINL1gTwAnzgUN5yHBXlUhkcV8y1dJ6vyUHF2QQ==\",\"id\":99,\"h\":\"1028\",\"shortcut\":{\"keyCode\":29,\"modifierFlags\":1572864}},{\"y\":\"0\",\"h\":\"1069\",\"display\":0,\"loc\":9,\"id\":95,\"title\":\"jCu4dG4\\\/18qQ7zyAdAlBuRFZbrF2vLGn6gLoj6XMDoIiU+L9DUJXFAXRtuA00SQUOarSTdX9UT\\\/kllz+aYG+QTthjg==\",\"w\":\"1710\",\"x\":\"0\",\"shortcut\":{\"keyCode\":29,\"modifierFlags\":1703936},\"name\":\"Max\"}]"
     },
     "maximizeAcrossDisplays" : {
       "int" : 0
@@ -263,7 +263,7 @@
       "int" : 2
     },
     "reticleColor" : {
-      "string" : "{\"alpha\":0.5,\"green\":0.3,\"blue\":0.2,\"red\":0.8}"
+      "string" : "{\"blue\":0.2,\"green\":0.3,\"alpha\":0.5,\"red\":0.8}"
     },
     "reticleDisplayMinDist" : {
       "float" : 0
@@ -510,6 +510,6 @@
       "modifierFlags" : 1572864
     }
   },
-  "timestamp" : 741808971.751353,
+  "timestamp" : 742492645.956345,
   "version" : "169"
 }
