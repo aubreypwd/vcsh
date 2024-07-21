@@ -413,5 +413,8 @@
   "workbench.settings.useSplitJSON": true,
   "workbench.sideBar.location": "right",
   "workbench.startupEditor": "none",
-  "workbench.statusBar.visible": false
+  "workbench.statusBar.visible": false,
+
+  // Github Copilot setings
+  "editor.lightbulb.enabled": "false",
 }
