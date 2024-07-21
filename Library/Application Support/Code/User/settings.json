@@ -1,406 +1,417 @@
 {
-    "launch": {
-        "configurations": [
-            {
-                "name": "Xdebug (9003)",
-                "type": "php",
-                "request": "launch",
-                "port": 9003,
-                "ignore": [
-                    "**/vendor/**/*.php",
-                    "**/node_modules/**/*.php",
-                    "**/dist/**/*.php",
-                ],
-                "xdebugSettings": {
-                    "max_data": 8096,
-                }
-            },
-            {
-                "name": "Xdebug (9000)",
-                "type": "php",
-                "request": "launch",
-                "port": 9000,
-                "ignore": [
-                    "**/vendor/**/*.php",
-                    "**/node_modules/**/*.php",
-                    "**/dist/**/*.php",
-                ],
-                "xdebugSettings": {
-                    "max_data": 8096,
-                }
-            },
+  // Debug configurations
+  "launch": {
+    "configurations": [
+      {
+        "name": "Xdebug (9003)",
+        "type": "php",
+        "request": "launch",
+        "port": 9003,
+        "ignore": [
+          "**/vendor/**/*.php",
+          "**/node_modules/**/*.php",
+          "**/dist/**/*.php"
         ],
-        "compounds": [],
-    },
-    "scm.providerCountBadge": "hidden",
-    "scm.showActionButton": false,
-    "scm.showInputActionButton": false,
-    "localWPShells.folderPath": "/Users/aubreypwd/Library/Application Support/Local/ssh-entry",
-    // "window.restoreWindows": "one",
-    "files.useExperimentalFileWatcher": false,
-    "phpSniffer.autoDetect": true,
-    "editor.fontSize": 12,
-    "terminal.integrated.commandsToSkipShell": [
-        "workbench.action.closePanel"
-    ],
-    "files.watcherExclude": {
-        "**/.git/": true,
-        "**/node_modules/*/**": true,
-        "**/vendor/*/**": true,
-    },
-    "window.title": "${folderPath}${separator}${activeEditorMedium}${separator}${focusedView}",
-    "editor.tokenColorCustomizations": "Monokai Pro (Filter Spectrum)",
-    "editor.minimap.enabled": false,
-    "editor.inlineSuggest.enabled": false,
-    "github.copilot.editor.enableCodeActions": false,
-    "search.useIgnoreFiles": false, // Don't break search using .gitignore
-    "workbench.editor.closeEmptyGroups": false,
-    "workbench.iconTheme": "Monokai Pro (Filter Spectrum) Icons",
-    "git.decorations.enabled": false,
-    "window.autoDetectHighContrast": false,
-    "editor.lineDecorationsWidth": 10,
-    "editor.lineNumbersMinChars": 0,
-    "editor.parameterHints.enabled": false, // This is so goddamn annoying!
-    "editor.glyphMargin": true,
-    "explorer.decorations.colors": false,
-    "workbench.settings.useSplitJSON": true,
-    "diffEditor.renderMarginRevertIcon": false,
-    "window.density.editorTabHeight": "compact",
-    "editor.lightbulb.enabled": "off",
-    "editor.guides.bracketPairs": "active",
-    "editor.showFoldingControls": "never",
-    "security.workspace.trust.untrustedFiles": "open",
-    "scm.diffDecorations": "none",
-    "scm.diffDecorationsGutterWidth": 1,
-    "editor.renderLineHighlight": "gutter",
-    "editor.multiCursorModifier": "ctrlCmd",
-    "editor.colorDecoratorsActivatedOn": "click",
-
-    // Blue: #0978D4
-    // Blue Dull: #175295
-
-    // Lialac: #5D6291
-    // Lialiac Dull: #626472
-
-    "editor.tokenColorCustomizations": {
-        "[Chromer Theme]": {
-            "textMateRules": [
-               {
-                    // Bulltin functions in PHP.
-                    "scope": "support.function",
-                    "settings": {
-                        "foreground": "#8AABFF",
-                    }
-                },
-
-                // public static, private function, etc...
-                {
-                    "scope": "storage.modifier",
-                    "settings": {
-                        "foreground": "#8AABFF",
-                    }
-                },
-                {
-                    "scope": "storage.type",
-                    "settings": {
-                        "foreground": "#8AABFF",
-                    }
-                }
-            ]
+        "xdebugSettings": {
+          "max_data": 8096
         }
-    },
-    "workbench.colorCustomizations": {
-        "[Chromer Theme]": {
-        
-            // Modify to look like Safari Devtools!
-
-            // Blue
-            // "button.background": "#0978D4", 
-            // "button.hoverBackground": "#0978D4",
-            // "editor.selectionBackground": "#175295",
-            // "editor.selectionHighlightBackground": "#175295",
-            // "editorWidget.resizeBorder": "#0978D4",
-            // "list.hoverBackground": "#0978D4",
-            // "input.border": "#175295",
-            // "menu.selectionBorder": "#175295",
-            // "textLink.activeForeground": "#569CD6",
-            // "textLink.foreground": "#569CD6",
-            // "badge.background": "#0978D4",
-            // "list.activeSelectionBackground": "#626472",
-
-            // Purple
-            "button.background": "#5D6291", 
-            "button.hoverBackground": "#5D6291",
-            "editor.selectionBackground": "#626472",
-            "editor.selectionHighlightBackground": "#626472",
-            "editorWidget.resizeBorder": "#5D6291",
-            "list.hoverBackground": "#5D6291",
-            "input.border": "#9B7ED5",
-            "menu.selectionBorder": "#9B7ED5",
-            "editor.outlineSelectionBackground": "#5D6291",
-            "textLink.activeForeground": "#0978D4", // Links should always be blue.
-            "textLink.foreground": "#0978D4", // Links should always be blue.
-            "badge.background": "#5D6291",
-            "selection.background": "#626472",
-            "list.activeSelectionBackground": "#626472",
-
-            // The rest
-            "editor.background" : "#2B2B2B",
-            "editor.lineHighlightBackground": "#2B2B2B",
-            "editor.selectionForeground": "#ffffff",
-            "editor.selectionHighlightForeground": "#ffffff",
-            "editorGroupHeader.border": "#202020",
-            "list.hoverForeground": "#ffffff",
-            "panel.background": "#2B2B2B",
-            "panel.border": "#4D4D4D",
-            "scrollbarSlider.background": "#00000000",
-            "sideBar.background": "#2B2B2B",
-            "sideBar.border": "#4D4D4D",
-            "sideBarSectionHeader.background": "#2B2B2B",
-            "sideBarSectionHeader.foreground": "#fff",
-            
-            // Tabs
-            "tab.activeBackground": "#2B2B2B",
-            "tab.activeBorder": "#2B2B2B",
-            "tab.activeBorderTop": "#2B2B2B",
-            "tab.activeForeground": "#ffffff",
-            "tab.border": "#47474700",
-            "tab.hoverBackground": "#1F1F1F",
-            "tab.hoverBorder": "#2B2B2B",
-            "tab.hoverForeground": "#D5D5D5",
-            "tab.inactiveBackground": "#202020",
-            "tab.inactiveModifiedBorder": "#202020",
-            "tab.unfocusedInactiveModifiedBorder": "#202020",
-            "tab.lastPinnedBorder": "#202020",
-            "tab.unfocusedActiveBackground": "#202020",
-            "tab.unfocusedActiveBorder": "#202020",
-            "tab.unfocusedActiveBorderTop": "#1F1F1F",
-            "tab.unfocusedHoverForeground": "#ffffff",
-            "tab.unfocusedInactiveBackground": "#202020",
-            "tab.unfocusedInactiveForeground": "#909090",
-            "editorGroupHeader.tabsBackground": "#202020",
-            
-            "titleBar.activeBackground": "#363636",
-            "titleBar.border": "#363636",
-            "titleBar.inactiveBackground": "#282828",
-            "widget.border": "#454545",
-            
-            // Panel borders...
-            "focusBorder": "#4D4D4D",
-            "panelSectionHeader.border": "#4D4D4D",
-            "panel.dropBorder": "#4D4D4D",
-            "panelSection.border": "#4D4D4D",
-            "panelTitle.activeBorder": "#2B2B2B", // No border.
-            "panelTitle.activeForeground": "#ffffff",
-            "panel.border": "#4D4D4D",
-            "panel.background": "#333333",
-
-            // Terminal Colors
-            "terminal.background": "#272727",
-            "terminal.ansiBlack": "#706E73",
-            "terminal.ansiBlue": "#8BABFF",
-            "terminal.ansiCyan": "#F39766",
-            "terminal.ansiGreen": "#7bd88f",
-            "terminal.ansiMagenta": "#987BD0",
-            "terminal.ansiRed": "#FE4949",
-            "terminal.ansiWhite": "#D5D2D5",
-            "terminal.ansiYellow": "#E7C548",
-            "terminal.ansiBrightBlue": "#5298D1",
-            "terminal.ansiBrightCyan": "#FFC491",
-            "terminal.ansiBrightBlack": "#D5D2D5",
-            "terminal.ansiBrightGreen": "#4BCCC3",
-            "terminal.ansiBrightMagenta": "#A053BD",
-            "terminal.ansiBrightRed": "#E53F41",
-            "terminal.ansiBrightWhite": "#D5D2D5",
-            "terminal.ansiBrightYellow": "#E7C548",
-        },
-        
-        // Remove any shadows.
-        "scrollbar.shadow": "#ffffff00",
-        "widget.shadow": "#ffffff00",
-
-        // Not-so intrusive guides.
-        "editorBracketPairGuide.activeBackground1": "#69676C",
-        "editorBracketPairGuide.activeBackground2": "#69676C",
-        "editorBracketPairGuide.activeBackground3": "#69676C",
-        "editorBracketPairGuide.activeBackground4": "#69676C",
-        "editorBracketPairGuide.activeBackground5": "#69676C",
-        "editorBracketPairGuide.activeBackground6": "#69676C",
-    },
-    "editor.rulers": [
-        {
-            "column": 80,
-            "color": "#2B2B2B"
-        },
-        {
-            "column": 72,
-            "color": "#2B2B2B"
-        },
-        {
-            "column": 50,
-            "color": "#2B2B2B"
-        },
-    ],
-    "[git-commit][scminput]": {
-        "editor.rulers": [ 50, 72 ],
-        "editor.wordWrap": "wordWrapColumn", // or "off"
-        "editor.wordWrapColumn": 70,
-    },
-    "debug.toolBarLocation": "docked",
-    "window.nativeTabs": false,
-    
-    // Sticky Scroll
-    "editor.stickyScroll.enabled": true,
-    "editor.stickyScroll.maxLineCount": 5,
-    "editor.stickyTabStops": true,
-    
-    "workbench.editor.decorations.colors": false,
-    "git.openRepositoryInParentFolders": "always",
-    "terminal.integrated.cursorBlinking": true,
-    "terminal.integrated.fontWeightBold": "normal",
-    "editor.cursorStyle": "line-thin",
-    "terminal.integrated.cursorStyle": "line",
-    "workbench.startupEditor": "none",
-    "terminal.integrated.fontFamily": "Hack Nerd Font Mono",
-    "editor.fontFamily": "Hack Nerd Font Mono, Menlo",
-    "scm.inputFontFamily": "Hack Nerd Font Mono, Menlo",
-    "editor.scrollbar.horizontalScrollbarSize": 0,
-    "editor.scrollbar.verticalScrollbarSize": 0,
-    "git.autofetch": true,
-    "git.branchProtection": [
-        "master",
-        "main"
-    ],
-    "workbench.editor.enablePreviewFromQuickOpen": false,
-    "git.fetchOnPull": true,
-    "github.gitProtocol": "ssh",
-    "phpsab.snifferShowSources": true,
-    "editor.tabSize": 2,
-    "editor.tabCompletion": "on",
-    "window.newWindowDimensions": "offset",
-    "window.openFoldersInNewWindow": "off",
-    "editor.largeFileOptimizations": false,
-    "githubPullRequests.pullBranch": "never",
-    "terminal.external.osxExec": "Terminal.app",
-    "window.openFilesInNewWindow": "default",
-    "workbench.preferredDarkColorTheme": "Monokai Pro (Filter Spectrum)",
-    "editor.accessibilitySupport": "off",
-    "accessibility.signals.clear": {
-        "sound": "off",
-        "announcement": "off",
-    },
-    "editor.language.colorizedBracketPairs": [
-
-    ],
-    "editor.renderWhitespace": "all",
-    "editor.insertSpaces": false,
-    "github.branchProtection": true,
-    "accessibility.signals.terminalBell": {
-        "sound": "on"
-    },
-    "terminal.integrated.enableVisualBell": true,
-    "workbench.settings.editor": "json",
-    "workbench.activityBar.location": "hidden",
-    "editor.autoIndent": "full",
-    "editor.emptySelectionClipboard": true,
-    "editor.detectIndentation": true,
-    "editor.dragAndDrop": false,
-    "editor.formatOnPaste": false,
-    "pasteAndIndent.selectAfter": true,
-    "editor.snippetSuggestions": "top",
-
-    // PHP Docblocker.
-    "php-docblocker.qualifyClassNames": true,
-    "php-docblocker.alignParams": true,
-    "php-docblocker.paramDescription": true,
-    "php-docblocker.returnDescription": true,
-    "php-docblocker.extra": [
-        "@since ${100:AFFWPN} $200",
-    ],
-    "php-docblocker.gap": true,
-    "php-docblocker.returnGap": true,
-    "workspaceSidebar.rootFolders": [
-        { 
-            "path": "/Users/aubreypwd/VSCode/Workspaces", 
-            "depth": 1, 
-            "excludeHiddenFolders": true 
+      },
+      {
+        "name": "Xdebug (9000)",
+        "type": "php",
+        "request": "launch",
+        "port": 9000,
+        "ignore": [
+          "**/vendor/**/*.php",
+          "**/node_modules/**/*.php",
+          "**/dist/**/*.php"
+        ],
+        "xdebugSettings": {
+          "max_data": 8096
         }
+      }
     ],
-    "workspaceSidebar.showFileIcons": false,
-    "workspace-manager.includeGlobPattern": [
-        "/Users/aubreypwd/Sites/Valet/**/.code-workspaces/*"
-    ],
-    "workspace-manager.advanced.deep": 5,
-    "workspaceSidebar.depth": 5,
-    "workspaceSidebar.excludeHiddenFolders": false,
-    "workspaceSidebar.showFolderHierarchy": true,
-    "intelephense.completion.fullyQualifyGlobalConstantsAndFunctions": true,
-    "intelephense.completion.maxItems": 10,
-    "php.validate.executablePath": "/opt/homebrew/opt/php@7.4/bin/php",
-    "autoHide.panelDelay": 2000,
-    "autoHide.sideBarDelay": 2000,
-    "explorer.confirmDelete": false,
-    "phpsab.fixerEnable": false,
-    "phpcs.ignorePatterns": [
-        "*/vendor/**",
-        "*/node_modules/**",
-        "*/dist/**"
-    ],
-    "phpcs.lintOnType": false,
-    "phpcs.standard": "",
-    "firefox.profileDir": "/Users/aubreypwd/Library/Application Support/Firefox/Profiles/hlshzjk8.dev-edition-default-1698963937197",
-    "workspaceExplorer.workspaceStorageDirectory": "/Users/aubreypwd/VSCode/Workspaces",
-    "workspaceExplorer.enableCustomIconSearch": false,
-    "debug.closeReadonlyTabsOnEnd": true,
-    "debug.confirmOnExit": "always",
-    "debug.console.closeOnEnd": false,
-    "github.copilot.editor.enableAutoCompletions": true,
-    "php.debug.ideKey": "",
-    "php.debug.executablePath": "",
-    "phpcs.showSources": true,
-    "phpcs.trace.server": "messages",
-    "cSpell.userWords": [
-        "absint",
-        "ABSPATH",
-        "affiliatewp",
-        "affwp",
-        "AFFWPN",
-        "mofile",
-        "Monokai",
-        "multisite",
-        "phpcs",
-        "Sandhills",
-        "Squiz",
-        "sslverify",
-        "subpackage",
-        "Traited",
-        "untrailingslashit",
-        "userdata",
-        "woocommerce",
-        "wpdb",
-        "xdebug"
-    ],
-    "bookmarks.saveBookmarksInProject": true,
-    "bookmarks.sideBar.countBadge": "off",
-    "scm.autoReveal": false,
-    "bookmarks.keepBookmarksOnLineDelete": true,
-    "bookmarks.multicursor.toggleMode": "eachLineIndependently",
-    "bookmarks.sideBar.expanded": true,
-    "workbench.colorTheme": "Chromer Theme",
-    "phpcs.executablePath": "/Users/aubreypwd/.composer/vendor/bin/phpcs",
-    "workbench.statusBar.visible": false,
-    "window.commandCenter": false,
-    "git.confirmSync": false,
-    "breadcrumbs.enabled": false,
-    "git.enableSmartCommit": true,
-    "terminal.integrated.bellDuration": 10000,
-    "terminal.integrated.confirmOnKill": "never",
-    "terminal.integrated.hideOnStartup": "whenEmpty",
-    "terminal.integrated.macOptionIsMeta": true,
-    "terminal.integrated.scrollback": 10000,
-    "terminal.integrated.tabs.location": "left",
-    "terminal.integrated.tabs.title": "${cwdFolder}${separator}${workspaceFolder}",
-    "localWPShells.folderPath": "/Users/aubreypwd/Library/Application Support/Local/ssh-entry",
-    "git.replaceTagsWhenPull": true,
-    "workbench.sideBar.location": "right",
+    "compounds": []
+  },
+
+  // Accessibility settings
+  "accessibility.signals.clear": {
+    "sound": "off",
+    "announcement": "off"
+  },
+  "accessibility.signals.terminalBell": {
+    "sound": "on"
+  },
+  "editor.accessibilitySupport": "off",
+
+  // Auto-hide settings
+  "autoHide.panelDelay": 2000,
+  "autoHide.sideBarDelay": 2000,
+
+  // Bookmarks settings
+  "bookmarks.keepBookmarksOnLineDelete": true,
+  "bookmarks.multicursor.toggleMode": "eachLineIndependently",
+  "bookmarks.saveBookmarksInProject": true,
+  "bookmarks.sideBar.countBadge": "off",
+  "bookmarks.sideBar.expanded": true,
+
+  // Breadcrumbs settings
+  "breadcrumbs.enabled": false,
+
+  // cSpell settings
+  "cSpell.userWords": [
+    "absint",
+    "ABSPATH",
+    "affiliatewp",
+    "affwp",
+    "AFFWPN",
+    "mofile",
+    "Monokai",
+    "multisite",
+    "phpcs",
+    "Sandhills",
+    "Squiz",
+    "sslverify",
+    "subpackage",
+    "Traited",
+    "untrailingslashit",
+    "userdata",
+    "woocommerce",
+    "wpdb",
+    "xdebug"
+  ],
+
+  // Debug settings
+  "debug.closeReadonlyTabsOnEnd": true,
+  "debug.confirmOnExit": "always",
+  "debug.console.closeOnEnd": false,
+  "debug.toolBarLocation": "docked",
+
+  // Editor settings
+  "editor.autoIndent": "full",
+  "editor.colorDecoratorsActivatedOn": "click",
+  "editor.cursorStyle": "line-thin",
+  "editor.detectIndentation": true,
+  "editor.dragAndDrop": false,
+  "editor.emptySelectionClipboard": true,
+  "editor.fontFamily": "Hack Nerd Font Mono, Menlo",
+  "editor.fontSize": 12,
+  "editor.formatOnPaste": false,
+  "editor.glyphMargin": true,
+  "editor.guides.bracketPairs": "active",
+  "editor.inlineSuggest.enabled": false,
+  "editor.insertSpaces": false,
+  "editor.language.colorizedBracketPairs": [],
+  "editor.largeFileOptimizations": false,
+  "editor.lineDecorationsWidth": 10,
+  "editor.lineNumbersMinChars": 0,
+  "editor.minimap.enabled": false,
+  "editor.multiCursorModifier": "ctrlCmd",
+  "editor.parameterHints.enabled": false,
+  "editor.renderLineHighlight": "gutter",
+  "editor.renderWhitespace": "all",
+  "editor.rulers": [
+    {
+      "column": 80,
+      "color": "#2B2B2B"
+    },
+    {
+      "column": 72,
+      "color": "#2B2B2B"
+    },
+    {
+      "column": 50,
+      "color": "#2B2B2B"
+    }
+  ],
+  "editor.scrollbar.horizontalScrollbarSize": 0,
+  "editor.scrollbar.verticalScrollbarSize": 0,
+  "editor.showFoldingControls": "never",
+  "editor.snippetSuggestions": "top",
+  "editor.stickyScroll.enabled": true,
+  "editor.stickyScroll.maxLineCount": 5,
+  "editor.stickyTabStops": true,
+  "editor.tabCompletion": "on",
+  "editor.tabSize": 2,
+  "editor.tokenColorCustomizations": {
+    "Monokai Pro (Filter Spectrum)": {},
+    "[Chromer Theme]": {
+      "textMateRules": [
+        {
+          "scope": "support.function",
+          "settings": {
+            "foreground": "#8AABFF"
+          }
+        },
+        {
+          "scope": "storage.modifier",
+          "settings": {
+            "foreground": "#8AABFF"
+          }
+        },
+        {
+          "scope": "storage.type",
+          "settings": {
+            "foreground": "#8AABFF"
+          }
+        }
+      ]
+    }
+  },
+
+  // Explorer settings
+  "explorer.confirmDelete": false,
+  "explorer.decorations.colors": false,
+
+  // Files settings
+  "files.useExperimentalFileWatcher": false,
+  "files.watcherExclude": {
+    "**/.git/": true,
+    "**/node_modules/*/**": true,
+    "**/vendor/*/**": true
+  },
+
+  // Firefox settings
+  "firefox.profileDir": "/Users/aubreypwd/Library/Application Support/Firefox/Profiles/hlshzjk8.dev-edition-default-1698963937197",
+
+  // Git settings
+  "git.autofetch": true,
+  "git.branchProtection": [
+    "master",
+    "main"
+  ],
+  "git.confirmSync": false,
+  "git.decorations.enabled": false,
+  "git.enableSmartCommit": true,
+  "git.fetchOnPull": true,
+  "git.openRepositoryInParentFolders": "always",
+  "git.replaceTagsWhenPull": true,
+
+  // GitHub settings
+  "github.branchProtection": true,
+  "github.copilot.editor.enableAutoCompletions": true,
+  "github.copilot.editor.enableCodeActions": false,
+  "github.gitProtocol": "ssh",
+
+  // Intelephense settings
+  "intelephense.completion.fullyQualifyGlobalConstantsAndFunctions": true,
+  "intelephense.completion.maxItems": 10,
+
+  // Local WP Shells settings
+  "localWPShells.folderPath": "/Users/aubreypwd/Library/Application Support/Local/ssh-entry",
+
+  // PHP settings
+  "php.debug.executablePath": "",
+  "php.debug.ideKey": "",
+  "php.validate.executablePath": "/opt/homebrew/opt/php@7.4/bin/php",
+  "phpsab.fixerEnable": false,
+  "phpsab.snifferShowSources": true,
+  "phpcs.executablePath": "/Users/aubreypwd/.composer/vendor/bin/phpcs",
+  "phpcs.ignorePatterns": [
+    "*/vendor/**",
+    "*/node_modules/**",
+    "*/dist/**"
+  ],
+  "phpcs.lintOnType": false,
+  "phpcs.showSources": true,
+  "phpcs.standard": "",
+  "phpcs.trace.server": "messages",
+  "phpSniffer.autoDetect": true,
+
+  // PHP Docblocker settings
+  "php-docblocker.alignParams": true,
+  "php-docblocker.extra": [
+    "@since ${100:AFFWPN} $200"
+  ],
+  "php-docblocker.gap": true,
+  "php-docblocker.paramDescription": true,
+  "php-docblocker.qualifyClassNames": true,
+  "php-docblocker.returnDescription": true,
+  "php-docblocker.returnGap": true,
+
+  // SCM settings
+  "scm.autoReveal": false,
+  "scm.diffDecorations": "none",
+  "scm.diffDecorationsGutterWidth": 1,
+  "scm.providerCountBadge": "hidden",
+  "scm.showActionButton": false,
+  "scm.showInputActionButton": false,
+
+  // Search settings
+  "search.useIgnoreFiles": false,
+
+  // Security settings
+  "security.promptForLocalFileProtocolHandling": false,
+  "security.workspace.trust.untrustedFiles": "open",
+
+  // Terminal settings
+  "terminal.external.osxExec": "Terminal.app",
+  "terminal.integrated.bellDuration": 10000,
+  "terminal.integrated.commandsToSkipShell": [
+    "workbench.action.closePanel"
+  ],
+  "terminal.integrated.confirmOnKill": "never",
+  "terminal.integrated.cursorBlinking": true,
+  "terminal.integrated.cursorStyle": "line",
+  "terminal.integrated.enableVisualBell": true,
+  "terminal.integrated.fontFamily": "Hack Nerd Font Mono",
+  "terminal.integrated.fontWeightBold": "normal",
+  "terminal.integrated.hideOnStartup": "whenEmpty",
+  "terminal.integrated.macOptionIsMeta": true,
+  "terminal.integrated.scrollback": 10000,
+  "terminal.integrated.tabs.location": "left",
+  "terminal.integrated.tabs.title": "${cwdFolder}${separator}${workspaceFolder}",
+
+  // VS Code Custom CSS settings
+  "vscode_custom_css.imports": [
+    "file:///Users/aubreypwd/.vscode/css/tweaks.css"
+  ],
+
+  // Window settings
+  "window.autoDetectHighContrast": false,
+  "window.commandCenter": false,
+  "window.density.editorTabHeight": "compact",
+  "window.nativeTabs": false,
+  "window.newWindowDimensions": "maximized",
+  "window.openFilesInNewWindow": "default",
+  "window.openFoldersInNewWindow": "off",
+  "window.title": "${folderPath}${separator}${activeEditorMedium}${separator}${focusedView}",
+
+  // Workspace settings
+  "workspaceExplorer.enableCustomIconSearch": false,
+  "workspaceExplorer.workspaceStorageDirectory": "/Users/aubreypwd/VSCode/Workspaces",
+  "workspace-manager.advanced.deep": 5,
+  "workspace-manager.includeGlobPattern": [
+    "/Users/aubreypwd/Sites/Valet/**/.code-workspaces/*"
+  ],
+  "workspaceSidebar.depth": 5,
+  "workspaceSidebar.excludeHiddenFolders": false,
+  "workspaceSidebar.rootFolders": [
+    {
+      "path": "/Users/aubreypwd/VSCode/Workspaces",
+      "depth": 1,
+      "excludeHiddenFolders": true
+    }
+  ],
+  "workspaceSidebar.showFileIcons": false,
+  "workspaceSidebar.showFolderHierarchy": true,
+
+  // Workbench settings
+  "workbench.activityBar.location": "hidden",
+
+  // Theme tweaks.
+  "workbench.colorCustomizations": {
+    "[Chromer Theme]": {
+      // Badge settings
+      "badge.background": "#0978D4", // Blue
+
+      // Button settings
+      "button.background": "#0978D4", // Blue
+      "button.hoverBackground": "#0978D4", // Blue
+
+      // Editor settings
+      "editor.background": "#2B2B2B", // Dark Gray
+      "editor.lineHighlightBackground": "#2B2B2B", // Dark Gray
+      "editor.outlineSelectionBackground": "#0978D4", // Blue
+      "editor.selectionBackground": "#175295", // Blue Dull
+      "editor.selectionForeground": "#FFFFFF", // White
+      "editor.selectionHighlightBackground": "#175295", // Blue Dull
+      "editor.selectionHighlightForeground": "#FFFFFF", // White
+
+      // Editor Group Header settings
+      "editorGroupHeader.border": "#202020", // Dark Gray
+      "editorGroupHeader.tabsBackground": "#202020", // Dark Gray
+
+      // Editor Widget settings
+      "editorWidget.resizeBorder": "#0978D4", // Blue
+
+      // Focus settings
+      "focusBorder": "#4D4D4D", // Gray
+
+      // Input settings
+      "input.border": "#175295", // Blue Dull
+
+      // List settings
+      "list.activeSelectionBackground": "#175295", // Blue Dull
+      "list.hoverBackground": "#0978D4", // Blue
+      "list.hoverForeground": "#FFFFFF", // White
+      "list.inactiveSelectionBackground": "#434343", // Gray
+
+      // Menu settings
+      "menu.selectionBorder": "#175295", // Blue Dull
+
+      // Panel settings
+      "panel.background": "#2B2B2B", // Dark Gray
+      "panel.border": "#4D4D4D", // Gray
+      "panel.dropBorder": "#4D4D4D", // Gray
+      "panelSection.border": "#4D4D4D", // Gray
+      "panelSectionHeader.border": "#4D4D4D", // Gray
+      "panelTitle.activeBorder": "#00000000", // Transparent
+      "panelTitle.activeForeground": "#FFFFFF", // White
+
+      // Scrollbar settings
+      "scrollbar.shadow": "#FFFFFF00", // Transparent
+      "scrollbarSlider.background": "#00000000", // Transparent
+
+      // Selection settings
+      "selection.background": "#175295", // Blue Dull
+
+      // Side Bar settings
+      "sideBar.background": "#2B2B2B", // Dark Gray
+      "sideBar.border": "#4D4D4D", // Gray
+      "sideBarSectionHeader.background": "#2B2B2B", // Dark Gray
+      "sideBarSectionHeader.foreground": "#FFFFFF", // White
+
+      // Tab settings
+      "tab.activeBackground": "#2B2B2B", // Dark Gray
+      "tab.activeBorder": "#2B2B2B", // Dark Gray
+      "tab.activeBorderTop": "#2B2B2B", // Dark Gray
+      "tab.activeForeground": "#FFFFFF", // White
+      "tab.border": "#47474700", // Transparent
+      "tab.hoverBackground": "#1F1F1F", // Darker Gray
+      "tab.hoverBorder": "#2B2B2B", // Dark Gray
+      "tab.hoverForeground": "#D5D5D5", // Light Gray
+      "tab.inactiveBackground": "#202020", // Dark Gray
+      "tab.inactiveModifiedBorder": "#202020", // Dark Gray
+      "tab.lastPinnedBorder": "#202020", // Dark Gray
+      "tab.unfocusedActiveBackground": "#202020", // Dark Gray
+      "tab.unfocusedActiveBorder": "#202020", // Dark Gray
+      "tab.unfocusedActiveBorderTop": "#1F1F1F", // Darker Gray
+      "tab.unfocusedHoverForeground": "#FFFFFF", // White
+      "tab.unfocusedInactiveBackground": "#202020", // Dark Gray
+      "tab.unfocusedInactiveForeground": "#909090", // Gray
+      "tab.unfocusedInactiveModifiedBorder": "#202020", // Dark Gray
+
+      // Text Link settings
+      "textLink.activeForeground": "#0978D4", // Blue
+      "textLink.foreground": "#0978D4", // Blue
+
+      // Title Bar settings
+      "titleBar.activeBackground": "#363636", // Dark Gray
+      "titleBar.border": "#363636", // Dark Gray
+      "titleBar.inactiveBackground": "#282828", // Dark Gray
+
+      // Widget settings
+      "widget.border": "#454545" // Gray
+    },
+    "editorBracketPairGuide.activeBackground1": "#69676C",
+    "editorBracketPairGuide.activeBackground2": "#69676C",
+    "editorBracketPairGuide.activeBackground3": "#69676C",
+    "editorBracketPairGuide.activeBackground4": "#69676C",
+    "editorBracketPairGuide.activeBackground5": "#69676C",
+    "editorBracketPairGuide.activeBackground6": "#69676C",
+    "scrollbar.shadow": "#ffffff00",
+    "widget.shadow": "#ffffff00"
+  },
+  "workbench.colorTheme": "Chromer Theme",
+  "workbench.editor.closeEmptyGroups": false,
+  "workbench.editor.decorations.colors": false,
+  "workbench.editor.enablePreviewFromQuickOpen": false,
+  "workbench.iconTheme": "Monokai Pro (Filter Spectrum) Icons",
+  "workbench.preferredDarkColorTheme": "Monokai Pro (Filter Spectrum)",
+  "workbench.settings.editor": "json",
+  "workbench.settings.useSplitJSON": true,
+  "workbench.sideBar.location": "right",
+  "workbench.startupEditor": "none",
+  "workbench.statusBar.visible": false
 }
