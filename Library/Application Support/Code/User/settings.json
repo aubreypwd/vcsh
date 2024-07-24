@@ -273,8 +273,9 @@
   "window.density.editorTabHeight": "compact",
   "window.nativeTabs": false,
   "window.newWindowDimensions": "maximized",
-  "window.openFilesInNewWindow": "default",
-  "window.openFoldersInNewWindow": "off",
+  "window.openFilesInNewWindow": "on",
+  "window.openFoldersInNewWindow": "on",
+  "window.openWithoutArgumentsInNewWindow": "on",
   "window.title": "${folderPath}${separator}${activeEditorMedium}${separator}${focusedView}",
 
   // Workspace settings
@@ -341,7 +342,7 @@
       "menu.selectionBorder": "#175295", // Blue Dull
 
       // Panel settings
-      "panel.background": "#2B2B2B", // Dark Gray
+      "panel.background": "#333333", // Dark Gray
       "panel.border": "#4D4D4D", // Gray
       "panel.dropBorder": "#4D4D4D", // Gray
       "panelSection.border": "#4D4D4D", // Gray
@@ -357,7 +358,7 @@
       "selection.background": "#175295", // Blue Dull
 
       // Side Bar settings
-      "sideBar.background": "#2B2B2B", // Dark Gray
+      "sideBar.background": "#333333", // Dark Gray
       "sideBar.border": "#4D4D4D", // Gray
       "sideBarSectionHeader.background": "#2B2B2B", // Dark Gray
       "sideBarSectionHeader.foreground": "#FFFFFF", // White
@@ -416,5 +417,5 @@
   "workbench.statusBar.visible": false,
 
   // Github Copilot setings
-  "editor.lightbulb.enabled": "false",
+  "editor.lightbulb.enabled": "off",
 }
