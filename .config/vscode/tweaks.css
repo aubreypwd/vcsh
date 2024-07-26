@@ -12,6 +12,7 @@
 	padding-right: 10px;
 }
 
+/* Add space for the [...] area in the tab area. */
 .monaco-workbench .part.editor>.content .editor-group-container>.title .editor-actions {
 	padding: 3px 8px 0 4px;
 }
