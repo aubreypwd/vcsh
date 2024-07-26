@@ -133,31 +133,6 @@
   "editor.stickyTabStops": true,
   "editor.tabCompletion": "on",
   "editor.tabSize": 2,
-  "editor.tokenColorCustomizations": {
-    "Monokai Pro (Filter Spectrum)": {},
-    "[Chromer Theme]": {
-      "textMateRules": [
-        {
-          "scope": "support.function",
-          "settings": {
-            "foreground": "#8AABFF"
-          }
-        },
-        {
-          "scope": "storage.modifier",
-          "settings": {
-            "foreground": "#8AABFF"
-          }
-        },
-        {
-          "scope": "storage.type",
-          "settings": {
-            "foreground": "#8AABFF"
-          }
-        }
-      ]
-    }
-  },
 
   // Explorer settings
   "explorer.confirmDelete": false,
@@ -388,8 +363,8 @@
       "textLink.foreground": "#0978D4", // Blue
 
       // Title Bar settings
-      "titleBar.activeBackground": "#363636", // Dark Gray
-      "titleBar.border": "#363636", // Dark Gray
+      "titleBar.activeBackground": "#333333", // Dark Gray
+      "titleBar.border": "#333333", // Dark Gray
       "titleBar.inactiveBackground": "#282828", // Dark Gray
 
       // Widget settings
@@ -403,6 +378,31 @@
     "editorBracketPairGuide.activeBackground6": "#69676C",
     "scrollbar.shadow": "#ffffff00",
     "widget.shadow": "#ffffff00"
+  },
+  "editor.tokenColorCustomizations": {
+    "Monokai Pro (Filter Spectrum)": {},
+    "[Chromer Theme]": {
+      "textMateRules": [
+        {
+          "scope": "support.function",
+          "settings": {
+            "foreground": "#8AABFF"
+          }
+        },
+        {
+          "scope": "storage.modifier",
+          "settings": {
+            "foreground": "#EEA8F0"
+          }
+        },
+        {
+          "scope": "storage.type",
+          "settings": {
+            "foreground": "#EEA8F0"
+          }
+        }
+      ]
+    }
   },
   "workbench.colorTheme": "Chromer Theme",
   "workbench.editor.closeEmptyGroups": false,
@@ -418,4 +418,6 @@
 
   // Github Copilot setings
   "editor.lightbulb.enabled": "off",
+  "pnotes.globalNotesFolder": "/Users/aubreypwd/.pnotes",
+  "pnotes.createGlobalProjectNotesGuideFile": false,
 }
