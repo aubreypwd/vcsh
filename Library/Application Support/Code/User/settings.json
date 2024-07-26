@@ -279,93 +279,93 @@
   "workbench.colorCustomizations": {
     "[Chromer Theme]": {
       // Badge settings
-      "badge.background": "#0978D4", // Blue
+      "badge.background": "#0978D4",
 
       // Button settings
-      "button.background": "#0978D4", // Blue
-      "button.hoverBackground": "#0978D4", // Blue
+      "button.background": "#0978D4",
+      "button.hoverBackground": "#0978D4",
 
       // Editor settings
-      "editor.background": "#2B2B2B", // Dark Gray
-      "editor.lineHighlightBackground": "#2B2B2B", // Dark Gray
-      "editor.outlineSelectionBackground": "#0978D4", // Blue
-      "editor.selectionBackground": "#175295", // Blue Dull
-      "editor.selectionForeground": "#FFFFFF", // White
-      "editor.selectionHighlightBackground": "#175295", // Blue Dull
-      "editor.selectionHighlightForeground": "#FFFFFF", // White
+      "editor.background": "#2B2B2B",
+      "editor.lineHighlightBackground": "#2B2B2B",
+      "editor.outlineSelectionBackground": "#0978D4",
+      "editor.selectionBackground": "#175295",
+      "editor.selectionForeground": "#FFFFFF",
+      "editor.selectionHighlightBackground": "#175295",
+      "editor.selectionHighlightForeground": "#FFFFFF",
 
       // Editor Group Header settings
-      "editorGroupHeader.border": "#202020", // Dark Gray
-      "editorGroupHeader.tabsBackground": "#202020", // Dark Gray
+      "editorGroupHeader.border": "#000000",
+      "editorGroupHeader.tabsBackground": "#202020",
 
       // Editor Widget settings
-      "editorWidget.resizeBorder": "#0978D4", // Blue
+      "editorWidget.resizeBorder": "#0978D4",
 
       // Focus settings
-      "focusBorder": "#4D4D4D", // Gray
+      "focusBorder": "#4D4D4D",
 
       // Input settings
-      "input.border": "#175295", // Blue Dull
+      "input.border": "#175295",
 
       // List settings
-      "list.activeSelectionBackground": "#175295", // Blue Dull
-      "list.hoverBackground": "#0978D4", // Blue
-      "list.hoverForeground": "#FFFFFF", // White
-      "list.inactiveSelectionBackground": "#434343", // Gray
+      "list.activeSelectionBackground": "#175295",
+      "list.hoverBackground": "#0978D4",
+      "list.hoverForeground": "#FFFFFF",
+      "list.inactiveSelectionBackground": "#434343",
 
       // Menu settings
-      "menu.selectionBorder": "#175295", // Blue Dull
+      "menu.selectionBorder": "#175295",
 
       // Panel settings
-      "panel.background": "#333333", // Dark Gray
-      "panel.border": "#4D4D4D", // Gray
-      "panel.dropBorder": "#4D4D4D", // Gray
-      "panelSection.border": "#4D4D4D", // Gray
-      "panelSectionHeader.border": "#4D4D4D", // Gray
-      "panelTitle.activeBorder": "#00000000", // Transparent
-      "panelTitle.activeForeground": "#FFFFFF", // White
+      "panel.background": "#333333",
+      "panel.border": "#4D4D4D",
+      "panel.dropBorder": "#4D4D4D",
+      "panelSection.border": "#4D4D4D",
+      "panelSectionHeader.border": "#4D4D4D",
+      "panelTitle.activeBorder": "#00000000",
+      "panelTitle.activeForeground": "#FFFFFF",
 
       // Scrollbar settings
-      "scrollbar.shadow": "#FFFFFF00", // Transparent
-      "scrollbarSlider.background": "#00000000", // Transparent
+      "scrollbar.shadow": "#00000000",
+      "scrollbarSlider.background": "#00000000",
 
       // Selection settings
-      "selection.background": "#175295", // Blue Dull
+      "selection.background": "#175295",
 
       // Side Bar settings
-      "sideBar.background": "#333333", // Dark Gray
-      "sideBar.border": "#4D4D4D", // Gray
-      "sideBarSectionHeader.background": "#2B2B2B", // Dark Gray
-      "sideBarSectionHeader.foreground": "#FFFFFF", // White
+      "sideBar.background": "#333333",
+      "sideBar.border": "#4D4D4D",
+      "sideBarSectionHeader.background": "#2B2B2B",
+      "sideBarSectionHeader.foreground": "#FFFFFF",
 
       // Tab settings
-      "tab.activeBackground": "#2B2B2B", // Dark Gray
-      "tab.activeBorder": "#2B2B2B", // Dark Gray
-      "tab.activeBorderTop": "#2B2B2B", // Dark Gray
-      "tab.activeForeground": "#FFFFFF", // White
-      "tab.border": "#47474700", // Transparent
-      "tab.hoverBackground": "#1F1F1F", // Darker Gray
-      "tab.hoverBorder": "#2B2B2B", // Dark Gray
-      "tab.hoverForeground": "#D5D5D5", // Light Gray
-      "tab.inactiveBackground": "#202020", // Dark Gray
-      "tab.inactiveModifiedBorder": "#202020", // Dark Gray
-      "tab.lastPinnedBorder": "#202020", // Dark Gray
-      "tab.unfocusedActiveBackground": "#202020", // Dark Gray
-      "tab.unfocusedActiveBorder": "#202020", // Dark Gray
-      "tab.unfocusedActiveBorderTop": "#1F1F1F", // Darker Gray
-      "tab.unfocusedHoverForeground": "#FFFFFF", // White
-      "tab.unfocusedInactiveBackground": "#202020", // Dark Gray
-      "tab.unfocusedInactiveForeground": "#909090", // Gray
-      "tab.unfocusedInactiveModifiedBorder": "#202020", // Dark Gray
+      "tab.activeBackground": "#383838",
+      "tab.activeBorder": "#00000000",
+      "tab.activeBorderTop": "#00000000",
+      "tab.activeForeground": "#FFFFFF",
+      "tab.border": "#494949",
+      "tab.hoverBackground": "#1F1F1F",
+      "tab.hoverBorder": "#00000000",
+      "tab.hoverForeground": "#D5D5D5",
+      "tab.inactiveBackground": "#202020",
+      "tab.inactiveModifiedBorder": "#000000",
+      "tab.lastPinnedBorder": "#00000000",
+      "tab.unfocusedActiveBackground": "#00000000",
+      "tab.unfocusedActiveBorder": "#00000000",
+      "tab.unfocusedActiveBorderTop": "#1F1F1F",
+      "tab.unfocusedHoverForeground": "#FFFFFF",
+      "tab.unfocusedInactiveBackground": "#00000000",
+      "tab.unfocusedInactiveForeground": "#909090",
+      "tab.unfocusedInactiveModifiedBorder": "#00000000",
 
       // Text Link settings
-      "textLink.activeForeground": "#0978D4", // Blue
-      "textLink.foreground": "#0978D4", // Blue
+      "textLink.activeForeground": "#0978D4",
+      "textLink.foreground": "#0978D4",
 
       // Title Bar settings
-      "titleBar.activeBackground": "#333333", // Dark Gray
-      "titleBar.border": "#333333", // Dark Gray
-      "titleBar.inactiveBackground": "#282828", // Dark Gray
+      "titleBar.activeBackground": "#383838",
+      "titleBar.border": "#00000000",
+      "titleBar.inactiveBackground": "#383838",
 
       // Widget settings
       "widget.border": "#454545" // Gray
