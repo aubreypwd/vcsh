@@ -317,7 +317,7 @@
       "menu.selectionBorder": "#175295",
 
       // Panel settings
-      "panel.background": "#333333",
+      "panel.background": "#383838",
       "panel.border": "#4D4D4D",
       "panel.dropBorder": "#4D4D4D",
       "panelSection.border": "#4D4D4D",
@@ -333,7 +333,7 @@
       "selection.background": "#175295",
 
       // Side Bar settings
-      "sideBar.background": "#333333",
+      "sideBar.background": "#383838",
       "sideBar.border": "#4D4D4D",
       "sideBarSectionHeader.background": "#2B2B2B",
       "sideBarSectionHeader.foreground": "#FFFFFF",
