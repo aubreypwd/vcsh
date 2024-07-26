@@ -624,6 +624,18 @@
 	</dict>
 	<dict>
 		<key>behaviour</key>
+		<integer>0</integer>
+		<key>behaviourArgument</key>
+		<string></string>
+		<key>enabled</key>
+		<false/>
+		<key>predicate</key>
+		<string>URL CONTAINS "drive.google.com" OR URL CONTAINS "docs.google.com" OR URL CONTAINS "sheets.google.com"</string>
+		<key>title</key>
+		<string>Google Drive</string>
+	</dict>
+	<dict>
+		<key>behaviour</key>
 		<integer>6</integer>
 		<key>behaviourArgument</key>
 		<dict>
@@ -744,23 +756,6 @@
 		<string>URL CONTAINS "a.supportally.com"</string>
 		<key>title</key>
 		<string>a.supportally.com</string>
-	</dict>
-	<dict>
-		<key>behaviour</key>
-		<integer>6</integer>
-		<key>behaviourArgument</key>
-		<dict>
-			<key>path</key>
-			<string>/Users/aubreypwd/Applications/Google Drive.app</string>
-			<key>type</key>
-			<string>ChoosyBrowser</string>
-		</dict>
-		<key>enabled</key>
-		<false/>
-		<key>predicate</key>
-		<string>URL CONTAINS "drive.google.com" OR URL CONTAINS "docs.google.com" OR URL CONTAINS "sheets.google.com"</string>
-		<key>title</key>
-		<string>Google Drive</string>
 	</dict>
 	<dict>
 		<key>behaviour</key>
