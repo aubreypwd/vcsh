@@ -239,7 +239,7 @@
 
   // VS Code Custom CSS settings
   "vscode_custom_css.imports": [
-    "file:///Users/aubreypwd/.vscode/css/tweaks.css"
+    "file:///Users/aubreypwd/.config/vscode/tweaks.css"
   ],
 
   // Window settings
