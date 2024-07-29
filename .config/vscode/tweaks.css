@@ -2,11 +2,11 @@
 /* Get the tab height like a normal tab on macos. */
 .monaco-workbench .part.editor>.content .editor-group-container>.title .tabs-container,
 .monaco-workbench .part.editor>.content .editor-group-container>.title .tabs-container>.tab.sizing-fit {
-	--editor-group-tab-height: 27px;
+	--editor-group-tab-height: 26px;
 }
 
 /* Show the [X] button on the left side */
-.monaco-workbench .part.editor>.content .editor-group-container.active>.title .tabs-container>.tab {
+.monaco-workbench .part.editor>.content .editor-group-container>.title .tabs-container>.tab {
 	flex-direction: row-reverse;
 	padding-left: 0;
 	padding-right: 10px;
@@ -15,4 +15,13 @@
 /* Add space for the [...] area in the tab area. */
 .monaco-workbench .part.editor>.content .editor-group-container>.title .editor-actions {
 	padding: 3px 8px 0 8px;
+}
+
+/* Make the close button always visible */
+.monaco-workbench .part.editor>.content .editor-group-container>.title .tabs-container>.tab>.tab-actions .action-label, 
+.monaco-workbench .part.editor>.content .editor-group-container>.title .tabs-container>.tab>.tab-actions .action-label, 
+.monaco-workbench .part.editor>.content .editor-group-container>.title .tabs-container>.tab.dirty>.tab-actions .action-label, 
+.monaco-workbench .part.editor>.content .editor-group-container>.title .tabs-container>.tab.sticky:not(.pinned-action-off)>.tab-actions .action-label, 
+.monaco-workbench .part.editor>.content .editor-group-container>.title .tabs-container>.tab>.tab-actions .action-label {
+	opacity: 0.5;
 }
