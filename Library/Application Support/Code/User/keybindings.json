@@ -56,7 +56,7 @@
 		"command": "workbench.action.openWorkspace"
 	},
 	{
-		"key": "shift+alt+t",
+		"key": "alt+l alt+f",
 		"command": "workbench.action.quickOpenLeastRecentlyUsedEditorInGroup",
 		"when": "!activeEditorGroupEmpty"
 	},
@@ -513,5 +513,60 @@
 	{
 		"key": "cmd+t",
 		"command": "-workbench.action.quickOpen"
+	},
+	{
+		"key": "shift+cmd+.",
+		"command": "-breadcrumbs.toggleToOn",
+		"when": "!config.breadcrumbs.enabled"
+	},
+	{
+		"key": "alt+d alt+k",
+		"command": "workbench.debug.viewlet.action.removeAllBreakpoints"
+	},
+	{
+		"key": "alt+g alt+d",
+		"command": "editor.action.revealDefinition",
+		"when": "editorHasDefinitionProvider && editorTextFocus"
+	},
+	{
+		"key": "f12",
+		"command": "-editor.action.revealDefinition",
+		"when": "editorHasDefinitionProvider && editorTextFocus"
+	},
+	{
+		"key": "alt+g alt+d",
+		"command": "editor.action.revealDefinition",
+		"when": "editorHasDefinitionProvider && editorTextFocus && isWeb"
+	},
+	{
+		"key": "cmd+f12",
+		"command": "-editor.action.revealDefinition",
+		"when": "editorHasDefinitionProvider && editorTextFocus && isWeb"
+	},
+	{
+		"key": "alt+c alt+a",
+		"command": "workbench.action.closeOtherEditors"
+	},
+	{
+		"key": "alt+cmd+t",
+		"command": "-workbench.action.closeOtherEditors"
+	},
+	{
+		"key": "alt+right",
+		"command": "-cursorWordEndRight",
+		"when": "textInputFocus"
+	},
+	{
+		"key": "alt+left",
+		"command": "-cursorWordLeft",
+		"when": "textInputFocus"
+	},
+	{
+		"key": "alt+left",
+		"command": "cursorWordLeft"
+	},
+	{
+		"key": "alt+right",
+		"command": "cursorWordRight"
 	}
 ]

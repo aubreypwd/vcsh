@@ -55,9 +55,6 @@
   "bookmarks.sideBar.countBadge": "off",
   "bookmarks.sideBar.expanded": true,
 
-  // Breadcrumbs settings
-  "breadcrumbs.enabled": false,
-
   // cSpell settings
   "cSpell.userWords": [
     "absint",
@@ -65,6 +62,8 @@
     "affiliatewp",
     "affwp",
     "AFFWPN",
+    "dashicon",
+    "dashicons",
     "mofile",
     "Monokai",
     "multisite",
@@ -94,7 +93,7 @@
   "editor.detectIndentation": true,
   "editor.dragAndDrop": false,
   "editor.emptySelectionClipboard": true,
-  "editor.fontFamily": "Hack Nerd Font Mono, Menlo",
+  "editor.fontFamily": "Menlo",
   "editor.fontSize": 12,
   "editor.formatOnPaste": false,
   "editor.glyphMargin": true,
@@ -113,17 +112,17 @@
   "editor.rulers": [
     {
       "column": 80,
-      "color": "#2B2B2B"
-    },
-    {
-      "column": 72,
-      "color": "#2B2B2B"
-    },
-    {
-      "column": 50,
-      "color": "#2B2B2B"
+      "color": "#202020"
     }
   ],
+  "[git-commit]":  {
+    "editor.rulers": [
+        50,
+        72
+    ],
+    "editor.wordWrap": "off",
+    "workbench.editor.restoreViewState": false
+  },
   "editor.scrollbar.horizontalScrollbarSize": 0,
   "editor.scrollbar.verticalScrollbarSize": 0,
   "editor.showFoldingControls": "never",
@@ -248,7 +247,7 @@
   "window.density.editorTabHeight": "compact",
   "window.nativeTabs": false,
   "window.newWindowDimensions": "maximized",
-  "window.openFilesInNewWindow": "on",
+  "window.openFilesInNewWindow": "default",
   "window.openFoldersInNewWindow": "on",
   "window.openWithoutArgumentsInNewWindow": "on",
   "window.title": "${folderPath}${separator}${activeEditorMedium}${separator}${focusedView}",
@@ -334,7 +333,7 @@
 
       // Side Bar settings
       "sideBar.background": "#383838",
-      "sideBar.border": "#4D4D4D",
+      "sideBar.border": "#494949",
       "sideBarSectionHeader.background": "#2B2B2B",
       "sideBarSectionHeader.foreground": "#FFFFFF",
 
@@ -377,7 +376,19 @@
     "editorBracketPairGuide.activeBackground5": "#69676C",
     "editorBracketPairGuide.activeBackground6": "#69676C",
     "scrollbar.shadow": "#ffffff00",
-    "widget.shadow": "#ffffff00"
+    "widget.shadow": "#ffffff00",
+
+    // Status Bar
+    "statusBar.background": "#202020",
+    "statusBar.border": "#00000000",
+    "statusBar.foreground": "#747474",
+    "statusBar.focusBorder": "#00000000",
+    "statusBarItem.hoverBackground": "#00000000",
+    
+      // When Debugging
+      "statusBar.debuggingBackground": "#F48671",
+      "statusBar.debuggingForeground": "#000000",
+      "statusBar.debuggingBorder": "#00000000",
   },
   "editor.tokenColorCustomizations": {
     "Monokai Pro (Filter Spectrum)": {},
@@ -414,10 +425,102 @@
   "workbench.settings.useSplitJSON": true,
   "workbench.sideBar.location": "right",
   "workbench.startupEditor": "none",
-  "workbench.statusBar.visible": false,
 
   // Github Copilot setings
   "editor.lightbulb.enabled": "off",
   "pnotes.globalNotesFolder": "/Users/aubreypwd/.pnotes",
   "pnotes.createGlobalProjectNotesGuideFile": false,
+  "git-blame.config.showBlameInline": false,
+  "git-blame.config.inlineBlameHoverMessage": true,
+
+  // Highlighted words.
+  "todohighlight.isCaseSensitive": true,
+  "todohighlight.keywords": [
+    {
+        "text": "debugger;",
+        "color": "#E51500",
+        "backgroundColor": "#00000000",
+        "isWholeLine": false
+    },
+    {
+        "text": "// TODO",
+        "color": "#14EB27",
+        "backgroundColor": "#00000000",
+        "isWholeLine": true
+    },
+    {
+        "text": "xdebug_break();",
+        "color": "#E51500",
+        "backgroundColor": "#00000000",
+        "isWholeLine": false
+    }
+  ],
+
+  // Docblocks.
+  "php-docblocker-coffeeio.alignParams": true,
+  "php-docblocker-coffeeio.alignReturn": false,
+  "php-docblocker-coffeeio.author": {
+    "name": "Aubrey Portwood",
+    "email": "${1000:aportwood@am.co}"
+  },
+  "php-docblocker-coffeeio.extra": [
+    "@since ${2000:AFFWPN}"
+  ],
+  "php-docblocker-coffeeio.gap": true,
+  "php-docblocker-coffeeio.qualifyClassNames": true,
+  "php-docblocker-coffeeio.returnGap": true,
+  "php-docblocker-coffeeio.returnVoid": false,
+  "php-docblocker-coffeeio.useShortNames": true,
+  "breadcrumbs.enabled": false,
+  "tabout.charactersToTabOutFrom": [
+    {
+      "open": "[",
+      "close": "]"
+    },
+    {
+      "open": "{",
+      "close": "}"
+    },
+    {
+      "open": "(",
+      "close": ")"
+    },
+    {
+      "open": "'",
+      "close": "'"
+    },
+    {
+      "open": "\"",
+      "close": "\""
+    },
+    {
+      "open": ":",
+      "close": ":"
+    },
+    {
+      "open": "=",
+      "close": "="
+    },
+    {
+      "open": ">",
+      "close": ">"
+    },
+    {
+      "open": "<",
+      "close": "<"
+    },
+    {
+      "open": ".",
+      "close": "."
+    },
+    {
+      "open": "`",
+      "close": "`"
+    },
+    {
+      "open": ";",
+      "close": ";"
+    }
+  ],
+  "diffEditor.ignoreTrimWhitespace": false,
 }
