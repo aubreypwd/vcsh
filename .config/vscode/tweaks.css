@@ -2,7 +2,7 @@
 /* Get the tab height like a normal tab on macos. */
 .monaco-workbench .part.editor>.content .editor-group-container>.title .tabs-container,
 .monaco-workbench .part.editor>.content .editor-group-container>.title .tabs-container>.tab.sizing-fit {
-	--editor-group-tab-height: 26px;
+	--editor-group-tab-height: 28px;
 }
 
 /* Show the [X] button on the left side */

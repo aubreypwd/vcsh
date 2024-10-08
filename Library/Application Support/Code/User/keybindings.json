@@ -471,7 +471,7 @@
 	{
 		"key": "escape",
 		"command": "workbench.action.closePanel",
-		"when": "panelFocus "
+		"when": "panelFocus"
 	},
 	{
 		"key": "alt+t alt+w",
@@ -568,5 +568,9 @@
 	{
 		"key": "alt+right",
 		"command": "cursorWordRight"
+	},
+	{
+		"key": "alt+p alt+c",
+		"command": "cody.chat.focus"
 	}
 ]
