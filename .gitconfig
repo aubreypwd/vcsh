@@ -59,6 +59,7 @@
 	stat   = status
 	stow   = "stash --all push -m"
 	uaf    = "reset" # Unstage all files.
+	pl     = "! function f() { git -C wp-content/plugins $@; }; f" # Runs command in the wp-content/plugins directory (useful with LocalWP site shell).
 
 [push]
 	default = current
