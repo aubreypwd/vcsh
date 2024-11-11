@@ -16,9 +16,11 @@
  #
  # See my-path.php in zsh-my-config for more.
  ##
+export N_PREFIX="$HOME/.n"
+export PATH="$N_PREFIX/bin:$PATH"
 export PATH="/usr/local/bin:$PATH" # Just for n, where it symlinks node.
-export PATH="$PATH:/opt/homebrew/bin:/opt/homebrew/sbin" # Homebrew (always preferring e.g. LocalWP).
-export PATH="$PATH:$HOME/.composer/vendor/bin" # Composer.
+export PATH="$PATH:/opt/homebrew/bin:/opt/homebrew/sbin" # Homebrew
+export PATH="$PATH:$HOME/.composer/vendor/bin" # Composer
 export PATH="/opt/homebrew/opt/ruby/bin:$PATH" #  Ruby
 export PATH="/opt/homebrew/opt/openssl@3/bin:$PATH" # Open SSL
 export PATH="/opt/homebrew/lib/ruby/gems/3.0.0/bin:$PATH" # Ruby Gems

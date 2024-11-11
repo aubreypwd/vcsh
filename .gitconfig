@@ -71,7 +71,7 @@
 
 [core]
 	excludesfile  = /Users/aubreypwd/.gitignore
-	editor = open -W -a 'CommitEdit'
+	editor        = open -W -a 'CommitEdit'
 	# editor        = "micro --clipboard external --infobar false --keepautoindent false --savecursor false --diffgutter false --colorcolumn 72 --ruler false --softwrap true --wordwrap true --eofnewline false --rmtrailingws true"
 	# editor        = "/Applications/Komet.app/Contents/MacOS/Komet"
 

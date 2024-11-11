@@ -25,6 +25,8 @@ tap "xvxx/code"
 brew "antigen"
 # General-purpose data compression with high compression ratio
 brew "xz"
+# TIFF library and utilities
+brew "libtiff"
 # Image format providing lossless and lossy compression for web images
 brew "webp"
 # New file format for still image compression
@@ -40,7 +42,7 @@ brew "libssh2"
 # Download with resuming and segmented downloading
 brew "aria2"
 # Interpreted, interactive, object-oriented programming language
-brew "python@3.12"
+brew "python@3.13"
 # Core application library for C
 brew "glib"
 # Protocol definitions and daemon for D-Bus at-spi
@@ -62,11 +64,11 @@ brew "cabextract"
 # XML-based font configuration API for X Windows
 brew "fontconfig"
 # Validating, recursive, caching DNS resolver
-brew "unbound"
+brew "unbound", restart_service: true
 # GNU Transport Layer Security (TLS) Library
 brew "gnutls"
 # GNU Emacs text editor
-brew "emacs"
+brew "emacs", restart_service: true
 # Emacs dependency management
 brew "cask"
 # Like cat but displays content with syntax highlighting
@@ -79,6 +81,8 @@ brew "pycparser"
 brew "cffi"
 # Control Google Chrome from the command-line
 brew "chrome-cli"
+# Cloudflare Tunnel client (formerly Argo Tunnel)
+brew "cloudflared", link: false
 # Cross-platform make
 brew "cmake"
 # Console Matrix
@@ -91,10 +95,14 @@ brew "curl"
 brew "freetds"
 # Library for encoding and decoding .avif files
 brew "libavif"
+# C library for reading, creating, and modifying zip archives
+brew "libzip"
 # General-purpose scripting language
 brew "php", restart_service: true
 # Dependency Manager for PHP
 brew "composer"
+# CPU usage limiter
+brew "cpulimit"
 # Cryptographic recipes and primitives for Python
 brew "cryptography"
 # Display user-friendly message boxes from shell scripts
@@ -103,12 +111,12 @@ brew "dialog"
 brew "openssl@1.1"
 # Utilities for converting macOS DMG images
 brew "dmg2img"
-# Lightweight DNS forwarder and DHCP server
-brew "dnsmasq", restart_service: true
 # Select default apps for documents and URL schemes on macOS
 brew "duti"
-# Modern replacement for 'ls'
-brew "exa"
+# C library of Git core methods that is re-entrant and linkable
+brew "libgit2"
+# Modern, maintained replacement for ls
+brew "eza"
 # Significantly faster alternative to the classic Unix cp(1) command
 brew "fcp"
 # Simple, fast and user-friendly alternative to find
@@ -119,6 +127,10 @@ brew "fff"
 brew "harfbuzz"
 # Image processing and image analysis library
 brew "leptonica"
+# Multi-format archive and compression library
+brew "libarchive"
+# Interpreted, interactive, object-oriented programming language
+brew "python@3.12"
 # Subtitle renderer for the ASS/SSA subtitle format
 brew "libass"
 # Blu-Ray disc playback library for media players like VLC
@@ -137,6 +149,8 @@ brew "firefoxpwa"
 brew "fzf"
 # Fast, simple fuzzy text selector with an advanced scoring algorithm
 brew "fzy"
+# GNU compiler collection
+brew "gcc"
 # Toolkit for image loading and pixel buffer manipulation
 brew "gdk-pixbuf"
 # GitHub command-line tool
@@ -171,6 +185,10 @@ brew "python@3.10"
 brew "googler"
 # Library for manipulating JPEG-2000 images
 brew "jasper"
+# Database of common MIME types
+brew "shared-mime-info"
+# ISO/IEC 23008-12:2017 HEIF file format decoder and encoder
+brew "libheif"
 # Image processing tools collection
 brew "graphicsmagick"
 # Colorize logfiles and command output
@@ -190,19 +208,17 @@ brew "highlight"
 # Improved top (interactive process viewer)
 brew "htop"
 # Apache HTTP server
-brew "httpd"
+brew "httpd", restart_service: true
 # User-friendly cURL replacement (command-line HTTP client)
 brew "httpie"
+# Website copier/offline browser
+brew "httrack"
 # Configurable static site generator
 brew "hugo"
 # ID3 tag manipulation
 brew "id3lib"
-# Database of common MIME types
-brew "shared-mime-info"
-# ISO/IEC 23008-12:2017 HEIF file format decoder and encoder
-brew "libheif"
-# Interpreted, interactive, object-oriented programming language
-brew "python@3.9"
+# C/C++ seam carving library
+brew "liblqr"
 # Library for reading RAW files from digital photo cameras
 brew "libraw"
 # Tools and libraries to manipulate images in many formats
@@ -223,8 +239,6 @@ brew "lynx"
 brew "m-cli"
 # System information fetcher, with an emphasis on performance and minimalism
 brew "macchina"
-# Web and API based SMTP testing tool
-brew "mailhog"
 # Tool to convert MDF (Alcohol 120% images) images to ISO images
 brew "mdf2iso"
 # Modern and intuitive terminal-based text editor
@@ -235,20 +249,26 @@ brew "midnight-commander"
 brew "multitail"
 # CLI for MySQL with auto-completion and syntax highlighting
 brew "mycli"
+# Protocol buffers (Google's data interchange format)
+brew "protobuf"
 # Open source relational database management system
-brew "mysql", restart_service: true
-# Node version management
-brew "n"
+brew "mysql"
 # Free (GNU) replacement for the Pico text editor
 brew "nano"
 # Fast, highly customisable system info script
 brew "neofetch"
 # Ambitious Vim-fork focused on extensibility and agility
 brew "neovim"
-# HTTP(S) server and reverse proxy, and IMAP/POP3 proxy server
-brew "nginx"
 # Optimized BLAS library
 brew "openblas"
+# Package for scientific computing with Python
+brew "numpy"
+# Manage multiple Node.js versions
+brew "nvm"
+# Tensors and dynamic neural networks
+brew "pytorch"
+# General-purpose speech recognition model
+brew "openai-whisper"
 # Development kit for the Java programming language
 brew "openjdk"
 # Open Visual Inference And Optimization toolkit for AI inference
@@ -264,15 +284,13 @@ brew "percol"
 # Pretty system information tool written in POSIX sh
 brew "pfetch"
 # General-purpose scripting language
-brew "php@8.1"
+brew "php@8.1", restart_service: true
 # General-purpose scripting language
 brew "php@8.2", restart_service: true
 # Web interface for MySQL and MariaDB
 brew "phpmyadmin"
 # Pinentry for GPG on Mac
 brew "pinentry-mac"
-# Protocol buffers (Google's data interchange format)
-brew "protobuf"
 # Protocol buffers library
 brew "protobuf-c"
 # Python 3 bindings for the Cairo graphics library
@@ -287,6 +305,10 @@ brew "python-tabulate"
 brew "python@3.11"
 # Interpreted, interactive, object-oriented programming language
 brew "python@3.8"
+# Interpreted, interactive, object-oriented programming language
+brew "python@3.9"
+# Persistent key-value database, with built-in net interface
+brew "redis"
 # Utility that provides fast incremental file transfer
 brew "rsync"
 # Install various Ruby versions and implementations
@@ -351,8 +373,6 @@ brew "yt-dlp"
 brew "zsh"
 # The modern, text-based browser
 brew "browsh-org/browsh/browsh"
-# Cloudflare Tunnel
-brew "cloudflare/cloudflare/cloudflared", link: false
 # A simple terminal UI for git commands, written in Go
 brew "jesseduffield/lazygit/lazygit"
 brew "lucapette/tap/fakedata"
@@ -386,14 +406,10 @@ cask "clean-me"
 cask "cool-retro-term"
 # Command-line display management utility
 cask "cscreen"
-# Utilities designed to make common development tasks easier
-cask "devtoys"
 # Utility to hide menu bar items
 cask "hiddenbar"
 # Tool to prevent the system from going into sleep mode
 cask "keepingyouawake"
-# Create apps from groups of websites
-cask "multi"
 # Reverse proxy, secure introspectable tunnels to localhost
 cask "ngrok"
 # VPN client for secure internet access and private browsing
@@ -413,22 +429,30 @@ cask "syncterm"
 # JDK from the Eclipse Foundation (Adoptium)
 cask "temurin"
 cask "vimmotion"
+# Binary releases of VS Code without MS branding/telemetry/licensing
+cask "vscodium"
 # Video communication and virtual meeting platform
 cask "zoom"
 vscode "alefragnani.bookmarks"
+vscode "be5invis.vscode-custom-css"
+vscode "bmalehorn.shell-syntax"
 vscode "bmewburn.vscode-intelephense-client"
 vscode "britesnow.vscode-toggle-quotes"
+vscode "cardinal90.multi-cursor-case-preserve"
 vscode "chouzz.vscode-better-align"
 vscode "christian-kohler.path-intellisense"
+vscode "coffeeio.php-docblocker-coffeeio"
+vscode "continue.continue"
 vscode "davidbwaters.macos-modern-theme"
 vscode "dbaeumer.vscode-eslint"
 vscode "deerawan.vscode-dash"
+vscode "devsense.intelli-php-vscode"
 vscode "ecmel.vscode-html-css"
 vscode "editorconfig.editorconfig"
+vscode "ezforo.copy-relative-path-and-line-numbers"
 vscode "formulahendry.auto-rename-tag"
 vscode "github.copilot"
 vscode "github.copilot-chat"
-vscode "github.vscode-pull-request-github"
 vscode "goodbyte.uy-chrome-devtools-theme"
 vscode "iceliu.highlight-icemode"
 vscode "includable.file-duplicate"
@@ -440,16 +464,19 @@ vscode "ms-python.debugpy"
 vscode "ms-python.python"
 vscode "ms-python.vscode-pylance"
 vscode "ms-vscode.sublime-keybindings"
-vscode "neilbrayfield.php-docblocker"
 vscode "posseus.chromer-theme"
 vscode "rifi2k.format-html-in-php"
 vscode "rubymaniac.vscode-paste-and-indent"
 vscode "shevaua.phpcs"
-vscode "smartlive.chrome-devtools-theme"
+vscode "sourcegraph.cody-ai"
 vscode "streetsidesoftware.code-spell-checker"
 vscode "thomasbergersen.xcode-default-dark"
 vscode "timonwong.shellcheck"
+vscode "valeryanm.vscode-phpsab"
+vscode "vscodevim.vim"
 vscode "waderyan.gitblame"
+vscode "wayou.vscode-todo-highlight"
+vscode "willasm.pnotes"
 vscode "wordpresstoolbox.wordpress-toolbox"
 vscode "xdebug.php-debug"
 vscode "zignd.html-css-class-completion"
