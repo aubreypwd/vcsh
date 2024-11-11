@@ -27,12 +27,11 @@
 	ghget  = "! function f() { ghq get \"git@github.com:$1/$2.git$1\"; }; f"
 	l      = log --oneline --decorate --graph # Better log, looks better in CLI.
 	l1     = l -n 1
-	l10    = l -n 10
-	l100   = l -n 20
-	l2     = l -n 2
-	l20    = l -n 20
 	l5     = l -n 5
+	l10    = l -n 10
+	l20    = l -n 20
 	l50    = l -n 20
+	l100   = l -n 20
 	lg     = "! function f() { lazygit; }; f"
 	lgnt   = "! function f() { ttab -w -t 'lazygit' -q 'lazygit && exit'; }; f"
 	m      = merge
@@ -72,9 +71,9 @@
 
 [core]
 	excludesfile  = /Users/aubreypwd/.gitignore
-	# editor         = "vim"
+	editor = open -W -a 'CommitEdit'
 	# editor        = "micro --clipboard external --infobar false --keepautoindent false --savecursor false --diffgutter false --colorcolumn 72 --ruler false --softwrap true --wordwrap true --eofnewline false --rmtrailingws true"
-	editor        = "/Applications/Komet.app/Contents/MacOS/Komet"
+	# editor        = "/Applications/Komet.app/Contents/MacOS/Komet"
 
 [color]
 	ui          = true
