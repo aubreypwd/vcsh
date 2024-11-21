@@ -5,9 +5,9 @@
     },
     "minimum-stability": "dev",
     "require": {
-        "laravel/valet": "~4.0",
         "beyondcode/expose": "dev-master",
-        "laravel/installer": "dev-master"
+        "laravel/installer": "dev-master",
+        "laravel/valet": "^4.0@dev"
     },
     "require-dev": {
         "squizlabs/php_codesniffer": "4.0.x-dev"
