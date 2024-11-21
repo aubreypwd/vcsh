@@ -18,7 +18,6 @@
  ##
 export N_PREFIX="$HOME/.n"
 export PATH="$N_PREFIX/bin:$PATH"
-export PATH="/usr/local/bin:$PATH" # Just for n, where it symlinks node.
 export PATH="$PATH:/opt/homebrew/bin:/opt/homebrew/sbin" # Homebrew
 export PATH="$PATH:$HOME/.composer/vendor/bin" # Composer
 export PATH="/opt/homebrew/opt/ruby/bin:$PATH" #  Ruby
@@ -27,6 +26,9 @@ export PATH="/opt/homebrew/lib/ruby/gems/3.0.0/bin:$PATH" # Ruby Gems
 export PATH="/opt/homebrew/opt/openjdk/bin:$PATH" # OpenJDK.
 export PATH="/Applications/UTM.app/Contents/MacOS/:$PATH" # UTM
 export PATH="/Applications/Sublime Text.app/Contents/SharedSupport/bin:$PATH" # subl
+export PATH="/usr/local/mysql/bin:$PATH" # mysql installed via oracle's website.
+export PATH="/Users/aubreypwd/.n/bin/:$PATH" # n node version (leave at the end).
+
 
 ###
  # High Level Options
@@ -177,3 +179,4 @@ if [[ "$TERM_PROGRAM" == 'vscode' ]]; then
 	alias exit="echo 'Kill terminal in VSCode Instead'"
 fi
 [[ "$TERM_PROGRAM" == "CodeEditApp_Terminal" ]] && . "/Applications/CodeEdit.app/Contents/Resources/codeedit_shell_integration.zsh"
+export PATH="/opt/homebrew/opt/mysql@8.0/bin:$PATH"
