@@ -174,9 +174,8 @@ if [ -e "./.git" ]; then git s; fi
 export GPG_TTY=$(tty)
 
 if [[ "$TERM_PROGRAM" == 'vscode' ]]; then
-
 	alias x="echo 'Kill terminal in VSCode Instead.'"
 	alias exit="echo 'Kill terminal in VSCode Instead'"
 fi
+
 [[ "$TERM_PROGRAM" == "CodeEditApp_Terminal" ]] && . "/Applications/CodeEdit.app/Contents/Resources/codeedit_shell_integration.zsh"
-export PATH="/opt/homebrew/opt/mysql@8.0/bin:$PATH"
