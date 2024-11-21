@@ -3,7 +3,21 @@
   "launch": {
     "configurations": [
       {
-        "name": "Xdebug (9003)",
+        "name": "Xdebug Valet (9022)",
+        "type": "php",
+        "request": "launch",
+        "port": 9022,
+        "ignore": [
+          "**/vendor/**/*.php",
+          "**/node_modules/**/*.php",
+          "**/dist/**/*.php"
+        ],
+        "xdebugSettings": {
+          "max_data": 8096
+        }
+      },
+      {
+        "name": "Xdebug LocalWP (9003)",
         "type": "php",
         "request": "launch",
         "port": 9003,
@@ -17,7 +31,7 @@
         }
       },
       {
-        "name": "Xdebug (9000)",
+        "name": "Xdebug 5.6 (9000)",
         "type": "php",
         "request": "launch",
         "port": 9000,
@@ -66,6 +80,7 @@
     "dashicon",
     "dashicons",
     "kses",
+    "Laravel",
     "linebreak",
     "mofile",
     "Monokai",
@@ -73,6 +88,7 @@
     "phpcs",
     "Portwood",
     "quicktags",
+    "rewardswp",
     "richedit",
     "Sandhills",
     "specialchars",
@@ -594,5 +610,8 @@
   "[php]": {
     "editor.defaultFormatter": "valeryanm.vscode-phpsab"
   },
-  "explorer.excludeGitIgnore": false
+  "explorer.excludeGitIgnore": false,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "never"
+  }
 }
