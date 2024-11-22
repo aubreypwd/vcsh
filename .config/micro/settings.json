@@ -2,11 +2,12 @@
     "autosu": true,
     "colorscheme": "monokai",
     "ignorecase": false,
-    "indentchar": "—",
+    "indentchar": "_",
     "infobar": false,
     "mkparents": true,
     "paste": true,
     "rmtrailingws": true,
     "statusline": false,
-    "tabsize": 2
+    "tabsize": 2,
+    "softwrap": true,
 }

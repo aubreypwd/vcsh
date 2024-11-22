@@ -1,15 +1,18 @@
 {
     "Alt-/": "lua:comment.comment",
-    "CtrlUnderscore": "lua:comment.comment",
-
-    // Disable
-    "Ctrlr": "None",
-
-    // Sublime Parity
-    "Alt-g": "command-edit:goto ",
-
-    // Quit (and save) easier.
+    "Alt-Shift-g": "FindPrevious",
+    "Alt-a": "SelectAll",
+    "Alt-c": "Copy",
+    "Alt-d": "DuplicateLine",
+    "Alt-f": "Find",
+    "Alt-g": "FindNext",
+    "Alt-k": "DeleteLine",
     "Alt-q": "Quit",
     "Alt-s": "Save",
+    "Alt-v": "Paste",
+    "Alt-x": "Cut",
+    "Alt-y": "Redo",
+    "Alt-z": "Undo",
+    "Ctrl-r": "None",
+    "CtrlUnderscore": "lua:comment.comment"
 }
-
