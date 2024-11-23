@@ -25,3 +25,8 @@
 .monaco-workbench .part.editor>.content .editor-group-container>.title .tabs-container>.tab>.tab-actions .action-label {
 	opacity: 0.5;
 }
+
+/* Adds space between the terminal and the status bar. */
+.monaco-workbench .pane-body.integrated-terminal {
+	margin-bottom: 15px;
+}
