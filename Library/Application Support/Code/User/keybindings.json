@@ -466,7 +466,7 @@
 	{
 		"key": "escape",
 		"command": "workbench.action.closePanel",
-		"when": "panelFocus"
+		"when": "panelFocus && !terminalFocus"
 	},
 	{
 		"key": "alt+t alt+w",

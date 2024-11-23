@@ -254,7 +254,7 @@
   "terminal.integrated.hideOnStartup": "whenEmpty",
   "terminal.integrated.macOptionIsMeta": true,
   "terminal.integrated.scrollback": 10000,
-  "terminal.integrated.tabs.title": "${cwdFolder}${separator}${workspaceFolder}",
+  "terminal.integrated.tabs.title": "${process}${separator}${cwdFolder}${separator}${workspaceFolder}",
 
   // VS Code Custom CSS settings
   "vscode_custom_css.imports": [
@@ -614,4 +614,5 @@
     "source.fixAll.eslint": "never"
   },
   "shell-syntax.defaultShell": "zsh",
+  "terminal.integrated.persistentSessionScrollback": 10000,
 }

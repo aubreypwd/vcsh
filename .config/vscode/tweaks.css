@@ -30,3 +30,8 @@
 .monaco-workbench .pane-body.integrated-terminal {
 	margin-bottom: 15px;
 }
+
+.monaco-workbench .xterm-decoration-overview-ruler,
+.monaco-workbench .terminal .scrollbar {
+	display: none !important;
+}
