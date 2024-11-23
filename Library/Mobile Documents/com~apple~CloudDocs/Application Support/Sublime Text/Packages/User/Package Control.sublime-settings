@@ -2,6 +2,17 @@
 	// "bootstrapped": true,
 	"in_process_packages":
 	[
+		"AlpineJS",
+		"LSP",
+		"Pretty JSON",
+		"rainbow_csv",
+		"SideBarEnhancements",
+		"SublimeLinter",
+		"SublimeLinter-eslint",
+		"SublimeLinter-json",
+		"Theme - Monokai Pro",
+		"TOML",
+		"WordHighlight",
 	],
 	"installed_packages":
 	[

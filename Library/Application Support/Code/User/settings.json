@@ -254,7 +254,6 @@
   "terminal.integrated.hideOnStartup": "whenEmpty",
   "terminal.integrated.macOptionIsMeta": true,
   "terminal.integrated.scrollback": 10000,
-  "terminal.integrated.tabs.location": "left",
   "terminal.integrated.tabs.title": "${cwdFolder}${separator}${workspaceFolder}",
 
   // VS Code Custom CSS settings
@@ -613,5 +612,6 @@
   "explorer.excludeGitIgnore": false,
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": "never"
-  }
+  },
+  "shell-syntax.defaultShell": "zsh",
 }

@@ -261,7 +261,9 @@
 	],
 	"ignored_packages":
 	[
+		"AlpineJS",
 		"Auto Hide Sidebar",
+		"LSP",
 		"LSP-bash",
 		"LSP-css",
 		"LSP-eslint",
@@ -269,8 +271,17 @@
 		"LSP-intelephense",
 		"LSP-tailwindcss",
 		"PHP Completions Kit",
+		"Pretty JSON",
+		"rainbow_csv",
+		"SideBarEnhancements",
+		"SublimeLinter",
+		"SublimeLinter-eslint",
+		"SublimeLinter-json",
 		"SublimeLinter-php",
+		"Theme - Monokai Pro",
+		"TOML",
 		"Vintage",
+		"WordHighlight",
 	],
 	"ignored_words":
 	[
